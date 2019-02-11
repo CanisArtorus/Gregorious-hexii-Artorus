@@ -1,0 +1,13 @@
+shaped=
+    oredictionary:craftingToolWrench ae2:ItemMaterial.FormationCore oredictionary:plateTinAlloy,
+    _ mc:piston _
+    -> ae2:ItemPart.ExportBus
+
+shaped=
+    _ ae2:ItemMaterial.AnnihilationCore _,
+    oredictionary:craftingToolWrench mc:sticky_piston oredictionary:plateTinAlloy
+    -> ae2:ItemPart.ImportBus
+    
+shapeless=
+    ae2:ItemPart.ImportBus ae2:ItemPart.ExportBus
+    -> ae2:ItemPart.StorageBus

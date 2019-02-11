@@ -1,0 +1,26 @@
+shapeless=
+    ae2:ItemMaterial.Cell2SpatialPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemSpatialStorageCell.2Cubed
+
+shapeless=
+    ae2:ItemMaterial.Cell16SpatialPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemSpatialStorageCell.16Cubed
+
+shapeless=
+    ae2:ItemMaterial.Cell128SpatialPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemSpatialStorageCell.128Cubed
+
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell2SpatialPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemSpatialStorageCell.2Cubed
+
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell16SpatialPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemSpatialStorageCell.16Cubed
+
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell128SpatialPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemSpatialStorageCell.128Cubed

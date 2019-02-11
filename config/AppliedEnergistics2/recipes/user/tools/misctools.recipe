@@ -1,0 +1,11 @@
+shaped=
+    ae2:ItemMaterial.CertusQuartzCrystalCharged _ _,
+    _ oredictionary:ringAnyIron _,
+    _ _ oredictionary:stickLongAnyIronSteel
+    -> ae2:ToolChargedStaff
+
+shaped=
+    ae2:ItemMaterial.PurifiedFluixCrystal ae2:BlockEnergyCell oredictionary:lensInfusedWater,
+    ae2:ItemMaterial.EngProcessor oredictionary:ringConstantan _,
+    oredictionary:lenInfusedFire _ oredictionary:stickLongAnyIronSteel
+    -> ae2:ToolEntropyManipulator

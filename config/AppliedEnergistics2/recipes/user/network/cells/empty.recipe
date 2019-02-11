@@ -1,0 +1,5 @@
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy _ oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemMaterial.EmptyStorageCell

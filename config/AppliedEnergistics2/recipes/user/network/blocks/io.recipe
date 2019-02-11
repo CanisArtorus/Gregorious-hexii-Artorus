@@ -1,0 +1,11 @@
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:lensGlass oredictionary:stickLongAnyIronSteel,
+    oredictionary:lensGlass oredictionary:dustFluix oredictionary:lensGlass,
+    oredictionary:plateAnyIronSteel oredictionary:lensGlass oredictionary:screwAnyIronSteel
+    -> ae2:BlockCondenser
+
+shaped=
+    glass oredictionary:craftingToolWrench glass,
+    ae2:BlockDrive cable ae2:BlockDrive,
+    oredictionary:plateAluminum ae2:ItemMaterial.LogicProcessor oredictionary:plateAluminum
+    -> ae2:BlockIOPort

@@ -1,0 +1,23 @@
+shaped=
+    oredictionary:wireFineRedAlloy certusCrystal oredictionary:redstone,
+    certusCrystal ae2:ItemMaterial.LogicProcessor certusCrystal,
+    oredictionary:redstone certusCrystal oredictionary:wireFineRedAlloy
+    -> ae2:ItemMaterial.Cell1kPart
+
+shaped=
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.CalcProcessor oredictionary:wireFineRedAlloy,
+    ae2:ItemMaterial.Cell1kPart ae2:BlockQuartzGlass ae2:ItemMaterial.Cell1kPart,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell1kPart oredictionary:wireFineRedAlloy
+    -> ae2:ItemMaterial.Cell4kPart
+
+shaped=
+    oredictionary:wireFineSignalum ae2:ItemMaterial.CalcProcessor oredictionary:redstone,
+    ae2:ItemMaterial.Cell4kPart ae2:BlockQuartzGlass ae2:ItemMaterial.Cell4kPart,
+    oredictionary:redstone ae2:ItemMaterial.Cell4kPart oredictionary:wireFineSignalum
+    -> ae2:ItemMaterial.Cell16kPart
+
+shaped=
+    oredictionary:wireFineSignalum ae2:ItemMaterial.EngProcessor oredictionary:wireFineSignalum,
+    ae2:ItemMaterial.Cell16kPart ae2:BlockQuartzGlass ae2:ItemMaterial.Cell16kPart,
+    oredictionary:wireFineSignalum ae2:ItemMaterial.Cell16kPart oredictionary:wireFineSignalum
+    -> ae2:ItemMaterial.Cell64kPart

@@ -1,0 +1,5 @@
+shaped=
+    oredictionary:ingotAnyIronSteel oredictionary:pipeTinySteelGalvanized ae2:ItemMaterial.FormationCore,
+    ae2:ItemMaterial.Cell4kPart ae2:BlockEnergyCell _,
+    ImmersiveEngineering:material:9 _ _
+    -> ae2:ToolMassCannon

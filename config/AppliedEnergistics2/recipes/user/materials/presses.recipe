@@ -1,0 +1,15 @@
+inscribe=
+    oredictionary:blockSolidAnyIron ae2:ItemMaterial.LogicProcessorPress
+    -> ae2:ItemMaterial.LogicProcessorPress
+
+inscribe=
+    oredictionary:blockSolidAnyIron ae2:ItemMaterial.CalcProcessorPress
+    -> ae2:ItemMaterial.CalcProcessorPress
+
+inscribe=
+    oredictionary:blockSolidAnyIron ae2:ItemMaterial.EngProcessorPress
+    -> ae2:ItemMaterial.EngProcessorPress
+
+inscribe=
+    oredictionary:blockSolidAnyIron ae2:ItemMaterial.SiliconPress
+    -> ae2:ItemMaterial.SiliconPress

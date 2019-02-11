@@ -1,0 +1,11 @@
+press=
+    ae2:ItemMaterial.FormationCore oredictionary:plateGemFluix oredictionary:plateStainlessSteel
+    -> ae2:ItemPart.FormationPlane
+
+press=
+    ae2:ItemMaterial.AnnihilationCore oredictionary:plateGemFluix oredictionary:plateStainlessSteel
+    -> ae2:ItemPart.AnnihilationPlane
+
+shapeless=
+    ae2:ItemPart.AnnihilationPlane ae2:ItemMaterial.FluixPearl
+    -> ae2:ItemPart.IdentityAnnihilationPlane

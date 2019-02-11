@@ -1,0 +1,11 @@
+shaped=
+    oredictionary:stickLongStainlessSteel cable oredictionary:stickLongStainlessSteel,
+    ae2:BlockQuartzGlass ae2:BlockFluix ae2:BlockQuartzGlass,
+    oredictionary:stickLongStainlessSteel cable oredictionary:stickLongStainlessSteel
+    -> ae2:BlockQuartzGrowthAccelerator
+
+shaped=
+    oredictionary:stickAnyCopper fluixCrystal oredictionary:ringAnyCopper,
+    oredictionary:ingotSteelGalvanized _ oredictionary:craftingToolWrench,
+    oredictionary:stickAnyCopper fluixCrystal oredictionary:ringAnyCopper
+    -> ae2:BlockCharger

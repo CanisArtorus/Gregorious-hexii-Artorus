@@ -1,0 +1,23 @@
+shaped=
+    oredictionary:craftingToolWrench oredictionary:plateSteelGalvanized oredictionary:craftingToolScrewdriver,
+    oredictionary:plateSteelGalvanized mc:furnace oredictionary:plateSteelGalvanized,
+    oredictionary:screwTinAlloy ae2:BlockEnergyAcceptor oredictionary:screwTinAlloy
+    -> ae2:BlockVibrationChamber
+
+shaped=
+    oredictionary:craftingToolSoftHammer ae2:BlockQuartzGlass oredictionary:wireGt01Tin,
+    ae2:BlockQuartzGlass fluixCrystal ae2:BlockQuartzGlass,
+    oredictionary:craftingToolWireCutter ae2:BlockQuartzGlass oredictionary:craftingToolChisel
+    -> ae2:BlockEnergyAcceptor
+    
+shaped=
+    oredictionary:plateGemCertusQuartz oredictionary:dustFluix oredictionary:plateGemCertusQuartz,
+    oredictionary:dustFluix ae2:BlockQuartzGlass oredictionary:dustFluix,
+    oredictionary:plateGemCertusQuartz oredictionary:dustFluix oredictionary:plateGemCertusQuartz
+    -> ae2:BlockEnergyCell
+
+shaped=
+    ae2:BlockEnergyCell ae2:BlockEnergyCell ae2:BlockEnergyCell,
+    ae2:BlockEnergyCell ae2:ItemMaterial.CalcProcessor ae2:BlockEnergyCell,
+    ae2:BlockEnergyCell ae2:BlockEnergyCell ae2:BlockEnergyCell
+    -> ae2:BlockDenseEnergyCell

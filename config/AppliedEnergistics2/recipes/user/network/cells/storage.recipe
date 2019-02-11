@@ -1,0 +1,35 @@
+shapeless=
+    ae2:ItemMaterial.Cell1kPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemBasicStorageCell.1k
+
+shapeless=
+    ae2:ItemMaterial.Cell4kPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemBasicStorageCell.4k
+
+shapeless=
+    ae2:ItemMaterial.Cell16kPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemBasicStorageCell.16k
+
+shapeless=
+    ae2:ItemMaterial.Cell64kPart ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemBasicStorageCell.64k
+    
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell1kPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemBasicStorageCell.1k
+
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell4kPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemBasicStorageCell.4k
+
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell16kPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemBasicStorageCell.16k
+
+shaped=
+    oredictionary:craftingToolScrewdriver oredictionary:plateGemCertusQuartz oredictionary:screwCertusQuartz,
+    oredictionary:wireFineRedAlloy ae2:ItemMaterial.Cell64kPart oredictionary:wireFineRedAlloy,
+    oredictionary:screwCertusQuartz oredictionary:plateAluminum oredictionary:craftingToolHardHammer
+    -> ae2:ItemBasicStorageCell.64k

@@ -1,0 +1,5 @@
+shaped=
+    oredictionary:stickLongStainlessSteel ae2:BlockQuartzGlass oredictionary:screwStainlessSteel,
+    ae2:ItemMaterial.AnnihilationCore oredictionary:craftingTableWood ae2:ItemMaterial.FormationCore,
+    oredictionary:craftingToolScrewdriver ae2:BlockQuartzGlass oredictionary:stickLongStainlessSteel
+    -> ae2:BlockMolecularAssembler

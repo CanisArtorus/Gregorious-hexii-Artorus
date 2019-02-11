@@ -1,0 +1,5 @@
+shaped=
+    ae2:BlockQuartzGlass oredictionary:wireFineAnyCopper ae2:BlockQuartzGlass,
+    oredictionary:wireFineAnyCopper certusCrystal oredictionary:wireFineAnyCopper,
+    oredictionary:craftingToolScrewdriver oredictionary:plateBronze oredictionary:screwBronze
+    -> ae2:ItemMaterial.BlankPattern

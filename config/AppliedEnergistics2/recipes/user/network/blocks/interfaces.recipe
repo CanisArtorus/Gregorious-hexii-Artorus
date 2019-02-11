@@ -1,0 +1,13 @@
+shapeless=
+    ae2:ItemPart.Interface
+    -> ae2:BlockInterface
+
+shapeless=
+    ae2:BlockInterface
+    -> ae2:ItemPart.Interface
+
+shaped=
+    oredictionary:stickLongTinAlloy glass oredictionary:craftingToolScrewdriver,
+    ae2:ItemMaterial.AnnihilationCore oredictionary:craftingToolWrench ae2:ItemMaterial.FormationCore,
+    oredictionary:screwTinAlloy glass oredictionary:stickLongTinAlloy
+    -> ae2:BlockInterface

@@ -1,0 +1,5 @@
+shaped=
+    wrench ae2:BlockChest oredictionary:craftingToolHardHammer,
+    cable ae2:ItemMaterial.Cell16kPart cable,
+    gregtech:gt.meta.plateDouble:8651 ae2:ItemMaterial.EngProcessor gregtech:gt.meta.plateGem:8347
+    -> ae2:BlockSecurity

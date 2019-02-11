@@ -1,0 +1,8 @@
+shapeless=
+    certusCrystal ae2:ItemMaterial.EmptyStorageCell -> ae2:ItemViewCell
+
+shaped=
+    ae2:BlockQuartzGlass oredictionary:wireFineRedAlloy ae2:BlockQuartzGlass,
+    oredictionary:wireFineRedAlloy certusCrystal oredictionary:wireFineRedAlloy,
+    oredictionary:craftingToolScrewdriver oredictionary:plateAluminum oredictionary:screwAluminum
+    -> ae2:ItemViewCell

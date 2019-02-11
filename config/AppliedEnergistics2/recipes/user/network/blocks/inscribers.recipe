@@ -1,0 +1,5 @@
+shaped=
+    oredictionary:craftingToolWrench gregtech:gt.multiitem.technological:12061 _,
+    fluixCrystal oredictionary:casingMachineSteelGalvanized oredictionary:cableGt01Tin,
+    _ gregtech:gt.multiitem.technological:12061 _
+    -> ae2:BlockInscriber

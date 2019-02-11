@@ -1,0 +1,5 @@
+shaped=
+    oredictionary:plateAluminum,
+    ae2:ItemMaterial.EngProcessor,
+    oredictionary:plateGemFluix
+    -> ae2:ItemPart.P2PTunnelME

@@ -1,0 +1,11 @@
+shaped=
+    glass ae2:ItemPart.Terminal glass,
+    cable _ cable,
+    oredictionary:plateAluminum fluixCrystal oredictionary:plateAluminum
+    -> ae2:BlockChest
+
+shaped=
+    _ ae2:ItemMaterial.EngProcessor _,
+    cable oredictionary:casingMachineAluminum cable,
+    _ ae2:ItemMaterial.EngProcessor oredictionary:craftingToolWireCutter
+    -> ae2:BlockDrive
