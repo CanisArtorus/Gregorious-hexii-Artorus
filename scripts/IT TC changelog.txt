@@ -1,0 +1,246 @@
+Thaumcraft Tweaks for Gregtech 6
+	in "/Gregorious hexii/ Art."
+	by Canis Artorus
+  an update with a few different design choices, from
+// ITTweak - Thaumcraft
+//  modified by Xavion
+// Nearly entirely derived from KRTweak by Nono
+//
+//
+// Changelog:
+	v0.8:
+		- Disabled references to IC2 as it is being removed form the modpack
+		- Book Infusion enchantments disabled pending completion of translation to GT6
+		- Essentia tube recipes reverted to cold iron only
+		- Tallow candles waiting for good machine choice
+		- Be hopeful about Thaunomicon displaying tiny dust outputs
+		+ ForbiddenMagic:BlinkFocus put in line with rest
+		- re-added fragments of ITKAMI
+			- WAY less punishing end-game to start.  But definitely super end-game later.
+		- update kami-foci to midasium rings
+		- make the Vintuem Gem Purified, not the common ore from AM2
+		+ Add Naquadah Ore transmutation, to source Naquadria
+		- return aluminium duplication to GregT
+		+ Add Trinium transmutation, and SGCraft part recipes
+//	Gregorious Hexii Edition
+//		- Removed Witching Gadgets, Automagy, HEE, EnderIO, ZTones, and ExtraUtilities References; not in this pack.
+//		- Translated GT5 object references to GT6 objects
+//	y	- Disabled InfinityCore references pending replacement
+//		- Clarified [GT] source notation to [IT] for research added herein
+//		- Revert Enderium to a Platinum transformation, raised price to compensate
+//		- Revert ThE essentia storage components to base tiering
+//		+ core basic 1k essentia storage with a Magic Chipset
+//		- Remove metal tech tiering from wand cores.
+//		- Golem research returned to batch unlocking
+//		- Made TF metal transformations lossy, as per existing lore entries
+//		- Adamantium is also transformed as an oxide, which is now still a powerful tool material
+//	x	- Aluminium transmutation nerfed to alumina
+//		- Excavation focus cheapened slightly to thaumium pickaxe heads
+//		- AEWrench focus changed to specific steels and quartz crystals
+//		+ Canner can also remove brains from a jar, with a slight chance of loss
+//		- recharging vis stone less lossy
+//		- Re-did Thaunomicon crafting recipe
+//		- Naquadah is now an eldritch transformation of Americium
+//		- Calved Thaumic Energistics to it's own file
+//   v0.7: InfiTech Overhaul Edition
+//   n   - Imported Hungry Hand Mirror fix
+//      - Mirrored glass modified to use glass plate
+//   x   - Magic mirror and essentia mirror use ender crystal instead of ender pearl
+//   x   - Hand mirror requies biome compass instead of compass
+//      - Thaumonomicon must be crafted initially
+//      - Gold and iron wand caps removed, all wand cap recipes relaxed
+//      - Silver wand caps are charged in a crucible, not via infusion
+//      - Original inkwell and thaumometer recipes restored
+//   y   - Initial wand crafted with placeholder item and 2 copper caps, will be crafted with wood rod
+//   x   - Enderium transmutation changed to enderium base ingot -> enderium ingot
+//      - Removed Railcraft tab, moved crowbar recipes to Thaumium and Void Metal researches
+//   x   - Thaumium creation modified to slivers to nuggets instead of balanced shards to ingots
+//      - Thaumium transmutation modified to ingot -> ingot
+//      - All transmutations based off 3 aspects + metallum, freezer/HV materials produce dust instead of nuggets
+//      - Void gear modified to arcane crafting, each item using 2 pieces of enderium
+//      - Goggles of revealing require gold rod and spring instead of thaumium, vis costs lowered
+//      - Totally redid wand foci, all now require a lens, 4 rings, and some "catalyst" items
+//   x   - Adjusted thaumium, flesh, amber, and tallow blocks to GT style
+//      - Added amber block -> amber plate recipe to cutting machine
+//      - Added recrystalization of vinteum crystals
+//      - Clusters modified to be able to be macerated or pulverized for extra dust instead of purifable for purified ore
+//      - Clusters and research added for purifying every ore with a primary focus
+//      - Purification moved to separate file due to script growing too large
+//      - Golem recipes modified to use gears, springs, and eeprom, no longer tiered
+//   n   - Magical energy generators modified, mostly gated with magical materials now
+//   n   - Restored IC2 crop aspects
+//      - Removed most recipes for magical items with machines
+//   x   - Modified candle recipes, multiple options using silk for increased efficiency
+//      - Removed golem core wiping and duplication
+//      - Enabled Disjunction enchanted books
+//      - Thaumostatic harness and girdle lowered in cost, gated to LV/MV respectively and require bewitched fabric
+//   n   - Witching gadgets enchantments moved over to books
+//      - Recipes added for Pure Love, Adamantium, and Fiery Blood
+//      - Osmotic Enchanter changed to require Adamantium, gating to EV
+//      - Ender bag requires ender rift focus
+//   n   - Spinning wheel requires GT parts to create
+//      - Recipe added for defunct zombie brains to proper ones
+//      - Warded Arcana requires advanced circuits instead of zombie brains
+//      - Infusion Altar requires vinteum crystal instead of ender pearl
+//      - Pedestals significantly more expensive, lathe recipe unchanged
+//      - Arcane bore base recipe added
+//      - Thaumic Energistics recipes modified to fit Applied Energistics style when applicable
+//      - Crystallizer requires autoclave
+//      - Alembic and Vis Filter require plates instead of ingots
+//      - Added extruder recipe for essentia tubes out of thaumium
+//      - Thaumic Restorer now gated to MV, requires void metal block
+//   n   - Primordial gear require enderium plates
+//   n   - Thirsty Tank requires fused quartz
+//   n   - Forming press recipe for gold plate to 8 gold goins
+//      - Dynamisim tablet requires use core
+//      - Fishing core no longer fish specific, requires fish nugget and fish oil
+//      - Arcane bellows now gated by kanthal
+//      - Whatever else I forgot
+//   v0.6: InfiTech Compatible Port
+//      - Removed all references to Twilight Forest or Biomes O' Plenty
+//      - Modified Feather Fall infusion enchanting to bucket of water for level 2 and rubber boots for level 3 to account for removal of TF feather
+//      - Cut firestone recipe modified to use ignis shards instead of unknown gem.
+//      - Silk touch recipe disabled for now due to unknown component.
+//   x   - Modified titanium transmutation to produce ilmenite instead of the broken dust 2375
+//   v0.5r: 
+//     - All BoP related tweaks disabled, as BoP is no longer in the modpack. 
+//     - Due to the void left by BoP items no longer being accessible, unobtainable GT materials will be used as a placeholder. 
+//   v0.5: 
+//     - Convenience recipe for tilled farmland block added
+//     - Disabled infusion enchanting
+//     - Added recipes to create enchanted books for the missing enchantments
+//   n  - Advances in the mechanical processing of living creatures has improved the efficiency of pixie pulverization
+//     - All enchantments now researched separately
+//     - Jar labels now have an alternative assembling machine recipe
+//     - Vis stone research added
+//     - Flesh golems no longer give warp upon crafting
+//     - Potion brewing added
+//     - Arcane Bellows nerfed
+//     - Fixed some vanilla localization issues
+//     - Sanitized tweak code to make it easier to maintain
+//   n  - Certain nonrenewable BoP materials like river cane can now be transmuted
+//   x  - Tiny fluid pipes may be converted to essentia tubes in assembler using thaumium
+//   x  - Tiered the wands based on GT metals as per suggestion
+//     - Added aspects to more items and blocks that do not have any
+//   n  - Ash stone and many other BoP blocks now can be processed
+//   n  - Some dusts like volcanic ashes and siltstone dust are now obtainable
+//     - Fixed some lore issues
+//     - Fixed some research being set to secondary when they should not be
+//     - Nerfed lava transmutation to prevent some exploits
+//     - Added a few more endgame research items
+//   v0.4: 
+//     - Minor cleanup to reduce file size
+//     - More lore changes
+//   n  - Pixies can now be macerated and centrifuged
+//     - Nerfed thaumium recipe
+//     - Adjusted the cost of Void tools/armor to compensate for a problem with the GT API
+//     - Glowstone duplication recipe is now properly removed
+//     - Nerfed mirrors again
+//     - Further increased runic shielding costs
+//   x  - Shard clusters are now required for the elemental golem upgrades
+//     - Buffed the native clusters to actually be useful and not give less metal than a macerator
+//   x  - Golem tech tree now linear
+//   x  - Golem crafting now tiered, infusion-based
+//   y  - Chop core removed (may be readded later if a good idea for tiering it happens)
+//     - Core costs completely redone: now requires OC parts
+//     - Empty animation core now less prohibitively expensive to make
+//     - Fixed a bug that was making some upgrades display the incorrect crafting recipe
+//     - Core copying recipes removed
+//     - Motus replaced by electrum in golem core infusion recipes
+//     - Added a few more transmutations
+//     - Tweaked research costs
+//   n  - Added ways to obtain some BoP items that are no longer available
+//   v0.3: 
+//     - Refreshed thaumonomicon entries for basic research so they properly show the GT recipes
+//     - Wrought Iron transmutation no longer marked as secondary research
+//     - Moved certain Thaumonomicon research icons around
+//     - Added Steel -> Damascus Steel transmutation research
+//     - Hungry chest now slightly more expensive to craft
+//     - Advanced Metallurgy now requires Damascus Steel transmutation
+//     - Tweaked costs of more TC recipes 
+//     - Mundane belt no longer craftable
+//     - Mundane belt removed from most recipes other than that for Runic Shielding
+//     - Clay transmutation disabled
+//     - Removed a debugging transmutation that was allowing infinite nether quartz
+//     - Massively revamped the crafting of Golem Animation cores
+//   x  - All cores are now an infusion recipe using an HV robot arm and an appropriate integrated circuit
+//   x  - Fishing animation core removed
+//   x  - Blank animation core now has multiple assembler recipes
+//   x  - Golem animation cores may be "copied" in assembler as long as you have one copy, but consumes a lot of EU
+//   x  - Golem animation cores may be formatted to a blank animation core in a magnetizer
+//   v0.2: 
+//     - Barrier of entry lowered to MV (120 EU/t)
+//     - Advanced metallurgic transmutations are now properly set to primary research
+//     - Bone Bow research now properly requires Infusion 
+//     - Added Assembling Machine recipe for Table
+//     - Added Assembling Machine recipe for Arcane Stone
+//     - Normalized some EU costs to prevent undesirable Insufficient Energy errors
+//     - Tweaked transmutation costs to make more sense as well as removing a possible exploit
+//     - Runic Shielding tech tree has been smoothed out
+//     - Doubled both cost and yield for gunpowder manufacture recipe
+//     - Excavation focus now an infusion recipe
+//     - Equal Trade focus now an infusion recipe
+//     - Primal focus now an infusion recipe
+//     - Minor lore changes for consistency
+//     - Elemental tool infusion recipes have Thaumium and Titanium swapped for consistency
+//     - Elemental tools now require salis mundus in lieu of greatwood log 
+//   x  - Voidmetal armor and tools are now infusion recipes requiring diamond equivalents (Already 
+//       implemented, but was not documented in v0.1 changelog)
+//   v0.1: 
+//     - Initial release
+//     - Thaumium ingots now require a balanced shard to craft
+//   x  - Thaumometer initially requires HV Assembling Machine
+//   x  - Scribing tools now requires Assembling Machine, but are also refilled more efficiently
+//   x  - Iron Wand Cap requires HV Precision Laser Engraver
+//   x  - Iron Wand assembled in HV Assembling Machine with Sealed Wood Stick
+//   x  - Charcoal transmutation removed
+//     - Gunpowder now under Alchemical manufacture and consumes saltpeter instead of being a duplication
+//     - Significantly increased the barrier of entry for golem automation
+//     - Warp has been added/increased for a large number of researches
+//     - Added many additional transmutation and alchemical recipes that can be unlocked, including 
+//       ways to obtain non-generating Railcraft decorative blocks
+//   x  - Tallow candle now requires significant time to manufacture, done so via Assembling Machine
+//     - Enchanted fabric has an alternate Assembling Machine recipe requiring molten Thaumium
+//     - Enchanted fabric is woven into clothes more efficiently in Assembling Machine
+//     - Deconstruction table can be made in Assembling Machine with molten gold and thaumometer
+//     - Arcane Keys created more efficiently in Forming Press
+//     - Essentia Jars created more efficiently in Assembling Machine
+//     - Fill Essentia Jars with lava in Fluid Canning Machine to transform them into Void Jars
+//     - Empty Void Jars in Fluid Canning Machine to get regular Essentia Jars back
+//     - Brain in a jar can be uncanned in the Canning Machine
+//     - Additional useful Alchemical Duplication recipes introduced
+//   x  - Goggles of Revealing now requires Thaumium (and therefore the Thaumium research) instead of Gold
+//     - Phials are now more expensive to craft in a worktable, Assembling Machine needed for old efficiency
+//     - Arcane lamp now crafted from a floodlight
+//     - Added Assembling Machine recipes for certain basic Thaumcraft blocks
+//     - Basic infusion tools now take an appropriate titanium tool head instead of a diamond
+//     - Bone bow is now an unstable infusion recipe that takes a long titanium rod
+//   x  - Boots of the Traveller infuses from Hover Boots
+//     - Thaumostatic Harness now infused from IC2 Jetpack
+//     - Thaumostatic Girdle now requires infusion and consumes two boost engines from GraviSuite
+//     - Wand caps now have a linear progression
+//     - Silverwood wand core now requires all intermediate wand cores researched
+//     - Voidmetal recipe now yields 1 nugget instead of 1 ingot
+//     - Voidmetal caps now require 5 ingots instead of 5 nuggets
+//     - Staff cores now only require Greatwood wand core research, to improve their location in the tech tree
+//     - Sceptre research now requires Thaumium Wand Cap and Silverwood Staff Core
+//     - Most affected Thaumonomicon entries have been updated
+//     - Thaumonomicon research locations moved around for improved aesthetics 
+//     - Arcane Bore more expensive to craft, to bring it in line with other auto-mining methods
+//     - Mirrors now more expensive to craft, to bring them in line with other forms of item transport
+//     - Wand of Equal Trade now an Eldritch tab research
+//     - Added appropriate aspects to certain Railcraft and Twilight Forest items
+//     - Runic shielding components (mundane accessories) are now dungeon loot only
+//     - Apprentice accessories can be deinfused into mundane accessories
+//     - Apprentice accessories are now craftable via new research
+//     - GT crop metaitems nerfed
+//       - Metallum replaced by Herba 
+//       - Lucrum replaced by Terra
+//     - Blast Furnace metal transmutations yield tiny pile of dust or oxidized metal instead of the nugget;
+//   x    (Note that the Thaumonomicon will show the output as nugget in some cases - this is a problem with
+//       the ModTweaker API and there is literally nothing I can do about it. The text of its Thaumonomicon
+//       entry will specify the proper form of the output.)
+//   x  - Runic shielding regen, cost, and cooldown nerfed (via separate Thaumcraft config)
+//     - Taint rate of spread nerfed (via separate Thaumcraft config)
+// 
+//***************************
