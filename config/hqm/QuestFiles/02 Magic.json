@@ -1,0 +1,926 @@
+{
+  "name": "Sufficiently Advanced Tech",
+  "description": "...is indistinguishable from magic, or as the saying goes. This chapter will walk you through the customizations that have been made to Thaumcraft and provide a basic run-down of Ars magica.",
+  "quests": [
+    {
+      "name": "Entrance to the Arcane",
+      "description": "Thaumcraft: Where even the most logical man becomes a gibbering mess, and loves every second of it.  Therefore, even though the Thaunomicon itself is usually great at providing clues, We'll list the salient turning points here anyway. ",
+      "x": 57,
+      "y": 10,
+      "icon": {
+        "id": "Thaumcraft:ItemThaumonomicon"
+      },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Mind the Splinters]",
+		"{It Really is a Whole New Game}[Habilus]"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Books before Wands",
+          "longDescription": "We have made the Thaumonomicon craftable. It is your in-game Guide Book to Thaumcraft. Some things may not be accurate, as /Gregorious hexii/ Artorus changes several recipes; including putting the book before the first wand by making it craftable, and making said wand Copper Capped.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemThaumonomicon"
+              },
+              "precision": "NBT_FUZZY"
+            }
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "A basic Wand",
+		  "longDescription": "Now that you have scribbled down the basic theory of thaumic resonance, craft a Copper Capped Wooden Wand, the simplest and crudest functional form of vis manipulation.",
+		  "items": [
+		    {
+			  "item": {
+				"id": "Thaumcraft:WandCap",
+				"damage": 3
+			  },
+			  "required": 2,
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.meta.stickLong",
+				"damage": 8221
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemManaBean",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Crafting Like a Magician",
+      "description": "The Arcane Worktable is one of the ways Thaumcraft adds for crafting things. Some things require vis in your wand, which you get by holding right click on a Node. See your Basic Information tab of the Thaumonomicon for details.",
+      "x": 27,
+      "y": 58,
+      "icon": {
+        "id": "Thaumcraft:blockTable",
+        "damage": 15
+      },
+      "prerequisites": [
+        "Entrance to the Arcane"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get an Arcane Worktable",
+          "longDescription": "Right Click a Thaumcraft Table with a Wand to get the Arcane Worktable. Pick it up for this quest.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable",
+                "damage": 15
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+	]
+	},
+	{
+	  "name": "Thinking About Thaumaturgy",
+	  "description": "The Research Table is how you learn how to make most Thaumcraft blocks and items. You have to unlock Research Notes in the Thaumonomicon using aspect points you get by scanning blocks, items, and especially Nodes using the Thaumometer. You have to scan things in a certain order; thankfully you can also scan things in your inventory. \n\n A good wizard tracks where all the nodes they have scanned were, and in what state they were last seen, no paper required.",
+	  "x": 57,
+	  "y": 52,
+	  "icon": {
+	    "id": "Thaumcraft:ItemInkwell"
+	  },
+	  "prerequisites": [
+	    "Entrance to the Arcane",
+		"{It Really is a Whole New Game}[Gleaning and Foraging]"
+	  ],
+	  "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Make a Research Table",
+          "longDescription": "To make the Research table, place to Tables next to each other and right-click with Scribing Tools. These will be used up as you do the research minigame (see the Thaumonomicon for some details), and refill it with any Black Dye to continue using them.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:ItemInkwell"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockTable"
+              },
+              "required": 2,
+              "precision": "NBT_FUZZY"
+            },
+			{
+			  "item": {
+			    "id": "Thaumcraft:ItemThaumometer"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:ItemResource",
+          "damage": 9,
+          "amount": 18
+        }
+      ]
+    },
+	{
+	  "name": "Toil and Trouble",
+	  "description": "Alchemy Thaumcraft style starts out messy, belching toxic waste Flux all over. It has vitally important utility however, and can easily be upgraded to a clean machine that runs on fluid Essentia.",
+	  "x": 99,
+	  "y": 58,
+	  "icon": {
+	    "id": "Thaumcraft:blockMetalDevice",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "Entrance to the Arcane"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Crucible was a Cauldron",
+		  "longDescription": "The basic crucible is made by waving your wand over a common cauldron, like one you may be doing the washing in. Pick up the result for this quest. The Crucible will function only while the water within is bubbling, this requires either Nitor, Fire, or Lava beneath it.",
+		  "items": [
+			{
+			  "item": {
+				"id": "Thaumcraft:blockMetalDevice"
+		      }
+		    }
+		  ]
+	    }
+	]
+	},
+	{
+	  "name": "Essential Vapours",
+	  "description": "Being quickly struck by the wastefulness of open-crucible alchemy, you must seek better ways... Perhaps examining the properties of Nitor and Alumentum will grant a clue... Ah-ha! A controlled furnace environment can be augmented with alembics (up to four) in order to distill the very essentia from items fed in, at the low price of solid furnace fuel. Now, how to prevent degradation... Of course! Jars. But jars formed and completely sealed by a touch of aqua vis. ",
+	  "x": 63,
+	  "y": 84,
+	  "icon": {
+	    "id": "Thaumcraft:blockJar"
+	  },
+	  "prerequisites": [
+	    "Crafting Like a Magician",
+		"Thinking About Thaumaturgy",
+		"{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "tasks": [
+	    {
+	      "type": "CRAFT",
+		  "description": "Distillion appartatus",
+		  "longDescription": "The caustic properties of this gasseous essentia are far greater than any acid you have encountered in the workshop; specially built pipes will have to be constructed. Common cold iron seems oddly able to muffle the stranger outbursts, and quicksilver is the substance most resistant to contact corrosion; keeping the quicksilver spread over the entire inner surface takes a dash of magic. As a side-effect, any wand acts like the wrench for these tubes.",
+		  "items": [
+		    {
+		      "item": {
+			    "id": "Thaumcraft:blockStoneDevice"
+			  }
+		    },
+		    {
+		      "item": {
+			    "id": "Thaumcraft:blockMetalDevice",
+			    "damage": 1
+			  }
+		    },
+		    {
+		    "item": {
+			    "id": "Thaumcraft:blockJar"
+			  },
+			  "precision": "FUZZY"
+		    },
+  		    {
+		      "item": {
+			    "id": "Thaumcraft:blockTube"
+			  }
+		    }
+		  ]
+	    }
+	  ]
+	},
+	{
+	  "name": "Automated Alchemy",
+	  "description": "There it is! An alchemical construct can be fed essentia in controlled quantities, but it must be pure distilled essentia. Now the water is not used, nor is any flux ever produced.",
+	  "x": 99,
+	  "y": 84,
+	  "icon": {
+	    "id": "Thaumcraft:blockMetalDevice",
+		"damage": 9
+	  },
+	  "prerequisites": [
+	    "Toil and Trouble",
+		"Essential Vapours"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Auotmate Alchemy",
+		  "longDescription": "",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "Thaumcraft:ItemResource",
+				"damage": 1
+			  }
+			},
+		    {
+			  "item": {
+				"id": "Thaumcraft:blockMetalDevice",
+				"damage": 9
+		      },
+	          "required": 2
+		    }
+		  ]
+	    }
+	  ],
+	  "reward": [
+	    {
+		  "id": "Thaumcraft:blockJar",
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "A Real Wand",
+	  "description": "Now that you have magic, it\u0027s past time to get a better wand to channel that magic with... Upon long reflection, the grand Greatwood trees seem to provide a fine wood to work magic with, and the thaumaturgic power of silver has been enshrined in myth and legend. ",
+	  "x": 27,
+	  "y": 94,
+	  "icon": {
+        "id": "Thaumcraft:WandCap",
+		"damage": 5
+	  },
+	  "prerequisites": [
+	    "Crafting Like a Magician",
+		"Thinking About Thaumaturgy"
+	  ],
+	  "tasks": [
+	    {
+	      "type": "DETECT",
+		  "description": "Careful Construction",
+		  "longDescription": "Alas, silver is too easily tarnished and retains the imprint of it\0027s construction, muddying it\u0027s ability to channel and shape arbitrary vis. Perhaps a dip in the essence of pure magic will help.",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "Thaumcraft:WandRod"
+			  }
+		    },
+  		    {
+		      "item": {
+			    "id": "Thaumcraft:WandCap",
+				"damage": 4
+			  },
+			  "required": 2
+		    }
+		  ]
+	    }
+	  ],
+	  "reward": [
+	    {
+		  "id": "Thaumcraft:ItemResource",
+		  "damage": 9,
+		  "amount": 9
+		}
+	  ]
+	},
+    {
+      "name": "Altar or Henge?",
+      "description": "Now for the most visually appealing extremely dangerous crafting mechanic in this pack, the Infusion Altar from Thaumcraft. (In this world,) You will first have to understand alchemical manufacturing processes well enough to crystallize Purified Vinteum, as no other focus will do at the heart of this nexus.",
+      "x": 33,
+      "y": 124,
+      "icon": {
+        "id": "Thaumcraft:blockStoneDevice",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Essential Vapours",
+		"A Real Wand"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Infusion Altar",
+          "longDescription": "See Infusion in the Artifice tab in your Thaumonomicon for more information on the Infusion Altar.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid",
+                "damage": 6
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockCosmeticSolid",
+                "damage": 7
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "Thaumcraft:blockStoneDevice",
+                "damage": 1
+              },
+			  "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+	{
+	  "name": "Sceptre of Crafting",
+	  "description": "A stable wand will only go so far, to perform truly astounding feats of magic you should use the correct tool for the task. And for the task of crafting even better magical gear, the Sceptre is royal.",
+	  "x": 81,
+	  "y": 124,
+	  "icon": {
+	    "id": "Thaumcraft:WandCap",
+	    "damage": 1,
+	    "nbt": "{cap:THAUMIUM, rod:SILVERWOOD, sceptre: 1b}"
+	  },
+	  "prerequisites": [
+	    "Altar or Henge?"
+	  ],
+	  "tasks": [
+	    {
+	      "type": "DETECT",
+		  "description": "Many Thoughts",
+		  "longDescription": "The road to understanding a crafting sceptre is long in this pack. First one must consider how each of the six elements of vis respond. Then one may find materials capable of channeling each with equal ease.",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "Thaumcraft:WandCap",
+				"damage": 6
+			  },
+			  "required": 3
+		    },
+  		    {
+		      "item": {
+			    "id": "Thaumcraft:blockMagicalLog",
+				"damage": 1
+			  }
+		    }
+		  ]
+	    },
+	    {
+	      "type": "CRAFT",
+		  "description": "Only Power Yields Power",
+		  "longDescription": "It must be the basic artificing method that is flawed, neither of these materials have reached their proper potential. And yet, still more focus is required...",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "Thaumcraft:WandCap",
+				"damage": 2
+			  },
+			  "required": 3
+		    },
+  		    {
+		      "item": {
+			    "id": "Thaumcraft:WandRod",
+				"damage": 2
+			  }
+		    },
+			{
+			  "item": {
+			    "id": "Thaumcraft:ItemResource",
+				"damage": 15
+			  }
+			}
+		  ]
+	    },
+	    {
+	      "type": "DETECT",
+		  "description": "Behold!... Calmly",
+		  "longDescription": "A masterful work of artistry, capable of fine definition and graceful art. Yet solidly inapplicable to blasting of any kind. Now it is obvious why the blasting staves were easier to understand.",
+		  "items": [
+		    {
+		      "item": {
+			    "id": "Thaumcraft:WandCap",
+				"damage": 1,
+				"nbt": "{cap: THAUMIUM, rod: SILVERWOOD, sceptre: 1b}"
+			  },
+			  "precision": "NBT_FUZZY"
+		    }
+		  ]
+	    }
+	  ]
+	},
+	{
+	  "name": "Rouse Not a Wizard\u0027s Ire",
+	  "description": "For they are terrible in wrath, holding many devious and delectable ways to inflict their will upon the world. \n\nAlas, while they can bash heads in a pinch, staves are useless for the fine work of arcane crafting.",
+	  "x": 15,
+	  "y": 166,
+	  "icon": {
+	    "id": "Thaumcraft:FocusHellbat"
+	  },
+	  "prerequisites": [
+	    "Altar or Henge?"
+	  ],
+	  "tasks": [
+	    {
+	      "type": "CRAFT",
+		  "description": "Choose your Weapon",
+		  "longDescription": "Working from the principle of a lens, Foci can be used to transform the raw vis you have been gathering into a material effect.",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "Thaumcraft:FocusFire"
+			  }
+		    },
+  		    {
+		      "item": {
+			    "id": "Thaumcraft:FocusShock"
+			  }
+		    },
+			{
+			  "item": {
+			    "id": "Thaumcraft:FocusFrost"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "Thaumcraft:FocusHellbat"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ThaumicTinkerer:focusDeflect"
+			  }
+			}
+		  ]
+	    },
+	    {
+	      "type": "CRAFT",
+		  "description": "A Suitable Platform",
+		  "longDescription": "The six elemental wand cores\u0027 ability to self-generate vis of their specific element works wonders for simple combat foci. They merely need to be upgraded with Primal Charms and paired wand caps to become turgid with arcane might.",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "Thaumcraft:WandRod",
+				"damage": 56
+			  }
+		    },
+  		    {
+		      "item": {
+			    "id": "Thaumcraft:WandRod",
+				"damage": 55
+			  }
+		    },
+			{
+			  "item": {
+			    "id": "Thaumcraft:WandRod",
+			    "damage": 53
+			  }
+			}
+		  ]
+	    }
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.ingot",
+		  "damage": 8632
+		},
+		{
+		  "id": "minecraft:diamond"
+		},
+		{
+		  "id": "minecraft:blaze_powder",
+		  "amount": 9
+		},
+		{
+		  "id": "Thaumcraft:ItemShard",
+		  "damage": 6,
+		  "amount": 12
+		}
+	  ]
+	},
+	{
+	  "name": "Crazy Going Am",
+	  "description": "And already loving it. You do not work this material, just invite the VOID to manifest. For it works you...whom art simply providing a guiding will to direct it\u0027s choice of form.",
+	  "x": 135,
+	  "y": 94,
+	  "icon": {
+	    "id": "Thaumcraft:ItemResource",
+		"damage": 17
+	  },
+	  "prerequisites": [
+	    "Toil and Trouble",
+		"Thinking About Thaumaturgy"
+	  ],
+	  "trigger": "TASK_TRIGGER",
+	  "triggertasks": 1,
+	  "tasks": [
+	    {
+	      "type": "DETECT",
+		  "description": "Definately not mineral...",
+		  "longDescription": "...nor vegtable...",
+		  "items": [
+		    {
+		    "item": {
+			    "id": "Thaumcraft:ItemResource",
+				"damage": 17
+			  }
+		    }
+		  ]
+		},
+	    {
+	      "type": "DETECT",
+		  "description": "ThIS not, working.",
+		  "items": [
+		    {
+		    "item": {
+			    "id": "Thaumcraft:ItemResource",
+				"damage": 16
+			  },
+			  "precision": "ORE_DICTIONARY"
+		    }
+		  ]
+	    }
+	  ]
+	},
+    {
+      "name": "...orcloth Strapped Silv...",
+      "description": "The Ultimate. The Alpha. The best dang wand this modpack has to offer. 1000 Essentia Capacity, 70% vis cost, a name that is 52 characters long! What CAN\u0027T this wand do?! ",
+      "x": 69,
+      "y": 160,
+      "icon": {
+        "id": "Thaumcraft:WandCap",
+        "damage": 1,
+        "nbt": "{cap:ICHOR,rod:ICHORCLOTH}"
+      },
+      "prerequisites": [
+        "Sceptre of Crafting"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+		  "description": "God Stick",
+          "longDescription": "To unlock Ichor research, you need to research nearly all of regular Thaumcraft, and ALL non-Ichor related Thaumic Tinkerer research.  This means Basic Information, Thaumaturgy, half of Alchemy, most of Artiface, and Golemancy too.",
+          "items": [
+            {
+              "item": {
+                "id": "Thaumcraft:WandCap",
+                "damage": 1,
+                "nbt": "{cap:ICHOR,rod:ICHORCLOTH}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Thaumcraft:blockAiry",
+          "amount": 5
+        }
+      ]
+    },
+	{
+	  "name": "Behold My Mighty POWER!",
+	  "description": "Nothing shall stand before me! I am Death, Destroyer of Mobs! ",
+	  "x": 39,
+	  "y": 190,
+	  "icon": {
+	    "id": "ThaumicTinkerer:focusShadowbeam"
+	  },
+	  "prerequisites": [
+	    "...orcloth Strapped Silv...",
+		"Rouse Not a Wizard\u0027s Ire"
+	  ],
+	  "tasks": [
+	    {
+	      "type": "CRAFT",
+		  "description": "The Best Weapon",
+		  "longDescription": "Combining the basic foci from each of the four classical elements into a single unit sounded crazy not so long ago. But crazy lives downstairs, power has the penthouse.\n\n They have mentioned that you can make an ichorcloth strapped STAFF core, if you like. Ichorium adorning a Primal Staff Core sounds like a better idea though.",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "ThaumicTinkerer:focusShadowbeam"
+			  }
+		    }
+		  ]
+	    }
+	  ],
+	  "reward": [
+	    {
+		  "id": "Thaumcraft:BlockJarNodeItem",
+		  "nbt": "{nodetype:4, Aspects:[0:{amount:10, key:ignis}, 1:{amount:10, key:aer}, 2:{amount:10, key:perditio}], nodeid:{0:3:125:-2}}"
+		}
+	  ]
+	},
+	{
+	  "name": "Minimal Expenditure",
+	  "description": "For all the hype about the awesome wand you\u0027ve recently crafted, it just feels lame somehow not to make a sceptre out of the best materials ever imagined. Ooh... 55 charactes... 60% base vis costs... hehehe... ",
+	  "x": 75,
+	  "y": 190,
+	  "icon": {
+	    "id": "Thaumcraft:ItemResource",
+		"damage": 15
+	  },
+	  "prerequisites": [
+	    "...orcloth Strapped Silv..."
+	  ],
+	  "trigger": "ANTI_TRIGGER",
+	  "tasks": [
+	    {
+	      "type": "CRAFT",
+		  "description": "More Parts, More Precise Power",
+		  "longDescription": "Too bad it doesn\u0027t self-recharge, otherwise this would be perfect for handling all the arcane crafting still to be done.",
+		  "items": [
+		  {
+		    "item": {
+			    "id": "ThaumicTinkerer:kamiResource",
+				"damage": 4
+			  },
+			  "required": 3
+		    },
+  		    {
+		      "item": {
+			    "id": "ThaumicTinkerer:kamiResource",
+				"damage": 5
+			  }
+		    },
+			{
+			  "item": {
+			    "id": "Thaumcraft:ItemResource",
+				"damage": 15
+			  }
+			}
+		  ]
+	    }
+	  ],
+	  "rewardchoice": [
+	    {
+	      "id": "ThaumicTinkerer:kamiResource",
+		  "amount": 12
+	    },
+	    {
+	      "id": "Thaumcraft:BlockJarNodeItem",
+		  "nbt": "{nodetype:0, Aspects:[0:{amount:100, key:aer}, 1:{amount:100, key:aqua}, 2:{amount:100, key:ignis}, 3:{amount:100, key:ordo}, 4:{amount:100, key:perditio}, 5:{amount:100, key:terra}], nodeid: {0:-5:120:4}}"
+	    }
+	  ]
+	},
+	{
+	  "name": "Maximum Utility",
+	  "description": "Since the wand was such a resounding success, maybe ichor will be outstanding at other Thaumaturgic tasks? \n\n Isn\u0027t it notable how each relates to a pure classical element?",
+	  "x": 111,
+	  "y": 160,
+	  "icon": {
+	    "id": "ThaumicTinkerer:ichorPick"
+	  },
+	  "prerequisites": [
+	    "...orcloth Strapped Silv..."
+	  ],
+	  "tasks": [
+	    {
+	      "type": "DETECT",
+		  "description": "Greater Tools",
+		  "longDescription": "Much like Thaumium and Void Metal, Ichorium can be crafted into a set of superior tools and weapons.",
+		  "items": [
+		    {
+		    "item": {
+			    "id": "ThaumicTinkerer:ichorPick"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+  		    {
+		      "item": {
+			    "id": "ThaumicTinkerer:ichorAxe"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+			{
+			  "item": {
+			    "id": "ThaumicTinkerer:ichorSword"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+	    },
+	    {
+	      "type": "CRAFT",
+		  "description": "Appropriate Robes",
+		  "longDescription": "Lo! Ichorcloth is also far superior to simply enchanted fabric. These robes rival thaumium plate for turning aside harm, while simultaneously surpassing void-aspected robes for channeling vis. Crafting these makes the ichor... sceptre sound like a good idea. Doesn\u0027t it strike a further idea how each relates to a pure classical element?",
+		  "items": [
+		    {
+		    "item": {
+			    "id": "ThaumicTinkerer:ichorclothHelm"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+  		    {
+		      "item": {
+			    "id": "ThaumicTinkerer:ichorclothChest"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+			{
+			  "item": {
+			    "id": "ThaumicTinkerer:ichorclothLegs"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "ThaumicTinkerer:ichorclothBoots"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+	    }
+	  ]
+	},
+	{
+	  "name": "New Depths",
+	  "description": "Use the power of this new pick, seek below the uncrossable. Access the inaccessible. Take in hand what only industrial magnates had before theorized.",
+	  "x": 147,
+	  "y": 166,
+	  "icon": {
+	    "id": "minecraft:bedrock"
+	  },
+	  "prerequisites": [
+	    "Maximum Utility"
+	  ],
+	  "tasks": [
+		{
+		  "type": "LOCATION",
+		  "description": "New Depths",
+		  "locations": [
+		    {
+			  "name": "Bedrock",
+			  "icon": {
+			    "id": "minecraft:bedrock"
+			  },
+			  "x": 46,
+			  "y": 127,
+			  "z": -28,
+			  "dim": -19,
+			  "radius": -1
+			}
+		  ]
+		}
+	  ],
+	  "rewardchoice": [
+	    {
+		  "id": "Thaumcraft:blockAiry",
+		  "amount": 3
+		},
+		{
+		  "id": "ThaumicTinkerer:warpGate",
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Practicaly Divinity",
+	  "description": "There are few limits left to be stretched, apply thine art to upgrading the ichorium tools and ichorcloth robes into their final form!",
+	  "x": 111,
+	  "y": 190,
+	  "icon": {
+	    "id": "ThaumicTinkerer:ichorclothHelmGem"
+	  },
+	  "prerequisites": [
+	    "...orcloth Strapped Silv..."
+	  ],
+	  "tasks": [
+	    {
+	      "type": "CRAFT",
+		  "description": "So Worth",
+		  "longDescription": "Obviously this will be expensive, difficult, and more than a little dangerous. One may wish to bling out the altar for maximum effect, garishness can be borne temporarily.",
+		  "items": [
+		    {
+		    "item": {
+			    "id": "ThaumicTinkerer:ichorPickGem"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+			{
+			  "item": {
+			    "id": "ThaumicTinkerer:ichorSwordGem"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+  		    {
+		      "item": {
+			    "id": "ThaumicTinkerer:ichorclothHelmGem"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+		    {
+		    "item": {
+			    "id": "ThaumicTinkerer:ichorclothChestGem"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+		    {
+		    "item": {
+			    "id": "ThaumicTinkerer:ichorclothLegsGem"
+			  },
+			  "precision": "NBT_FUZZY"
+		    },
+		    {
+		    "item": {
+			    "id": "ThaumicTinkerer:ichorclothBootsGem"
+			  },
+			  "precision": "NBT_FUZZY"
+		    }
+		  ]
+	    }
+	  ],
+	  "rewardchoice": [
+	    {
+	      "id": "Thaumcraft:BlockJarNodeItem",
+		  "nbt": "{nodetype:5, Aspects:[0:{amount:100, key:aer}, 1:{amount:100, key:aqua}, 2:{amount:100, key:ignis}, 3:{amount:100, key:ordo}, 4:{amount:100, key:perditio}, 5:{amount:100, key:terra}], nodeid: {0:5:120:-4}}"
+	    },
+		{
+		  "id": "Thaumcraft:BlockJarFilledItem",
+		  "nbt": "{Aspects: [0:{amount: 64, key: nebrisum}]}",
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "It Found Me, Finding It",
+	  "description": "The penUlitmate power of the Ur-vis is yours to contain!!",
+	  "x": 135,
+	  "y": 130,
+	  "icon": {
+	    "id": "Thaumcraft:ItemEldritchObject"
+	  },
+	  "prerequisites": [
+	    "Crazy Going Am"
+	  ],
+	  "tasks": [
+	    {
+	      "type": "CRAFT",
+		  "description": "The Eye Sees",
+		  "longDescription": "The cult of crimson were small-minded, this is so obvious!",
+		  "items": [
+		    {
+		      "item": {
+			    "id": "Thaumcraft:ItemEldritchObject"
+			  },
+			  "required": 4,
+			  "precision": "NBT_FUZZY"
+		    }
+		  ]
+	    },
+	    {
+	      "type": "LOCATION",
+		  "description": "Apperitum Occulus",
+		  "longDescription": "...how unnervingly solid..." ,
+		  "locations": [
+		    {
+		    "name": "Outer Lands",
+		    "icon": {
+		      "id": "Thaumcraft:ItemEldritchObject",
+			  "damage": 4
+		    },
+		    "x": -5,
+		    "y": 60,
+		    "z": 7,
+		    "dim": -42,
+		    "radius": -1
+			}
+		  ]
+	    },
+	    {
+	      "type": "DETECT",
+		  "description": "That was Harrowing",
+		  "longDescription": "For it enlightened the unseen... Now at lAst I undErstand the VAStness of my IgnorAnce!?!!?>&!",
+		  "items": [
+		    {
+		      "item": {
+			    "id": "Thaumcraft:ItemEldritchObject",
+			    "damage": 3
+			  },
+			  "precision": "NBT_FUZZY"
+		    }
+		  ]
+	    }
+	  ],
+	  "reward": [
+	    {
+		  "id": "Thaumcraft:BlockJarFilledItem",
+		  "nbt": "{Aspects: [0:{amount: 64, key: radio}]}",
+		  "amount": 4
+		}
+	  ]
+	}
+  ],
+  "reputationBar": []
+}

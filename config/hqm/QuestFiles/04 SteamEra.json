@@ -1,0 +1,1347 @@
+{
+  "name": "Dawn of Industry",
+  "description": "Use that Bronze and Iron to craft better tools. Build a basic steam powered machine factory! \n Steel will come. And with it come many oportunities for industrial upgrading.",
+  "quests": [
+	{
+	  "name": "Steam Age",
+	  "description": "True machine power at this era comes in the form of Steam. A gas that has to be produced by heating water, and then piped to a consumer. Railcraft also has steam boilers, and can generate RF directly from steam, and they neither explode nor melt; Alas, the RC boilers only come in Iron and Steel, require blaze powder to make Fire Charges for their self-ignition feature, only run on common fresh Water, produce decimal amounts of Steam per tick, and don\u0027t auto-emit. \n\n Like a crucible, the boiler can overheat and melt, and like a pipe it can also become overfilled and explode from pressure. At least it has a built-in pressure gauge. \n Note that GTPipe physics can occasionally get confused when merging flows of different sizes, try to balance the inputs to any segment; a pipe intersection will balance it\u0027s own outputs.",
+	  "x": 25,
+	  "y": 75,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 1202
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Alloying]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Burning boxes again",
+		  "longDescription": "The power from fuel - solid, liquid, or gas - is always created as heat (HU) in GregTech. These are combustion engines after all; air will also be required, and either ashes or CO_2 waste products will generally be produced.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1102
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "A Boiler Tank",
+		  "longDescription": "This 4B tank only holds types of water. Be aware that it will calcify and lose power capacity unless pure Distilled Water is used. Use a Magnifying Lens to check how bad it gets. Also, like the drums, it cannot accept water direct from buckets - use a funnel attachment to fill by hand. \n Naturally, it takes some time and energy for the cold boiler to heat up to operational temperature. It is thus preferable for steam power to be running for as long as possible per cycle.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1202
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26100,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Turbine be Mine",
+	  "description": "This device consumes steam to produce RU, rotary power - not to be confused with RoC Shaft Power. This is used by GT machines that need to spin in any way. As a by-product, if a tank or pipe is on any of the sides of this device, it will return most of the water content of the steam (by GT standards) as pure Distilled water. \n\n Naturally, if it gets provided steam over the limit (twice nominal flow), it will make a god-awful racket for a second or two and then violently explode. Prehaps selecting the steam input pipe to transfer less than the limit per tick is wise (exploding pipes are relatively cheap, and one can make a pipe release valve).",
+	  "x": 75,
+	  "y": 125,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 1512
+	  },
+	  "prerequisites": [
+	    "Steam Age",
+		"{It Really is a Whole New Game}[Workshop Tools]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Remember Facing",
+		  "longDescription": "All GT devices are strongly sided. Steam comes in the back, RU comes out the front, and distilled water could come from any or all of the other four faces. Connect the RU consuming machine, and various pipes, with that in mind. Unlike processing machines (or burning boxes), power providers like this can actually be rotated to face up or down, in addition to the flat sides. \n As is logical, right-clicking with the wrench on a pipe will toggle the connection on this face or edge-adjacent face, shift-right-clicking toggles the opposite face\u0027s connection - which can also be done by right-clicking on any corner.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1512
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26121,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Pounding Power",
+	  "description": "The reciprocating piston Engines provide alternating KU, kinetic power, used by GT machines that need to shake or press. A Screwdriver (or Selector Cover) can be used to cycle them to faster or slower beat cycles - which can be very important to some consumers and some recipes. in general, shorter term recipes want faster engines than the long term recipes.",
+	  "x": 75,
+	  "y": 25,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 1300
+	  },
+	  "prerequisites": [
+	    "Steam Age",
+		"{It Really is a Whole New Game}[Workshop Tools]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "A Piston Engine",
+		  "longDescription": "Wheter steam or flux, these will shake, pound, and rachet away at any task set before them.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1311
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26121,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Drain Pipe",
+	  "description": "The Drain cover takes any fluid that would try to flow through it\u0027s face, were the pipe removed, and puts it into the pipe. This can be used to drain lava, oil, common water, or etherium pools. It can also collect rain if pointed up into an exposed sky while it is raining (not snowing). \n\n Most importantly, in a River Biome it collects fresh Water without removing the source block, and similarly Seawater in an Ocean-type biome. \n A drain never overfills the pipe, and can only pick up one block of liquid at a time.",
+	  "x": 25,
+	  "y": 175,
+	  "icon": {
+	    "id": "gregtech:gt.multiitem.technological",
+		"damage": 1020
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Infinite Water (GT)",
+		  "longDescription": "The Drain is a type of Cover, it goes on the side of an existing Pipe block. You can slide them in on the edge adjacent side, or place directly on the visible face.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1020
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:bucket"
+		}
+	  ]
+	},
+	{
+	  "name": "Nicely Flattened",
+	  "description": "For now, a Rolling Mill is more useful than a Compressor. Either can make the Dense Plates needed to improve the steam boilers and burning boxes. The Rolling Mill however, can also turn any ingot or stacked ingot into a plate losslessly, and it also flattens curved plates. While the Compressor could use plates or triple plates in addition to Solid Blocks or Blocks of Plates of metal to make a dense plate, it can also make Crystalline Plates from most gem-material dusts (of available tier - and since that means not Diamond, we probably don\u0027t care yet).",
+	  "x": 75,
+	  "y": 75,
+	  "icon": {
+	    "id": "gregtech:gt.meta.plateDense",
+		"damage": 8003
+	  },
+	  "prerequisites": [
+	    "Turbine be Mine",
+		"Pounding Power"
+	  ],
+	  "parentrequirement": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "For Strong Construction",
+		  "longDescription": "These will be needed to upgrade your steam production facilities.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plateDense",
+				"damage": 8610
+			  },
+			  "precision": "ORE_DICTIONARY",
+			  "required": 5
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.meta.plateDense",
+				"damage": 290
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.plateQuadruple",
+		  "damage": 8610,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Down the Sluice!",
+	  "description": "The Sluice machine performs the simple stir in water ore processing step far better than tossing it in a cauldron ever will. Some purified ores can even be further refined in the centrifuge. Even the copious amounts of Sluice Juice byproduct can have useful materials extracted from it, with the right machines.",
+	  "x": 75,
+	  "y": 175,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20291
+	  },
+	  "prerequisites": [
+	    "Turbine be Mine",
+		"Drain Pipe"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Washing Machine",
+		  "longDescription": "Now you can retire that cauldron. But, washing ore is a 32RU/t job that takes plenty of clean water (not seawater). Thus you will need at least an Invar Turbine to run this safely. You can store or void the sluice juice until getting the overclocked centrifuge running. Check out the multiblock tanks.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20291
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "A Centrifuge (GT)",
+		  "longDescription": "For now, you probably only have materials for the tier 1 Bronze Centrifuge. And unless you have Bees or Bumblebees, there are very few easy centrifuge recipes to care about. It does a lot of de-alloying, for materials of the machine\u0027s tier, and can refine a select few washed ores. But the major reason everyone should get a centrifuge already is the processing of Sluice Juice - which is a 64RU/t recipe (and so is the non-optional reason to need one later). And that is exactly it\u0027s failure limit!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20081
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Perfectly Overclocked",
+		  "longDescription": "Remember that part about machines blowing up when they exceed their power limits? Well, the centrifuge is part of the ore processing chain only when powered to exactly it\u0027s limit, and powered at that level continuously: two ticks lower in a minute and the recipe fails. This means the boiler must be producing exactly the right amount of steam (no pipe has 192mB/t bandwidth \u003d flow rate); and that means it must be in perfect condition with ZERO calcification. So only run this Strong Bronze Boiler (192mB/t steam) on pure distilled water that you have collected as condensate from running less fussy machines. Remember to put in EXACTLY 96HU/t, like a Dense Bronze Burning Box.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1252
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "rewardchoice": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 20081
+		},
+		{
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26122,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Whet Sand",
+	  "description": "The Sharpening of raw tool head casts is an important step in making tools out of better materials - like obsidian. While this can be done by in hand crafintg with a File, using the Grindstone only consumes sand instead of tool durability. Using the Sanding Machine consumes only power, and the contained space even recovers the dust shaved off the cast!",
+	  "x": 25,
+	  "y": 125,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 32703
+	  },
+	  "prerequisites": [
+	    "Turbine be Mine",
+		"{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "parentrequirement": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Choose a Grindwheel",
+		  "longDescription": "The iron standing grindstone wears down blocks of sandstone to sharpen things, you will have to replace it frequently. The sanding machine takes RU power instead, but is made of sandstone blocks.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:sandstone"
+			  },
+			  "precision": "FUZZY",
+			  "required": 3
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Black Tools",
+		  "longDescription": "Obsidian is the replacement for flint as your basic tool material. It still has Fire Aspect when fighting, has good enough durability, the raw material is plentiful, and it has a higher mining level. Lava can be poured directly into the Crucible to be turned into hot obsidian scrap, only a little heat is needed to re-melt for forming in a mold or basin.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.toolHeadRawPickaxe",
+				"damage": 8214
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 8214,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Efficient Manufacturing",
+	  "description": "Ease up on the Wire snips, get a Wiremill to pull transmission wire or fine wire thread losslessly! \n The Cluster Mill is dedicated to making foil, and nothing else, but does so losslessly unlike hammer rolling.",
+	  "x": 125,
+	  "y": 125,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20041
+	  },
+	  "prerequisites": [
+	    "Turbine be Mine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Waste Free",
+		  "longDescription": "These machines only need to be run for specific batches of each component, so you would just pick them up when not in use and share a single turbine mount point.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage":20141
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20151
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Lathing",
+		  "longDescription": "While we\u0027re on the topic of lossless production, only the Lathe can make Screws right. Unfortunately this requires a diamond chip for the cutting head. Taking a Saw to some Chipped Diamond Gems gets them well enough.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20041
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32713,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "Mechanization",
+	  "description": "Less about preventing waste, more about having new options, but basically about having a machine that can craft a stack (or chest full) of something while you\u0027re off doing something more interesting.",
+	  "x": 125,
+	  "y": 75,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20121
+	  },
+	  "prerequisites": [
+	    "Turbine be Mine",
+		"Pounding Power"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "With new uses",
+		  "longDescription": "Time to retire the rolling cylinders, The Roll Bender makes round things neatly: curved plates, springs, even Cans. \n\n The Loom can make cloth better than by hand, and braid or spin wire together - with special features for OpenComputers data cables and AE system cable.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20121
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20211
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Sometimes Better",
+		  "longDescription": "The Squeezer mechanizes Juicing things, it often gets more (even double) the fluid output per item, but often has less solid rind left over than hand juicing. Plus, it has a pipe outlet!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20071
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:material",
+		  "damage": 4,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Sifting for Loot",
+	  "description": "If you have picked up some Sand Ore (in a desert) or Gravel Ore in a pocket, you will have noticed they cannot be washed in a Sluice or Cauldron. These ores are \"washed\" dry by the sifter. \n Also, Crushed Gem-type ores, which includes the coal varieties, can be sifted to retrieve a mixture of Gem items and Dust piles. True crystalline gems come in several varieties / denominations, they can be broken down easily but some recipes require the larger ones.",
+	  "x": 25,
+	  "y": 25,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 32702
+	  },
+	  "prerequisites": [
+	    "Pounding Power",
+		"{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "parentrequirement": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Choose the mesh",
+		  "longDescription": "There is no difference in output between the hand Sifting table and the Sifter machine, the only choice is automation and steam power versus time and food energy.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.metatool.01",
+				"damage": 26
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.metatool.01",
+		  "damage": 4,
+		  "nbt": "{GT.ToolStats: {a:290s, c:8221s, j:6400s}}"
+		}
+	  ]
+	},
+	{
+	  "name": "Chewy",
+	  "description": "The gizzard for your ore processing, the Crusher makes two Crushed Ore per block of Ore put in - double the Hammer harvesting rate.",
+	  "x": 125,
+	  "y": 25,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20021
+	  },
+	  "prerequisites": [
+	    "Pounding Power"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "TWO Diamonds!",
+		  "longDescription": "Alas, the crushing faces of this machine are stock Diamond Gems. But ore doubling is worth two diamonds, right?",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20021
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32713,
+		  "amount": 20
+		}
+	  ]
+	},
+	{
+	  "name": "Early Game RF",
+	  "description": "There is quite a list of RF generators at the Iron Age (or before), longer than the list of potential consumers until the Steel Age at least. RF lends itself well to storage and re-distribution using a system of batteries and wires that are also much more forgiving than the Electrical Era is going to be. \n Note that the Fluxic power convertors (Engine, Motor, Heater, Magnet, and Cooler) from GregTech do have maximum input limits before they fail, which happily coincide with the transfer rates of IE wire connectors!",
+	  "x": 225,
+	  "y": 25,
+	  "icon": {
+	    "id": "ImmersiveEngineering:coil"
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Gleaning and Foraging]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Flux that Redstone!",
+		  "longDescription": "Pre-Iron engines - Forestry: Peat Engine, Clockwork Engine; BuildCraft: Sterling Engine; Railcraft: Hobbyist\u0027s Steam Engine; Gregtech: Engines (KU). \n Iron Age engines - Railcraft: Commecial Steam Engine; BuildCraft: Combustion Engine. \n Steel Age engines - Railcraft: Industrial Steam Engine; RotaryCraft: Rotational Dynamo (from shaft power).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:piston"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Run Wires",
+		  "longDescription": "The primary RF transmission method in this pack are the IE wire coils, via connectors and relays. Logistics Pipes can be upgraded to do so too, and they have a much higher transfer limit; BC Kinesis Pipes may also be a viable alternative up to MV, which you can already make wires for. \n Remember, wires do lose energy in transit.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 0
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:coil",
+				"damage": 0
+			  },
+			  "required": 8
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Storage Cells",
+		  "longDescription": "IE is also the provider of the primary Iron Age RF storage block: the LV Capacitor. Knock sides with the Engineer\u0027s Hammer to cycle between input, output, and disconnected modes. Once again, upgraded Logistics Pipes could fill this role, but that upgrade takes BC chips from the laser table.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 1
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "BuildCraft|Transport:item.buildcraftPipe.pipepoweremerald"
+		},
+		{
+		  "id": "BuildCraft|Transport:item.buildcraftPipe.pipepowergold",
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Item Transport",
+	  "description": "Hoppers don\u0027t move things very fast or very far, going beyond input and output buffer chests on your machines requires actual transport. GT Item Pipes of various materials work well, as do IE Conveyor Belts.",
+	  "x": 175,
+	  "y": 25,
+	  "icon": {
+	    "id": "ImmersiveEngineering:metalDevice",
+		"damage": 11
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "The Easy Road",
+		  "longDescription": "Conveyor Belts not only move items, they also pull entities along, and are components in several IE multiblock machines. Alas, they move items as entity stacks so it is very suceptible to interference and takes render effort.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 11
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 4
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Routing and Filtering",
+		  "longDescription": "Simply moving everything is only helpful. Sorting what gets put where allows for multi-stage processes to be automated (there are so many by-products from GT Ores after all). The IE Item Router is often better than GT Filter Covers from the Modern (MV) Era.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 13
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Logistics",
+	  "description": "The Logistics Pipes are outrageously effective at sorting at transporting items. It even provides autocrafting blocks and eventually a nice central interface to retrieve things from. All it takes is a steady RF power supply.",
+	  "x": 275,
+	  "y": 25,
+	  "icon": {
+	    "id": "LogisticsPipes:item.PipeItemsBasicLogistics"
+	  },
+	  "prerequisites": [
+	    "Early Game RF"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Power Core",
+		  "longDescription": "Like BC extraction pipes, there is a small passive RF drain for extraction pipes and modules. The real RF cost comes from every intersection routing things, and request pipes asking for things to be fetched.  All that power must come from a Logistics Power Junction block, which can accept RF from the remaining 5 sides.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:logisticsSolidBlock",
+				"damage": 1
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Routed and Stupid Pipes",
+		  "longDescription": "The super cheap unrouted pipe gets very confused if it is an intersction, make sure Basic Pipe or any specific pipe made from them are used at every potential branch in the path. Yes, they take diamond gems, but the batch size is large (64 per 2 diamonds and 8 gold gears or BC chips). \n The pipe can always accept items being pushed into it, but will only send it\u0027s contents into the one block it is facing - generally the block it was placed against, but it will select a valid inventory side if placed against a wall.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.PipeItemsBasicTransport"
+			  },
+			  "precision": "FUZZY",
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "LogisticsPipes:item.PipeItemsBasicLogistics"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Actual Routing",
+		  "longDescription": "Open the GUI on one Basic Logistics Pipe with a BC-compatible Wrench, and it can be set to DEFAULT to drop all un-routed overflow into the connected inventory. Pre-sorted inventories should use a Logistics Chassis with a Polymorphic ItemSink Module to accept only more copies of what is already inside, while mass storages of any kind can get away with a basic ItemSink Module in thier Logistics Chassis. The system input can work on any inventory by using an Extractor Module, likely a mk2 or mk3 for speed, and optionally Advanced Extractor Module for filtering.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.itemModule",
+				"damage": 1
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.itemModule",
+				"damage": 3
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.PipeLogisticsChassiMk1"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Automation",
+		  "longDescription": "Simply choosing destinations for incoming items won\u0027t run an ore processing plant, the input batch size is simply too large. Rather, put Provider Pipes or Modules on the raw material (ore) storage, probably as the second slot in their Chassis, and Supplier Pipes or Modules on the machine to keep it full of the selected things. Remember to allow the outputs to be pushed into the system, and have somewhere for them to route to (or enough space in the defualt). \n Similarly, fluids can be extracted, insterted, default routed, and provided to machines via suppliers - but only with specific Pipes as there are no liquid modules. Therefore, the only benefit over GT (multi-)pipes is routing.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.itemModule",
+				"damage": 500
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsdiamond",
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Familliar Old Hell",
+	  "description": "Of great import is the Miniature Nether Portal. It follows the same 8 to 1 spatial compression, fuzzy endpoint detection, and iginition trigger as the full-size portal does, opening many useful ways to exploit the territory. It cannot transport entities, it instead acts like a trans-dimensional universal extender, any-Greggy-thing piped or wired in one side will be piped or wired out the other as if the nexus was the same type of pipe or wire. Items, fluids, redstone signals, and EU all work this way. \n\n RotaryCraft Shafts can transfer power through the vanilla portal just fine.",
+	  "x": 150,
+	  "y": 50,
+	  "icon": {
+	    "id": "minecraft:end_portal"
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "LOCATION",
+		  "description": "Burning in the Deeps",
+		  "longDescription": "I won\u0027t mention how to build the portal frame, only that any firestarter will do.",
+		  "locations": [
+            {
+              "name": "the Nether",
+              "icon": {
+                "id": "minecraft:obsidian"
+              },
+              "x": 68,
+              "y": 69,
+              "z": -42,
+              "dim": -1,
+              "radius": -1
+            }
+          ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:quartz",
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Blast that Furnace!",
+	  "description": "Using nothing more than coke, iron, and time, these machines can make Steel. \n The RC version can also recycle (poorly) some things made of iron or steel; the early IE version cannot be automated (it doesn\u0027t interact with pipes or hoppers), and produces Slag by-product. Not to worry, I\u0027ve added a recipe to upgrade the RC one into IE\u0027s better furnace once you have 27 Plates of Steel.",
+	  "x": 150,
+	  "y": 100,
+	  "icon": {
+	    "id": "Railcraft:machine.alpha",
+		"damage": 12
+	  },
+	  "prerequisites": [
+	    "Familliar Old Hell"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "The Slowest Steel",
+		  "longDescription": "You could make 27 IE blast bricks in a 3-cube and knock it with a hammer, or you could build 34 RC blast furnace bricks in a hollow 3 cylinder 4m tall.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metal",
+				"damage": 7
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:metal",
+		  "damage": 7,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Grand Tanks",
+	  "description": "No, not the AFV kind. \n Mass liquid storage is a helpful stopgap for sluice operations, but it will become more important once you start fractionating petrol. Also during the Chemical Age mass gas storage becomes an issue too. \n Some playstyles will simply end up accumulating large quantities of certain fluids, and want to decorate their land with massive storage structures.",
+	  "x": 125,
+	  "y": 175,
+	  "icon": {
+	    "id": "Railcraft:machine.beta",
+		"damage": 2
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Ferrous Metal Domination]",
+		"{It Really is a Whole New Game}[All the Barrels]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Greggy Orbs",
+		  "longDescription": "Only the iron-bound Wooden Tank can be built without Chemical Era metals, but it still holds 16B per block (Unlike the item storages, GT Drums and Tanks do get bigger when made of stronger metals). Be aware that it is made of wood, so it cannot hold gasses, and will burn up if exposed to hot molten liquids. \n The singular main valve block, placed in the centre of any face, will auto-emit if in a side, and the top or bottom will also depending on whether the fluid is lighter or heavier than air (see tooltips in NEI recipe lookup). Pipes can connect anywhere on the structure to input to, or actively pull from, the tank.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17001
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18001
+			  },
+			  "required": 25
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "IE\u0027s Pretty Orb",
+		  "longDescription": "A building made of sheet metal blocks held up by treated wood fences, the fixed size IE tank remains competitive due to fair capacity coupled with custom model aesthetics. The redstone dependent auto-emit feature on the bottom block is also quite nice.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:woodenDecoration",
+			    "damage": 1
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 2
+			  },
+			  "required": 34
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "The Railcraft tower",
+		  "longDescription": "Made entirely of Iron (or Steel for double capacity), these variable size monstrousities can be HUGE! The Iron 9x8 tank holds almost as much as an Adamantium Tank or Dense Titanium Tank, with Steel approaching the Dense Tungsten Tanks. A valve can only have fluid pumped out if it is near the bottom, from any side position, and another valve must be used to input the fluid. \n They also may crash the world when GT buckets, Capsule-Cell-Containers, or Pots attempt to interact with them; but they are by far the cheapest to build.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "Railcraft:machine.beta",
+				"damage": 2
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "Railcraft:machine.beta",
+				"damage": 0
+			  },
+			  "required": 24
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "BuildCraft|Transport:item.buildcraftPipe.pipefluidswood",
+		  "amount": 2
+		},
+		{
+		  "id": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsgold",
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "the Riddle of Steel",
+	  "description": "There are many types of steel, and sometimes they are interchangable. Other things require simple, common, carbon steel. \n Always made from Iron, there are several ways to addmix and modify the material into a steel state. One of them even goes directly to a specific sub-type of steel.\n\n Steel is much stronger than Iron, allowing more machines to be built from it, and providing somewhat more useful in the construction of tools. It also allows the creation of Weight and Volume Sensors to assist in inventory automation and crucible fuel calculations.",
+	  "x": 225,
+	  "y": 125,
+	  "icon": {
+	    "id": "Railcraft:part.plate",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Ferrous Metal Domination]",
+		"Down the Sluice!",
+		"Blast that Furnace!",
+		"{It Really is a Whole New Game}[Washing Dirt]",
+		"{Rotational Engineering}[Heart of the Dragon]",
+		"{Sufficiently Advanced Tech}[Toil and Trouble]",
+		"{Chemical Era}[Without Blemish]"
+	  ],
+	  "parentrequirement": 2,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Doped up Iron",
+		  "longDescription": "50 parts Wrought Iron, 1 part pure Carbon. Pure Carbon!? Hopefully some washed off your diamonds, or you found a full vein of graphite (with the diamonds embedded therein), or you\u0027ll have to melt down diamonds to get it. 51 parts, but the crucible only holds 16! \n I guess quarters will do, or two nineths.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metal",
+				"damage": 38
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:metal",
+		  "damage": 38,
+		  "amount": 4
+		},
+		{
+		  "id": "ImmersiveEngineering:metalDecoration",
+		  "damage": 1,
+		  "amount": 4
+		},
+		{
+		  "id": "gregtech:gt.meta.stickLong",
+		  "damage": 8630,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Engineer Immersively",
+	  "description": "Much of Immersive Engineering remains using generic steel as it\u0027s key component. The Fluid Pump is good at picking up oil or lava, and Fluid Pipe is comparable to steel pipes - it is also an infinite source of fresh water (always check water quality first). A Crusher could be helpful for a mob farm, or to get more Gems from ores, it is inferior to the default GT ore processing chain otherwise. A Bottler only does automated container filling, yet it is the only option until the LV Electric Machine Age. Conversely, the Metal Press is obsolete compared to a GT workshop.\n If you have enough lava and steel, the Immersive Integration Industrial Coke Oven can replace an entire bank of common IE and RC coke ovens.",
+	  "x": 175,
+	  "y": 75,
+	  "icon": {
+	    "id": "ImmersiveEngineering:tool",
+		"damage": 0
+	  },
+	  "prerequisites": [
+	    "the Riddle of Steel",
+		"Early Game RF"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Fast and Steady",
+		  "longDescription": "The upgraded Blast Furnace structure pulls and pushes like a GT machine, and has upgrade ports to use RF in the Modern Era (aka MV Age).\n An Arc Furnace cannot be properly powered yet, but does work slowly and expensively on 3072RF/t from triple MV connections - a price to weigh against the difficulty of alloying operations the GregTech way. Greg already handles recycling and ore processing better than a hobbled arc furnace can, those options need to wait for HV cable.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:stoneDecoration",
+				"damage": 6
+			  },
+			  "required": 27
+			},
+			{
+			  "item": {
+			    "id": "minecraft:hopper"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Fluicrafting",
+		  "longDescription": "Another 3-cube, this one is strongly sided. The Autocrafter (IE) structure uses RF to perform three crafting recipes (potentially in order) from it\u0027s internal inventory, and can output the results. It surpasses other crafting methods for the ability to use internal fluid tanks as proxy for fluid containers in those recipes, without actually needing to have the container be present.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 1
+			  },
+			  "required": 9
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 3
+			  },
+			  "required": 6,
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 11
+			  },
+			  "required": 2,
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 10
+			  },
+			  "required": 6
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 7
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:metalDevice",
+		  "damage": 3,
+		  "nbt": "{energyStorage: 5000}"
+		}
+	  ]
+	},
+	{
+	  "name": "Green Diesel",
+	  "description": "Biodiesel production was very important for HV IE, but the PneumaticCraft oil fractions make better fuel for that Electrical Age generator, and other liquid fueled purposees. The main benefit to biodiesel being non-petroleum is the freedom to make as mcuh farmland dedicated to growing the fuel as you feel like, with no other limit to it\u0027s supply.",
+	  "x": 275,
+	  "y": 75,
+	  "icon": {
+	    "id": "ImmersiveEngineering:fluidContainers",
+		"damage": 4
+	  },
+	  "prerequisites": [
+	    "Early Game RF",
+		"the Riddle of Steel"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Different Extractions",
+		  "longDescription": "The IE squeezer can do a few of the things the GT Squeezer can do, but is the only way to get IE Plant Oil, a very thin version of seed oil. It\u0027s pair partner, the Fermenter (IE), only makes one thing: \"ethanol\" (IE), which isn\u0027t used anywhere else.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalMultiblock",
+				"damage": 2
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalMultiblock",
+				"damage": 3
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 7
+			  },
+			  "required": 38
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Mixed Refining",
+		  "longDescription": "Combining these two fluids produces a viable liquid fuel.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 1
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 8
+			},
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 7
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 6
+			},
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 5
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 10
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 24
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Mineral Excavation",
+	  "description": "An iconic element of IE, the big-toothed void miner. These out-of-world mineral deposits will become exhausted eventually, while still providing several times the ore of an in-world mineral vein. One of RF/u0027s forgiving features as implemented here, is the ability to run part time when given insufficient power.",
+	  "x": 225,
+	  "y": 75,
+	  "icon": {
+	    "id": "ImmersiveEngineering:metalDevice",
+		"damage": 14
+	  },
+	  "prerequisites": [
+	    "Early Game RF",
+		"the Riddle of Steel"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Prospecting",
+		  "longDescription": "Much like picking up rocks to find ore veins, the Core Sample Drill must be operated in every \"chunk\" (square chain) of land in case it discovers a void ore vein there. They are fairly rare, but it\u0027s still better than trying to blindly stumble across an ore flower patch.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 14
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Giant Hiccoughing Dwarf",
+		  "longDescription": "It takes 4096 RF to makes this wheel turn, but at least it can wait the other tick while your three MV connectors valiantly try, and fail, to feed it enough power. Just think of the engine array you\u0027ll have to build to get even that much RF/t...",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:storage",
+				"damage": 7
+			  },
+			  "required": 21
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 1
+			  },
+			  "required": 23
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 5
+			  },
+			  "required": 13
+			},
+			{
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 7
+			  },
+			  "required": 9
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:metalDevice",
+		  "damage": 1,
+		  "nbt": "{energyStorage: 100000}"
+		}
+	  ]
+	},
+	{
+	  "name": "Buzz Slice",
+	  "description": "At last! The age of sawing wood planks by hand is at an end. It also saws gems (at Tier 2 or above), and many block slabs. Another improvement is recovering the sawdust from cutting plates into eight tiny plates (or sheets).",
+	  "x": 225,
+	  "y": 175,
+	  "icon": {
+	    "id": "gregtech:gt.meta.toolHeadBuzzSaw",
+		"damage": 8630
+	  },
+	  "prerequisites": [
+	    "the Riddle of Steel",
+		"Turbine be Mine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Diamond edged Blade",
+		  "longDescription": "This does everything you think an industrial table saw should do, including needing a supply of lubricant - though it can usually make do with water or grease. \n No, you cannot make a tier 2 one yet.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20061
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26022,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Extrusion",
+	  "description": "The process of shoving a soft material through a cut gap to control the cross section is the subject of several children\u0027s toys. While also useful in the pottery studio, here we can use heat to make some low-temperature metals soft enough to extrude also. \n While you are cutting the various shapes into plates, pick one to check NEI for the list of metals that can be formed this way (the input list per material is enormous - 20 to 60 each, so book some scrolling time here).",
+	  "x": 275,
+	  "y": 125,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20201
+	  },
+	  "prerequisites": [
+	    "the Riddle of Steel"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Needs a Form",
+		  "longDescription": "And a diamond-edged saw blade. The tier 1 heat requirement can be met by most any burning box of 64HU/t or less (overwhelmingly 16 HU/t will do), to avoid making the machine parts themselves gooey.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20201
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 10200
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Gas Canisters",
+		  "longDescription": "A form that can only be extruded, it has no crafting recipe, the Capsule-Cell-Container is your first gas-tight tank from GregTech. They do have not have the bonus to safety temperature molds, pipes, and tanks enjoy, and are all a single bucket size, but also only take a single unit of material to make.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 32607
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Baking on Purpose",
+	  "description": "There are four other heat-based machines available to build at this point in the progression: the Oven, Dryer, Roasting Oven, and Laminator. \n An Oven is simply a powered furnace, good for little else than cooking now. \n The Laminator will be responsible for putting the glass on Forestry Electron Tubes, but for now all it does is coat things in wax - preferably wooden things in fire-proof wax. \n The Dryer extracts Distilled Water from many sources, sometimes the solid by-product is actually enhanced by this. Perhaps you should put one between your boilers and the river (or now optionally ocean) so calcification stops being a problem.",
+	  "x": 175,
+	  "y": 125,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20171
+	  },
+	  "prerequisites": [
+	    "the Riddle of Steel"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Heating Things",
+		  "longDescription": "Since you can already make tier 2 versions of these machines from Invar, I won\u0027t specify which one to get. The power input tier mechanics are standard across GregTech, although burning boxes rarely match standard denominations.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plateDouble",
+				"damage": 290
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Roasted like a Rotten Egg",
+		  "longDescription": "The Roasting Oven deserves special mention, as it is a key component in improving sulphurous ore processing. The Air Vent Cover acts like a Drain Cover for gasses, but sucks in infinite amounts of Air if there is no specific block in front (and it is on a dimension with an atmosphere). Driving off the SO_2 this way provides much better yields than simply smelting the ore, but the use of breathable air instead of pure Oxygen gas introduces a loss rate. \n That sulphurous oxide gas will be very useful soon... Where to store it? IE Metal Drums perhaps.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1022
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32609,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Tier Up",
+	  "description": "You may have guessed that all those bronze machines were a low-tier (1) version; Steel is the base material for Tier 2 kinetic (KU) and rotation (RU) machines, which require at least 64 U/t to operate, and fail (violently) if given more than 256 U/t. \n Greg\u0027s power tiering system bears explaining here though. Those 64 RU/t overclocked recipes are ALWAYS overclocking recipes! The tier 2 machine can only enhance recipes with a base cost less than both the tier limit and one-quarter of the actual power used. Using the higher tier machine then takes only half as much time, at four times the power, for a total of twice the energy.",
+	  "x": 175,
+	  "y": 175,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20082
+	  },
+	  "prerequisites": [
+	    "the Riddle of Steel"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "De-Alloying",
+		  "longDescription": "Amoung the machines that can be upgraded, the centrifuge has the most new recipes: the alloy separation class. Nearly anything that can be made in a Mixer or Mixing Bowl, or is the result of shapelessly crafting dusts, or mixed alloys in the crucible, can be reduced to component parts by a centrifuge recipe. Most of these are higher tier than the recipe to make the material mind. Some natural materials, like redstone, glowstone, clay, and sand, can also be decomposed. This is in addition to the wider variety of Purified ores that can be Refined. \n Getting 256 RU/t constantly to double-quick sluice juice centrifugation will be less of a challenge once your Dryer is operational.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20082
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:glowstone",
+		  "amount": 16
+		}
+	  ]
+	}
+  ],
+  "reputationBar": []
+}

@@ -1,0 +1,910 @@
+{
+  "name": "Matter to Energy",
+  "description": "AE2, everyone\u0027s favorite inventory manager!",
+  "quests": [
+    {
+      "name": "No-body said Aliens",
+      "description": "As a great industrial magnate, you don\u0027t need relics from long-dead super civilizations to perform hard sci-fi calculations.  Just write your own circuit presses (if you have a HV laser engraver), or get an earthly sponsor.",
+      "x": 158,
+      "y": 9,
+      "icon": {
+        "id": "appliedenergistics2:tile.BlockInscriber"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get 1 of each Press",
+          "longDescription": "You can make extra Presses of ones you have by putting it and any Solid Iron or Steel Block in any tier of Press, or use the dedicated Inscriber.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 13
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 14
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 15
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 19
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Energy Conversion",
+      "description": "An ME System normally runs on internal AE, but Greggy-EU will work (the AE system has a HV limit before EXPLODING). You can convert RF, EU, or shaft power into AE by connecting it into the Energy Acceptor and piping it out with Fluix Cables or Quartz Fibres. You can also supply power through the ME Controller, but then that is one less side you can pull channels from.",
+      "x": 184,
+      "y": 28,
+      "icon": {
+        "id": "appliedenergistics2:tile.BlockEnergyAcceptor"
+      },
+      "prerequisites": [
+        "No-body said Aliens"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Make an Energy Acceptor",
+          "longDescription": "1EU \u003d 2 AE. 1 AE \u003d 2 RF. 160 Nm * rad/s \u003d 1 AE/t",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockEnergyAcceptor"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "So Many Channels, Nothing On",
+      "description": "The ME Controller gives you more channels to work with. Each side adds 8 or 32 channels. It can also accept energy and convert it to AE. It is an extended structure that can look like whatever neural ganglion you feel like, but you can only have one per ME System. ",
+      "x": 132,
+      "y": 28,
+      "icon": {
+        "id": "appliedenergistics2:tile.BlockController"
+      },
+      "prerequisites": [
+        "No-body said Aliens",
+        "{Chemical Era}[Steamed]",
+		"{Chemical Era}[Blending]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Make an ME Controller",
+          "longDescription": "The ME Controller also accepts RF and EU to power the ME system, but that is one less side you can use channels with.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockController"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Made Out of Buttons and Wires",
+      "description": "AE2 machines are hooked up and powered via Fluix conduits. Channels are a very special mechanic: most Busses or AE2 Machines take up a channel. ME glass or smart cables can only transfer 8 channels, and can have busses attached to them. The Dense ME Cable carries 32 channels but does not operate busses nor terminals.",
+      "x": 158,
+      "y": 109,
+      "icon": {
+        "id": "appliedenergistics2:item.ItemMultiPart",
+        "damage": 16
+      },
+      "prerequisites": [
+        "No-body said Aliens"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Glass Cables",
+          "longDescription": "ME Glass Cables can only carry 8 channels. You can connect Busses and terminals to them.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 16
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make Smart Cables",
+          "longDescription": "ME Smart Cables can also only hold 8 Channels at once, but you see a visual representation of them. You can hook up Busses and/or terminals with them also.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 56
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make Dense Cables",
+          "longDescription": "ME Dense Cables can carry 32 channels, and you can see a visual representation of them. However, you cannot connect Busses nor terminals to them.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 76
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ME Wire Coils",
+      "description": "These Wire Coils function similar to other Wire Coils from Immersive Engineering. The Transformers are connector-like (but big), the Connectors are relay-like (without the placement restriction of HV).",
+      "x": 75,
+      "y": 127,
+      "icon": {
+        "id": "immersiveintegration:wireCoil"
+      },
+      "prerequisites": [
+        "Made Out of Buttons and Wires"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Set up Fluix Wire Coils",
+          "longDescription": "Touch ME Cables to the ME Transformer, then connect via ME Wire Connectors and Fluix Wire Coils to another ME Transformer and the rest of your ME System. This tier can only hold 8 channels, and can have 24 blocks in between ME Wire Connectors.",
+          "items": [
+            {
+              "item": {
+                "id": "immersiveintegration:meTransformer"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveintegration:wireCoil"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveintegration:meWireConnector"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Set up Dense Wire Coils",
+          "longDescription": "Touch ME Cables to the ME Dense Transformer, then connect via ME Dense Wire Connectors and Dense Wire Coils to another ME Dense Transformer and the rest of your ME System. This tier can hold 32 channels, and can have 16 blocks in between ME Dense Wire Connectors.",
+          "items": [
+            {
+              "item": {
+                "id": "immersiveintegration:meDenseTransformer"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveintegration:wireCoil",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "immersiveintegration:meDenseWireConnector"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Not Actually Floppy",
+      "description": "Storage Cells are placed into the ME Drive. Every Storage Cell can only take 63 unique items, but the different tiers can hold certain amounts of bytes. 8 items take up 1 byte, no matter the size of a regular stack. Going straight for the max size Storage Cell isn\u0027t necessarily the best idea, because then you still only have 63 possible unique items, even if it\u0027s a lot more of those 63 items.",
+      "x": 154,
+      "y": 150,
+      "icon": {
+        "id": "appliedenergistics2:tile.BlockDrive"
+      },
+      "prerequisites": [
+        "Made Out of Buttons and Wires",
+		"{Modern Era}[Alumin-in-inium]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the ME Drive",
+          "longDescription": "I won\u0027t ask you to make any specific Storage Cell, as depending on where you are you can afford larger ones.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockDrive"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Accessing Your Stuff",
+      "description": "The ME Crafting Terminal allows you to access items stored in your ME Storage Cells, and has an in-built crafting table.",
+      "x": 222,
+      "y": 68,
+      "icon": {
+        "id": "appliedenergistics2:item.ItemMultiPart",
+        "damage": 360
+      },
+      "prerequisites": [
+        "Made Out of Buttons and Wires"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Crafting Terminal",
+          "longDescription": "The ME Crafting Terminal connects to an ME Cable, and takes up 1 channel.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 360
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Wheels on the Bus",
+      "description": "No, not that kind of bus. These Busses are essentially ways to interact with things outside of the ME System. These all take a channel each.",
+      "x": 208,
+      "y": 146,
+      "icon": {
+        "id": "appliedenergistics2:item.ItemMultiPart",
+        "damage": 220
+      },
+      "prerequisites": [
+        "Made Out of Buttons and Wires"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make an Import Bus",
+          "longDescription": "The Import Bus pulls items from an inventory in front of it into the ME System it is connected to. For example, if you want to move all your items out of chests into your ME System, you would use a Dolly to move all your chests so that they\u0027re connected to an Import Bus, which will suck out all the items and put them into the System. You can set a whitelist on what to import by opening it and putting items into it. By default, the whitelist can only have 1. With 2 Capacity Cards, it can have 9.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 240
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make an Export Bus",
+          "longDescription": "The Export Bus pushes items out of the ME System into the inventory it is facing. You have to open the Bus and put the items you want to push out into it. Without Capacity Cards, you only can export 1 item. With 2 Capacity Cards, you can export 9.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 260
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Storage Bus",
+          "longDescription": "The Storage Bus allows you to access inventories that are not a part of the ME system. If you place it facing, for instance, a Drawer Controller, you won\u0027t have to get rid of your entire wall of Drawers; instead, you\u0027ll be able to access them all from ME Terminals. This way, you won\u0027t waste precious Storage Cell space.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 220
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Autocrafting",
+      "description": "AE2\u0027s probably best feature is Autocrafting. This allows you to automatically craft whatever you define, which saves a surprising amount of time. But it takes a modicum of infrastructure.",
+      "x": 74,
+      "y": 60,
+      "icon": {
+        "id": "appliedenergistics2:tile.BlockCraftingUnit",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Made Out of Buttons and Wires"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Set up the Crafting CPU",
+          "longDescription": "The Crafting CPU is a multiblock. It must be a cuboid, meaning it has 6 sides maximum. It is made up of Crafting Co-Processing Units and Crafting Storages. The more Crafting CPUs, the more parts can be crafted in parrallel. The more Crafting Storage you have, the more complicated of a recipe you can make. Having multiple Multiblocks allows you to autocraft multiple things at once.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockCraftingUnit",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockCraftingStorage"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Pattern Terminal",
+          "longDescription": "The ME Pattern Terminal allows you to set recipes that can be autocrafted, either through regular crafting or through machines. You need Blank Patterns to begin with. For crafting table recipes, input the recipe to the crafting table gui to the left and hit the Encode Pattern Button and pull out the Encoded Pattern.  Be aware that all tools used in a Gregtech6 crafting recipe must be replaced with their \"Robot Arm\" versions in an autocrafting pattern. For processing patterns, for instance Roll Bender or other things like that, click the Crafting Table to the right to switch modes. Then, put the inputs to the left and outputs to the right. Keep clicking to put more of the same item in if you need multiple or receive multiple of one of the items.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiPart",
+                "damage": 340
+              }
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 52
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the ME Interfaces",
+          "longDescription": "The ME Interface is where you connect your ME System to processing or crafting. For processing, put the ME Interface (preferably the panel version, as you can put multiple in one block, and you easily specify which side of the cable) next to a machine, like a Wiremill. Then, put a processing recipe into the bottom slots of the ME Interface. Connect an Import Bus to the machine\u0027s output face to pull the finished item back into the ME System. Bingo presto! Automatic processing! For regular crafting, see the next task. ME Interfaces take up a channel each.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockInterface"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make Molecular Assemblers",
+          "longDescription": "Molecular Assemblers perform the crafting grid recipes. They require a ME Interface to hold their patterns, and AE power (which they transmit). Unlike other processing machines, they put their products back into the attached interfaces automatically.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockMolecularAssembler"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dimensional Box",
+      "description": "The ME Wireless Access Point and Wireless Terminal allow you to wirelessly access your ME System\u0027s contents.",
+      "x": 254,
+      "y": 87,
+      "icon": {
+        "id": "appliedenergistics2:item.ToolWirelessTerminal"
+      },
+      "prerequisites": [
+        "Made Out of Buttons and Wires",
+		"{Electric Revolution}[Galvan to the Rescue]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make ME Wireless Access Point",
+          "longDescription": "The ME Wireless Access Point is the central location that you have to be nearby to in order to use the Wireless Terminal. You can extend the range with Wireless Boosters at the cost of more AE/t usage.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockWireless"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the ME Security Terminal",
+          "longDescription": "The ME Security Terminal is how you bind your Wireless Terminal to the ME System. Place the Wireless Terminal in the top right and it will bind to that system. Biometric cards can also be used herein to limit permissions for any person (including yourself), and set default permissions.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockSecurity"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make the Wireless Terminal",
+          "longDescription": "The Wireless Terminal is essentially an ME Access Terminal that you can hold.",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ToolWirelessTerminal"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MagiTech Crafting",
+      "description": "The Arcane Crafting Terminal works as a regular Crafting Terminal AND an Arcane Worktable. You put your Wand in there, and craft like normal, but you have access to your entire ME System while doing it.",
+      "x": 233,
+      "y": 87,
+      "icon": {
+        "id": "thaumicenergistics:part.base",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Accessing Your Stuff",
+        "{Sufficiently Advanced Tech}[Crafting Like a Magician]",
+        "{Sufficiently Advanced Tech}[Thinking About Thaumaturgy]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Arcane Crafting Terminal",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicenergistics:part.base",
+                "damage": 5
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Electric Fluids",
+      "description": "The ME Fluid Terminal allows you to access fluids in your ME System. You need to have Fluid Storage in your ME System to store fluids in it.",
+      "x": 231,
+      "y": 50,
+      "icon": {
+        "id": "extracells:part.base",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Accessing Your Stuff"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make ME Fluid Terminal",
+          "longDescription": "Put the thing you want to put the fluid into (bucket/can/whatever) into the left slot, and click what you want to put into it. Or, you can put a filled fluid container into the left slot, and it will go into the system.",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:part.base",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Information MagiTechnology",
+      "description": "The Essentia Terminal allows you to access Essentia in your ME System. To store Essentia in your ME System, you need Essentia Storage Cells.",
+      "x": 252,
+      "y": 50,
+      "icon": {
+        "id": "thaumicenergistics:part.base",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Accessing Your Stuff",
+		"Not Actually Floppy",
+        "{Sufficiently Advanced Tech}[A Real Wand]",
+		"{Electric Revolution}[Dawn of Computing]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make the Essentia Terminal",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicenergistics:part.base",
+                "damage": 4
+              }
+            }
+          ]
+        },
+	    {
+		  "type": "DETECT",
+		  "description": "Magical Disk Drive",
+		  "longDescription": "Only these magical chips can run the septinary code required for essentia storage natively. ",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30311
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Make essentia Storage.",
+		  "items": [
+			{
+			  "item": {
+			    "id": "thaumicenergistics:storage.component",
+				"damage": 0
+			  }
+			},
+			{
+			  "item": {
+			    "id": "thaumicenergistics:storage.casing"
+			  }
+			}
+		  ]
+		}
+      ]
+    },
+    {
+      "name": "Now With USB4 Compatibility",
+      "description": "The Wireless Universal Terminal gains new modes by crafting together with an Access Terminal of a new type (items, fluids, gasses, essentia). To switch modes, shift right click it.",
+      "x": 264,
+      "y": 68,
+      "icon": {
+        "id": "extracells:terminal.universal.wireless",
+        "nbt": "{type:0b,modules:31b}"
+      },
+      "prerequisites": [
+        "Information MagiTechnology",
+        "Electric Fluids",
+        "Dimensional Box"
+      ],
+	  "parentrequirement": 2,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Wireless Universal Terminal ",
+          "longDescription": "To add a mode, craft a Wireless Terminal with an Access Terminal that you want to add support for. To make the max upgraded one, craft the regular Wireless Access Terminal with either a Fluid Terminal or Essentia Terminal, then craft that with the other one, and finally with a vanilla crafting table.",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:terminal.universal.wireless",
+                "nbt": "{type:3b,modules:15b}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Amphibious Bus Tour",
+      "description": "These Busses work exactly the same as the regular ones, but with Fluids.",
+      "x": 230,
+      "y": 146,
+      "icon": {
+        "id": "extracells:part.base",
+        "damage": 2
+      },
+      "prerequisites": [
+        "The Wheels on the Bus"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Fluid Busses",
+          "items": [
+            {
+              "item": {
+                "id": "extracells:part.base"
+              }
+            },
+            {
+              "item": {
+                "id": "extracells:part.base",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "extracells:part.base",
+                "damage": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magic School Bus",
+      "description": "These Busses work exactly the same as the regular ones, but with Essentia.",
+      "x": 219,
+      "y": 164,
+      "icon": {
+        "id": "thaumicenergistics:part.base",
+        "damage": 2
+      },
+      "prerequisites": [
+        "The Wheels on the Bus",
+        "{Sufficiently Advanced Tech}[A Real Wand]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make Essentia Busses",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicenergistics:part.base"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "thaumicenergistics:part.base",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "thaumicenergistics:part.base",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magical Autocrafting",
+      "description": "With these machines you will be able to automatically craft things that usually would require an Arcane Worktable.",
+      "x": 84,
+      "y": 40,
+      "icon": {
+        "id": "thaumicenergistics:thaumicenergistics.block.arcane.assembler"
+      },
+      "prerequisites": [
+        "{Sufficiently Advanced Tech}[Altar or Henge?]",
+        "Autocrafting",
+        "{Sufficiently Advanced Tech}[Sceptre of Crafting]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Make the Knowledge Inscriber",
+          "longDescription": "The Knowledge Inscriber works similar to the Pattern Terminal. Instead of Patterns, you need the Knowledge Core. Put in the recipe and save it to the Knowledge Core. The Knowledge Core can have 21 Recipes in it. \n Instead of putting patterns in a connected terminal(s), the Arcane Assembler takes one Knowledge Core internally. Therefore, unlike the normal Molecular Assembler, the Arcane Assembler does take up a network channel.",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicenergistics:thaumicenergistics.block.knowledge.inscriber"
+              }
+            },
+            {
+              "item": {
+                "id": "thaumicenergistics:knowledge.core"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "thaumicenergistics:thaumicenergistics.block.arcane.assembler"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Automated Automated Alchemy",
+      "description": "The Essentia Provider allows Thaumcraft machines to access Essentia from your ME System.",
+      "x": 52,
+      "y": 60,
+      "icon": {
+        "id": "thaumicenergistics:thaumicenergistics.block.essentia.provider"
+      },
+      "prerequisites": [
+        "{Sufficiently Advanced Tech}[Altar or Henge?]",
+        "Magic School Bus",
+        "Autocrafting",
+        "{Sufficiently Advanced Tech}[Automated Alchemy]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Make the Essentia Provider",
+		  "longDescription": "It acts like a giant Buffer Tube.",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicenergistics:thaumicenergistics.block.essentia.provider"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mirror Mirror",
+      "description": "The Infusion Provider allows the Infusion Altar to use Essentia directly from your ME System. ",
+      "x": 62,
+      "y": 41,
+      "icon": {
+        "id": "thaumicenergistics:thaumicenergistics.block.infusion.provider"
+      },
+      "prerequisites": [
+        "{Sufficiently Advanced Tech}[Altar or Henge?]",
+        "Magic School Bus"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Make the Infusion Provider",
+          "longDescription": "Place it as if it was the jar nearby your altar.",
+          "items": [
+            {
+              "item": {
+                "id": "thaumicenergistics:thaumicenergistics.block.infusion.provider"
+              }
+            }
+          ]
+        }
+      ]
+    },
+	{
+	  "name": "Entanglo-portation",
+	  "description": "There are some places it is just impossible to run (dense) cable to, like other planets or planes of existence. For those situations, AE2 suggests the creation of an artifically stabilized Einstein-Rosen bridge, better known as a micro wormhole. No coherent matter can pass through, but thankfully you have in place a system to transmit and store material as pure information.",
+	  "x": 120,
+	  "y": 10,
+	  "icon": {
+	    "id": "appliedenergistics2:item.ItemMultiMaterial",
+		"damage": 48
+	  },
+	  "prerequisites": [
+	    "So Many Channels, Nothing On",
+		"{Chemical Era}[Titanic]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Collapse Into Singularity",
+		  "longDescription": "Bending space-time into a wormhole first requires an excessively dense gravity field, that is a really heavy and super-compressed ball of matter. A quarter million junk items should do the trick.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "appliedenergistics2:tile.BlockCondensor"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "appliedenergistics2:item.ItemMultiMaterial",
+				"damage": 47
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "The Tiny Bang",
+		  "longDescription": "Some force will be required to split the singularity into two linked parts, which can then be individually moved while remaining linked inside. \n\n Who knew a minor concussive explosion would be enough?",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "appliedenergistics2:item.ItemMultiMaterial",
+				"damage": 48
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 2
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Ring Gates",
+		  "longDescription": "Transdimensional I/O operations in the AE network require a horizontal ring around the core, into which the specific quantum-linked singularity will be placed. The ring has four (or twelve?) contacts for cable, and can transmit at least those 128 channels. \n Note that these structures do not care about distance, and could even be used as long-range, or simply wireless, connections on the same world.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "appliedenergistics2:tile.BlockQuantumLinkChamber"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "appliedenergistics2:tile.BlockQuantumRing"
+			  },
+			  "required": 16
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Welcome to the Matrix",
+	  "description": "Having so successfully digitized and uploaded material, it is time to attempt the transmogrification of living creatures... \n Well, we can\u0027t do that directly, but it does work indirectly by virtualizing the entire patch of space-time in which the entity resides.",
+	  "x": 150,
+	  "y": 180,
+	  "icon": {
+	    "id": "appliedenergistics2:item.ItemMultiMaterial",
+		"damage": 32
+	  },
+	  "prerequisites": [
+	    "Not Actually Floppy"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "We Need More Pylons.",
+		  "longDescription": "Time to brush up on subnets (or just build it seperately); each network can only contain ONE Spatial I/O Port, and exactly THREE Spatial Pylons. The Pylons must be offset from the IO Port along each of the cardinal axes, as they define the region that will be scanned in to (or re-constituted from) the disk in it. \n Apply a rising edge redstone signal to the I/O Port to swap the contents of the disk and the space. This will only work if the local network has (Dense) Energy Cells with sufficient charge to INSTANTLY supply the full energy cost of transmogrificating every entity and block in the space.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "appliedenergistics2:tile.BlockSpatialIOPort"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "appliedenergistics2:tile.BlockSpatialPylon"
+			  },
+			  "required": 3,
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "World in a Bottle",
+		  "longDescription": "The category of Spatial storage Disk defines the maximum side length of zone that can be scanned onto it by a Spatial I/O Port. \n Upon exploration, it turns out that entire cubic volume is made available in some virtual meta-reality. The Spatial Storage is a sort of key to the specific demi-plane, allowing parts of it to be swapped with whatever is inside the Spatial Pylons each time the Spatial I/O Port is activated with it. Time passes normally for all things in these demi-planes, one could even construct an inter-dimensional teleporter to access them directly (Stargates anyone?); Without such an internal link, the Spatial storage Disk would be the only way to access the contents of that demi-plane. \n One could get tricky with Quantum Link Chambers and a bookshelf.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "appliedenergistics2:item.ItemMultiMaterial",
+				"damage": 33
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ]
+	}
+  ],
+  "reputationBar": []
+}

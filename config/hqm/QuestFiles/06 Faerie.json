@@ -1,0 +1,1290 @@
+{
+  "name": "World Walker",
+  "description": "Travel to distant Realms for which old fashioned common sense could use some updating. Like the Nether and the End, the Erebus and Twilight Forest have specific portals and denizens.",
+  "quests": [
+    {
+      "name": "The Twilight Zone",
+      "description": "The Twilight Forest is a dimension filled with dungeons and magic. Beware, however. The Twilight Forest is fairly server intensive. \n\n Check out the Miniature Twilight Portal for transferring loot to and from the Overworld. It treats space as equal scale just like the portal, but has a vast (512m) allowance for endpoint connections so that one can avoid locked biomes. \n RotaryCraft Shafts will transfer power through the orignal portal just fine.",
+      "x": 270,
+      "y": 30,
+      "bigicon": true,
+      "icon": {
+        "id": "TwilightForest:tile.TFFirefly"
+      },
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "description": "Go through Twilight Portal",
+          "longDescription": "To make the portal to the Twilight Forest, make a 2x2x1 of water in the ground. Surround it with plants, like flowers or saplings. Lastly, throw a Diamond into the water. If it worked, it will create a strike of lightning and the portal will be created. Simply jump in to travel through it!",
+          "locations": [
+            {
+              "name": "Twilight Forest",
+              "icon": {
+                "id": "minecraft:diamond"
+              },
+              "x": 68,
+              "y": 69,
+              "z": -42,
+              "dim": 7,
+              "radius": -1
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Make a Magic Map",
+          "longDescription": "The Magic Map is the key to finding landmarks and dungeons in the Twilight Forest. Right click on the Empty Magic Map to start scribing the nearby area. It will show you biomes and dungeons, but not the terrain itself, like a regular Map. Ravens tend to spawn near the Obsidian pillars, and Torchberries grow on the underside of Stone.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.emptyMagicMap"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+	{
+	  "name": "Geodic Riches",
+	  "description": "The \"Hollow Hills\" have old-fashioned ore pockets densely within them. This is probably why so many Kobolds and Redcaps live there.",
+	  "x": 240,
+	  "y": 55,
+	  "icon": {
+	    "id": "minecraft:diamond_ore"
+	  },
+	  "prerequisites": [
+	    "The Twilight Zone"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "KILL",
+		  "description": "Stompin\u0027 Boots",
+		  "mobs": [
+		    {
+			  "name": "Redcap",
+			  "mob": "TwilightForest.Redcap",
+			  "kills": 2,
+			  "exact": false
+			},
+			{
+			  "name": "Kobolds",
+			  "mob": "TwilightForest.Kobold",
+			  "kills": 1,
+			  "exact": true
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:gold_ore",
+		  "amount": 16
+		},
+		{
+		  "id": "minecraft:diamond_ore",
+		  "amount": 8
+		}
+	  ]
+	},
+    {
+      "name": "Adventure\u0027s Path",
+      "description": "There is a strict progression you must go through if you want to explore everything this dimension has to offer. If you are stuck, you can check the Twilight Forest\u0027s achievements page in the pause menu for detailed instructions.",
+      "x": 280,
+      "y": 75,
+      "icon": {
+        "id": "TwilightForest:item.trophy"
+      },
+      "prerequisites": [
+        "The Twilight Zone"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Slay the Naga",
+          "longDescription": "The first boss you can fight is the Naga. The Naga can be found in the Twilight Forest (the biome, as well as the dimension) or the Mushroom Forest biome. The Magical Map will show the Naga as a green circle with 2 red eyes. The dungeon is walled in, with patterns of snakes adorning the walls. The Naga itself is a giant, multi-segmented snake. It slithers around the arena and charging down players within. In total, the Naga has 250 health (125 hearts), and does 9 damage (4.5 hearts) with each attack. As you fight the Naga, it will get shorter and faster until it dies. It will drop the Naga Trophy and several Naga Scales. The player must pick both up to unlock the Lich Tower.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.trophy",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "TwilightForest:item.nagaScale"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Defeat the Twilight Lich",
+          "longDescription": "The Twilight Lich lives in the Mushroom/Twilight Forest biomes, in the Lich Tower. The Magic Map shows the Lich as a white circle with 2 red eyes and a gold crown. You cannot enter the Lich Tower until you have defeated the Naga and collected its scales. You have to climb the Lich Tower to the very top, where you can find the Lich and its minions. The Lich has 3 stages: In the first stage, the Lich and its 2 Twilight Lich Shadows will shoot slow-moving projectiles at the player. Dodge the fireballs and reflect the Ender Pearl projectiles back at the Lich by hitting them (similar to Ghasts) to remove the Lich\u0027s shields. While the Lich has its shields, it takes no damage. In the second stage, the Lich will spawn special Zombies to attack the player. Also, the Twiligth Lich Shadows will leave, and will not return. Kill the Zombies to progress to the next stage. In the third and final stage, the Lich will equip a Gold Sword and attack. Each hit will do 4.5 hearts of damage unarmored. Killing the Lich in its third form will drop the Lich Trophy and one of 3 scepters. The Scepter of Twilight will fire the same projectile the Lich does in the first stage, dealing up to 3 hearts of damage, with a chance of bypassing armor. The Scepter of Life Draining damages mobs as you hold right click, while healing you for a fraction of the damage dealt. Finally, the Zombie Scepter will summon Zombie minions, like the second stage of the Lich fight. They will fight hostile mobs for you, excluding Creepers. Each scepter has durability and their own recipes to recharge. They will not break, just stop working until they are recharged, so you don\u0027t have to worry. The player must pick up the Lich Trophy and any of the Scepters to progress to the next boss.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.trophy",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Kill the Minoshroom",
+          "longDescription": "The Minoshroom spawns in the lowest floor of the Labyrinth. The Labyrinth can be found in the Twilight Swamp biome, which surrounds the Fire Swamp. The Magic Map shows it as a vaguely green-white square. Bring LOTS of Torches, it\u0027s very dark in the Labyrinth. The blocks the Labyrinth is made of are extremely resistant to mining, so it is not recommended to try to cheat your way through. The Labyrinth is filled with Minotaurs, Pinch Beetles, Slime Beetles, Fire Beetles, and Maze Slimes, so make sure you\u0027re prepared for a fight. You can find chests with Maze Map Focuses, which you can craft into Maze Maps. Once you make your way through the Labyrinth and defeat the Minoshroom (which is fairly simple to do, just hit it until it dies) you will get some  Meef Stroganoff and the Minotaur Axe. The Meef Stroganoff is required to enter the Fire Swamp.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.meefStroganoff"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Slay the Hydra",
+          "longDescription": "The Hydra spawns in the middle of Fire Swamp biomes. There aren\u0027t any dungeons to face, the Hydra is simply in the middle of the biome. The Magic Map shows it as a dark blue-green circle with 2 violet eyes and a lighter blue frill at the top. The Hydra is a 3 headed dragon that will bite at the player, as well as shoot fire and explosive projectiles at them. The Hydra can be damaged by projectiles while it\u0027s mouth is open and shot at. When a head is damaged enough, it will explode and be replaced with two new heads. Once the Hydra is defeated, it will drop a Hydra Trophy, Fiery Blood, and Hydra Chops. The Fiery Blood is required to enter the Dark Forest biome.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.trophy"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "TwilightForest:item.fieryBlood"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "to the Dark Forest!",
+      "description": "Now, enter the demense of deliberate awfulness, if you dare.",
+      "x": 280,
+      "y": 110,
+      "icon": {
+        "id": "TwilightForest:tile.TFSapling",
+		"damage": 3
+      },
+      "prerequisites": [
+        "Adventure\u0027s Path"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Defeat the Phantom Knight",
+          "longDescription": "The Phantom Knight spawns in the Goblin Knight Stronghold in the Dark Forest Biome. The Magic Map shows it as a horned helmet. To enter the Stronghold, you must find the Latent Trophy Pedestal and place a Hydra Trophy on it. If it says you are unworthy, make sure you have the \"Of One Blood\" achievement, which is acquired by picking up Fiery Blood. Finding the Phantom Knight is tough, so bring Torches. The Phantom Knight spawns along with several doubles, all of which must be killed to win. Once defeated, it will spawn a chest with loot in it, which is needed to approach the Dark Tower.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.phantomHelm"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "KILL",
+          "description": "Shoot down the Ur-Ghast",
+          "longDescription": "The Ur-Ghast spawns in the Dark Forest Center biome, at the very top of the Dark Tower. The Magic Map shows it as an off-white square with tendrils at the bottom. The Dark Tower is a very interesting dungeon in that it has several puzzles to surpass (if you don\u0027t have a means of flight, in which case you can just fly to the top). Enter by right-clicking on a door made of Reappearing Blocks at the bottom. Some of the Towerwood looks a bit singed, that is Infested Towerwood. Breaking Infested Towerwood will spawn a Towerwood Borer, which drops Borer Essence, which is an ingredient in Carminite. Several parts of the Dark Tower use Anti-Builders, which disallow you to place or permanently remove blocks. Blocks placed will be dropped, and blocks destroyed will be replaced with Anti-Built Blocks. Near the top is a puzzle involving Carminite Builders. These turn on with a redstone signal, given by the lever nearby, and will build blocks in the location the player is looking. So, the strategy here is to give it a redstone signal, follow the blocks as they\u0027re being placed, and turn your head to change direction to the next platform. At the top of this puzzle is a couple buffer floors, giving the crafting recipes for Carminite and Carminite related blocks. There is also a nearly finished Carminite Reactor Finish it by extending the pistons so that the redstone blocks on all sides touch the Reactor. The Ur-Ghast cannot be harmed with melee attacks, so you must use a bow or reflect it\u0027s fireballs back at it. The easiest way to kill it is through the 4 Ghast Traps at the top of the Dark Tower. The Ghast Traps are charged by killing Carminite Ghastlings near them. About 3 Carminite Ghastlings will charge the Ghast Trap, allowing them to work with a redstone signal. Wait until the Ur-Ghast is directly above the Ghast Trap, then stand on the pressure plate to activate it. It will spend its charge to harm the Ur-Ghast while keeping it in place, allowing the player to shoot it easily. Once the Ur-Ghast is defeated, it will spawn a chest with loot in the center room at the top.",
+          "mobs": [
+            {
+              "name": "Ur-Ghast",
+              "mob": "TwilightForest.Tower Boss",
+              "kills": 1,
+              "exact": true
+            }
+          ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Grab the loot",
+		  "longDescription": "Drop and pick up the Ur-Ghast Trophy and the Fiery Tears to get the achievement that allows access to the Snowy Forest biome.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.trophy",
+                "damage": 3
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "TwilightForest:item.fieryTears"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+	  ],
+	  "reward": [
+	    {
+		  "id": "TwilightForest:item.carminite",
+		  "amount": 8
+		}
+	  ],
+	  "repeat": {
+	    "type": "INTERVAL",
+		"days": 32,
+		"hours": 0
+	  }
+	},
+	{
+	  "name": "Brave the Blizzard",
+	  "description": "There is great beauty to be found in the deadliest frost.",
+	  "x": 280,
+	  "y": 140,
+	  "icon": {
+	    "id": "TwilightForest:item.alphaFur"
+	  },
+	  "prerequisites": [
+	    "to the Dark Forest!"
+	  ],
+	  "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Thaw the Alpha Yeti",
+          "longDescription": "The Alpha Yeti spawns in the Snowy Forest biome, in a cave with Packed Ice. The Magic Map shows it as a white semicircle. The Alpha Yeti is immune to ranged attacks, and can throw ice blocks that slow and hurt players. During the fight, the Alpha Yeti can flail, flinging nearby players away. There are also several regular Yeti in the cave. The Alpha Yeti drops Alpha Yeti Fur, which is needed to enter the Ice Tower, along with Ice Bombs.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.alphaFur"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Dethrone the Snow Queen",
+          "longDescription": "The Snow Queen sits atop the Aurora Tower in the Twilight Glacier Biome. The Magic Map shows it as a white pillar, despite the fact that the Aurora Tower itself is made of color-changing Aurora Blocks. Climb the Aurora Tower similarly to how you climbed the Dark Tower. Inside you can fight Stable and Unstable Ice Cores and Snow Guardians. The Snow Queen herself sits atop a cloud of ice at the top of the Aurora Tower. She will drift up and down, and the cloud will block damage, so she can only be hit with melee when on the floor (or if the player is flying). She will attempt to slam the player with her ice cloud, so be careful. Once defeated, she drops the Tri-Bow and the Snow Queen Trophy, which allows the player to traverse the Highlands and Thornlands biomes.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.trophy",
+                "damage": 4
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+	  ],
+	  "repeat": {
+	    "type": "TIME",
+		"days": 8,
+		"hours": 0
+	  },
+	  "reward": [
+	    {
+		  "id": "TwilightForest:tile.TFAuroraBrick",
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "The Final stretch",
+	  "description": "Follow this trail of trials to the end.",
+	  "x": 270,
+	  "y": 160,
+	  "icon": {
+	    "id": "TwilightForest:item.lampOfCinders"
+	  },
+	  "prerequisites": [
+	    "Brave the Blizzard"
+	  ],
+	  "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Pay the Troll toll",
+          "longDescription": "The Highlands Biome essentially has 2 parts: The Cloud Cottage and the Troll Cave. The Troll Cave is filled with Trolls, fairly easy monsters at this point. Also inside the Troll cave is a Giant Obsidian box, and a regular obsidian box. Break the regular Obsidian Box and collect the Magic Beans and Uberous Soil inside.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.magicBeans"
+              },
+              "precision": "NBT_FUZZY"
+            },
+			{
+			  "item": {
+			    "id": "TwilightForest:tile.UberousSoil"
+			  },
+			  "required": 9
+			}
+          ]
+        },
+		{
+		  "type": "DETECT",
+		  "description": "Raid the Cloud Giants",
+		  "longDescription": "Leave the Troll Cave, and look up at the Cloud Cottage in the sky. Go to just under the edge of the cloud, place the Uberous Soil, and plant the Magic Beans on it to spawn a Huge Stalk to climb your way up to the Cloud Cottage. The Cloud Cottage has a Giant that must be murdered in order to attain the Giant\u0027s Pickaxe it holds.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "TwilightForest:item.giantPick"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Open the box",
+		  "longDescription": "The Giant Pickaxe allows you to mine giant blocks, specifically including the Giant Obsidian back in the cave. Inside the Giant Obsidian box is a Lamp of Cinders, which must be dropped and picked up to unlock the Thornlands biome.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "TwilightForest:item.lampOfCinders"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Storm the Castle",
+          "longDescription": "The Thornlands Biome is full of Thorns that damage the player upon touch. The Lamp of Cinders helps get past this by burning the Thorns. Right click directly on the Thorns to burn them, or hold and let go to burn in an area around you. Burnt Thorns can be walked right through. Once you reach the Castle, nerdpole up (or bring another Giant Stalk) to the main building. There\u0027s no way up through the outer towers, they\u0027re completely solid at the base, so don\u0027t bother trying there. Unfortunately, Twilight Forest is a WHIP mod, and there is no final boss. The Castle is mostly empty, no monsters or puzzles inside, just an easy maze. So climb to the top and get the sign. I suppose this could make a pretty cool looking base, if you don\u0027t mind the occasional unbreakable forcefield. Congratulations! You\u0027ve finished the Twilight Forest\u0027s progression! That isn\u0027t to say there\u0027s not anything else to do, though.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:fence"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ThaumicTinkerer:cleansingTalisman"
+        }
+      ]
+    },
+    {
+      "name": "It\u0027s Sigfried Time",
+      "description": "Wow! Burning Dragon (Hydra) blood! You can\u0027t bathe in it yourself, but maybe you should bathe something else in it...",
+      "x": 260,
+      "y": 92,
+      "icon": {
+        "id": "TwilightForest:item.fierySword"
+      },
+      "prerequisites": [
+        "Adventure\u0027s Path",
+		"{Chemical Era}[Without Blemish]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Steel, obviously",
+          "longDescription": "Actually any Ferrous metal will do.  And lo! The transformation permeates the metal, so unlike galvanized steel it can be manipulated or even melted down and retain these magical properties. Maybe this would make a good crucible and mold material. Bathe an ingot of AnyIronOrSteel to indicate your understanding, a wooden bowl might not do.",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.fieryIngot"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "TwilightForest:item.fieryBlood",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "name": "Crawl with the Creepies",
+      "description": "Erebus, the Underworld of Arthropods holds a lot of field mini-bosses, and some tamable creatures to exploit.  For the most part though, it is an alien world of dim and noisome surprises. The WHIP nature of this dimension is mostly in things growing into extreme imbalance should someone stick around for too long. While some places would be pretty to base in, site preparation always has extra steps here. These tasks can be done in any order, as you discover them, though some are definitely more difficult than others.",
+      "x": 120,
+      "y": 100,
+      "bigicon": true,
+      "icon": {
+        "id": "erebus:food"
+      },
+	  "prerequisites": [
+		"{Dawn of Industry}[the Riddle of Steel]"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "One - trick crafting Altar",
+          "longDescription": "The Offering Altar is Akin to the Terrasteel Agglomeration Plate in it\u0027s simplicity and yet necessity.  Quite distinctly, it takes no power. \n Now that there are Miniature Erebus portals to activate with this Gaean Gem, it will actually get used more than twice.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:offeringAltar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Hollow Earth Keys",
+          "longDescription": "The Gaean Keystone will maintain a portal only so long as a Staff of Gaea remains inserted in it. This means you have to leave the entrance key in the overworld, and should entirely expect to need another such key to activate the return gate.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:portalActivator"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "A Door of Leaves",
+          "longDescription": "Compared to the keys, the actual portal is very cheap: Stone Bricks filled with sheared Leaves.  Other than being a complete path (including corners) of stone bricks constrained in a single vertical plane, it can be any shape or size your embarkation room desires.  Remember to fill the entire interior of the stone brick frame with leaves, preferably the same type of leaf - and be careful about accidentally triggering a treecapitation event in this topiary.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stonebrick"
+              },
+              "required": 12
+            },
+            {
+              "item": {
+                "id": "minecraft:leaves"
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "erebus:gaeanKeystone"
+              }
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Into the brownish-green",
+          "longDescription": "Place the Gaean Keystone in front of the filled portal frame with a single block space between. Intone a Greek prayer (optional), and slide the Staff in the Keystone (use-click).  If the gods deem you worthy, the leaves will transform into a shimmering green portal. Make sure you bring the second Staff of Gaea with you before stepping closer to the portal. Before entering the portal, re-check your inventory again; there is sufficient risk of being deposited in a dark cave with some hungry bugs to triple check your inventory.",
+          "locations": [
+            {
+              "name": "the Erebus",
+              "icon": {
+                "id": "erebus:umberstone"
+              },
+              "x": -68,
+              "y": 72,
+              "z": 42,
+              "dim": 66,
+              "radius": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Overpopulated Elysium",
+      "description": "Elysian Fields and Elysian Forests are the \"safe\" parts of Ereubs.  Enjoy froliking with a pile of neutral mobs, including the giant worker bees, among giant flowers. Be warned that Dragonflies have a habit of introducing you to vertical space. Titan Beetles are the local megafauna, a hostile tamable with twice the health of endermen.  If one stays around long enough, the Grasshoppers may just swarm, a terrifying event as each and every Locust is a miniboss.",
+      "x": 50,
+      "y": 100,
+      "icon": {
+        "id": "erebus:food",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Parasitic Buttflies",
+          "longDescription": "Unfortunately some of the buzzing nuisances are looking for Steve-shaped nest boxes.  Having larvae is totally and literally sickening, so milk some of the common beetles for the local cure-all juice. Mammalian milk won\u0027t remove the pesky blighters.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:bucketBeetleJuice"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "The Harder They Fall",
+          "longDescription": "Take down the Titan.  Not to worry, another will re-spawn later.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:food",
+                "damage": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Screaming Loot",
+          "longDescription": "Cicadas down here may be passive, but they\u0027re screams hurt terribly. They are only found in Elysian Fields, and are the only source of Repellent anywhere. See Varnished Planks.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 29
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Welcome Rescinded",
+          "longDescription": "You fed the Grasshoppers.  Time to fight dozens or hundreds of flying beasts with triple-digit health bars. Or die, that\u0027s a valid option here.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Those Aren\u0027t Trees",
+      "description": "The aptly named Fungal Forest is quite visually striking, for those who can see it. Alas, many residents are physically striking. The Stag Beetle would\u0027ve been megafauna elsewhere, it has identical stats to the Titan and Rhinocerous beetles, but this zone has a full field boss simply on the spawn table. Should one stay long enough, the Glowshrooms lighting this area from above will grow all the way down to the floor, and eventually fill the space with their bright strands.",
+      "x": 85,
+      "y": 50,
+      "icon": {
+        "id": "erebus:greenMushroom"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Get Jumped",
+          "longDescription": "Occasional large hollow stumps conceal Jumping Spiders.  AoE poison on their dragoon-alike ground slams make them mildly dangerous.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 22
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Mind-Controlled Ambush",
+          "longDescription": "These Ants aren\u0027t social, they\u0027re Zombies, something about fungal strands running through their brains. When extracted (as a rare drop), said fungus can be made into useful things.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 66
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "CRUSHED!",
+          "longDescription": "Aptly-named, the Crushroom field boss is the weakest of the three true bosses in the Erebus.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 49
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Chewy and Comfy",
+          "longDescription": "After slaying several Crushrooms, one can craft the Mush Helm, a mediocre protective gear that you will automatically chew on to restore hunger.  Remember to repair it before it breaks.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:mushroomHelm"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deceptively Familiar",
+      "description": "This Subterranean Savannah follows most of the same rules as the Elysian Fields with small beetles, Botflies, and Grasshoppers et al, however both the clingy Scorpions and aggressive Wasps are rather more dangerous.  There is no mega-beetle in this area, instead the Savannah hosts the Tarantula Queen\u0027s Giant Baobab dungeon.",
+      "x": 20,
+      "y": 100,
+      "icon": {
+        "id": "erebus:saplingBaobab"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "In Her Web",
+          "longDescription": "The cyclopean tower that is a hollow Giant Baobab invites you, adventurer, to brave two vaults of tarantula spawners as you climb to the Queen\u0027s web arena. Or you could climb the outside and engage her from the overlooking canopy. Much like the Wither, the Tarantula Queen shifts from a blue phase immune to melee, to an aggressive orange phase immune to projectiles. The baby spiders she flings at you are still poisonous, and only the silk parts of the floor are safe to step on. Her \"trophy\" is actually a respectable armor shirt, as long as you don\u0027t mind looking like Spider-Boy.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:tarantulaEgg"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yucky Muck",
+      "description": "Noisome dampness suffuses the buzzing Submerged Swamp. It is very slow to traverse as the ground tries to swallow more than your boots, and the bioluminescent plants provide mood lighting at best. While Botflies are thankfully absent, a variety of blood-suckers almost makes up for that annoyance. It is suggested to be immune to fall damage before exploring this area, as there are plenty of Dragonflies waiting to carry you off.",
+      "x": 155,
+      "y": 50,
+      "icon": {
+        "id": "erebus:bullrush"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Rough Paper",
+          "longDescription": "The bullrushes growing here, and in the Underground Jungle, are the sole source of Papyrus. While it has paper-related uses, check out it\u0027s other recipes. Also, it is preferably harvested by Shears, as it doesn\u0027t spread.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 27
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "My Launching Flower",
+          "longDescription": "At the centre of the occasional lake one can find a Giant Lilypad, with Dragonflies nesting upon it. The spawner within is a guaranteed source of Ender Pearls, if extremely difficult to stay next to for long. If you prefer to dive for the loot chest here, the rare green Ender Dragonflies occasionally drop pearls too.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 25
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:ender_pearl"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Steamy Death",
+      "description": "The easiest to survive of the death zones, an Underground Jungle will be very familiar to those who have visited flatworlds. Should you see the brilliant blue and orange megafauna Bombadier Beetle: RUN!!! It\u0027s default melee attack compares to a Creeper, except it also has knockup that can hit the ceiling. It drops nothing of value, and cannot be tamed; seriously, just run (while avoiding quicksand).",
+      "x": 85,
+      "y": 150,
+      "icon": {
+        "id": "erebus:bambooCrop"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Bam! Boo.",
+          "longDescription": "Bamboo grows naturally here, enjoy the vast array of crafting uses it has. Further, bamboo shoots are the health food for your (eventual) tame beetles. Next step, figure out how to grow some",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:bambooCrop"
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:bambooShoot"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Knocking over Wasps\u0027 Nests",
+          "longDescription": "Being aware that wasps are already rather dangerous poisonous flyers, the jungle dungeon is on the roof. Rare Hornets of Despair thankfully give back Anti-venom, should you survive victorious. Why attack? The spawner within may drop the late-game Wasp Sword.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:waspSword"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dusty Death",
+      "description": "Reportedly the most lethal place to go for a walk, the sandy Ulterior Outback crawls with terror. There is no focal point of danger in this biome, just lots of it. And the local megafauna Rhino Beetle charging for high knockback is in the middle of that list. Both the Black Widows and the Solifuge Babies can inflict wither upon you, while blindness and poison are also common. Even though flying is rare, many native creatures are good jumpers, and several are fire/lava immune.",
+      "x": 155,
+      "y": 150,
+      "icon": {
+        "id": "erebus:droughtedShrub"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Weak Cinderpearls",
+          "longDescription": "Fireblooms may look as blazing as the desert flowers, but it takes nine of them to get powder.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:fireBloom"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Windy Camels",
+          "longDescription": "The ten-limbed Solifugeae have been mutated in the Erebus. They are very fast, and split in four like slimes when defeated. Terrifyingly, all four baby solifuge inflict a potion curse selected at split; these include blindness, wither, weakness, and many other terrors. At least they can be turned into pants of running away sanic fast.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Horns and All",
+          "longDescription": "Thankfully the Rhinocerous beetle is tamable, and can even be commanded to charge when ridden. Its aggression makes it the easier to find reason to venture here.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 36
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Not-Rubber",
+          "longDescription": "Balsam trees are the true jewel in the death trap. They are the only source of special plant sap, a required ingredient in Varnished Wood and Amber Stars, that can also be used as rubber tree latex.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:saplingSap"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A Different Hell",
+      "description": "Try to picture the nether made of sand. You\u0027ve got a tolerable picture of the Volcanic Desert. Now, add Solifugeae, Black Widows, and Scorpions from the Ulterior Outback; Continue to add Botflies AND three varieties of ignition-spitting creature. At least the Botflies burn, not even the scorched trees do that here.",
+      "x": 190,
+      "y": 100,
+      "icon": {
+        "id": "erebus:templeBrick"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Mind the Sand Trap",
+          "longDescription": "Antlions. Some of the bigger ones live in dungeons with ghost block roofs; they have accumulated some treasure from all the things that fell in.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+				"damage": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Enter the Pyramid\u0027s Maze",
+          "longDescription": "Possibly buried, the grounds of each Overlord\u0027s Pyramid boast a maze of decorative Gniess - while it can be mined it also acts as crusted lava. In the four non-cardinal corners one will find the Idol Guardians; each of them drops a required key to the Pyramid itself. If absolutely necessary, an UmberGolem Statue can be aligned with the missing element to act as a single use spawn egg for that Idol Guardian.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:idols",
+				"damage": 0
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:idols",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:idols",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:idols",
+                "damage": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Lots of Keys",
+          "longDescription": "Apparently, defeating the four guardians isn\u0027t heroic enough, you must also bring a pile of drops from the various mobs found within the Pyramid\u0027s maze. Along with the one using all 8 Jade handed to you in the antechamber, there are four more local portals to activate to cover the interior.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "minecraft:magma_cream"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 61
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "minecraft:string"
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Audience with the Overlord",
+          "longDescription": "At last, the biggest bad boss in Erebus. Beware the AoE quake attacks, and the blinding sand spit. While it would be easier to engage from afar, it is too quick to allow a solo challenger to use bows or splash potions effectively. Maybe you should hover. It is guaranteed to drop a trophy egg, the powerful Quake Hammer, and a Soul Crystal...",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 65
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Adding Soul",
+      "description": "... to nearly anything. The Wand of Animation can transform any simple (non-tile entity) block into a defense pet akin to a chameleon tick. They follow the wand, as long as it is in your inventory, and drop as the source block again when slain. Furthermore, three special blocks can also be animated: Chester (vanilla chest), Bamber (bamboo crate), and Petra (petrified wood crafting bench); each of them retains it\u0027s usefulness while walking - though having a chest die is an irritating experience. Other uses of this wand may reveal themselves soon.",
+      "x": 210,
+      "y": 100,
+      "icon": {
+        "id": "erebus:wandOfAnimation"
+      },
+      "prerequisites": [
+        "A Different Hell"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Mount the Souls",
+          "longDescription": "A diamond, and a stick.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:wandOfAnimation"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Altars of Temporary Power",
+      "description": "These magical altars remain inert until infused by the Wand of Animation while the proper sacrifice item is placed atop. Elastic Fibre will repair a single item (see below); Bio-Velocity will transform a few erebus mob drops into XP Orbs; with a Redgem the Altar of Lightning will strike out at any arthropod nearby for a standard day (20 minutes irl); Bioluminescence nigh-instantly heals all players in a four metre radius to full.",
+      "x": 220,
+      "y": 80,
+      "icon": {
+        "id": "erebus:altarRepair"
+      },
+      "prerequisites": [
+        "Adding Soul"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Find magic tablets",
+          "longDescription": "The Altar Fragments required can only be obtained from Fossil \"Ore\" blocks.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 15
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Prayer Focus",
+          "longDescription": "Those Altar Fragments seem to know a lot of magic, just putting them in a ring about some obsidian is enough. Now to sacrifice the key item for your spell and infuse that altar.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:altarBase"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Repair the Wand",
+          "longDescription": ".. or most anything, really. The Altar of Repair is expended (and reverts to a base altar) after repairing a single tool or armour, it is a complete repair. It however comes with an arcane warning about certain complicated gear that dislikes having its \"damage meta\" manipulated independently of the \"NBT\". While Punchrooms from the fungal forest can be looted for some Elastic Fibre to sacrifice, this is the valuable drop from Locusts that have been allowed to transform.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mr. Gargoyle",
+      "description": "More than a very expensive decorative statue, the UmberGolem animates into a guard dog. It only follows while you are actively holding the Wand of Animation, but only fights off intruders while idle. Using the Wand on the animated creature will return it to block form, where it forgets about being damaged.",
+      "x": 220,
+      "y": 120,
+      "icon": {
+        "id": "erebus:umberGolemStatue"
+      },
+      "prerequisites": [
+        "Adding Soul"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Alternate Golemancy",
+          "longDescription": "Assembling an UmberGolem requires bug parts from many biomes of the Erebus, and a full altar\u0027s worth of fragments.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:umberGolemStatue"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Beetle Rider",
+      "description": "Three of those megafauna can be tamed and ridden, each with a special power. Rhinocerous Beetles can be commanded to charge, Titan Beetles can carry both you and a chest (shift-use to open the saddlebags), but Stag Beetles keep their secret well. All three can be healed with Bamboo Shoots, or bred with Turnips much like smaller beetles. Remember that beetle larvae must eat wood to grow, thankfully the tame ones accept sticks.",
+      "x": 150,
+      "y": 70,
+      "icon": {
+        "id": "erebus:materials",
+        "damage": 50
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Amulet of Taming",
+          "longDescription": "Requiring both a gem of Jade and an Altar Fragment, the single-use beetle taming collar must be attached to a mega-beetle in close proximity.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 51
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Mount Up",
+          "longDescription": "Unlike Horse and Pig Saddles, the Beetle Riding Kit is simple to craft. It permits the same interaction to a tame beetle as a tame Horse would.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 50
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Honey, You\u0027re Home",
+      "description": "Giant Bees are far easier to keep than their normal cousins. They can handle themselves in a fair fight with a Wasp, and naturally occur only in the Wasp-free Elysian Fields; potentially this is a result of them being hostile specifically to wasps, and neutral to all others. The home Honeycomb block is required for them to deposit Nectar in, but they are hardy to environmental conditions.",
+      "x": 90,
+      "y": 130,
+      "icon": {
+        "id": "erebus:materials",
+        "damage": 20
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Queen\u0027s Other Hand",
+          "longDescription": "With the Bee Pendant, one can select a Honeycomb block up to fifteen times, and then grab as many giant Bees as desired to work it and the surrounding flowers. Since Bees cannot be bred, killing one is the worst way to get the required nectar, the Nectar Collector is a much better idea.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:honeyCombBlock"
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:beeTamingAmulet"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+	  "repeat": {
+	    "type": "INTERVAL",
+		"days": 8,
+		"hours": 0
+	  },
+	  "reward": [
+        {
+          "id": "erebus:monsterPlacer",
+          "damage": 23
+        }
+      ]
+    },
+    {
+      "name": "Ant Farmers",
+      "description": "Black Ants, common passives in the Fungal Forest, can be put to work automating a field of crops. They\u0027re especially dim-witted even compared to thaumic work golems, having very tight specialties and no appreciation for terrain. Thankfully, they can farm any bone-mealable crop, and carry an entire stack at once. Pet (use-click) a tame Black Ant to give it orders. Rather than having the golem automation core be permanently attached, ants take their role from which tool is in their left slot; their centre slot is a required filter. Honeypot Ants from the Elysian Fields require no base station, but must be tamed before they accept hand-feeding.",
+      "x": 90,
+      "y": 70,
+      "icon": {
+        "id": "minecraft:wheat"
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Queen\u0027s Hand",
+          "longDescription": "The Ant Medallion can select a Silo block up to fifteen times, and tame as many ants as desired to that location. Thankfully Zombie Ants also occasionally drop the required Ant Pheremones, so there is no reason to kill the passive ants, especially as they cannot be bred.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:antTamingAmulet"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Milk that Honey",
+          "longDescription": "One does not require a home location to tame Honeypot Ants, just a Nectar Collector to safely milk them. A tame Honeypot will accept Sugar, digesting it 1:1 into Nectar.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:nectarCollector"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Fancy Digs",
+          "longDescription": "The Silo required to home worker ants is certainly an expensive proposition, five Varnished Wood, nine Petrified Wood planks, and 22 iron.  Construct them as a three stack in the centre of your desired field, and add piping to taste.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:siloRoof"
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:siloTank"
+              }
+            },
+            {
+              "item": {
+                "id": "erebus:siloSupports"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Pl-Ant-er",
+          "longDescription": "Give an Ant a Hoe and it\u0027ll both till soil and plant the specific seed type it is given, provided there was some in the Silo for it to fetch.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stone_hoe"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Fertilit-Ant",
+          "longDescription": "If desired, an Ant can be set to use bonemeal on juvenile crops by handing it a Bone as tool and Bone Meal as the filter. ",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bone"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:dye",
+                "damage": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Harvest Ant",
+          "longDescription": "Give an Ant iron Shears so it\u0027ll break every full-grown crop around. Just like the harvest golem, it doesn\u0027t pick anything up. Thankfully, this one also doesn\u0027t need a filter object.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:shears"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Collect-Ant",
+          "longDescription": "The final type of worker Ant isn\u0027t specific to farming. With an iron Bucket as tool, this ant will pick up whatever the filter item is and deposit them in the Silo. Only the one item type though, so you\u0027ll at least need one for the seeds and a second for the crop.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bucket"
+              }
+            }
+          ]
+        }
+      ],
+	  "repeat": {
+	    "type": "TIME",
+		"days": 32,
+		"hours": 0
+	  },
+      "reward": [
+        {
+          "id": "erebus:monsterPlacer",
+          "damage": 41,
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "Catch in Amber",
+      "description": "This safari net alternative creates decorative blocks during transport that one might just want to keep around. Naturally the ammunition it uses is difficult to come by, and non-renewable.",
+      "x": 150,
+      "y": 130,
+      "icon": {
+        "id": "erebus:materials",
+        "damage": 42
+      },
+      "prerequisites": [
+        "Crawl with the Creepies"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "So Much Amber",
+          "longDescription": "The distinctive sallow gold translucency of amber occurs in large veins here. While it can be processed similarly to other amber, Erebus Amber has many more decorative uses.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:amber"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "An Old Inclusion",
+          "longDescription": "Sometimes, deep inside an Amber deposit one will find preserved things. Best of all is the Wand of Preservation, which naturally allows one to put creatures in amber.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:wand_of_preservation"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Ready-to-Liquify Amber",
+          "longDescription": "Now to make the ammunition for this wand, one will need to combine baked Amber Glass with Balsam tree Sap.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:materials",
+                "damage": 42
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Jewelry to Order",
+          "longDescription": "Use the Wand of Preservation to fling an Amber Star, preferably onto a creature you wish to transport. A silk touching pickaxe is required, otherwise you\u0027ll just let it back out.",
+          "items": [
+            {
+              "item": {
+                "id": "erebus:preservedBlock"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

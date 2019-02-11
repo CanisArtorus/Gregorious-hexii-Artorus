@@ -1,0 +1,1278 @@
+{
+  "name": "Chemical Era",
+  "description": "Your mastery of Fire and heat provides no further benefit to industrial progress. It is time to master the other Elements - perform Chemistry to discover new materials with greater applications. In time, your energized Water and Air will transform the Earth in those ores into more and novel materials to explore and exploit.",
+  "quests": [
+	{
+	  "name": "Without Blemish",
+	  "description": "The Art of Chemistry cannot be done in a dirty space. One must first craft a container that will not itself react with the substances of interest. It\u0027s a bit of a stretch of imagination, but Stainless Steel is a good game-y choice for that material. \n It also makes a gas-tight, acid-safe, medium-temperature Tank and Drum larger than the Wooden Tank or Barrel. This Bathing Pot will hold some molten metals (the steel can melt), and is acid-safe like the Measuring Pot (beaker) upgrade.",
+	  "x": 50,
+	  "y": 100,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 32708
+	  },
+	  "bigicon": true,
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Stainless",
+		  "longDescription": "As NEI displays, mix Wrought Iron (any iron will be wrought by the alloying temperature anyway) with Invar, Chromium, and Manganese. The Invar must be pre-mixed to avoid NiChrome forming. Sourcing these new doping elements is the challenge: Cr can be smelt directly from the ore Chromite, or recovered from overclocked centrifuging Sluice Juice; Mn for the time being only smelts from the ore Pyrolusite. Be hopeful some of these materials will have washed off as by-products of your existing ores, such as Hematite.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 8636
+			  },
+			  "precision": "ORE_DICTIONARY",
+			  "required": 5
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32708
+		}
+	  ]
+	},
+	{
+	  "name": "Blending",
+	  "description": "Now that we have a material that won\u0027t contaminate recipes, that is also strong, we can build a machine that proceeds to ignore all material limits about what is inside it. The Mixer machines have no limit on their content\u0027s temperature, are acid-safe, gas-tight, RU-powered upgrades / replacements to the ceramic Mixing Bowl.",
+	  "x": 150,
+	  "y": 100,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20181
+	  },
+	  "prerequisites": [
+	    "Without Blemish",
+		"{Dawn of Industry}[Turbine Be Mine]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Mixing Acids and Gasses",
+		  "longDescription": "You can already make a tier 2 Steel Mixer, or just use a tier 1 Bronze Mixer. Note that many metals can be alloyed in the molten state by Mixing Recipes, so this machine is extremely versatile. Expect to make a lot of them, not just several.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.rotor",
+				"damage": 8636
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 8636
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26165,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "Swapping Up",
+	  "description": "These four machines are independantly interesting, rather than being properly necessary steps to progression. A Generifier to reduce things to ore dictionary simplicity. A Fermenter to control brewing and composting. The Debarkers to improve lumber production. And the Distilleries to brew potions, some of which are alcoholic.",
+	  "x": 25,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20191
+	  },
+	  "prerequisites": [
+	    "Without Blemish"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Clean",
+		  "longDescription": "De-barking Logs into Beams not only recovers the bark shavings, each Beam saws into six or more planks and some sawdust. Naturally this requires RU from a turbine or motor. \n The Generifier is like unto a oredictionifier you may have come across elsewhere. However, the recipes for the Generifier are fixed by GregAPI reading the pack ore dictionary and modlist; meaning that anything can be made into the most generic form, but only select few things can be transformed from the generic form into specific alternates. Notably, IE Plant Oil is interchangable with Seed Oil - while every other nut or seed oil can only be transformed to typeless seed oil. This is helpful for getting common typeless Wood, Iron, Steel, Juice, Wine, Concrete, etc. when using production methods from another mod. While it may technically be a time consuming machine, the Generifier consumes or produces an entire stack or bucket per tick.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 22001
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Vintage",
+		  "longDescription": "The Fermenter operates on pure Time, making alcohol and other yeasty goodness. But, unlike a sealed Barrel or Drum, it only ever goes a single step, and it is capable of admixing a solid into the recipe. Thus, biomass digestion and glycerol production (the precursor to dynamite). \n A Distilley machine requires heat, and performs potion brewing much like a common Brewing Stand would, along with the production of distilled spirits. Note that many such products make for tolerable liquid fuel.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 22003
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "rewardchoice": [
+	    {
+		  "id": "gregtech:gt.multiitem.bottles",
+		  "damage": 602,
+		  "amount": 2
+		},
+		{
+		  "id": "gregtech:gt.multiitem.bottles",
+		  "damage": 402,
+		  "amount": 2
+		},
+		{
+		  "id": "minecraft:potion",
+		  "damage": 8193,
+		  "amount": 2
+		},
+		{
+		  "id": "minecraft:potion",
+		  "damage": 16456
+		},
+		{
+		  "id": "gregtech:gt.block.beam.b",
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Vitriolic",
+	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is required to make two of the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, alas it will take a MV Electrolyzer to process the various colours of mineralized vitriol - most of which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam. \n Carbonizing Sugar is a great renewable source of pure Carbon for your Steel-producing (and other oxide reductive smelting) efforts.",
+	  "x": 125,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.meta.chemtube",
+		"damage": 9824
+	  },
+	  "prerequisites": [
+	    "Blending"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Fuming Vitriol",
+		  "longDescription": "The final step is to Mix SO_3 gas into Water. \n If you have some Black Sand to centrifuge into Vanadium Pentoxide, or have a Platinum dust lying about, either will catalyze the mixture of SO_2 and O_2 gases. You can just use breathable Air for that Oxygen; the sulfurous fumes come from Roasting. \n Alternately, use a tier 2 Steel Centrifuge on Gypsum to get calcium sulphate, which can be mixed with glass or Flint dust (mortared from the scrap of your original tools) to release some SO_3 without a catalyst.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1022
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 8274,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Acid Gas",
+	  "description": "Since Hydrochloric Acid is naturally a gas, the Bath machine must be used to bathe ores in it. Note that only the nine ores with Manganese as a by-product can be Refined this way; HCl bathing is also a step in processing some tungstic oxide ores as dust. \n The Chlorine Gas released by Manganese ore refining is itself useful to un-dye anything bathed in it (and to refine titanium).",
+	  "x": 175,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.meta.chemtube",
+		"damage": 9826
+	  },
+	  "prerequisites": [
+	    "Blending",
+		"{Dawn of Industry}[Down the Sluice!]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Sulfuric Salt",
+		  "longDescription": "Either mix Salt (either NaCl or KCl) in Sulphuric Acid, or mix both oxygen and SO_2 with sodium Salt in over-saturated Salt Water.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 22002
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 8031,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Royal Water",
+	  "description": "A mixture of Nitric Acid and Hydrochloric Acid, Aqua Regia is used strictly for ore processing - it produces additional chances at the Platinum Group Sludge by-product from purified ores that might contain it. The sludge is then overclock centrifuged into approximately equal parts of all six platinum group metals: Ruthenium, Rhodium, Palladium, Platinum, Osmium, and Iridium. The Chloroplatinic Acid also produced by this process requires MV electrolysis to decompose, into more Platinum and other elements sufficient to re-constitute the Aqua Regia cyclically. \n\n It can also be used on purified Copper, Gold, Tin, and/or Cassiterite to get other chloro-acids and additional by-products.",
+	  "x": 150,
+	  "y": 40,
+	  "icon": {
+	    "id": "gregtech:gt.meta.chemtube",
+		"damage": 9827
+	  },
+	  "prerequisites": [
+	    "Vitriolic",
+		"Acid Gas"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Nitric Nitre",
+		  "longDescription": "Nitric Acid produciton is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 8205
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Valuable Sludge",
+		  "longDescription": "Wash some ores containing Platinum, or it\u0027s siblings.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.crushedCentrifugedTiny",
+				"damage": 8103
+			  },
+			  "required": 9
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 770
+		},
+		{
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 780
+		}
+	  ]
+	},
+	{
+	  "name": "Titanic",
+	  "description": "Titanium, the Tier 3 metal for both heat and mechanical machinery. \n Note that smelting is simply insufficient to liberate useable Titanium from its ores, time to start building dedicated ore processing machine chains.",
+	  "x": 225,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.meta.ingot",
+		"damage": 220
+	  },
+	  "prerequisites": [
+		"Acid Gas"
+	  ],
+	  "tasks": [
+		{
+		  "type": "CRAFT",
+		  "description": "Stir in Flames",
+		  "longDescription": "Central to Titanium refining, the Burner Mixers involve stirring while the contents are lit on fire. This machine in fact requires Invar and not Stainless Steel at its core. NEI is clear on what must be added to the Ilmenite or Rutile in this machine, though I must mention that liquid calcium carbonate is something you have already made - in the crucible when fluxing Hematite to Iron by melting down limestone or marble. Gently dip a measuring beaker, pot, or medium-temperature Capsule-Cell-Container in the molten crucible to extract the liquid, or preferably pour it into a Mixing Bowl under the Faucet first to normalize its temperature. \n I specify the steel version, as that will be required to make Refined Metal for Steve\u0027s Carts 2.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20522
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Akali Earth",
+		  "longDescription": "The elemental Sodium or Magnesium to sprinkle on the Titanium Chloride in a Bath can also be produced in a Burner Mixer, from a process involving yet more molten carbonate. A reminder, the Crucible is entirely capable of melting any solid with a liquid form.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 220
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 20521
+		}
+	  ]
+	},
+	{
+	  "name": "Steamed",
+	  "description": "The Autoclave machine block requires an input only of Steam and Time. It will be helpful for applied energistics, but first it is an essential part in the torturous Bauxite ore processing chain.",
+	  "x": 75,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 22004
+	  },
+	  "prerequisites": [
+	    "Without Blemish"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Quartz Crystal Growth Chamber",
+		  "longDescription": "No need for the AE2 puddle, this machine both grows the pure seeds and can re-constitute quartz-like gems from their dusts - to a selected quality!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 22004
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.gemLegendary",
+		  "damage": 8313
+		}
+	  ]
+	},
+	{
+	  "name": "Coagulation",
+	  "description": "Sometimes things just need to congeal. This is the machine to contain the slowly solidfying goo in. \n Most importantly, this is how one turns the latex extracted from resin or slime into proper Rubber.",
+	  "x": 25,
+	  "y": 130,
+	  "icon": {
+	    "id": "gregtech:gt.meta.nugget",
+		"damage": 8217
+	  },
+	  "bigicon": true,
+	  "prerequisites": [
+	    "Without Blemish"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Goo Here!",
+		  "longDescription": "Build the Coagulator, a pure Time machine block, from a pile of Stainless Steel. Then start pouring some Latex into it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 22000
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Bouncy",
+		  "longDescription": "At long last, Rubber! With this immensely pliable insulating material many things become possible. \n Rubber is too bouncy to work solid like a metal, and a whole third burns off whenever melting it; thus it is best to manuipulate rubber in a Steel low-heat Extruder. Obviously, curved rubber sheets don\u0027t exist as a seperate item.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 8217
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.plate",
+		  "damage": 8217,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Simple Fractions",
+	  "description": "Time for those grand Tanks to be used. The Oil Distillation Tower splits most varieties of Oil into two gases (Propane and Butane), five liquids (Lubricant, Petrol, Fuel Oil / gasoline, Diesel, and Kerosene), and a blend of three solids (Asphalt, Plastic, and Parrafin Wax). All seven fluids have dedicated output hatches, in order of condensation temperatures, above the item output hatch. Input the Oil into any of the other 11 faces on the base ring of the Tower Parts and controller, while supplying a total of 64 to 256 HU/t via the bottom of the nine Heat Acceptors. \n Many of the liquid fractions, and both gasses, are fuels; it is thus possible to make the distillation tower self-sustaining. While one may need a Bucket or Generifier, the GT Lubricant is easy to use as RoC lubricant, and GT machine recipes requiring Lubricant generally accept the RoC version natively.",
+	  "x": 75,
+	  "y": 130,
+	  "icon": {
+	    "id": "gregtech:gt.meta.chemtube",
+		"damage": 9850
+	  },
+	  "prerequisites": [
+	    "Without Blemish"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Tower of Juice",
+		  "longDescription": "The front of this multiblock is only for the GUI, it\u0027s the back one really cares about. Also, the 3 by 9 cylinder is hollow, a heat acceptor and a tower part cap the ends.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18101
+			  },
+			  "required": 9
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18102
+			  },
+			  "required": 64
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17101
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Plastics!",
+		  "longDescription": "All three solids are output from the bottom port, so this is a good place to use Quadruple Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Like Rubber, Plastic burns when melted, loosing a third of the material each time; it also shapes well in a Steel low-heat Extruder.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 8218
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.plate",
+		  "damage": 8218,
+		  "amount": 2
+		},
+		{
+		  "id": "gregtech:gt.meta.plateCurved",
+		  "damage": 8218
+		}
+	  ]
+	},
+	{
+	  "name": "Encouraging Motion",
+	  "description": "Don\u0027t let the Electric in their names fool you, Compact Pumps and Conveyors are only made of the same tiering materials as electric machines, they don\u0027t actually require energy to run. You can already make UltraLowVoltage versions, and may be able to make LowVoltage versions also, of these as well as the Motor and Piston crafting components. Although you do have the materials for HV tier in general, you do not have the ability to magnetize steel just yet.",
+	  "x": 15,
+	  "y": 112,
+	  "icon": {
+	    "id": "gregtech:gt.multiitem.technological",
+		"damage": 12040
+	  },
+	  "prerequisites": [
+	    "Coagulation"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Magnetization",
+		  "longDescription": "The first Magnetic Rod is a challenge. Use NEI to discover how to magnetize Iron without a polarizer.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.stickLong",
+				"damage": 8645
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Motor",
+		  "longDescription": "Even though they don\u0027t actually consume EU, most automated motion devices have this properly constructed electromagnetic brush motor as a component.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 12000
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Pumped Pipes",
+		  "longDescription": "It may not like like a Cover in inventory, but the Compact Pump series of items can be placed as a Cover on any fluid Pipe from GregTech. By default they will suck the fluid out of the tank they are pointing at and pull it into the pipe. A Screwdriver can reverse the flow direction to forcefully empty a pipe into the tank (which needn\u0027t, and often shouldn\u0027t, be a connected direction). \n It might be an idea to use a Pressure Valve on pipes with forced inputs.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 12020
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Convey Items",
+		  "longDescription": "The Compact Conveyor looks even less like a Cover, but acts identically to the Compact Pump when used to Cover an Item Pipe from GregTech.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 12040
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 25002,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Wolf Ram I Am at Heart",
+	  "description": "W. Tungsten. A famously strong material for high-temperature acid-safe applications. Little surprise it requires advanced chemistry to extract from the ore. \n Tungsten will make a good material for beakers, Tanks, Taps / Funnels, and Pipes, once you can actually work it.",
+	  "x": 200,
+	  "y": 100,
+	  "icon": {
+	    "id": "gregtech:gt.meta.gearGtSmall",
+		"damage": 740
+	  },
+	  "prerequisites": [
+	    "Blending"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Oxide Isolation",
+		  "longDescription": "Whether smetled directly from a few ores, dried from the acid-wash of many more ores, or centrigued as traces from exotic asteroids (Endstone), tungstic oxide WO_3 is where medieval methods end.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 8026
+			  },
+			  "required": 4
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Reduced to WolfRam and Water",
+		  "longDescription": "We, however, have access to pure Hydrogen Gas and the ability to reduce the oxide to pure metallic Tungsten. \n In case you\u0027re short, or used it for other things, mix some elemental sodium, potassium, or silicon with water; the lye by-product may be useful elsewhere.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 740
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:diamond",
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "Crock Pot",
+	  "description": "An early step, but a very long one, in the production of electronic devices is the production of conrolled semi-conductor wafers. Elemental Silicon is a good material, alloying it with Redstone seems to be even better. Naturally, letting the boule grow from seed dust in liquid must be done with a non-reactive atmosphere; a noble gas, Helium, Neon, Argon, etc., is the best way to keep all the other gases from leaking in and contaminating the material. Like finding the minerals in Sluice Juice, getting the specific gasses out of Air is a perfect 64 RU/t Centrifuge recipe.",
+	  "x": 200,
+	  "y": 136,
+	  "icon": {
+	    "id": "gregtech:gt.meta.boule",
+		"damage": 140
+	  },
+	  "prerequisites": [
+	    "{Dawn of Industry}[Down the Sluice!]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Absolutely Pure",
+		  "longDescription": "To grow semiconductor wafers, one needs a surface that is both a good catalyst and never going to leech into the material. Iridium fits that role nicely, even better than platinum.\n This crucible can also be used in the temperature progression.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1039
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Wait, how long?!",
+		  "longDescription": "Organized atomic matricies cannot be rushed. It takes a full real Hour to cook each Boule. Make sure the heat source has enough fuel, and ash / smoke removal, to last three days straight.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.boule"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.plateGem",
+		  "damage": 140
+		}
+	  ]
+	},
+	{
+	  "name": "Extra Crispy",
+	  "description": "That Ceramic Crucible had to get replaced eventually; there are a good number of materials with melting and alloying temperatures above 2500K. One will need to make a Crucible, and enough molds, from a material that one is currently capable of working that will have a higher failure temperatue and thus be able to work other materials, and so on. \n The use of foreign \"magic\" processes can create soild ingots of materials that can be worked cold, with hand tools like in the Stone Age that can by-pass some steps of this ladder. \n These Crucibles do not have higher minimum HU/t tiers, 16 will still do, but reaching such high temperatures slowly can test one\u0027s patience.",
+	  "x": 190,
+	  "y": 118,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20241
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Metal Smelting]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Better than Ceramics",
+		  "longDescription": "As I write this, the initial options for a better Crucible than Ceramic are, in order: Chromium, Meteoric Steel, Thaumium, and Niobium-Titanium alloy. All of them can (if not safely) melt and cast Iridium, some can also do other materials to be mentioned in the next section. You will need to keep the Iridium Crucible for other uses. \n Fiery Steel, Void Metal, and bedrock-steel alloy can be made into ingots directly, while also being valid materials for a GregTech Crucible.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 770
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Iridi-good",
+		  "longDescription": "Climbing the thermometer further: Iridium, Niobium, and Molybdenum can all melt and cast Osmium, and be themselves worked some of the crucibles from the previous list.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 760
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Toungue Stan",
+		  "longDescription": "Almost there. Void Metal, Tantalum, and Osmium can all melt and cast Tungsten, while being shaped themselves even in an Iridium forge. \n Fiery Steel can only be melted in these crucibles, even though it can be worked as steel before conversion in the medium-temperature Bath, but cannot survive molten Tungsten. Bedrock-HSLA steel Alloy could be worked solid, like Void Metal, skipping directly to Tungsten, or worked in a Ta or Os crucible.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 740
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Time to Smelt",
+		  "longDescription": "All the Smelter machines have a Tungsten Crucible at thier core. There may yet be a few alloying recipes that do not work in the Mixer with molten materials, so keeping this other Crucible around can be helpful. Only one mold is really needed though, since the Extruder can manipulate any material if it is of a high enough tier. Molds will cast when given molten output from the smelter machine, if one chooses that route; any pipe must have the ability to completely fill the mold, they do not have partial fill-states like the other smeltery mod.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 1024
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 1024
+		}
+	  ]
+	},
+	{
+	  "name": "Carbide",
+	  "description": "Tungsten itself is not a tiering material, but two of its alloys Tungsten Carbide and TungstenSteel are the Tier 4 construction materials for heat and mechanical machines, respectively. Creating these alloys requires molten Tungsten, hence the need for a crucible over 3700K.",
+	  "x": 225,
+	  "y": 118,
+	  "icon": {
+	    "id": "gregtech:gt.meta.ingot",
+		"damage": 8638
+	  },
+	  "bigicon": true,
+	  "prerequisites": [
+	    "Wolf Ram I Am at Heart",
+		"Extra Crispy"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "High-Temperature Alloy",
+		  "longDescription": "WC is also the key material for relaxing the low-temperature restriction on your extruder.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 8638
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.plate",
+		  "damage": 8635
+		}
+	  ]
+	},
+	{
+	  "name": "Re-Shaping",
+	  "description": "Now that one has Tunsten Carbide, double that plate to make new Extruder Shapes that can handle all the high-temperature materials without failure. Also, build any higher tier Extruder to use them from yet more Carbide plates.",
+	  "x": 250,
+	  "y": 100,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20202
+	  },
+	  "prerequisites": [
+	    "{Dawn of Industry}[Extrusion]",
+		"Carbide"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Needs better Forms",
+		  "longDescription": "A fully prepared factory may not have a full set of these, but it will have a lot of them.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 10000
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 10000
+		}
+	  ]
+	},
+	{
+	  "name": "5x5 has no Pipes",
+	  "description": "Now for a strongly isolated branch: NuclearCraft. Obviously home to vast quantities of RF (or steam) from nuclear reactors, NC also has two processing machines that deserve mention beyond radioactive isotopes. The portable ender chest (vanilla) is also nice. \n This bud is formed of special Tough Alloy and Universal Reactant, and a 5x5 crafting grid.",
+	  "x": 150,
+	  "y": 130,
+	  "icon": {
+	    "id": "NuclearCraft:nuclearWorkspace"
+	  },
+	  "prerequisites": [
+	    "Blending"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Preparations",
+		  "longDescription": "I require that you use a Tier 2 Steel Mixer to make Tough Alloy, rather than shapelessly, to delay it to this point in the progression. None of these materials are challenging to obtain otherwise.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:material",
+				"damage": 7
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:parts",
+				"damage": 4
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:parts",
+				"damage": 0
+			  },
+			  "required": 3
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Heavy Crafting Ho!",
+		  "longDescription": "Thus, here is your new over-sized crafting grid. It will be required to make all the NC things until you have an Assembler (NC) running.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:nuclearWorkspace"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "NuclearCraft:parts",
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Compact Machine Crafts",
+	  "description": "These crafting machines require an RF supply; use one from another mod or build a Weak RadioThermal Generator from U238, if you have managed to isolate some. Together they form the parts and machines factory for NC. \n A manufactory however also doubles quite a few ores directly to ingots or gems.",
+	  "x": 150,
+	  "y": 160,
+	  "icon": {
+	    "id": "NuclearCraft:machineBlockNC"
+	  },
+	  "prerequisites": [
+	    "5x5 has no Pipes",
+		"{Dawn of Industry}[Early Game RF]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Makes more than Parts",
+		  "longDescription": "The Manufactory is like a single block parts factory, at least for all the NC shaped pieces. Some pure ores can be doubled to ingots here too.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:factoryIdle"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Limited Autocrafting",
+		  "longDescription": "This Assembler finally auto-crafts most of the 5x5 recipes, as a four input list. The Mechanical Component may have started as an abstraction layer to fit some recipes into such a small ingredient list, but it now serves as an important component of RF generators that can only be made in the Assembler (NC).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:assemblerIdle"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "NuclearCraft:parts",
+		  "damage": 19,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Alternate RF Supply",
+	  "description": "NC is good for RF power supply even without the nuclear reactors. Solar, radio-thermal, and steam power ahead!",
+	  "x": 175,
+	  "y": 190,
+	  "icon": {
+	    "id": "NuclearCraft:RTG"
+	  },
+	  "prerequisites": [
+	    "Compact Machine Crafts"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Itty-Bitty Infinity",
+		  "longDescription": "Radio-Thermal Generators will provide a steady stream of RF for ever (while chunkloaded), without any further fuel input. The Weak RTG is easy to make, and pitiful; artificial isotopes can make much better RTGs. \n This can be made directly in the Heavy Duty Workspace.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:WRTG"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Solar Power (NC)",
+		  "longDescription": "This isn\u0027t EnvironmentalTech, solar power per block is small, and depends on sunny days. \n This requires parts from the Manufactory.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:solarPanel"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Steamy RF Direct",
+		  "longDescription": "Operating on fluid Steam from any source, the NC Steam Generator produces variable RF depending on how much steam is put in each tick. \n These require parts from the Assembler (NC).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:steamGenerator"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:metalDevice",
+		  "damage": 2,
+		  "amount": 6
+		},
+		{
+		  "id": "ImmersiveEngineering:coil",
+		  "damage": 1,
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Nuculeer Machinery",
+	  "description": "It takes a lot of specialty parts from the Manufactory to build a Machine Base; NC\u0027s version of casing or chassis. Initially, one will want an Isotope Separator to enrich Th, U, and Pu processed from ores. \n An Oxidiser, fed by an Electrolyzer, can make your fuels burn hotter. ",
+	  "x": 100,
+	  "y": 160,
+	  "icon": {
+	    "id": "NuclearCraft:separatorActive"
+	  },
+	  "prerequisites": [
+	    "Compact Machine Crafts"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Fuel Extraction",
+		  "longDescription": "Enrich that Uranium!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:material",
+				"damage": 26
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "NuclearCraft:fuel",
+		  "damage": 33
+		}
+	  ]
+	},
+	{
+	  "name": "Atomic POWER!",
+	  "description": "Full 3D, but no neutron flux; the NC fission reactors are very different to build from RoC, BR, or IC2 fission reactors. Due to the coolers having double effect under certain conditions, stacking a 2D representation will not scale well in general. Due to the square-cube relationship, designing an optimal medium size NC reactor is outrageously more complex than optimizing the maximum size of RoC, IC2, or BR reactor. \n The casing does not require edges or corners, and the controller only works when facing outwards in an edge position. \n Always check your specific fuel\u0027s heat and power in the tooltip before operating the reactor.",
+	  "x": 75,
+	  "y": 190,
+	  "icon": {
+	    "id": "NuclearCraft:fissionReactorGraphiteIdle"
+	  },
+	  "prerequisites": [
+	    "Nuculeer Machinery"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "A Puzzler",
+		  "longDescription": "Reactor internal design is a great in-depth topic. While searching the external resources, be aware that NC 1.9 for 1.7.10 has different cooler mechanics than modern NC 2.7 / 2.10; tooltips are your local resource.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:reactorBlock"
+			  },
+			  "required": 6
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:fissionReactorGraphiteIdle"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:cellBlock"
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Atomise Steam",
+	  "description": "Upgrade that Fission reactor Controller to a Steam Fission reactor Controller; fluid Steam is the same for GregTech, Railcraft, Immersive Engineering, Forestry, Buildcraft, RotaryCraft, and NuclearCraft. However, if you have a powerful recator, NC will output Dense or Superdense Steam instead; this ensures a 2B/t pipe will be sufficient, and requires Steam Decompressor machines to convert into normal Steam that generators can use. The water is created by an internal infinite source, so no need to worry about active cooling.",
+	  "x": 50,
+	  "y": 190,
+	  "icon": {
+	    "id": "NuclearCraft:parts",
+		"damage": 7
+	  },
+	  "prerequisites": [
+	    "Atomic POWER!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Compatible Power",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:fissionReactorSteamIdle"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 26084,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Climb the Isotope Path",
+	  "description": "Choose some fuels for power generation, and others for breeding potential. But always be aware of the heat prodction from each fuel mixture. \n The Deacy Hastener can further refine the outputs of the Reprocessing of Depleted Fuel rods.",
+	  "x": 60,
+	  "y": 170,
+	  "icon": {
+	    "id": "NuclearCraft:fuel",
+		"damage": 139
+	  },
+	  "prerequisites": [
+	    "Atomic POWER!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Re-Process",
+		  "longDescription": "This Reproccessing Plant converts extracts the usable isotopes from spent fuel rods. Often, this includes a small amount of something more useful than the fuel was made from; frequently it also includes a portion of un-spent fuel material.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:recyclerIdle"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "HEU235",
+		  "longDescription": "Only heavily enriched Uranium 235 can produce the Plutonium 242 used as the base matrix for pure Plutonium fuels. Oxidation mostly matters for power output.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:fuel",
+				"damage": 1
+			  }
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:fuel",
+				"damage": 23
+			  }
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:material",
+				"damage": 34
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Pu239",
+		  "longDescription": "Enriching the Pu 242 with Pu 239 (to either extent) is the first way to source the Americium 243 basis for the next tier of fuel.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:material",
+				"damage": 100
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Curie",
+		  "longDescription": "Either lightly enriched Am 242 or heavily enriched Pu 241 will make the Curium basis isotope 246 when depleated and reprocessed. \n The choices continue with lightly enriching Cm 245 or heavily enriching Cm 247 to breed the pinacle of both NC and Madame Curie\u0027s carreer : Californium 250.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:material",
+				"damage": 122
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Everlasting Power",
+		  "longDescription": "Cf 250 is the best thing NC has to offer for power generation. Each full lump of the stuff can be housed as a Californium RTG to produce a grand 500 RF/t forevermore.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:CfRTG"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "SGCraft:naquadah"
+		}
+	  ]
+	},
+	{
+	  "name": "RF Fusion",
+	  "description": "A very square, solidly encased, Tokamak variation is chosen by NC for the Fusion Reactor. Two fuels enter, four of six products leave. \n Each and every Electromagnet consumes 100 RF/t to be plasma-solid (aka not explode when active); the core requires high RF power input to reach an enormous reaction temperature. But once at or above the particular temperature, and with room in the output slots, the core emits a massive stream of power for a modest and constant stream of fuel.",
+	  "x": 100,
+	  "y": 130,
+	  "icon": {
+	    "id": "NuclearCraft:fusionReactor"
+	  },
+	  "prerequisites": [
+	    "Nuculeer Machinery"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Electrolysis (NC)",
+		  "longDescription": "More than just Oxygen, water is the best source of Hydrogen for Fusion reactors. \n If you have some Fission infrastructure, get Th 230 and Collect some Helium. \n Also consider using a Neutron Irradiator to upgrade some fusion fuels.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:electrolyserIdle"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Size 1",
+		  "longDescription": "Even for the minimum scale fusion square ring, it\u0027s a lot of materials and maintenance RF drain. Once again, no edges or corners needed, but the Electromagnets must fully enclose the continuous square ring of plasma centred on the Reactor Core; Fusion Connectors can be placed as spokes on the cardinal axes for larger rings.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:fusionReactor"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:electromagnetIdle"
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 77
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:fuel",
+				"damage": 36
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "NuclearCraft:fuel",
+		  "damage": 47
+		}
+	  ]
+	},
+	{
+	  "name": "Eat Death",
+	  "description": "The Pistol can only fire Depleted Uranium Bullets, but it sure packs a whallop. \n\n Compare and Contrast the IE Revolver or Railgun, RoC GravelGun or Fire Charge Launcher, PneumaticCraft minigun, TC combat Wand Foci, and AM combat spell options in a tweleve page essay please. References to Botania Mana Blaster and Rods, Blood Magic procedural Spells, Witchery Infused Gestures, Tech Guns everything, Thaumic Bases Revolver, and MFR hand cannon will be awarded or penalized on merit.",
+	  "x": 125,
+	  "y": 190,
+	  "icon": {
+	    "id": "NuclearCraft:pistol"
+	  },
+	  "prerequisites": [
+	    "Nuculeer Machinery"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Firearms",
+		  "longDescription": "You\u0027ve probably found these on Creepers or other monsters already, but these bullets are good for killing.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "NuclearCraft:pistol"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "NuclearCraft:dUBullet"
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "HardcoreQuesting:hearts",
+		  "damage": 3
+		}
+	  ]
+	}
+  ],
+  "reputationBar": []
+}

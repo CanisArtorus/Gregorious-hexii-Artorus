@@ -1,0 +1,2769 @@
+{
+  "name": "Rotational Engineering",
+  "description": "The Manual Is Your Friend! So read it! These quest are put together with the idea that you are willing or have read through the in game guide. When you do these quest there are times where you will have to refer back to it and figure things out. Some of these quest will give u an item list, to make something work you have to figure out how to connect everything! \n\n Like a Fig, this part of the techtree can grow it\u0027s own roots and support the canopy.",
+  "quests": [
+	{
+	  "name": "Heart of the Dragon",
+	  "description": "Heat this sucka up! This require heat along with required items to work (sand, coal, gunpowder) in order to turn iron into HSLA. You will need A TON OF HSLA ALOT OF IT A MEGATON OF IT. YOU MUST LIVE BREATHE AND SLEEP IRON!",
+	  "x": 15,
+	  "y": 95,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 45
+	  },
+	  "prerequisites": [
+	    "{It Really is a Whole New Game}[Gleaning and Foraging]",
+		"{It Really is a Whole New Game}[Ferrous Metal Domination]",
+		"{It Really is a Whole New Game}[Mind the Splinters]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Cooking with primordial fire",
+		  "longDescription": "Ways to heat it up early game; take it to the nether, in the overworld biome temp plays a small part. So taking it to a desert biome and placing lava underneath, and netherrack +fire on each side of it should get it going for you!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 45
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "The RoC screwdriver",
+		  "longDescription": "The screwdriver can be used on RoC machines. For example click on a shaft or gear will orient it. And Shift +Click on gears will change it from torque to speed!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_screwdriver"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:gunpowder",
+		  "amount": 32
+		},
+		{
+		  "id": "magicalcrops:magicalcrops_CreeperSeeds",
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Worktable",
+	  "description": "This table is normally required to craft all Rotarycraft machines. But in this modpack the option to craft machines in crafting tables is enabled. It will still be required to install windsprings and a few upgrades.",
+	  "x": 60,
+	  "y": 60,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 75
+	  },
+	  "prerequisites": [
+	     "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "A heavy crafting bench",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 75
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 64
+		},
+		{
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32713,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "WoodCutter",
+	  "description": "Single tree farm, plus you can enchant it. It can be powered by a steam engine with a 2:1 wooden gear. Remember wooden gears do not require lube but instead needs a cooling fin to prevent it from overheating. Read the book more on gears!",
+	  "x": 16,
+	  "y": 34,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 32
+	  },
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Blades in place",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 32
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_gearbox",
+				"damage": 0
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 74
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "Fermenting!",
+	  "description": "Ethanol! Place down the Fermenters and read the gui connected to the in game guide! (obviously I\u0027m getting tired of typing)",
+	  "x": 60,
+	  "y": 85,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_ethanol"
+	  },	  
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Rotarycraft has a sweet tooth! Start a Sugarcane farm!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:sugar"
+			  },
+			  "required": 32
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "And mere dc engines required.",
+		  "longDescription": "One to isolate Yeast, T\u0027other ferments ethanol fuel.",
+		  "items": [
+		    {
+			  "item": {
+			    "id":"RotaryCraft:rotarycraft_item_machine",
+				"damage": 7
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 0
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:lever"
+			  },
+			  "required": 3
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Warm, not hot",
+		  "longDescription": "The operational speed of Fermenters peaks at optimal temperatures, deviation in either direction can kill the process.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_ethanol"
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "magicalcrops:magicalcrops_NatureSeeds",
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Sourcing Water (RoC)",
+	  "description": "The Rotarycraft Pump is useful for supplying water to various machines. It\u0027s best to place the pump over a 3x3 pool of water. The pump also must be powered.",
+	  "x": 60,
+	  "y": 122,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 16
+	  },
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type":"CRAFT",
+		  "description": "Many parts",
+		  "longDescription": "Junctioning two dc engines should be more than enough to operate a Pump. Using the tools you previously crafted and the items listed here, power the pump and connect liquid pipes to it!\nNote: There are other methods of generating water within this pack to provide to machines; but this is the Rotarycraft way! Also there are different ways to get the pump going.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 16
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 0
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 6
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 17
+			  },
+			  "required": 8
+			},
+			{
+			  "item" : {
+			    "id": "RotaryCraft:rotarycraft_item_shaft",
+				"damage": 2
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 32
+		}
+	  ]
+	},
+	{
+	  "name": "Lubrication",
+	  "description": "This lube really helps grind your gears! It\u0027s needed to prevent gear boxes under bedrock from taking damage and lowering their efficiency. \n The Grinder is the preferred method of extracting it from canola. This machine also triples ores and is useful for some other tasks, including as a mob farm kill solution. \n\n Any gear below diamond will consume lube while in use. So if you can afford it always use diamond gear box as they only require a bucket of lube and don\u0027t consume it while in use. Go set up a canola farm to produce a lot. Read the guide book for efficiency tips.",
+	  "x": 85,
+	  "y": 125,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_bucket",
+		"damage": 0
+	  },
+	  "prerequisites": [
+	    "Sourcing Water (RoC)"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Grind it Into Dust!",
+		  "longDescription": "The steam engine needs a source of water from the back, and heat below. Lit netherrack works great in most biomes. It will immediately explode if used in the nether, and may operate without fire near the world floor.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 11
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 2
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Torqued up",
+		  "longDescription": "Some special information: The worm gear doesn\u0027t require lube which makes it the prefect gear to get the grinder running early game but not the fastest. Read the book to find out more informations on gears!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_advgear",
+				"damage": 0
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 74
+			  }
+			}
+		  ]
+		},
+  	    {
+		  "type": "DETECT",
+		  "description": "Canola!",
+		  "longDescription": "Used to make fun gel, you\u0027ll need buckets of it for what\u0027s coming...",
+		  "items": [
+		    {
+			  "item": {
+			    "id":"RotaryCraft:rotarycraft_item_canola"
+			  },
+			  "required": 32
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bucket",
+				"damage": 0
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Special pipes",
+		  "longDescription": "RoC machines strongly prefer to get Lube from this specific pipe type, which can carry nothing else. These open-topped tanks are also helpful -- they auto-emit downwards and can collect rainwater.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 13
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 18
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 20
+		},
+		{
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32713,
+		  "amount": 20
+		}
+	  ]
+	},
+	{
+	  "name": "(RoC) Centrifuge",
+	  "description": "This machine will help you get some useful items. As well as give you extra lube from your canola by-product, husks. It also gets more items out of Forestry-style bee combs.",
+	  "x": 127,
+	  "y": 145,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 125
+	  },
+	  "prerequisites": [
+	    "Lubrication"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Powered from below!?",
+		  "longDescription": "Early game power option: Steam Engine, a 8:1 Gearbox (I always suggest diamond but stone and above works) in speed mode. Don\u0027t forget a  Bevel Gear which is used to change the direction of power in this case sending it upwards into the centrifuge which can only accept power from the bottom!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 125
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 4
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_gearbox"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 8
+		},
+		{
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32713,
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Contained Volcanism",
+	  "description": "Generating lava. Then mixing it with water.",
+	  "x": 114,
+	  "y": 104,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 91
+	  },
+	  "prerequisites": [
+	    "Sourcing Water (RoC)"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Hot power",
+		  "longDescription": "This machine can be powered by two dc engines junctioned together. It consumes cobble, or preferably netherrack.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 91
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Stir from below",
+		  "longDescription": "2 steam engines, a 4:1 speed gear, and bevel gear to power this machine. Connect a source of water and lava to make obsidian, but don\u0027t leave lava in it by itself for too long.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 27
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 4
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 16
+		}
+	  ]
+	},
+	{
+	  "name": "Arrow Gun",
+	  "description": "The more power your give the faster it operates. It of course needs arrows. Plus you can enchant this with infinity among other things. Power it for simple base defence.",
+	  "x": 127,
+	  "y": 124,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 87
+	  },
+	  "prerequisites": [
+	    "Contained Volcanism"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Tower upgraded mi\u0027lord",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 87
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "magicalcrops:magicalcrops_ChickenSeeds",
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Lets Fly",
+	  "description": "The standard RoC jetpack allows for fueled flight, the mainstay flight for this pack in fact. \n\n There are a few upgrades you can tack on to it. But all upgrades must be applied to it within the worktable!",
+	  "x": 72,
+	  "y": 104,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_jetpack"
+	  },
+	  "prerequisites": [
+	    "Fermenting!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Flying on Moonshine",
+		  "longDescription": "Craft the standard RoC Jetpack. It runs on liquid ethanol, but jet fuel makes it faster. The filling station to recharge the internal tank runs on a dc engine.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_jetpack"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 101
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_ethanol",
+		  "amount": 64
+		},
+		{
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 32
+		}
+	  ]
+	},
+	{
+	  "name": "Frictive Heat",
+	  "description": "If you want to make creating HSLA more friendly indoors. The friction heater when powered by a machine will heat the blast furnace. A tip, when trying to gain a high temp always attempt to junction four of your top tier engines together i.e gas engines, performance engines, etc.",
+	  "x": 56,
+	  "y": 148,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 67
+	  },
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Heating brushes",
+		  "longDescription": "It can also be used to heat a vanilla furnace, both doing normal baking very fast, and making some new things,  Check NEI.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 67
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Guzzling Booze",
+	  "description": "This engine can power a few higher tier machines. Also if you chain four of them together you might hit up the blast furnace higher!",
+	  "x": 81,
+	  "y": 72,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_engine",
+		"damage": 3
+	  },
+	  "prerequisites": [
+	    "Fermenting!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Pure Ethanol",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 3
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_ethanol",
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Dynamometry",
+	  "description": "Read your book! These are great tools for checking the shaft power you\u0027re generating and helpful when it comes to meeting a machine\u0027s power requirement!",
+	  "x": 38,
+	  "y": 47,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 10
+	  },
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Transduce Angles",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 10
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_meter"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "Dynamo! RF ahead!",
+	  "description": "I\u0027ve said it before I\u0027ll say it again, Check Your Book! This device can generate RF from shaft power! Use a Flux Amplitude Upgrade to double the convertable torque.",
+	  "x": 12,
+	  "y": 174,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 108
+	  },
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Is that supposed to be familiar?",
+		  "longDescription": "It all started with a transmission coil.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 108
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "EnderIO:itemPowerConduit",
+		  "amount": 10
+		},
+		{
+		  "id": "ImmersiveEngineering:metalDevice",
+		  "damage": 2,
+		  "amount": 4
+		},
+		{
+		  "id": "ImmersiveEngineering:metalDevice",
+		  "damage": 1,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Farming Machines",
+	  "description": "These will help grow and harvest crops. Details in the book. Just add water, shaft power, and compostable material.",
+	  "x": 126,
+	  "y": 85,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 131
+	  },
+	  "prerequisites": [
+	    "Sourcing Water (RoC)"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Automate Farming",
+		  "longDescription": "This fan is awesome. It can harvest crops. A simple dc engine and 4:1 gear  (on speed)will help with a simple farm. If you want something big you will have to use a more powerful engine.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 23
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 90
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 131
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 31
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 114
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_machine",
+		  "damage": 17,
+		  "amount": 24
+		}
+	  ]
+	},
+	{
+	  "name": "Ticking Engine",
+	  "description": "The AC Electric engine actually runs on redstone ticks, the faster clock the better. It also drains the magnetization off a shaft core in the process.",
+	  "x": 125,
+	  "y": 44,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_engine",
+		"damage": 4
+	  },
+	  "prerequisites": [
+	    "Guzzling Booze"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Redstone Microflux Infusion",
+		  "longDescription": "Your goal is to magnetize the core in order to use it to power the AC engine. You can power the magnetizer using a gas engine and a 4:1 gear on speed but really slowly. After the core is charged up a bit put it in (or near) the AC engine and it will generate power. Keep in mind that the Magnetizer and the AC Engine both need a redstone clock (fastest tick) but I\u0027ll let you figure out the rest. I got you this far. Again read the book bro!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 4
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 60
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_enginecraft",
+				"damage": 14
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Wound Spring Tools",
+	  "description": "There are many other portable tools in RoC and ReC that rely on the windspring as an internal power source, these are the flashiest. Be aware that the Coil Winder doesn\u0027t have any safety features, you should keep a close eye on it when attempting to get high power into the device. It takes a Worktable to swap out a tool\u0027s internal spring.",
+	  "x": 147,
+	  "y": 10,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_spring"
+	  },
+	  "prerequisites": [
+	    "Worktable",
+		"Ticking Engine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Coil Winder",
+		  "longDescription": "The Coil Winder takes power from the back, the more torque the better. This is used to charged springs which are needed for weapons. Take care not to break the springs.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 41
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_spring"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Seeing Thru the Darkness",
+		  "longDescription": "These night vision goggles can even be inserted into the BedAlloy helmet. Remeber to insert a Wind Spring!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_nvg"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Shooting Chips",
+		  "longDescription": "The Gravel Gun fires gravel from your inventory. The speed and damage are determined by the charge on the internal windspring, since it uses a percentage of current energy per shot.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_gravelgun"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 8
+		},
+		{
+		  "id": "minecraft:gravel",
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Crafting on the Go",
+	  "description": "One of Rotarycraft\u0027s many useful trinkets, this 3x3 crafting table is hand-held.",
+	  "x": 34,
+	  "y": 160,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_handcraft"
+	  },
+	  "prerequisites": [
+	    "Heart of the Dragon"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Take it With You",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_handcraft"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Performance Engine",
+	  "description": "An upgrade to the internal combustion engine, this one takes additives!",
+	  "x": 101,
+	  "y": 190,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_engine",
+		"damage": 5
+	  },
+	  "prerequisites": [
+	    "Guzzling Booze",
+		"Frictive Heat"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Hit the Nitro!",
+		  "longDescription": "By now you should have a working centrifuge right? So it shouldn\u0027t be a problem coming up with the items or even heating up the blast furnace to a higher temp in order to make this new engine. \nWhy not upgrade your existing engines too?",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 5
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_upgrade",
+				"damage": 0
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "magicalcrops:magicalcrops_BlazeSeeds",
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Hydro Plant (Real Mid Game)",
+	  "description": "You! Yea you! You will get not one single reward from this quest. Yep sucks! Instead I will gift you knowledge. Read the book about the hyrdo and understand it well.",
+	  "x": 157,
+	  "y": 182,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_engine",
+		"damage": 6
+	  },
+	  "prerequisites": [
+		"Performance Engine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Waterfall Wheels",
+		  "longDescription": "With four hydros chained together and a steady income of canola from your farm. You could power four grinders to an operation time of 11.95s and four centrifuges to an operation time of 8.95s.\n\nMeaning you would produce so much lube to keep this hydro going forever and as well as enough left over lube to power additional hydros! Isn\u0027t that awesome! You\u0027ll have to figure out how though. Just a few gears, junctions, bevel gears here and there and you are set!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 6
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "Thaumcraft:ItemResource",
+		  "damage": 9
+		}
+	  ]
+	},
+	{
+	  "name": "Engine Control",
+	  "description": "Check the Book! This lets redstone or computer commands save fuel in your engines. \n\n It works differently on both late-game turbines.",
+	  "x": 104,
+	  "y": 68,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 38
+	  },
+	  "prerequisites": [
+	    "Guzzling Booze"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "E.C.U.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 38
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "magicalcrops:magicalcrops_EndermanSeeds",
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Extractor \u003d Tons of Ores",
+	  "description": "Quintupling normal ores, or even more for rare materials, this beast demands you swtich between high torque and high speed power often. I\u0027m telling you now, put all your iron ores in here you will need the side product for lategame resources! \n\nAt current version, side products will only be awarded for ores made from default Stone, Netherrack, or Endstone.",
+	  "x": 182,
+	  "y": 143,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 20
+	  },
+	  "prerequisites": [
+	    "Lubrication"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "One Machine, Four Steps",
+		  "longDescription": "A gas engine and a 16:1 gear can run this machine. You must also switch the gear from speed and torque in order to power the different stages. So can four steam engines and a lot of ingenuity.\nThe machine also requires a constant input of water. It takes power from the bottom so a bevel gear is needed.  In the future you\u0027ll have better machines to power this one a little faster.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 20
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:iron_ore",
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "the Boring Machine",
+	  "description": "This quarry, well bore, bores straight on unto practically infinity; unlike most other quarries it doesn\u0027t strictly need to be relocated. One just needs power to run it and enough torque to break all blocks. It also ignores liquids so no problems there. Further, it silk touches spawners.",
+	  "x": 147,
+	  "y": 38,
+	  "bigicon": true
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 14
+	  },
+	  "prerequisites": [
+	    "Ticking Engine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "To the Ends of the Earth",
+		  "longDescription": "There are many ways to power this machine. A simple set up is junctioning two AC engines together. Also the drops are pushed out from the top of the bore. A chest on top if it will catch the drops. Check out the RoC Scaleable Chest for uniqueness. The more power it receives the more slots provided within the chest.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 14
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+			    "damage": 58
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:iron_ore",
+		  "amount": 32
+		},
+		{
+		  "id": "gregtech:gt.meta.ore.broken.default",
+		  "damage": 9108,
+		  "amount": 16
+		},
+		{
+		  "id": "gregtech:gt.meta.ore.broken.default",
+		  "damage": 290,
+		  "amount": 48
+		}
+	  ]
+	},
+	{
+	  "name": "Mob Farming",
+	  "description": "The spawner controller makes a vanilla mob spawner work on shaft power. You figure out how to run it. I can say a microturbine will make it rain (mobs)!",
+	  "x": 137,
+	  "y": 108,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 33
+	  },
+	  "prerequisites": [
+	    "Ticking Engine",
+		"Contained Volcanism"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Spawned to Slay",
+		  "longDescription": "The Harvester is a great companion machine, as it damages any mob on top of it (and not item entities like the grinders). It also doesn\u0027t require very much power; a single performance engine could run five in parallel.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 33
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 50
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.ingot",
+		  "damage": 8634,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Industrial Coil",
+	  "description": "The shaftpower storage block. These are very useful. For example taking the bore or pile driver somewhere and powering only a section to pick up a spawner.\n\n\n Junctioning a couple of these together might help you power the blast furnace to a super high temperature. Might want to figure out how to really charge these up. A hint, if you have a micro engine and a few gears you could probably get a quick decent charge.\n\n Also don\u0027t let it overcharge and explode!",
+	  "x": 180,
+	  "y": 188,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_advgear",
+		"damage": 2
+	  },
+	  "prerequisites": [
+	    "Performance Engine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Torque to Go",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_advgear",
+				"damage": 2
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "ElectriCraft",
+	  "description": "There are various batteries that you can craft and use. These will allow you to take power on the go or make some of your builds a lot more compact. Read the book! \n\n Be aware the four power source limit counts straight through electrical systems to the root engines (unless the batteries are discharging without input); a Resonance Stability Upgrade loosens the limit for the final Induction motor.",
+	  "x": 180,
+	  "y": 169,
+	  "icon": {
+	    "id": "ElectriCraft:electricraft_item_battery"
+	  },
+	  "prerequisites": [
+	    "Frictive Heat",
+		"Extractor \u003d Tons of Ores"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Batteries!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ElectriCraft:electricraft_item_placer",
+				"damage": 1
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "ElectriCraft:electricraft_item_placer",
+				"damage": 2
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "appliedenergistics2:tile.BlockCraftingStorage",
+		  "damage": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Shaft Conversions",
+	  "description": "Rotarycraft has many items that can convert/transfer etc to and from shaft power. The RF to Shaft power is the most popular especially when it comes to producing RF energy from NuclearCraft or ReactorCraft reactors. Steam Turbine and Friction Boiler make a fair second choice for common steam integration.\n\n Go back to all your previous builds and find new ways to compact them and make them run super fast! Good luck!",
+	  "x": 127,
+	  "y": 173,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 109
+	  },
+	  "prerequisites": [
+	    "Frictive Heat",
+		"Extractor \u003d Tons of Ores"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "the Magnetostatic Engine",
+		  "longDescription": "Runs on RF, it needs to be cooled - and cooled a lot once upgraded to handle more power. Liquid Nitrogen will come in handy here. \nThe upgrades in order: Redstone Cooling, Magnetic Coil, Flux Conductance, Thermal Stability, and Torsion Resistance.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 109
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 118
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_machine",
+		  "damage": 109,
+		  "nbt": "{}"
+		}
+	  ]
+	},
+	{
+	  "name": "Jet Fuel",
+	  "description": "Just when you need me the most I\u0027m cutting you lose. You now have to rely more on the book to figure stuff out yourself! \n\nP.s. The Ghast Tear is a catalyst, one will last forever.",
+	  "x": 166,
+	  "y": 75,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_bucket",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "Ticking Engine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Fuel Enhancement \u0043 5",
+		  "longDescription": "A gas engine can power some of these machines if not maybe try a performance engine. But don\u0027t forget to use a gear if needed and determine if the gear should be on speed or torque. Don\u0027t forget to lube up your gears btw!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 25
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 21
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 128
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 24
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Six Ingredients",
+		  "longDescription": "And the seventh is a catalyst. \n\n Or you could use a Fuel Enhancer with four ingredients on some BC / GT / Pneu Gasoline.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bucket",
+				"damage": 1
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "A new Furnace",
+		  "longDescription": "Extreme and focused heat will be needed for new materials to make late-game engines. This Pulse Jet Furnace should do the trick niceley. It consumes quite a lot of jet fuel, and needs to be cooled to avoid melting itself down too; perhaps a water pipe will do.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 21
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "magicalcrops:magicalcrops_SlimeSeeds",
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Solar power (RoC)",
+	  "description": "Read the book! The tower needs constant water and its expandable which means it can produce a ton of power but be careful around the mirrors!",
+	  "x": 170,
+	  "y": 101,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 70
+	  },
+	  "prerequisites": [
+	    "Hydro Plant (Real Mid Game)",
+		"Jet Fuel"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Tower of Sunshine",
+		  "longDescription": "The mirrors must form a contiguous path to the tower base, can only be placed on top of solid blocks, and break when jumped on like farmland. \nOh, did I mention everything inside the mirrors is set on fire?",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 71
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 70
+			  },
+			  "required": 8
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 22004
+		},
+		{
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 20232
+		},
+		{
+		  "id": "ae2stuff:Grower"
+		},
+		{
+		  "id": "ae2stuff:Inscriber"
+		}
+	  ]
+	},
+	{
+	  "name": "Microturbine",
+	  "description": "You made it this far?! Congratulations, or maybe your playstyle doesn\u0027t need to be judged, it\u0027s your game after all. This is a great late game engine to produce a pile of RF or put some RoC machines into overdrive!",
+	  "x": 190,
+	  "y": 114,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_engine",
+		"damage": 7
+	  },
+	  "prerequisites": [
+	    "Jet Fuel",
+		"Frictive Heat"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Several will be required soon enough.",
+		  "longDescription": "Have an apple :D",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 7
+			  },
+			  "required": 3
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "magicalcrops:magicalcrops_UltimateEmeraldApple"
+		},
+		{
+		  "id": "gregtech:gt.multiitem.bottles",
+		  "damage": 1500
+		}
+	  ]
+	},
+	{
+	  "name": "Aeronautical Power",
+	  "description": "You have made it this far? Really? Congrats again! \nYou remember all of that iron I told you to process in the Extractor? Yea, I did, go back and look. You\u0027ll need the iron\u0027s by-product to make these engines.\n\nAt this point raising the temperature of the blast furnace should be a piece of cake, get it, cake?. \nThere is an Afterburner Upgrade to make it even more fun, with fire.",
+	  "x": 221,
+	  "y": 194,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_engine",
+		"damage": 8
+	  },
+	  "prerequisites": [
+	    "Extractor \u003d Tons of Ores",
+		"Microturbine"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Mind your Feet and Ears",
+		  "longDescription": "This engine is entriely as loud as it should be. I will remind you to put a wool arch over it. Your base may not be flying, but this engine is still afraid of birds. \nAvoid and/or protect the air intake; it needs air to breathe though. Replacement Turbines can be inserted to fix mild damage.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_engine",
+				"damage": 8
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:cake"
+		}
+	  ]
+	},
+	{
+	  "name": "The RailGun",
+	  "description": "Rotarycraft has a lot of weapons as you already know. The Railgun is very deadly once powered. But can you power it?",
+	  "x": 246,
+	  "y": 175,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 53
+	  },
+	  "prerequisites": [
+	    "Aeronautical Power"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Pfa-thunk, BANG!",
+		  "longDescription": "Also take a look at some other emplaced weapons in RotaryCraft.  There\u0027s a freeze ray, heat ray, etc..",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 53
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+		{
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Energy Field Manipulation",
+	  "description": "Harness the fields of potential to create fields of force. All it takes is a boat load of raw power.",
+	  "x": 256,
+	  "y": 195,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 46
+	  },
+	  "prerequisites": [
+	    "Aeronautical Power"
+	  ],
+	  "tasks": [
+		{
+		  "type": "CRAFT",
+		  "description": "Shields Up!",
+		  "longDescription": "The forcefield needs power to protect you from the enemies outside of it. Now the enemies on the inside is a different story. How can you power this machine?",
+		  "items" : [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 46
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "A Bridge of Light",
+		  "longDescription": "Walking on Sunshine! Might be cool to have a secret set up for it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 15
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 64
+		},
+	    {
+		  "id": "appliedenergistics2:tile.BlockMolecularAssembler",
+		  "amount": 4
+		},
+		{
+		  "id": "appliedenergistics2:tile.BlockInterface",
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "That End Game Dust!",
+	  "description": "Mined from bedrock. Yes the un-breakable is broken down to make this! Agonizingly slowly mind. By now getting the blast furnace hot enough to work the material should be no trouble (even the backdraft from an engine can do the basic).",
+	  "x": 213,
+	  "y": 85,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_machine",
+		"damage": 0
+	  },
+	  "prerequisites": [
+	    "Microturbine",
+		"Extractor \u003d Tons of Ores"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Break Bedrock",
+		  "longDescription": "Not the world floor or ceiling though. It might go on forever, but it definately digs out eight blocks a tiny sliver at a time. Two microturbines and some (diamond) gears could do the trick, or use a gas turbine.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 0
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Come back later",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_powders",
+				"damage": 4
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "appliedenergistics2:item.ItemMultiPart",
+		  "damage": 360
+		},
+		{
+		  "id": "appliedenergistics2:item.ItemMultiPart",
+		  "damage": 16,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "That\u0027s alot of Torque!",
+	  "description": "With bedrock you can now craft gears that do not require lube and that can\u0027t break as easily as the others which means they can keep up with those powerful new engines.",
+	  "x": 256,
+	  "y": 86,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_advgear",
+		"damage": 3
+	  },
+	  "prerequisites": [
+	    "That End Game Dust!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "High Ratio Gears",
+		  "longDescription": "The high-ratio bedrock gear does require a copious amount of lube, but it is very very very ... did I say very useful. Just check out the compact designs.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_advgear",
+				"damage": 3
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "The C.V.T.",
+		  "longDescription": "Meh, now that you think about it you don\u0027t have to manually switch from torque to speed on your Extractor set up anymore. Plus this is so compact. It only needs belts and lube. See if you can find a use for this item.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_advgear",
+				"damage": 1
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+	      "id": "magicalcrops:magicalcrops_CowSeeds",
+		  "amount": 5
+		},
+	    {
+		  "id": "extracells:storage.gas",
+		  "damage": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Industrial Coil (Bedrock Edition)",
+	  "description": "Which holds and releases a ton more power than the steel version. Imagine what you could do with this. Power certain strong machines on the go. But first you must figure out how to even charge this one high enough. Might I suggest a gas turbine perhaps?",
+	  "x": 274,
+	  "y": 136,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_advgear",
+		"damage": 2,
+		"nbt": "{bedrock:true}"
+	  },
+	  "prerequisites": [
+	    "That End Game Dust!",
+		"Industrial Coil"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Bedrock coils to go",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_advgear",
+				"damage": 2,
+				"nbt": "{bedrock:1b}"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+		  "damage": 1,
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Another Upgrade!",
+	  "description": "With bedrock you can now make a stronger wind spring that will keep your weapons and tools going a little bit longer, and hitting somewhat harder.",
+	  "x": 256,
+	  "y": 11,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_strongcoil"
+	  },
+	  "prerequisites": [
+	    "That End Game Dust!",
+		"Wound Spring Tools"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Sintered Bedrock Spring",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_strongcoil"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "extracells:storage.fluid",
+		  "damage": 3,
+		  "nbt": "{}"
+		}
+	  ]
+	},
+	{
+	  "name": "Armour UP!!!",
+	  "description": "Bedrock dust is the endgame. You can make really powerful gear. Upgrade the extractor with a bedrock drill. Also another spring coil with bedrock dust to make your weapons more powerful. Not to mention OP gear with enchantments already on it. Just use NEI and see what the dust can be used for...duh!",
+	  "x": 268,
+	  "y": 69,
+	  "icon": {
+	    "id": "RotaryCraft:rotarycraft_item_bedchest"
+	  },
+	  "prerequisites": [
+	    "That End Game Dust!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Great Power",
+		  "longDescription": "Comes with great caution. This armour will never break, is inherently heavily enchanted, and is super tough naturally. Plus, they\u0027re upgradable. \nThe pick isn\u0027t actually Silk Touching, it turns the harvested blocks into items... Sometimes that does funny things to tile entities. Thankfully, ores handle the event gracefully and process the silk touch.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bedhelm"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bedchest"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bedlegs"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bedboots"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_bedpick"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "appliedenergistics2:tile.BlockDrive"
+		},
+		{
+		  "id": "appliedenergistics2:item.ItemBasicStorageCell.64k",
+		  "nbt": "{}"
+		}
+	  ]
+	},
+	{
+	  "name": "ReactorCraft",
+	  "description": "Ready to delve into Nuclear Reactors? Watch out for radiation leaks.",
+	  "x": 180,
+	  "y": 41,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_geiger"
+	  },
+	  "prerequisites": [
+	    "Wound Spring Tools"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Root Core",
+		  "longDescription": "All four fission reactor cores are crafted from the first one. The Cadmium-Indium-Silver neutron focusing alloy may be difficult to get.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 0
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Precautions",
+		  "longDescription": "Never expect perfection. Be ready to check for deathly radiation leaks before initiating the reaction which could spew them all over your portion of the world.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_geiger"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Fissile Aenium",
+	  "description": "At long last, Nuclear Reactors that spin! Or more accurately, make your shafts spin via turbines, but really it\u0027s just ReC. We need to enrich the Uranium, then contain the Neutrons flying out of it to boil some Steam. But not normal steam, High-Pressure Steam that would need to be processed before conversion to other mods\u0027 uses. \n At least the neutrons will only fly in the four horizontal cardinal directions, this severely reduces the amount of shielding required in the design; which also improves pipe access to the reactor cores. Unless you are intent on living in an irridiated poisonous wasteland.",
+	  "x": 268,
+	  "y": 41,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_crafting",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "That End Game Dust!",
+		"ReactorCraft"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Dissolving Pitchblende",
+		  "longDescription": "ReC centrifugally enriches Uranium in the liquid state, rather than GregTech\u0027s refined ore method. Go make some RoC hydroflouric acid; it can also be done in-place, but using two Uranium Processors can be more efficient. \n Then, use a super-high speed Isotope Centrifuge to separate the enriched portion. ",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 9
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 8
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Rich Aenium",
+		  "longDescription": "The recipe is Water + Flourite - HF; HF + Uranium  or Pitchblende - UF_6. Thus in a single machine, simply pipe in Water while adding Flourite and an impure uranium ingot - the UF_6 can then be extracted from the front (middle) tank.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_canister",
+			    "damage": 1
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_raw",
+				"damage": 1
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Controlled Chaos",
+		  "longDescription": "No need to understand QFT, just drop some fissile material in a contained space, and use the cooling to pull power out of it.",
+		  "items": [
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 11
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 6
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ReactorCraft:reactorcraft_block_mats",
+		  "damage": 0,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Nuclear Steam Turbines",
+	  "description": "The full power exported from a reactor through the Steam Lines can only be harnessed by a proper Turbine. These are naturally a bit large and fragile. Also the only place ReC cares about Tungsten Carbide.",
+	  "x": 226,
+	  "y": 113,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_placer",
+		"damage": 4
+	  },
+	  "prerequisites": [
+	    "Jet Fuel",
+		"Extractor \u003d Tons of Ores",
+		"ReactorCraft"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Messy Power",
+		  "longDescription": "These early Turbines require the steam to be set loose in world beneath them, spew the waste steam (unless the front is covered) that needs to be Scrubbed from the world, and have an inconsistant rotational Speed (unless augmented with a Turbine Flywheel multi-block). At least they stack four layers on a shaft - which must be horizontal. \n Even though placed as single blocks, it does take up a 5x5 cross-section.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 4
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 12
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Horn of Might",
+		  "longDescription": "Upgrade those basic turbines to the core of a High-Pressure Turbine multiblock. No more walking into spinning blades, volume filled construction is nice. One can even build it in stages to accomodate impotent reactors.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 36
+			  },
+			  "required": 7
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 6
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_turbinemulti",
+			    "damage": 0
+			  },
+			  "required": 136
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_turbinemulti",
+				"damage": 1
+			  },
+			  "required": 216
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_turbinemulti",
+				"damage": 2
+			  },
+			  "required": 8
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ReactorCraft:reactorcraft_item_placer",
+		  "damage": 6,
+		  "amount": 30
+		}
+	  ]
+	},
+	{
+	  "name": "DYNAMO!!!",
+	  "description": "The entire output of a High-Pressure Turbine converted to RF. Hundreds of thousands of RF per tick; get yourself a new cable to distribute this.",
+	  "x": 226,
+	  "y": 151,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_placer",
+		"damage": 33
+	  },
+	  "prerequisites": [
+	    "Nuclear Steam Turbines"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "HOW Big?!",
+		  "longDescription": "Completely proportional. 10x5x5",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 33
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_generatormulti",
+				"damage": 0
+			  },
+			  "required": 9
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_generatormulti",
+				"damage": 1
+			  },
+			  "required": 56
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_generatormulti",
+				"damage": 2
+			  },
+			  "required": 135
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_generatormulti",
+				"damage": 3
+			  },
+			  "required": 17
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "appliedenergistics2:item.ItemMultiPart",
+		  "damage": 466,
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Try So Hard",
+	  "description": "TRISO fuel, baked from Graphite and raw Uranium, is used strictly in the High-Temperature Gas Reactor design. The lack of waste and cheap fuel make it an enticing early option, with unique options available. Using CO_2 as the working fluid is optional, but more effective with a full bed of pellets; having a vertical column reduces the effectiveness of the lower layers, as the depeleted pellets settle slowly.",
+	  "x": 213,
+	  "y": 28,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_placer",
+		"damage": 29
+	  },
+	  "prerequisites": [
+	    "ReactorCraft"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Clean Core",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 29
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_pellet"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Contained Working Fluid",
+		  "longDescription": "Unlike the fire and forget water steam, or turbine cycling ammonia, carbon dioxide coolant will not turn a turbine. An extra step of Heat Exchange is inserted between the reactor cooling blocks and the power producing turbine. \n Also, new gas-tight pipes. \n Don\u0027t forget to actually collect enough of the gas!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 28
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+			    "damage": 24
+			  },
+			  "required": 12
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 30
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 20
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ReactorCraft:reactorcraft_item_crafting",
+		  "damage": 15,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Molten What Now?",
+	  "description": "Thorium Fission in ReC is totally wierd. Beyond working with fluid fuel and waste, the reactor needs a hole in the radiation shielding to match with a hole in a different fission reactor\u0027s shielding to inject / share neutrons to start the reaction. \n One can use any of the three reactor coolants in any of the five fission reactor designs, though some precautions are advised while experimenting.",
+	  "x": 213,
+	  "y": 60,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_placer",
+		"damage": 40
+	  },
+	  "prerequisites": [
+	    "Jet Fuel",
+		"ReactorCraft"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Liquid Resources",
+		  "longDescription": "Now using the poorly named Uranium Processor for adding Flourine (Flourite) and Beryllium (Emerald dust) to the Molten Lithium in order to... wait, Molten Lithium?! Skim off the top of Lava? Try y-level 10 underground, or the surface of Nether seas. \n Follow up by using the gasoline upgrading Fuel Enhanceer to add the Thorium to this LiBeF with some more Flourite.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 9
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 7
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 86
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Piped Cores",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 38
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 39
+			  },
+			  "required": 4
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 20161
+		}
+	  ]
+	},
+	{
+	  "name": "Heavy Air",
+	  "description": "Using Ammonia as the hot fluid that is pushed through Turbines is more efficient than Water Steam, but since it takes fossil resources to produce the re-condensation cycle is important. That means no Turbine Flywheels.",
+	  "x": 236,
+	  "y": 132,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_canister",
+		"damage": 3
+	  },
+	  "prerequisites": [
+	    "Nuclear Steam Turbines"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Catch the Drips",
+		  "longDescription": "This first part works with Water too, not that many folks will care once they have turbines. Put open-topped BC tanks or RoC Reserviors under the HP turbine face to collect condensate directly. Add Condensers above to intercept the steam stream if there is an RF Dynamo attached (or using common Turbines), and some re-pressurizing machines to turn that Low-Pressure fluid back into usable cold working fluid.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 5
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 13
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Use Thicker Vapour",
+		  "longDescription": "Make Ammonia.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_raw",
+				"damage": 3
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_raw",
+				"damage": 4
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 14
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "RotaryCraft:rotarycraft_item_machine",
+		  "damage": 18,
+		  "amount": 3,
+		  "nbt": "{}"
+		}
+	  ]
+	},
+	{
+	  "name": "Eternal Waste",
+	  "description": "The harmful by-products of Nuclear Fission are many; the methods of dealing with them are few. ANY method of storing them will poison the surroundings, yes even digitised in an ME disk, so it is preferred to toss them into an unoccupied world - like the Sun.",
+	  "x": 300,
+	  "y": 9,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_waste"
+	  },
+	  "prerequisites": [
+	    "Fissile Aenium",
+		"Molten What Now?"
+	  ],
+	  "parentrequirement": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Sort the Trash",
+		  "longDescription": "The 29 types of fission waste have two independant characteristics: danger and half-life. Short and Long half-lived materials have different disposal methods; dangerous materials must be sent to disposal as quickly as possible, and require better shielding on the disposal site.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 110
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 125
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Proper Bins",
+		  "longDescription": "A pool of fresh Water ringed with radiation shielding to absorb the death of short-lived wastes (extracting the power out of that heat is really dangerous). \n A Drum in a shielded room forevermore for the long-lived products. The drums have few slots, and automate poorly - so use a good sorting pipe system like AE2 or LP to push the material in. Especially as dangerous waste can cause issues even during transit on a slow conveyor or train.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 10
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+			    "damage": 21
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "LogisticsPipes:item.PipeItemsSupplierLogistics",
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Controlling Reactions",
+	  "description": "Important safety measures, to have less mess in a much smaller hole when things go awry.",
+	  "x": 290,
+	  "y": 27,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_placer",
+		"damage": 3
+	  },
+	  "prerequisites": [
+	    "Fissile Aenium"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Quenching Rods",
+		  "longDescription": "Control Rods can be set to any chosen percentage of neutron interception, individually manually or in total with a Central Control block. The SCRAM for critically high temperature in any Fuel Core or a loss of power to the control block should quietly snuff out good reactor designs.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 1
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 3
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Vomitous Trouble",
+		  "longDescription": "A Fuel Dump Valve simply evacuates all the liquid salt fuel in the Thorium reactor into the world if any Core\u0027s temperature is about to melt down. Have something to collect that lake of radioactive goo, cool it down, and figure out how to re-use or void it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 40
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 1024,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Breeding More Power",
+	  "description": "once you have a good handle on Uranium Fission reactors, Plutonium provides more power for worse waste from the depleted pellets. But to get there requires a new, specific, intermediate reactor that works much better on molten sodium coolant.",
+	  "x": 300,
+	  "y": 45,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_plutonium",
+		"damage": 0
+	  },
+	  "prerequisites": [
+	    "Fissile Aenium"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Nest Box",
+		  "longDescription": "These cores cannot be mixed with any other type, though if one wanted to have matching holes in the shielding it wouldn\u0027t care.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 18
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Novel Coolant",
+		  "longDescription": "Produce Molten Sodium. Then encapsulate it in a closed loop. \n Now, what to do with that Chlorine?",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 16
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 67
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 20
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Giant Spinning Fusion Ring",
+	  "description": "The ReC Tokamak is ENORMOUS. Hundreds of mobile entities are a drain to both server and client framerate, dozens of heat conducting blocks are a further massive Cellular Autmota simulation for the server to be running; but if you\u0027ve got a beast of a machine to run this beast of a machine, it can max out a High-Pressure Turbine per Preheater and Injector used.",
+	  "x": 270,
+	  "y": 102,
+	  "icon": {
+	    "id": "ReactorCraft:reactorcraft_item_placer",
+		"damage": 15
+	  },
+	  "bigicon": true,
+	  "prerequisites": [
+	    "That End Game Dust!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Heavy Water",
+		  "longDescription": "Extract the D2O from ocean water (y-level 45, full column of water above, in an ocean biome); electrolyze the Oxygen out of your Deuterium; then bombard a portion with neutrons from a fission reactor to get Tritium. \nOxygen gas will super-charge the Pulse Jet Furnace.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 7
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 16
+			  }
+			},
+			{
+			  "item" :{
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 17
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Site Prep",
+		  "longDescription": "The Tokamak Blueprint Highlighter is helpful to count out the correct postions for everything in the reaction plane, some things will need to be built below it. Use some temp blocks to place the Magnet rings, they require their 3x3x3 to be otherwise clear to function; they also need to be rotated precisely with the Screwdriver. When properly rotated, they will conduct shocks from nearby Van De Graff Generators for thier power, but still need to be individually piped with Liquid Nitrogen coolant.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 34
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 15
+			  },
+			  "precision": "NBT_FUZZY",
+			  "required": 36
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 103
+			  },
+			  "required": 12
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Microwave Oscillations",
+		  "longDescription": "A spinning ring of permanent magnets not only assits bending the plasma stream into a circle, the variation in field strength locally constricts the magnetic bottle, inciting fusion. \nThis goes right in the middle, where the blueprint highlighter was. \n\n Getting these dense permanent magnets requires the Compressor; a machine that also makes industrial Diamonds.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 22
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 27
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_solenoidmulti",
+				"damage": 5
+			  },
+			  "required": 17
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_solenoidmulti",
+				"damage": 0
+			  },
+			  "required": 40
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_solenoidmulti",
+				"damage": 1
+			  },
+			  "required": 56
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_solenoidmulti",
+				"damage": 2
+			  },
+			  "required": 20
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_solenoidmulti",
+				"damage": 3
+			  },
+			  "required": 28
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_solenoidmulti",
+				"damage": 4
+			  },
+			  "required": 40
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Fuel Injection",
+		  "longDescription": "D-T Fusion Plasma takes another multiblock and a fixed beam Nether Star Heat Ray to produce from Deuterium and Tritium. The special pipe will melt instantly if not charged by Van De Graff Generators. \nBuild the injector multiblock at a point of the Solenoid, one works, filling a ring with four is more efficient; it can handle the entire output of the Preheater. The use of piece-wise rings is good for art, confusing for power generation.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 23
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 17
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_heatermulti",
+				"damage": 0
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_heatermulti",
+				"damage": 1
+			  },
+			  "required": 30
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_heatermulti",
+				"damage": 2
+			  },
+			  "required": 12
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_heatermulti",
+				"damage": 3
+			  },
+			  "required": 40
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_heatermulti",
+				"damage": 4
+			  },
+			  "required": 42
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 25
+			  },
+			  "required": 11
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 103
+			  }
+			},
+			{
+			  "item": {
+			    "id": "RotaryCraft:rotarycraft_item_machine",
+				"damage": 12
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 22
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 0
+			  },
+			  "required": 9
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 1
+			  },
+			  "required": 18
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 2
+			  },
+			  "required": 32
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 3
+			  },
+			  "required": 9
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 4
+			  },
+			  "required": 18
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 5
+			  },
+			  "required": 3
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 6
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_block_injectormulti",
+				"damage": 7
+			  },
+			  "required": 11
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Harness those Neutrons",
+		  "longDescription": "A Tokamak Fusion ring acutally produces nothing but neutrons, for all that operational maintainence power and supplies. So, figure out how to use neutron shielding to produce heat that can be turned into power. Here are some ideas: \n\n Even the component multiblocks can gain radiation poisoning when struck, so some internal shielding is advised.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 26
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 32
+			  }
+			},
+			{
+			  "item": {
+			    "id": "ReactorCraft:reactorcraft_item_placer",
+				"damage": 44
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ReactorCraft:reactorcraft_item_canister",
+		  "damage": 5
+		},
+		{
+		  "id": "ReactorCraft:reactorcraft_item_canister",
+		  "damage": 6
+		},
+		{
+		  "id": "NuclearCraft:fuel",
+		  "damage": 37
+		},
+		{
+		  "id": "NuclearCraft:fuel",
+		  "damage": 38
+		}
+	  ]
+	}
+  ],
+  "reputationBar": []
+}

@@ -1,0 +1,1349 @@
+{
+  "name": "Electric Revolution",
+  "description": "Get ready to replace nearly everything, power conversions to and from EU combine with the ability to actually store it to radically change how a factory is laid out. Many other mods have also been defferred to this tech level, where central power generation meets improvements in general automation.",
+  "quests": [
+	{
+	  "name": "Galvan to the Rescue",
+	  "description": "We don\u0027t need the full chemical resistance of Stainless Steel, but we do need to reduce hysteresis. Having a counter-acting layer of Zinc coat the Steel should provide a simple basis for electro-magnetic operations.",
+	  "x": 30,
+	  "y": 50,
+	  "icon": {
+	    "id": "gregtech:gt.meta.machine",
+		"damage": 8651
+	  },
+	  "prerequisites": [
+	    "{Dawn of Industry}[the Riddle of Steel]",
+		"{Chemical Era}[Without Blemish]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "A Deeper Bath",
+		  "longDescription": "Hey! Grab that stainless Bathing Pot! The metal can withstand molten Zinc. Toss in some steel components, stir, and presto! \n Do note that Galvanized Steel cannot be cut or extruded, it is a thin plating of zinc over the steel after all. Entire casings can be galvanized after construction though.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.plate",
+				"damage": 8651
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.stickLong",
+		  "damage": 8651,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "More RF Power",
+	  "description": "Time for IE to provide darn good RF power that isn\u0027t nuclear, and not even steam.",
+	  "x": 30,
+	  "y": 15,
+	  "icon": {
+	    "id": "ImmersiveEngineering:woodenDevice",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "Galvan to the Rescue",
+		"{Dawn of Industry}[Early Game RF]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "A Direct Kinetic Dynamo",
+		  "longDescription": "Power comes out the top.\n Three Waterwheels could be stacked upon each of these blocks for a reasonable and eternal power supply. Or one Improved Windmill, if you have free sky space for it and don\u0027t mind storm wind fluctuations.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDevice",
+				"damage": 9
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Awful Racket",
+		  "longDescription": "There is nothing to be done about the noise, but 4096 RF/t is worth having. Alas, you will have difficulty getting all that power out, even split over three potential contacts. Though originally designed to run on Biodiesel, this engine actually lasts longer on the Diesel and Gasoline fractions of petroleum.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 5
+			  },
+			  "required": 27
+			},
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 4
+			  },
+			  "required": 9
+			},
+		    {
+			  "item": {
+			    "id": "ImmersiveEngineering:metalDecoration",
+				"damage": 6
+			  },
+			  "required": 6
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "ImmersiveEngineering:treatedWood",
+		  "amount": 32
+		}
+	  ]
+	},
+	{
+	  "name": "Dawn of Computing",
+	  "description": "Circuits and Chips. Thinking machines stop going clickity-clack with some nearly pure semi-conductive Silicon wafers and controlled amounts of electricity. This also makes them much smarter...",
+	  "x": 60,
+	  "y": 100,
+	  "icon": {
+	    "id": "gregtech:gt.multiitem.technological",
+		"damage": 30301
+	  },
+	  "prerequisites": [
+	    "{Chemical Era}[Simple Fractions]",
+		"{Dawn of Industry}[Pounding Power]"
+	  ],
+	  "tasks": [
+		{
+		  "type": "DETECT",
+		  "description": "Masks and Wires",
+		  "longDescription": "Chips themselves are tiny. Best to build a card to carry them around on; it will make connections much easier.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30000
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30001
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30002
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Basic Chip Board",
+		  "longDescription": "Circuit Tiers are a complicated list, so I\u0027ll give some notes here. \n Copper Boards are T2, Gold Boards T4, and Platinum T6.\n The lesser tier of the Board and the Circuit Parts is used. \n Soldering with Soldering Alloy preserves that tier; and must be used for specialty circuits, like Magic or Enderium. Soldering with Tin subtracts one from the tier of advanced circuits, but is fine for making Tier 2 (Good) Circuitry. Soldering with Lead only really works for T1 (Basic) Circuits and Signalum Circuits, as it subtracts two from the tier of anything else.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30301
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 30202
+		}
+	  ]
+	},
+	{
+	  "name": "Carts on Rails",
+	  "description": "Some may find Railcraft sufficient to create grand mining and transport infrastructure. For the rest of us, Steve\u0027s Carts handles that, while also greatly expanding the list of tasks a cart can be used to automate. \n Get a GT Roll Former to make rails with, the RC Rolling Machine is much harder to use, and otherwise fully replaced by a parts factory already.",
+	  "x": 80,
+	  "y": 20,
+	  "icon": {
+	    "id": "minecraft:rail"
+	  },
+	  "prerequisites": [
+	    "Galvan to the Rescue"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Made to Order",
+		  "longDescription": "An early example of a machine that assembles crafted parts to create the custom entity. Do note many of the module recipes have been altered.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "StevesCarts:BlockCartAssembler"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Galgadoria",
+	  "description": "Upgrading Steve\u0027s Cart for greater versatility, tool level, and reduced maintenance. \n This uses the Burner Mixer, that is originally intended for Titanium refining, of Tier 2 or higher.",
+	  "x": 120,
+	  "y": 10,
+	  "icon": {
+	    "id": "StevesCarts:ModuleComponents",
+		"damage": 45
+	  },
+	  "prerequisites": [
+	    "Carts on Rails",
+		"{Chemical Era}[Blending]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Refined meta-steel",
+		  "longDescription": "Not sure which part burns, but cleansing fire augments molten Steel with plenty of Diamond and Obsidian (and a dash of Blue Steel alloy) into this ultra-hard steel-like metal.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "StevesCarts:ModuleComponents",
+				"damage": 22
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "A Strange Eye",
+		  "longDescription": "The awareness module for all things cart-related. Open an Eye of Ender with Ur-Ghast Tears.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "StevesCarts:ModuleComponents",
+				"damage": 45
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Self-Aware Metal",
+		  "longDescription": "The Eye of Galgador can only be melded with Refined Metal in burning Glowstone, and the mixer blades must also be overclocked to puree. \n While it does take a block of this to form a single ingot of Enhanced Galgadorian Metal, it is more an ordering of incipient conciousness than a compression; hence use a Titanium or better Extruder.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "StevesCarts:ModuleComponents",
+				"damage": 47
+			  }
+			},
+			{
+			  "item": {
+			    "id": "StevesCarts:ModuleComponents",
+				"damage": 49
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "StevesCarts:BlockMetalStorage",
+		  "damage": 1
+		},
+		{
+		  "id": "StevesCarts:BlockMetalStorage",
+		  "damage": 0
+		}
+	  ]
+	},
+	{
+	  "name": "Carpentry",
+	  "description": "All about horticulture, with a foray into other agrarian pasttimes such as apiary, brewing, farming, and arborculture, Forestry is an aptly-named mod. \n Fermentation and comb processing have also been done (often better) by other mods, though the Moistener is one of the very few ways to create Mycelium.",
+	  "x": 10,
+	  "y": 110,
+	  "icon": {
+	    "id": "Forestry:sturdyMachine"
+	  },
+	  "prerequisites": [
+	    "Galvan to the Rescue",
+		"{Dawn of Industry}[Early Game RF]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Multi-functional",
+		  "longDescription": "The Carpenter does a good many unique recipes, mostly due to being a fluid augmented assembler. The boxing of resources in Forestry Crates is completely inferior to GT Crates, but does also work on food. \n See also Binnie\u0027s decorative and assitive machines from Extra Trees and Genetics.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "Forestry:factory",
+				"damage": 1
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "Forestry:minerBag"
+		}
+	  ]
+	},
+	{
+	  "name": "Auto-Farming",
+	  "description": "There is a better way to get produce from the earth than visting with a Sense every moon. Wrangling Fans, programming Pistons, or training Ants / Golems could all work, but Sir Sengir has a unified option for a moderate cost. RF, Water, and Fertilizer must all be supplied constantly; a task that can only be automated with Rubber for Compact Pumps and Compact Conveyors. \n Remember the structure can be entirely buried beneath the soil, flush with it, or built above ground; but the top layer must always be pure farm structure blocks without controller, gearbox, hatch, nor valve",
+	  "x": 35,
+	  "y": 140,
+	  "icon": {
+	    "id": "Forestry:ffarm",
+		"damage": 2
+	  },
+	  "prerequisites": [
+	    "Carpentry",
+		"Dawn of Computing"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Diode Devices",
+		  "longDescription": "No need for a Thermionic Fabricator, Electron vacuum Tubes are a two-step assembly: the contacts in a Press, coated with glass in a Laminator.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "Forestry:thermionicTubes",
+				"damage": 1
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Cuboid Rhombic",
+		  "longDescription": "Ranging from 3x3x3 to 5x5x3, this multiblock is the iron standard for automated farming.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "Forestry:ffarm"
+			  },
+			  "precision": "FUZZY",
+			  "required": 27
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "Forestry:fertilizerCompound",
+		  "amount": 64
+		}
+	  ]
+	},
+	{
+	  "name": "Electricity",
+	  "description": "Your factory has been converting power units since the dawn of Steam, but now so many more varities of power can be produced with the controlled application of Electric Units. Rotary RU is currently the only reversable transformation. No conversion is perfectly efficient, there are always losses. With simple machines, you will get 11 EU from the 16 RU produced by each 24 HU from a Burning Box, with fuel consumption also being affected by burning box efficiency from the theoretical maximum of 5000 HU per smelting operation of solid fuels. That energy could be used to produce 5.5 HU, RU, or KU, minus transmission line losses, with the appropriate convertor.",
+	  "x": 80,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.multiitem.technological",
+		"damage": 1014
+	  },
+	  "prerequisites": [
+	    "Galvan to the Rescue",
+		"{Dawn of Industry}[Turbine be Mine]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Magnetic Shaft",
+		  "longDescription": "Have you done this yet? Remember NEI, you can only magnetize iron at all right now.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.stickLong",
+				"damage": 8645
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Dynamo (GT), Small",
+		  "longDescription": "Electricity is easy to generate from the relative spin of a permanent magnet and some coils. Hence RU. \n A very similar setup will cause spinning when a current is put through the coils. Thus Electric Motors and Engines. Or one can use a resistive wire material for an Electric Heater. All with 50\u0025 loss.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10111
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Transmission Wire",
+		  "longDescription": "There are so many different types of transmission Wire due to the three characteristics they have. Maximum Voltage by material, Amperage by material and cross-section, and Resistance (line loss) by material - improved when wrapped in Rubber sheet insulation. \n These line losses per meter in every packet make getting the correct tier of energy to the final consumer an increasingly complicated proposition. Note: Even if the packet Voltage has gotten absurdly small, the Amperage count of packets in the wire remains the same until collected by a Battery Box. \n Each packet of power is routed from the producer to a consumer; one destination will be preferred until the next packet would put it over it\u0027s input limt, that one usually finds a new consumer (but occasionally takes the earlier route anyway - just long enough to overload wire amperage, to average at that machine\u0027s voltage limit).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 28350
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 28350,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Magnetic Polarization",
+	  "description": "It is a small step from understanding induction dynamos to creating a free-standing magnetic field from an electric current. This can be used to induce some materials to become permanent magnets, or simply to selectively move components of an ore for refinement by extraction.",
+	  "x": 100,
+	  "y": 40,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 10031
+	  },
+	  "prerequisites": [
+	    "Electricity"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "B-Vector Field",
+		  "longDescription": "In order to use magnetic power - MU - it must be created from some EU in an Electromagnet, which operates similar to the Electric Motor with 50\u0025 loss. \n See also the Fluxomagnet series.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10031
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Hysteresis",
+		  "longDescription": "All higher tier E-M machines (Motor, Engine, and Dynamo) require better core rods. Steel, and later Neodymium, Rods can be magnetized just like Iron by using the Polarizer instead of rubbing several piles of redstone over it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20221
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Playing with Sand",
+		  "longDescription": "Dry Sluice Sand in particular. The Magnetic Seperators turn this by-product of normal ore processing into a source of useful metals for the future: Cobalt, Neodymium, Manganese, Nickel, and Iron all dance from the waste under magnetic stimulation.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20301
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.stickLong",
+		  "damage": 8646
+		}
+	  ]
+	},
+	{
+	  "name": "Frosty",
+	  "description": "Ice machines are nice if one needs to re-create wintery conditions with a Freezer; or like Ice Cream from the Cryo-Mixer. Sooner or later the Cold Units of energy might actually be useful for chilling fresh-cast parts.",
+	  "x": 110,
+	  "y": 60,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20561
+	  },
+	  "prerequisites": [
+	    "Electricity"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Hot and Pumping",
+		  "longDescription": "Strongly limited by the second law of thermodynamics, the production of CU by a Thermoelectric Cooler produces an equal amount of Heat Units out the other side, with the two together adding up to half the EU consumed like normal for conversion machines.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10161
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:ice",
+		  "amount": 8
+		},
+		{
+		  "id": "minecraft:snow",
+		  "amount": 8
+		}
+	  ],
+	  "rewardchoice": [
+	    {
+		  "id": "gregtech:gt.multiitem.food",
+		  "damage": 13008,
+		  "amount": 4
+		},
+		{
+		  "id": "gregtech:gt.multiitem.food",
+		  "damage": 13995,
+		  "amount": 4
+		},
+		{
+		  "id": "gregtech:gt.multiitem.food",
+		  "damage": 13021,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Electrolysis",
+	  "description": "The use of electric voltage to break up molecular materials into more basic, possibly atomic, materials. This process will vastly expand the variety of ores that can be used for any material, as it also improves the recovery rate of those components. Including one outrageous awfully difficult to purify material...",
+	  "x": 140,
+	  "y": 120,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20091
+	  },
+	  "bigicon": true,
+	  "prerequisites": [
+	    "Electricity",
+		"{Chemical Era}[Coagulation]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Platinum Contacts",
+		  "longDescription": " powered by Tin Cable, in a Galvanized Casing. Let the bubbles commence!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20091
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 250,
+		  "amount": 8
+		},
+		{
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 60,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Density Shuffling",
+	  "description": "Instead of using water to Sluice raw ore, it can be Bathed in a dense liquid to selectively extract certain desirable impurities. We did this with Mercury back in the Forge Age to get more royal metals; now we can use Persulfate solution for several bi-valent cations - Cobalt, Copper, Nickel, and Zinc.",
+	  "x": 155,
+	  "y": 140,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 32721
+	  },
+	  "prerequisites": [
+	    "Electrolysis",
+		"{Chemical Era}[Vitriolic]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Salty Vitriol",
+		  "longDescription": "Any HCl acid that had been made before the advent of salt water electrolysis had a solid waste product ... those bisulfates get electrolysed into the Persulfate we need here. Add a whole dust to each crushed ore in a water bath to extract matching quantities of the specific secondary metal.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 9822
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32712,
+		  "amount": 10
+		}
+	  ]
+	},
+	{
+	  "name": "Direct Electric Industry",
+	  "description": "Have all your friends (or you) been clamouring for automated shaped crafting for a long time now? Well, time to get that particular ball rolling uphill. Recipes that don\u0027t take GT Tools are probably easier to do in the IE Assembler, the GT Autocrafters are even more picky about input materials. \n See also the Electric forms of Sifter, Loom, and Mixer that do not require an external Engine / Motor.",
+	  "x": 120,
+	  "y": 40,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20341
+	  },
+	  "prerequisites": [
+	    "Electricity",
+		"{Chemical Era}[Encouraging Motion]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Autocrafted",
+		  "longDescription": "Remote Arms, thankfully not internally powered and self-replicating (yet).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20341
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 12081
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Instructions",
+		  "longDescription": "Place the raw Blueprint in it\u0027s slot of an Advanced Crafting Table. Fill the crafting grid with the exact (nbt-specific) materials and tools for the crafting recipe. Shift-click the blueprint from said slot to write this information. \n A written blueprint can also be used in the A.C.T. manually to remember the pattern and pull it from connected mass storages instead of fetching all the parts locally and using the nei button.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 7011
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "All the Right Tools",
+		  "longDescription": "Robot hands require different tools than human ones. Every GT Tool must be the Robot Arm version when making the blueprint, Autocrafters simply refuse to use normal tools, even with a perfect nbt data match. Thankfully, these Robot Arm Tips have no durability, and will last forever.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8000
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8001
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8002
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8003
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8004
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8005
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8006
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8007
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8008
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.randomtools",
+				"damage": 8009
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.randomtools",
+		  "damage": 7010,
+		  "amount": 16
+		}
+	  ]
+	},
+	{
+	  "name": "Cans \u0026 Crates",
+	  "description": "Food Tins, Spray Cans, Gas Canisters, the Canning Machine does many useful things, even bottling drinks, and un-does basically all of them. Other varities of portable tank filler / emptier are available, this one is important for being gas-tight and acid-resistant. \n In a similar vein, storing material in block form, possibly as a Crate, is both helpful and potentially decorative.",
+	  "x": 180,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20161
+	  },
+	  "prerequisites": [
+	    "Dawn of Computing",
+		"{Chemical Era}[Encouraging Motion]",
+		"Electricity"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Bottles Too",
+		  "longDescription": "Did I mention Spray Cans? The joys of C-Foam embeding pipes, possibly some Spray Paint, or the utilitarian Fire Extinguisher - the only way to instantly turn off a Burning Box. \n Gas loading is done here, most importantly for the propane Lighters.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20161
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "And Blocks",
+		  "longDescription": "Most outputs of the Boxinator can be placed in-world. The compression recipes to each Block format are done here, as is the titular loading of a Crate. Unlike Forestry fruit crates, GT material crates store 16 units. \n Unboxing from crate can be done with a Crowbar in-world, or save the crate in the machine. Unboxinators will also de-compress storage Blocks.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20581
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.randomtools",
+		  "damage": 1998
+		}
+	  ]
+	},
+	{
+	  "name": "New Processes",
+	  "description": "Some things just take delicate action, absent a master clockmaker one can simply use controlled doses of electricity via some logic circuits to make that happen.",
+	  "x": 120,
+	  "y": 120,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20271
+	  },
+	  "prerequisites": [
+	    "{Chemical Era}[Encouraging Motion]",
+		"Dawn of Computing",
+		"Electricity"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Insertion",
+		  "longDescription": "Mostly for cream Doughnuts and Soda, the Injectors have a few strange recipes of the Fluid Transposer variety, like medicinal Pills and Hot Sauce.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20261
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Dicey",
+		  "longDescription": "Strictly for food processing, the Slicer machines cut fruit, vegtables, and bread in ways you are not skilled enough to do with a knife.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20381
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.food",
+		  "damage": 7015
+		},
+		{
+		  "id": "gregtech:gt.multiitem.food",
+		  "damage": 31001
+		}
+	  ]
+	},
+	{
+	  "name": "BATTERIES!!!",
+	  "description": "At long last, power can be stored! The cells emit precise flows of current. Alas these Battery Boxes do not listen to command signals, the best way to slect the output is by choosing how many battery cells are in it. Spare electricity can be wired into the battery box for voiding, it only breaks if it recieves a packet of too large a Voltage.",
+	  "x": 125,
+	  "y": 150,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 14003
+	  },
+	  "prerequisites": [
+	    "Dawn of Computing",
+		"{Chemical Era}[Vitriolic]",
+		"Electricity"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Car Batteries?",
+		  "longDescription": "The old kind. Wrap up some lead. You will need to fill each of these with Sulphuric Acid to be functional.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 20000
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "The UPS Box",
+		  "longDescription": "It will output a constant LV 32 EU /t packet per LV cell in it. See transmission wires for routing behaviour. \n Each cell can be charged at 64 EU/t, making it useful to put a Battery Box next to each consumer for voltage smoothing, especially with Solar Power arrays.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10081
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 14001
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 20001,
+		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "Lazors!",
+	  "description": "Yet another power type on the horizon here, LU laser light. Use an electric voltage to pump an inverted population of gas particles, while the silver mirrors keep the rare spontaneous emission bouncing back and forth to collect additional photons in phase before leaving the chamber.",
+	  "x": 250,
+	  "y": 100,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20321
+	  },
+	  "prerequisites": [
+	    "Cans \u0026 Crates"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Wavelength Precision",
+		  "longDescription": "Crafting an amplification chamber to be a precise number of wavelengths between the mirrors isn\u0027t easy. This better chipset will be required to help with that.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30302
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "Sounding Light",
+		  "longDescription": "Now to actually place those mirrors at exactly the right distance apart, while keeping the tube gas-tight.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 11000
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Cutting Laser",
+		  "longDescription": "Use some CO_2 from burning liquid fuels (or otherwise) to fill the tube. It resonates with a colour of laser that is good for powering Engravers and Welders, so we make do with the generalization of it as the standard LU.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 11008
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "CRAFT",
+		  "description": "No Peeking",
+		  "longDescription": "Once again, a 50\u0025 loss on conversion from EU. At least glass/diamond Laser Fiber is completely lossless (and limitless) power transfer of LU. Bloody expensive though.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10101
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 24900
+		}
+	  ]
+	},
+	{
+	  "name": "Advanced Circuitry",
+	  "description": "Those copper circuits are strongly limited to simple calculations. With better conductors, in finer patterns, one can automate much more complicated tasks. Especially the ability to produce higher tier electric machinery. Too bad direct HV production is nearly impossible right now, you could have been able to actually use that machine tier. \n If you have Tungsten Carbide, you\u0027ll also be able to miniturize a cobble generator to fit in the input slot of a machine - making infinite vanilla stone products. \n Improvements in chip production here spill over into better chips elsewhere; Forestry, Open Computers, and PneumaticCraft will be unfettered.",
+	  "x": 250,
+	  "y": 150,
+	  "icon": {
+	    "id": "gregtech:gt.multiitem.technological",
+		"damage": 30303
+	  },
+	  "prerequisites": [
+	    "Lazors!"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Carve That Path",
+		  "longDescription": "Making a better chip will require more precise wiring layout. Solder and hand wiring can only do so good. Use this Laser to Engrave the printing of a ciruit board with Gold.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20321
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Fewer Errors",
+		  "longDescription": "Now even Tin is too resistive to provide real good Solder.  Make some Soldering Alloy to preserve the tier of your new chips.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30004
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30303
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Improved Doping",
+		  "longDescription": "Alloy the Silicon with Redstone before growing a Boule under anoxic noble gas (for a whole hour each). Add some gold and signalum wiring, several Press stages, and good Solder for Elite tier 4 Circuits. \n Similarly, the use of Platinum will get tier 5 Master and 6 Ultimate Circuits",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30304
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 30304
+		}
+	  ]
+	},
+	{
+	  "name": "Plug-in Tools",
+	  "description": "Hand Power Tools. Using those Battery Cells for properly portable power. Rather than wearing down and breaking into scrap, these tools will just run dry of juice. Mining Drills and Chainsaws operate much like the Pickaxe and Axe do, and are available in three voltages. \n The electric Wrenches can be toggled to Monkey mode easily, chose which model based on torque requirements. \n A mechanical whisk to do Hand Mixing in your Bowl with electricity instead of hunger. \n And a set of simple tools that are LV rechargable: Buzzsaw, Screwdriver, and hedge Trimmer.",
+	  "x": 230,
+	  "y": 175,
+	  "icon": {
+	    "id": "gregtech:gt.metatool.01",
+		"damage": 120
+	  },
+	  "prerequisites": [
+	    "Advanced Circuitry",
+		"{It Really is a Whole New Game}[A. Crafting T.]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "A Place to Recharge",
+		  "longDescription": "Remember those five slots in the top right of the ACT? The ones that could have liquids piped in and out of. Well, with this upgrade, they will now accept EU electricity, if the correct voltage is wired in.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 5500
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Fire in the Hole!",
+		  "longDescription": "Power drills. A completely new thing; inserting rebar directly into blocks in world, or Dynamite sticks. Plus a few crafting recipes.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.metatool.01",
+				"damage": 160
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 32712,
+		  "amount": 8
+		}
+	  ]
+	},
+	{
+	  "name": "Block Extensions",
+	  "description": "There were only six faces to any block... Now there can be thirty. The Extenders for Items, Fluids, Both, and Everything turn the attached face into four input sides and move any output to a configurable side (with Monkey Wrench). The nature of what can be accepted, pulled, pushed, or extracted from those faces is still determined by the face the extender is placed against. \n The Universal Extender includes redstone signals and most forms of power, along with items and fluids. These three extra input faces can be very helpful in overclocking recipes.",
+	  "x": 225,
+	  "y": 140,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 30255
+	  },
+	  "prerequisites": [
+	    "Advanced Circuitry"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Spilt Split",
+		  "longDescription": "When the extender has something pushed into it that cannot fit in the attached block, it routes it to the output face. Thus, it can be used as an overflow detector for large Tanks or Mass Storages. \n An Inventroy And Tank Extender is good for the input of a general-use Centrifuge, as it allows both the Item pipe (or Hopper) and the Fluid pipe (or Funnel) to connect to the same, single, input face.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 30002
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 30000
+		},
+		{
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 30001
+		}
+	  ]
+	},
+	{
+	  "name": "Lasers?",
+	  "description": "Logic chips from BuildCraft are also laser-etched. But rather than using a vast array of emitters, shared between tables, each costing two Diamonds for 20 RF/t, why not use a single Flawless Diamond for a specially designed Electric Laser Emitter with the full 64 EU/t at LV. This version is paired with the table immediately under it, reducing flexibility, and requires an especially exceptional Diamond to craft.",
+	  "x": 60,
+	  "y": 160,
+	  "icon": {
+	    "id": "BuildCraft|Silicon:laserBlock"
+	  },
+	  "prerequisites": [
+	    "Dawn of Computing"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Chip Craft",
+		  "longDescription": "This bench is powered remotely. Recipes will be made available when the components are present; activate the desired recipes and the machine will cycle through making them round-robin style; completed chips or other products are auto-output to adjacent chests. \n It is therefore neccessary to have a second table for Redstone Chipsets when building a machine-by-request system -- whether LP or AE.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "BuildCraft|Silicon:laserTableBlock",
+				"damage": 0
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "A Flawless Diamond",
+		  "longDescription": "Cannot be artifically produced. Find one by getting lucky in the ores, or looting a tomb of someone who paid for that luck long ago.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10071
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "BuildCraft|Silicon:redstoneChipset",
+		  "damage": 1,
+		  "amount": 4
+		},
+		{
+		  "id": "BuildCraft|Silicon:redstoneChipset",
+		  "damage": 2,
+		  "amount": 2
+		},
+		{
+		  "id": "BuildCraft|Silicon:redstoneChipset",
+		  "damage": 3,
+		  "amount": 1
+		}
+	  ]
+	},
+	{
+	  "name": "Upgraded Logistics",
+	  "description": "While one was able to muddle through Logistics Pipes with Gears instead of Chipsets, such clunky crafting could only work for Modules and Pipes, not the Upgrades to Pipes. Now, with BC Chipsets made, the full power of LP is released to you. Try out these, and many other, things using this BC-Compatible network. Requests deserve special mention, as one can ask for a thing to be made and have the parts for it also made, if the system has knowledge of a recipe to make it and the parts or recipes for the parts of those recipes recursively. \n EU power transmission is disabled, like many other cases of IC2 compatability that don't actually work with GT6.",
+	  "x": 35,
+	  "y": 180,
+	  "icon": {
+	    "id": "LogisticsPipes:item.itemUpgrade",
+		"damage": 30
+	  },
+	  "prerequisites": [
+	    "Lasers?"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Complex Inputs",
+		  "longDescription": "With the Advanced Satellite Upgrade, a Crafting Pipe can insert items into three, rather than two, places AND call for a fluid in the recipe.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.itemUpgrade",
+				"damage": 21
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Pipes of Power",
+		  "longDescription": "It is now possible to route RF through the pipes too. Since it is transmitted as a red laser, there must be a straight-line path between every routed pipe segment on the journey, and every such segment must be have either the Power Transportation Upgrade or a (TE) Power Supplier Upgrade, the latter exporting RF into their connected blocks. Power starts this journey at a Logsitcs RF Power Provider block, which accepts 25 kRF/t per face.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.itemUpgrade",
+				"damage": 30
+			  }
+			},
+			{
+			  "item": {
+			    "id": "LogisticsPipes:item.itemUpgrade",
+				"damage": 32
+			  }
+			},
+			{
+			  "item": {
+			    "id": "LogisticsPipes:logisticsSolidBlock",
+				"damage": 11
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Fetch!",
+		  "longDescription": "The Request Table is a crafting grid with interface to all the provided materials on the pipe network. It will make and recieve local manual requests for things, re-fill the grid form internal inventory like the A.C.T., and request a multiple of the materials for the active crafting recipe.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "LogisticsPipes:item.PipeBlockRequestTable"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "LogisticsPipes:item.itemUpgrade",
+		  "damage": 30,
+		  "amount": 16
+		}
+	  ]
+	},
+	{
+	  "name": "Solar Power (GT)",
+	  "description": "The only form of free power in all of GregTech 6, sunshine. It comes in Ultra Low Voltage packets to force solar farms to not only be large, but to use step-up Transformers before shipping the power out to consumers. \n Due to the line loss resistance mechanic, it is a good idea to step-up transmission lines as high as stable to minimize the number of packets being shrunk in transit.",
+	  "x": 120,
+	  "y": 180,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 10050
+	  },
+	  "prerequisites": [
+	    "Electricity",
+		"Dawn of Computing",
+		"{Chemical Era}[Coagulation]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Electric Sunlight",
+		  "longDescription": "So it\u0027s only 8 EU/t, and only during the day; use some Battery Boxes to smooth it out over the day cycle.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10050
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Step-Up",
+		  "longDescription": "The 8 EU packets generated by Solar Panels will be harmlessly voided by any consumer of LV or higher; the ULV Transformer acts as ULV on five faces and LV on the front, tap it with a Monkey Wrench to change the LV face to be a source, called Step-Up Mode, instead of the default Step-Down Mode. Naturally, the transformer will only output LV packets if it gets at least 16 EU/t in total. If it gets more than four ULV packets, it will output a quater of them rounded up as equal sized LV packets (which could be ULV if the division goes badly).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 10040
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitool.01",
+				"damage": 52
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 10050,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Worker Lines",
+	  "description": "Now that panes can be expanded, tram lines to shuttle items and fluids are feasible. Also, this allows for the farming of crops or trees to drop off resources; and similarly for tunnel mining operations. \n Logistics Pipes can use the shared inventory of a train line to send items, fluids, and requests across the divide. But, since it cannot transfer power, another Power Junction is required at each remote site.",
+	  "x": 170,
+	  "y": 25,
+	  "icon": {
+	    "id": "StevesCarts:CartModule",
+		"damage": 8
+	  },
+	  "prerequisites": [
+	    "Cans \u0026 Crates",
+		"Carts on Rails"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Proper Stops",
+		  "longDescription": "pair these items to make for an automated un/loading station for the cart. Any attached train will have to be handled the Railcraft way.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "StevesCarts:BlockCargoManager"
+			  },
+			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "StevesCarts:BlockAdvDetector"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:rail",
+		  "amount": 32
+		}
+	  ]
+	}
+  ],
+  "reputationBar":[]
+}
