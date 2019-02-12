@@ -1,0 +1,91 @@
+
+:: mark 1.1r307 ::
+
+Attempting to improve new player welcome quests.
+
+MT fixes for wooden stairs GregT missed : all Ereubs vareities, Railcraft, Carpenters, Witchwood, and a birch/spruce mixup once Chiseled.
+
+Change Compacting Drawer Recipe to be Galvanized / Steel; from Aluminium / Steel
+ - mostly for Tiny Ore handling
+ - may restict utility of the Dust Funnel.
+   * only handles three of the five dust sizes, with choice of tiny or small in each to pile and block.
+   * did it even work on ores?
+
+Update
+: Dragon Everything v21c
+ - plenty of bugfixes
+ - still not compatible with Thaumic Fixer
+: GalaxySpace 1.2.5-STABLE
+ - continual improvement
+: Gregtech 6.08.04
+ - Wood stuff *
+ - loading times improved
+ - config erroring quelled
+ * not caring aobut Aether II mod, yet.
+ * version checker currently broken, disabled until resolved.
+ 
+Added
+: Tweaked inventory Tweaks
+ - sorting chests full of ore / samples.
+
+:: mark 1.0r295 ::
+
+repair the errored configs
+  - Worldgen mostly
+  - Probably due to re-adding galcticraft
+Completed (GT) quest writing
+
+Decision
+! Declare Release!  WooHoo!
+: Automagy Will not Add
+ - golem autocraft / sorted storage
+   * overlaps AE2 and Logistics Pipes
+   * requirement of EEPROM in each golem makes a lackluster choice - just use robots
+ - essentia to creature summons
+   * worse than RoC stabilized spawners
+   * similar to Wrath Cage and Tablet of Necromancy (FM, TT)
+ - essentia to block summons
+   * very weak version of matter replication
+   * why not just quarry
+ - redcrystal
+   * Expanded Redstone has better logic
+   * Signalum wire has equal transmission
+   * ELN massively better in both
+
+Issues
+ - extremely long pauses in build / load
+ - Occasional FML Proxy Packet crash on launch.
+   - Quit and reload MineCraft entirely usually works
+   - Only still happens to me if the World Load is in the Background
+     * Load into world with patience, as the active application window.
+
+Update 
+: GT6.08.00
+ - IE takes EU
+ - some Railcraft stuff
+ - Ocean underwater sunlight
+ * Apparently the major version is back-end stuff
+   * Including the prior 6.07.24 in case of existing worlds breaking for other folks
+: Dragon everything v20c
+ - Galacticraft might be addable?
+ - Grinder / Extractor handle GT6 ore variants by default
+ - log spam, hopefully less
+ - Thaumic Fixer still isn't compatible
+ ! force MTReload - which doesn't work with MTUtilsGT
+   * managed to work-around, for now
+ 
+Add
+: Expanded Redstone v20a
+ - removed the troublesome dependency
+: Electrical Age 1.14.2
+ - realistic power simulator
+ - odd, but very limited, processing
+ - analog (LV-microamp) signal processing with rs interchange
+ * remove easy rubber
+ * remove easy chips
+: Galacticraft 3.0.12-504, and GalaxySpace 1.2.4
+ - asteroid dimension lighting fixed
+ - still has random crashes in Oxygen system
+   * these bugs are still unlikey to ever get fixed
+ 
+:: mark 0.8rc272 ::

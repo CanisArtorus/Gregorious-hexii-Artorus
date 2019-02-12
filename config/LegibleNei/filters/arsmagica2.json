@@ -1,0 +1,7 @@
+{
+arsmagica2: [
+	{hide:[["Crystal Phylactery"],[3]]};
+	{hide:[Bound, [*], Nor,[*]]};
+	{hide:[[spellBase],[]]};
+]
+}

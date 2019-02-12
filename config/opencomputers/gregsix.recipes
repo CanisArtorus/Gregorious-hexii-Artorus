@@ -1,0 +1,442 @@
+# To use different sets of recipes, include other recipe files in the order of
+# priority to use the recipes defined in them. The last include has the highest
+# priority (i.e. included recipes simply replace the current definition for all
+# already known recipes).
+# To disable a recipe, assign a boolean value to it. For example, to disable
+# the recipe for the transistor: `transistor = false`. This will disable the
+# recipe and hide the item in the creative tab and NEI. If you assign `true`,
+# the recipe will still be disabled, but not hidden in the creative tab/NEI.
+
+
+#include file("default.recipes")
+
+#include file("hardmode.recipes")
+
+include file("gregtech.recipes")
+
+# machines are GT5u = wrong; specified in MTUtils zenscript
+# reduced ic2-style incremental upgrades with gt6-style higher tier crafts.
+# removed all ic2 references
+
+# You can also specify custom recipes in this file directly. Have a look at the
+# default.recipes file to get an idea how recipes have to be structured. You'll
+# want to define your recipes after all includes, to avoid those overwriting
+# your recipes.
+
+analyzer {
+  # 32762 = Portable Scanner = 9002
+  type: shapeless
+  input: [{item="gregtech:gt.multiitem.randomtools", subID=9002}]
+}
+# hover boots {default}
+# manual {default}
+nanomachines {
+  # potion regenII
+  input: [["oc:chamelium", "oc:wlanCard", "oc:chamelium"]
+          ["oc:cpu2", {item=potion, subID= 8225}, "oc:ram1"]
+          ["oc:chamelium", "oc:capacitor", "oc:chamelium"]]
+}
+# texturePicker {default}
+wrench = true # {	# not working
+  # 260 = iron
+#  input: [[plateIron, "", plateIron]
+#			[casingSmallIron, "oc:circuitChip1", casingSmallIron]
+#			["", stickIron, ""]]
+#          [{item="gregtech:gt.meta.casingSmall", subID=260}, "oc:circuitChip1", {item="gregtech:gt.meta.casingSmall", subID=260}]
+#		  ["", stickAnyIron, ""]]
+#  type: shapeless
+#  input: [{item="gregtech:gt.meta.toolheadWrench", subID=any}, {item="gregtech:gt.meta.toolHeadScrewdriver", subID=any}, "oc:circuitChip1"]
+#}
+
+# droneCase1 { default }
+# droneCase2 {default}
+microcontrollerCase1 {
+  input: [[screwAnyIron, "oc:circuitChip1", screwAnyIron]
+          [redstone, chest, redstone]
+          [screwAnyIron, "oc:materialCircuitBoardPrinted", screwAnyIron]]
+}
+microcontrollerCase2 {
+  input: [[screwAluminium, "oc:circuitChip3", screwAluminium]
+          [wireFineSignalum, chest, wireFineSignalum]
+          [screwAluminium, "oc:materialCircuitBoardPrinted", screwAluminium]]
+}
+terminal {
+  input: [[screwStainlessSteel, "oc:solarGeneratorUpgrade", screwStainlessSteel]
+          ["oc:circuitChip3", "oc:screen2", "oc:wlanCard"]
+          [screwStainlessSteel, "oc:keyboard", screwStainlessSteel]]
+}
+tabletCase1 {
+  input: [[screwAluminium, button, plateGold]
+          ["oc:componentBus1", "oc:screen2", "oc:circuitChip3"]
+          [plateGold, "oc:materialCircuitBoardPrinted", craftingToolScrewdriver]]
+}
+tabletCase2 {
+  input: [["oc:circuitChip2", button, plateGold]
+          ["oc:componentBus3", "oc:screen2", "oc:circuitChip3"]
+          ["oc:circuitChip2", "oc:materialCircuitBoardPrinted", plateAluminum]]
+}
+
+diskDriveMountable {
+  input: [[obsidian, "oc:circuitChip1", obsidian]
+          [stickStainlessSteel, "oc:diskDrive", stickStainlessSteel]
+          [obsidian, "oc:materialCircuitBoardPrinted", obsidian]]
+}
+
+# server {gregtech}
+# server2 {gregtech}
+# server3 {gregtech}
+# terminalServer { default }
+
+ram1 = true
+ram2 {
+  input: [["oc:circuitChip1", "oc:circuitChip1", "oc:circuitChip1"]
+          ["oc:ram1", "oc:materialCircuitBoardPrinted", "oc:ram1"]
+          ["gt:circuit2", craftingToolWrench, "gt:circuit2"]]
+}
+ram3 = true
+ram4 {
+  input: [["oc:circuitChip2", "oc:circuitChip2", "oc:circuitChip2"]
+          ["oc:ram3", "oc:materialCircuitBoardPrinted", "oc:ram3"]
+          ["gt:circuit4", craftingToolWrench, "gt:circuit4"]]
+}
+ram5 = true
+# ram6 {gregtech}
+
+# eeprom { default}
+# floppy {gregtech}
+# hdd1 {gregtech}
+hdd2 {
+  input: [["oc:ram3", "oc:materialDisk", "oc:ram3"]
+          ["oc:ram3", "oc:materialDisk", "oc:ram3"]
+          [screwTitanium, craftingToolScrewdriver, "oc:circuitChip2"]]
+}
+hdd3 {
+  input: [["oc:ram5", "oc:materialDisk", "oc:ram5"]
+          ["oc:ram5", "oc:materialDisk", "oc:ram5"]
+          [screwTungstenSteel, craftingToolScrewdriver, "oc:circuitChip3"]]
+}
+
+dataCard1 {
+  input: [[screwGold, "oc:materialALU", "oc:circuitChip2"]
+          [craftingToolScrewdriver, "oc:materialCard", ""]]
+}
+dataCard2 {
+  input: [[screwAluminium, "oc:cpu1", "oc:circuitChip3"]
+          [craftingToolScrewdriver, "oc:materialCard", "oc:materialALU"]]
+}
+dataCard3 {
+  input: [[screwTitanium, "oc:cpu2", "oc:ram5"]
+          [craftingToolScrewdriver, "oc:materialCard", "oc:circuitChip3"]]
+}
+graphicsCard1 {
+  input: [["oc:circuitChip1", "oc:materialALU", "oc:ram1"]
+          ["", "oc:materialCard", ""]]
+}
+graphicsCard2 {
+  input: [["oc:circuitChip2", "oc:materialALU", "oc:ram3"]
+          ["oc:circuitChip2", "oc:materialCard", ""]]
+}
+graphicsCard3 {
+  input: [["oc:circuitChip3", "oc:materialALU", "oc:ram5"]
+          ["oc:circuitChip3", "oc:materialCard", "oc:circuitChip3"]]
+}
+internetCard {
+  input: [[screwTitanium , "oc:circuitChip3" , screwTitanium]
+          ["oc:materialInterweb", "oc:materialCard", torchRedstoneActive]
+          [screwTungstenSteel, craftingToolScrewdriver, screwTungstenSteel]]
+}
+redstoneCard1 {
+  input: [[screwStainlessSteel , "oc:circuitChip2" , screwStainlessSteel]
+          ["comparator", "oc:materialCard", diode]
+          [screwStainlessSteel , craftingToolScrewdriver, screwStainlessSteel]]
+}
+redstoneCard2 {
+  input: [[screwTitanium, "oc:circuitChip2" , screwTitanium]
+          ["comparator", "oc:materialCard", enderPearl]
+          [screwTitanium, craftingToolScrewdriver, screwTitanium]]
+}
+# lanCard {gregtech}
+wlanCard {
+  # 30198 = EnderPearl circuit parts
+  input: [[screwTitanium , "oc:circuitChip2" , screwTitanium]
+          [{item="gregtech:gt.multiitem.technological", subID=30198}, "oc:materialCard", {item="gregtech:gt.multiitem.technological", subID=30198}]
+          [screwTitanium , craftingToolScrewdriver, screwTitanium]]
+}
+# linkedCard { hardmode}
+abstractBusCard = false
+# worldSensorCard {default}
+
+# angelUpgrade {default}
+batteryUpgrade1 {
+  type: shapeless
+  input: ["oc:capacitor", "oc:materialTransistor"]
+}
+batteryUpgrade2 {
+  type: shapeless
+#  input: ["oc:capacitor", "gt:re-battery2", "oc:materialTransistor"]
+	input: ["oc:capacitor", {item="ImmersiveEngineering:metalDevice", subID=3}, "oc:materialTransistor"]
+}
+batteryUpgrade3 {
+  type: shapeless
+#  input: ["oc:capacitor", "gt:re-battery3", "oc:materialTransistor"]
+	input: ["oc:capacitor", "oc:materialTransistor", {item="ImmersiveEngineering:metalDevice", subID=7}]
+}
+# chunkloaderUpgrade {default}
+craftingUpgrade {
+  # 1 = LV Casing
+  input: [[screwStainlessSteel, "oc:materialCircuitBoardPrinted" , screwStainlessSteel]
+          ["oc:circuitChip2", casingMachineSteelGalvanized, "oc:circuitChip2"]
+          [screwStainlessSteel, craftingToolScrewdriver, screwStainlessSteel]]
+}
+# databaseUpgrade1 {default}
+# databaseUpgrade2 {default}
+# databaseUpgrade3 {default}
+# experienceUpgrade {hardmode}
+generatorUpgrade {
+  # 8 = Commercial steam engine
+  input: [[screwStainlessSteel, "oc:materialCircuitBoardPrinted" , screwStainlessSteel]
+          ["oc:circuitChip2", {item="Railcraft:machine.beta", subID=8}, "oc:circuitChip2"]
+          [screwStainlessSteel, craftingToolScrewdriver, screwStainlessSteel]]
+}
+# hoverupgrade1 {default}
+# hoverUpgrade2 {default}
+inventoryUpgrade {
+  # 12080 = ULV robot arm
+  type: shapeless
+  input: [chest, "oc:circuitChip1", {item="gregtech:gt.multiitem.technological", subID=12080}]
+}
+inventoryControllerUpgrade {
+  # 12140 = ULV sensor
+  type: shapeless
+  input: ["oc:analyzer", {item="gregtech:gt.multiitem.technological", subID=12080}, casingMachineStainlessSteel, {item="gregtech:gt.multiitem.technological", subID=12140}, "oc:circuitChip2", craftingToolWrench]
+}
+# mfu {default}
+# leashUpgrade {default}
+navigationUpgrade {
+  # 2 = MV Casing
+  input: [[casingMachineAluminum, compass, screwAluminium]
+          ["oc:circuitChip3", {item=filled_map, subID=any}, "oc:circuitChip3"]
+          [screwAluminium, potion, craftingToolScrewdriver]]
+}
+pistonUpgrade {
+  type: shapeless
+  input: [casingMachineAluminium, craftingPiston, "oc:circuitChip1"]
+}
+# signUpgrade {gregtech}
+solarGeneratorUpgrade {
+  # 32750 = Solar Panel = 10050
+  input: [[screwTitanium, "", screwTitanium]
+          ["oc:circuitChip3", {item="gregtech:gt.multitileentity", subID=10050} , "oc:circuitChip3"]
+          [screwTitanium, craftingToolScrewdriver, screwTitanium]]
+}
+tankUpgrade {
+  # 12020 = ULV compact pump
+  type: shapeless
+  input: [cauldron, "oc:circuitChip1", {item="gregtech:gt.multiitem.technological", subID=12020}]
+}
+tankControllerUpgrade {
+  # 12021 = LV compact pump
+  type: shapeless
+  input: [glassBottle, "oc:circuitChip2", {item="gregtech:gt.multiitem.technological", subID=12021}, casingMachineStainlessSteel]
+}
+tractorBeamUpgarde {
+  # 12100 = ULV compact force field emitter
+  type:shapeless
+  input: [{item="gregtech:gt.multiitem.technological", subID=12100}, "oc:circuitChip3", casingMachineMagnalium]
+}
+# tradingUpgrade {hardmode}
+
+# cardContainer1 {default}
+# cardContainer2 {default}
+# cardContainer3 {default}
+# upgradeContainer1 {default}
+# upgradeContainer2 {default}
+# upgradeContainer3 {default}
+
+cuttingWire = false 
+acid = false
+disk {
+	input: [[plateAluminium, "", plateAluminium]
+			["", "", ""]
+			[plateAluminium, "", plateAluminium]]
+}
+# chamelium {default}
+# endstone {default}
+inkCartridgeEmpty = true
+# inkCartridge {default}
+
+# buttonGroup { fallback to default }
+# arrowKeys { fallback to default }
+# numPad { fallback to default }
+
+transistor = true 
+
+chip1 {
+  type: shapeless
+  input: ["oc:materialTransistor", craftingToolSaw, "oc:circuitChip2", craftingToolScrewdriver]
+  output: 2
+}
+chip2 {
+  type: shapeless
+  input: ["oc:materialTransistor", craftingToolSaw, "oc:circuitChip3", craftingToolScrewdriver]
+  output: 2
+}
+chip3 = true 
+
+alu = true 
+# apu1 {default}
+# apu2 {hardmode}
+componentBus1 {
+  input: [[screwAluminium, wireFineRedAlloy, screwAluminium]
+          ["oc:circuitChip1", "oc:materialCU", craftingToolScrewdriver]
+		  [screwAluminium, "oc:materialCircuitBoardPrinted", screwAluminium]]
+}
+componentBus2 {
+  input: [[screwStainlessSteel, wireFineSignalum, screwStainlessSteel]
+          ["oc:circuitChip2", "oc:materialCU", craftingToolScrewdriver]
+		  [screwStainlessSteel, "oc:materialCircuitBoardPrinted", screwStainlessSteel]]
+}
+componentBus3 {
+  # Signalum wire
+  input: [[screwTitanium, {item="gregtech:gt.multitileentity", subID=27050}, screwTitanium]
+          ["oc:circuitChip3", "oc:materialCU", craftingToolScrewdriver]
+		  [screwTitanium, "oc:materialCircuitBoardPrinted", screwTitanium]]
+}
+# cpu1 {gregtech}
+cpu2 {
+  input: [["oc:circuitChip2", plateDoubleStainlessSteel, "oc:circuitChip2"]
+          ["oc:ram3", "oc:materialCU", "oc:ram3"]
+          ["oc:circuitChip2", craftingToolScrewdriver, "oc:circuitChip2"]]
+}
+cpu3 {
+  input: [["oc:circuitChip3", plateDoubleTitanium, "oc:circuitChip3"]
+          ["oc:ram5", "oc:materialCU", "oc:ram5"]
+          ["oc:circuitChip3", craftingToolScrewdriver, "oc:circuitChip3"]]
+}
+cu = true 
+
+# use gt gold-wired circuit plate = 30004
+rawCircuitBoard = false
+circuitBoard = false
+printedCircuitBoard = false 
+card {
+  input: [[screwStainlessSteel, "oc:circuitChip2", "oc:materialTransistor"]
+          [stickAluminium, "oc:materialCircuitBoardPrinted", "oc:materialCircuitBoardPrinted"]
+          [craftingToolScrewdriver, boltGold, roundGold]]
+}
+# interweb {hardmode}
+
+adapter {
+  input: [["oc:cable", "oc:circuitChip1", "oc:cable"]
+          ["", casingMachineAluminium, ""]
+          ["oc:materialCircuitBoardPrinted", "oc:cable", craftingToolWrench]]
+}
+assembler {
+  # 8001 = robot screwdriver
+  # 8000 = robot wrench
+  input: [["oc:circuitChip2", {item="gregtech:gt.multiitem.technological", subID=12080}, workbench ]
+          [{item="gregtech:gt.multiitem.randomtools", subID=8001}, casingMachineStainlessSteel, {item="gregtech:gt.multiitem.randomtools", subID=8000}]
+          [craftingToolScrewdriver, craftingToolWrench,"oc:materialCircuitBoardPrinted"]]
+}
+cable = true # {
+#	input: [[wireFineCopper, wireFineCopper, wireFineCopper]
+#			[wireFineCopper, dustGlass, wireFineCopper]
+#			[wireFineCopper, wireFineCopper, wireFineCopper]]
+#	output: 6
+#}
+capacitor {
+  # 7 = CESU, LV battery, MV capacitor
+#  input: [["gt:re-battery1", "", "gt:re-battery1"]
+	input: [["", {item="ImmersiveEngineering:metalDevice", subID=3}, ""]
+          ["oc:materialTransistor", casingMachineStainlessSteel, "oc:materialTransistor"]
+          ["oc:materialCircuitBoardPrinted", craftingToolWrench, "oc:materialCircuitBoardPrinted"]]
+  output: 2
+}
+charger {
+  # 2 = Chargepad (MFE), MV = 1
+  # 3 = HV Casing
+  input: [["", plateStainlessSteel, ""]
+          [{item="immersiveintegration:inductionCharger", subID=1}, casingMachineChromium, {item="immersiveintegration:inductionCharger", subID=1}]
+		  ["oc:circuitChip3", craftingToolWrench, "oc:materialCircuitBoardPrinted"]]
+}
+case1 {
+  input: [[screwAluminium, "oc:materialCircuitBoardPrinted", craftingToolWrench]
+          [rotorSteelGalvanized, casingMachineAluminium, rotorSteelGalvanized]
+		  [screwAluminium, "oc:circuitChip1", craftingToolScrewdriver]]
+}
+case2 {
+  input: [[screwStainlessSteel , "oc:materialCircuitBoardPrinted", craftingToolWrench]
+		  [rotorAluminum, casingMachineStainlessSteel, rotorAluminum]
+          [screwStainlessSteel, "oc:circuitChip2", craftingToolScrewdriver]]
+}
+case3 {
+  input: [[screwTitanium , "oc:materialCircuitBoardPrinted", craftingToolWrench]
+		  [rotorChromium, casingMachineTitanium, rotorChromium]
+          [screwTitanium, "oc:circuitChip3", craftingToolScrewdriver]]
+}
+# disassembler {default}
+diskDrive {
+  input: [["", "oc:circuitChip2", ""]
+          [craftingPiston, casingMachineAluminium, craftingLensWhite]
+          ["oc:circuitChip2", craftingToolWrench, "oc:circuitChip2"]]
+}
+# geolyzer {hardmode}
+hologram1 {
+  # Lumium wirelamp
+  input: [["oc:circuitChip2", craftingToolScrewdriver, "oc:circuitChip2"]
+          [craftingLensYellow, {item="gregtech:gt.multitileentity", subID=27500}, craftingLensCyan]
+		  [obsidian, casingMachineAluminium, obsidian]]
+}
+hologram2 {
+  input: [["oc:circuitChip3", craftingToolScrewdriver, "oc:circuitChip3"]
+          [craftingLensRed, craftingLensGreen, craftingLensBlue]
+		  [ringBlaze, casingMachineMagnalium, gemExquisiteDiamond]]
+}
+# keyboard { fallback to default }
+# motionSensor {default}
+# netSplitter {default}
+printer {
+  # = 20273 = printer (HV)
+  type: shapeless
+  input: [{block="gregtech:gt.multitileentity", subID=20273}, "oc:cable"]
+}
+powerConverter {
+  # 4 = MV Transformer = 10042
+  input: [["", "oc:circuitChip2", ""]
+          [plateAluminium, {item="gregtech:gt.multitileentity", subID=10042}, plateAluminium]
+          ["oc:materialCircuitBoardPrinted", craftingToolWrench, "oc:materialCircuitBoardPrinted"]]
+}
+powerDistributor {
+  # 7 = CESU, MV battery charger 10082
+  input: [["", plateAluminium, ""]
+          [capacitor, {item="gregtech:gt.multitileentity", subID=10082}, capacitor]
+		  ["oc:materialCircuitBoardPrinted", plateAluminium, craftingToolWrench]]
+}
+rack {
+  input: [[craftingToolScrewdriver, "oc:wlanCard", craftingToolWrench]
+          [rotorChromium, chest, rotorChromium]
+          ["oc:relay", "oc:materialCircuitBoardPrinted","oc:powerDistributor"]]
+}
+# raid {default}
+redstone {
+  # 32731 -> redstone switch = 1007
+  input: [[plateTinyRedstoneAlloy, "oc:materialCircuitBoardPrinted", plateTinyRedstoneAlloy]
+          [{item="gregtech:gt.multiitem.technological", subID=1007}, casingMachineStainlessSteel, "oc:redstoneCard1"]
+          ["oc:circuitChip2", "oc:materialCircuitBoardPrinted", "oc:circuitChip2"]]
+}
+relay {
+  input: [["", "oc:lanCard", ""]
+          ["oc:cable", casingMachineStainlessSteel, "oc:cable"]
+          ["oc:materialCircuitBoardPrinted", craftingToolWrench, "oc:materialCircuitBoardPrinted"]]
+}
+# screen1 {gregtech}
+screen2 {
+  # 32740 = ??? / 1008 = manual selector
+  input: [[plateStainlessSteel, plateCurvedAluminium, craftingToolWrench]
+          ["oc:circuitChip2", blockGlass, {item="gregtech:gt.multiitem.technological", subID=1008}]
+          [plateStainlessSteel, plateCurvedAluminium, craftingToolScrewdriver]]
+}
+# screen3 {gregtech}
+# transposer {default}
+# waypoint {default}
+# appengTunnel {default}
