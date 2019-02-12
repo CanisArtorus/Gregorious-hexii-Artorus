@@ -1,0 +1,18 @@
+{RotaryCraft:[
+	{keep-one:[[rotarycraft_item_spawner, rotarycraft_item_gearupgrade],[]]};
+	{keep:["rotarycraft_item_", [spring, strongcoil, extracts, modextracts, modingots, customextract, customingot],[0]]};
+	{keep:[[rotarycraft_item_railgun, rotarycraft_item_slide], [15]]};
+	{_hide:[[rotarycraft_block_*],[*]]};
+	{show:[[rotarycraft_block_deco, rotarycraft_block_blastglass, rotarycraft_block_blastpane],[*]]};
+],
+ElectriCraft:[
+	{_hide:[[electricraft_block_*],[*]]};
+	{show:[[electricraft_block_ore],[*]]};
+],
+ReactorCraft:[
+	{keep:["reactorcraft_", [item_fluorite, block_lamp, block_fluorite],[0]]};
+	{keep:[[reactorcraft_item_canister],[0,1]]};
+	{keep:[[reactorcraft_item_magnet], [6]]};
+	{hide:["reactorcraft_block_", [chlorine, hf, thorium], [*]]};
+]
+}
