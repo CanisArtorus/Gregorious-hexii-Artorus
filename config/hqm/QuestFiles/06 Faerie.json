@@ -1,6 +1,6 @@
 {
   "name": "World Walker",
-  "description": "Travel to distant Realms for which old fashioned common sense could use some updating. Like the Nether and the End, the Erebus and Twilight Forest have specific portals and denizens.",
+  "description": "Travel to distant Realms for which old fashioned common sense could use some updating. Like the Nether and The End, the Erebus, Atum, and Twilight Forest have specific portals and denizens.",
   "quests": [
     {
       "name": "The Twilight Zone",
@@ -1284,7 +1284,160 @@
           ]
         }
       ]
-    }
+    },
+	{
+	  "name": "A Haze of Sand",
+	  "description": "A realm of the sleeping dead, Atum supports only sparse life. Most moving things are in fact undead, continuing the way of life that lead them to be buried in the shifting sands near their homeland.",
+	  "x": 20,
+	  "y": 15,
+	  "icon": {
+	    "id": "atum:item.desertHelmet"
+	  },
+	  "bigicon": true,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "The Fourth Portal",
+		  "longDescription": "Lay down a shallow pool in sandstone. A complete 5x5 foundation below the ring layer. Add two block pillars to the four corners. \n The same structure can be built of atum limestone large bricks to return. \n\n Because the base is required, Rotary shaft power cannot be transmitted to this dimension. There is however a Miniature Portal to link any-Greggy-thing.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:sandstone"
+			  },
+			  "required": 49
+			},
+			{
+			  "item": {
+			    "id": "atum:item.scarab"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "LOCATION",
+		  "description": "Dive into the Wind",
+		  "longDescription": "Activate the portal by setting the scarab into the centre of it\u0027s depression. A pool or vortex of ever-swirling sand will fill it, and whisk all who enter into a bleak afterlife.",
+          "locations": [
+            {
+              "name": "Atum",
+              "icon": {
+                "id": "atum:item.scarab"
+              },
+              "x": 68,
+              "y": 69,
+              "z": -42,
+              "dim": 17,
+              "radius": -1
+            }
+          ]
+		}
+	  ]
+	},
+	{
+	  "name": "Ancient lootz",
+	  "description": "Pyramids here are much better defended than those still in the Overworld. They are nearly unbreakable structures. Each has a single entrance that leads into a tight and winding corridor filled with traps designed to foil builders and sappers. At the heart of this maze is a ladder up to the burial chamber. The noble was generally intered with their personal riches, but generally dislikes being robbed in thier sleep.",
+	  "x": 40,
+	  "y": 15,
+	  "icon": {
+	    "id": "atum:item.scepter"
+	  },
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "By right of conquest",
+		  "longDescription": "That old Pharoh has no further need for thier riches. Defeat them and their mummy guards to keep the contents of the chest. \n Occasionally there will be grand Divine Artifacts, more often there is dirty finery that will need to be cleaned gently in a Bath.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "atum:item.loot"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.gemExquisite",
+		  "damage": 8300
+		}
+	  ]
+	},
+	{
+	  "name": "Land of Riches",
+	  "description": "In this gently rolling land, huge veins of ore can be found. The old-style ore sandwiches exist, one per nine chunks, in a nice regular pattern across the world. When they are near the surface, it becomes strange sand ore, which is processed in the Sifter instead of the Sluice. \n There are also bedrock ore veins to be found. Some indicator flowers may grow above them.",
+	  "x": 20,
+	  "y": 35,
+	  "icon": {
+	    "id": "gregtech:gt.meta.ore.normal.sand.atum",
+		"damage": 820
+	  },
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Pick and Shovel",
+		  "longDescription": "There are only two ground materials here: strange sand and dry limestone. Ores could be in either.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.ore.broken.atum"
+			  },
+			  "precision": "FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.meta.ore.normal.sand.atum"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "atum:item.limestoneShovel"
+		}
+	  ]
+	},
+	{
+	  "name": "The Lost Ones",
+	  "description": "You have discovered a strange and wonderous artifact: the Ring of Worlds. Or one of them that is. When you place down the final block (or tag the controller of a built ring) it will whisper to you a sequence of nine characters, which we map to the alpha-numerics for ease of reference. Hopefully you have also found a carved obsidian altar bearing those symbols nearby, a DHD. If not, you will need to program an OC computer to dial out. And it does operate much like dialing a phone, enter a string of seven symbols into the nearby DHD or attached dialing computer that correspond to a ring in this world. An amount of power will be spent, and a gateway to that place opened for a while.",
+	  "x": 210,
+	  "y": 155,
+	  "icon": {
+	    "id": "SGCraft:stargateRing",
+		"damage": 1
+	  },
+	  "trigger": "TASK_TRIGGER",
+	  "triggertasks": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "A Great Ring",
+		  "longDescription": "Some old Pyramids contain functional Cha\u0027apa\u0027ai above the treaure shaft. The difficult part will be powering this thing. The DHD can eat Naquadah lumps to power a fair number of jumps. \n RF power and OC control can be supplied from below; Iris control, if installed, takes redstone signals from the sides while redstone signals are output on these same sides for wormhole activity. Thankfully, the Gate Controller will relay any OC Wireless signals through the connection.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "SGCraft:stargateRing"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "The Eighth Chevron",
+		  "longDescription": "Since each world is so enormous, seven digit dialing will only reach locations on the same dimension of existence. Attach some Enderium reflectors in this augment to allow for nine-digit dialing; thereby Stargates built (or found) in any dimension on any world can be accessed by dialing their full symbol sequence.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "SGCraft:sgChevronUpgrade"
+			  }
+			}
+		  ]
+		}
+	  ]
+	}
   ],
   "reputationBar": []
 }

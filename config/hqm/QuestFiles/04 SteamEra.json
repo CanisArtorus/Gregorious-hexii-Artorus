@@ -12,7 +12,7 @@
 		"damage": 1202
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Alloying]"
+	    "{In Ages Past}[Alloying]"
 	  ],
 	  "tasks": [
 	    {
@@ -63,7 +63,7 @@
 	  },
 	  "prerequisites": [
 	    "Steam Age",
-		"{It Really is a Whole New Game}[Workshop Tools]"
+		"{In Ages Past}[Workshop Tools]"
 	  ],
 	  "tasks": [
 	    {
@@ -100,7 +100,7 @@
 	  },
 	  "prerequisites": [
 	    "Steam Age",
-		"{It Really is a Whole New Game}[Workshop Tools]"
+		"{In Ages Past}[Workshop Tools]"
 	  ],
 	  "tasks": [
 	    {
@@ -136,7 +136,7 @@
 		"damage": 1020
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	    "{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "tasks": [
 	    {
@@ -223,7 +223,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Washing Machine",
-		  "longDescription": "Now you can retire that cauldron. But, washing ore is a 32RU/t job that takes plenty of clean water (not seawater). Thus you will need at least an Invar Turbine to run this safely. You can store or void the sluice juice until getting the overclocked centrifuge running. Check out the multiblock tanks.",
+		  "longDescription": "Now you can retire that cauldron. But, washing ore is a 32RU/t job that takes plenty of clean water (not seawater). Thus you will need at least an Invar Turbine to run this consistently. You can store or void the sluice juice until getting the overclocked centrifuge running. Check out the multiblock tanks.",
 		  "items": [
 		    {
 			  "item": {
@@ -250,7 +250,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Perfectly Overclocked",
-		  "longDescription": "Remember that part about machines blowing up when they exceed their power limits? Well, the centrifuge is part of the ore processing chain only when powered to exactly it\u0027s limit, and powered at that level continuously: two ticks lower in a minute and the recipe fails. This means the boiler must be producing exactly the right amount of steam (no pipe has 192mB/t bandwidth \u003d flow rate); and that means it must be in perfect condition with ZERO calcification. So only run this Strong Bronze Boiler (192mB/t steam) on pure distilled water that you have collected as condensate from running less fussy machines. Remember to put in EXACTLY 96HU/t, like a Dense Bronze Burning Box.",
+		  "longDescription": "Remember that part about machines blowing up when they exceed their power limits? Well, the centrifuge is part of the ore processing chain only when powered to exactly it\u0027s limit, and powered at that level continuously: two ticks lower in a minute and the recipe fails. This means the boiler must be producing exactly the right amount of steam (no pipe has 192mB/t bandwidth \u003d flow rate); and that means it must be in perfect condition with ZERO calcification. So only run this Strong Bronze Boiler (192mB/t steam) on pure distilled water that you have collected as condensate from running less fussy machines. Remember to put in EXACTLY 96HU/t, like a Dense Bronze Burning Box. \n While you\u0027re at it, better use a Bronze Axle fuse. The axle will pop off into the world if it gets overpowered, with no loss in material if it gets picked up (perhaps by a hopper, robot, worker ant, or golem).",
 		  "items": [
 		    {
 			  "item": {
@@ -275,7 +275,7 @@
 	},
 	{
 	  "name": "Whet Sand",
-	  "description": "The Sharpening of raw tool head casts is an important step in making tools out of better materials - like obsidian. While this can be done by in hand crafintg with a File, using the Grindstone only consumes sand instead of tool durability. Using the Sanding Machine consumes only power, and the contained space even recovers the dust shaved off the cast!",
+	  "description": "The Sharpening of raw tool head casts is an important step in making tools out of better materials - like obsidian. While this can be done by in hand crafting with a File, using the Grindstone only consumes sand instead of tool durability. Using the Sanding Machine consumes only power, and the contained space even recovers the dust shaved off the cast!",
 	  "x": 25,
 	  "y": 125,
 	  "icon": {
@@ -284,7 +284,7 @@
 	  },
 	  "prerequisites": [
 	    "Turbine be Mine",
-		"{It Really is a Whole New Game}[Ferrous Metal Domination]"
+		"{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "parentrequirement": 1,
 	  "tasks": [
@@ -305,7 +305,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Black Tools",
-		  "longDescription": "Obsidian is the replacement for flint as your basic tool material. It still has Fire Aspect when fighting, has good enough durability, the raw material is plentiful, and it has a higher mining level. Lava can be poured directly into the Crucible to be turned into hot obsidian scrap, only a little heat is needed to re-melt for forming in a mold or basin.",
+		  "longDescription": "Obsidian is the replacement for flint as your basic tool material. It still has Fire Aspect when fighting, has good enough durability, the raw material is plentiful, and it has a higher mining level. Lava can be poured directly into the Crucible to be turned into hot obsidian scrap, where only a little heat is needed to re-melt it for forming in a mold or basin.",
 		  "items": [
 		    {
 			  "item": {
@@ -327,7 +327,7 @@
 	},
 	{
 	  "name": "Efficient Manufacturing",
-	  "description": "Ease up on the Wire snips, get a Wiremill to pull transmission wire or fine wire thread losslessly! \n The Cluster Mill is dedicated to making foil, and nothing else, but does so losslessly unlike hammer rolling.",
+	  "description": "Ease up on the Wire snips, get a Wiremill to pull transmission wire or fine wire thread losslessly! \n The Cluster Mill is dedicated to making foil, and nothing else, but does so losslessly unlike hammer and anvil rolling.",
 	  "x": 125,
 	  "y": 125,
 	  "icon": {
@@ -396,7 +396,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "With new uses",
-		  "longDescription": "Time to retire the rolling cylinders, The Roll Bender makes round things neatly: curved plates, springs, even Cans. \n\n The Loom can make cloth better than by hand, and braid or spin wire together - with special features for OpenComputers data cables and AE system cable.",
+		  "longDescription": "The Roll Bender makes round things neatly: curved plates, springs, even Cans. No more relying on the Hammer and Anvil for them. \n\n The Loom can make cloth better than by hand, and braid or spin wire together - now with special features for OpenComputers data cables and AE system cable.",
 		  "items": [
 		    {
 			  "item": {
@@ -437,7 +437,7 @@
 	},
 	{
 	  "name": "Sifting for Loot",
-	  "description": "If you have picked up some Sand Ore (in a desert) or Gravel Ore in a pocket, you will have noticed they cannot be washed in a Sluice or Cauldron. These ores are \"washed\" dry by the sifter. \n Also, Crushed Gem-type ores, which includes the coal varieties, can be sifted to retrieve a mixture of Gem items and Dust piles. True crystalline gems come in several varieties / denominations, they can be broken down easily but some recipes require the larger ones.",
+	  "description": "If you have picked up some Sand Ore (in a desert) or Gravel Ore in a pocket, you will have noticed they cannot be washed in a Sluice or Cauldron. These ores are \"washed\" dry by the sifter. \n Also, Crushed Gem-type ores, which includes the coal varieties, can be sifted to retrieve a mixture of Gem items and Dust piles. True crystalline gems come in several varieties / denominations, which can be broken down easily but some recipes require the larger ones.",
 	  "x": 25,
 	  "y": 25,
 	  "icon": {
@@ -446,7 +446,7 @@
 	  },
 	  "prerequisites": [
 	    "Pounding Power",
-		"{It Really is a Whole New Game}[Ferrous Metal Domination]"
+		"{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "parentrequirement": 1,
 	  "tasks": [
@@ -518,7 +518,7 @@
 	    "id": "ImmersiveEngineering:coil"
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Gleaning and Foraging]"
+	    "{In Ages Past}[Strike a Light]"
 	  ],
 	  "tasks": [
 	    {
@@ -589,7 +589,7 @@
 		"damage": 11
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	    "{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "tasks": [
 	    {
@@ -624,7 +624,7 @@
 	},
 	{
 	  "name": "Logistics",
-	  "description": "The Logistics Pipes are outrageously effective at sorting at transporting items. It even provides autocrafting blocks and eventually a nice central interface to retrieve things from. All it takes is a steady RF power supply.",
+	  "description": "The Logistics Pipes are outrageously effective at sorting and transporting items. It even provides autocrafting blocks and eventually a nice central interface to retrieve things from. All it takes is a steady RF power supply.",
 	  "x": 275,
 	  "y": 25,
 	  "icon": {
@@ -651,7 +651,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Routed and Stupid Pipes",
-		  "longDescription": "The super cheap unrouted pipe gets very confused if it is an intersction, make sure Basic Pipe or any specific pipe made from them are used at every potential branch in the path. Yes, they take diamond gems, but the batch size is large (64 per 2 diamonds and 8 gold gears or BC chips). \n The pipe can always accept items being pushed into it, but will only send it\u0027s contents into the one block it is facing - generally the block it was placed against, but it will select a valid inventory side if placed against a wall.",
+		  "longDescription": "The super cheap unrouted pipe gets very confused if it is an intersection, make sure Basic Pipe or any specific pipe made from them are used at every potential branch in the path. Yes, they take diamond gems, but the batch size is large (64 per 2 diamonds and 8 gold gears or BC chips). \n The pipe can always accept items being pushed into it, but will only send it\u0027s contents into the one block it is facing - generally the block it was placed against, but it will select a valid inventory side if placed against a wall.",
 		  "items": [
 		    {
 			  "item": {
@@ -719,14 +719,14 @@
 	},
 	{
 	  "name": "Familliar Old Hell",
-	  "description": "Of great import is the Miniature Nether Portal. It follows the same 8 to 1 spatial compression, fuzzy endpoint detection, and iginition trigger as the full-size portal does, opening many useful ways to exploit the territory. It cannot transport entities, it instead acts like a trans-dimensional universal extender, any-Greggy-thing piped or wired in one side will be piped or wired out the other as if the nexus was the same type of pipe or wire. Items, fluids, redstone signals, and EU all work this way. \n\n RotaryCraft Shafts can transfer power through the vanilla portal just fine.",
+	  "description": "Of great import is the Miniature Nether Portal. It follows the same 8 to 1 spatial compression, fuzzy endpoint detection, and iginition trigger as the full-size portal does, opening many useful ways to exploit the territory. It cannot transport entities, rather it acts like a trans-dimensional universal extender, any-Greggy-thing piped or wired in one side will be piped or wired out the other as if the nexus was the same type of pipe or wire. Items, fluids, redstone signals, and power (EU, LU, RU, even RF) all work this way. \n\n RotaryCraft Shafts can transfer power through the vanilla portal just fine.",
 	  "x": 150,
 	  "y": 50,
 	  "icon": {
 	    "id": "minecraft:end_portal"
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	    "{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "tasks": [
 	    {
@@ -801,8 +801,8 @@
 		"damage": 2
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Ferrous Metal Domination]",
-		"{It Really is a Whole New Game}[All the Barrels]"
+	    "{In Ages Past}[Ferrous Metal Domination]",
+		"{In Ages Past}[All the Barrels]"
 	  ],
 	  "tasks": [
 	    {
@@ -826,7 +826,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "IE\u0027s Pretty Orb",
 		  "longDescription": "A building made of sheet metal blocks held up by treated wood fences, the fixed size IE tank remains competitive due to fair capacity coupled with custom model aesthetics. The redstone dependent auto-emit feature on the bottom block is also quite nice.",
 		  "items": [
@@ -849,7 +849,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "The Railcraft tower",
-		  "longDescription": "Made entirely of Iron (or Steel for double capacity), these variable size monstrousities can be HUGE! The Iron 9x8 tank holds almost as much as an Adamantium Tank or Dense Titanium Tank, with Steel approaching the Dense Tungsten Tanks. A valve can only have fluid pumped out if it is near the bottom, from any side position, and another valve must be used to input the fluid. \n They also may crash the world when GT buckets, Capsule-Cell-Containers, or Pots attempt to interact with them; but they are by far the cheapest to build.",
+		  "longDescription": "Made entirely of Iron (or Steel for double capacity), these variable size monstrousities can be HUGE! The Iron 9x8 tank holds almost as much as an Adamantium Tank or Dense Titanium Tank, with Steel approaching the Dense Tungsten Tanks. A valve can only have fluid pumped out if it is near the bottom, from any side position, and another valve must be used to input the fluid. \n They also may CRASH the WORLD when GT buckets, Capsule-Cell-Containers, Wooden Buckets, or Pots attempt to interact with them; but they are by far the cheapest to build.",
 		  "items": [
 		    {
 			  "item": {
@@ -889,15 +889,13 @@
 		"damage": 1
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Ferrous Metal Domination]",
-		"Down the Sluice!",
+	    "Down the Sluice!",
 		"Blast that Furnace!",
-		"{It Really is a Whole New Game}[Washing Dirt]",
+		"{In Ages Past}[Washing Dirt]",
 		"{Rotational Engineering}[Heart of the Dragon]",
-		"{Sufficiently Advanced Tech}[Toil and Trouble]",
-		"{Chemical Era}[Without Blemish]"
+		"{Different Knowledge}[Toil and Trouble]"
 	  ],
-	  "parentrequirement": 2,
+	  "parentrequirement": 1,
 	  "tasks": [
 	    {
 		  "type": "DETECT",
@@ -934,7 +932,7 @@
 	},
 	{
 	  "name": "Engineer Immersively",
-	  "description": "Much of Immersive Engineering remains using generic steel as it\u0027s key component. The Fluid Pump is good at picking up oil or lava, and Fluid Pipe is comparable to steel pipes - it is also an infinite source of fresh water (always check water quality first). A Crusher could be helpful for a mob farm, or to get more Gems from ores, it is inferior to the default GT ore processing chain otherwise. A Bottler only does automated container filling, yet it is the only option until the LV Electric Machine Age. Conversely, the Metal Press is obsolete compared to a GT workshop.\n If you have enough lava and steel, the Immersive Integration Industrial Coke Oven can replace an entire bank of common IE and RC coke ovens.",
+	  "description": "Much of Immersive Engineering remains using generic steel as its key component. The Fluid Pump is good at picking up oil or lava, and Fluid Pipe is comparable to steel pipes - it is also an infinite source of fresh water (always check water quality first). A Crusher could be helpful for a mob farm, or to get more Gems from ores, it is inferior to the default GT ore processing chain otherwise. A Bottler only does automated container filling, yet it is the only machine to do so until the LV Electric Machine Age. Conversely, the Metal Press is obsolete compared to a GT workshop.\n If you have enough lava and steel, the Immersive Integration Industrial Coke Oven can replace an entire bank of common IE and RC coke ovens.",
 	  "x": 175,
 	  "y": 75,
 	  "icon": {
@@ -966,7 +964,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Fluicrafting",
 		  "longDescription": "Another 3-cube, this one is strongly sided. The Autocrafter (IE) structure uses RF to perform three crafting recipes (potentially in order) from it\u0027s internal inventory, and can output the results. It surpasses other crafting methods for the ability to use internal fluid tanks as proxy for fluid containers in those recipes, without actually needing to have the container be present.",
 		  "items": [
@@ -1020,7 +1018,7 @@
 	},
 	{
 	  "name": "Green Diesel",
-	  "description": "Biodiesel production was very important for HV IE, but the PneumaticCraft oil fractions make better fuel for that Electrical Age generator, and other liquid fueled purposees. The main benefit to biodiesel being non-petroleum is the freedom to make as mcuh farmland dedicated to growing the fuel as you feel like, with no other limit to it\u0027s supply.",
+	  "description": "Biodiesel production was very important for basic HV IE, but the PneumaticCraft oil fractions make better fuel for that Electrical Age generator, and other liquid fueled purposees. The main benefit to biodiesel being non-petroleum is the freedom to make as mcuh farmland dedicated to growing the fuel as you feel like, with no other limit to its supply.",
 	  "x": 275,
 	  "y": 75,
 	  "icon": {
@@ -1033,7 +1031,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Different Extractions",
 		  "longDescription": "The IE squeezer can do a few of the things the GT Squeezer can do, but is the only way to get IE Plant Oil, a very thin version of seed oil. It\u0027s pair partner, the Fermenter (IE), only makes one thing: \"ethanol\" (IE), which isn\u0027t used anywhere else.",
 		  "items": [
@@ -1061,7 +1059,7 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Mixed Refining",
 		  "longDescription": "Combining these two fluids produces a viable liquid fuel.",
 		  "items": [
@@ -1118,7 +1116,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Prospecting",
-		  "longDescription": "Much like picking up rocks to find ore veins, the Core Sample Drill must be operated in every \"chunk\" (square chain) of land in case it discovers a void ore vein there. They are fairly rare, but it\u0027s still better than trying to blindly stumble across an ore flower patch.",
+		  "longDescription": "Much like picking up rocks to find ore veins, the Core Sample Drill must be operated in every \"chunk\" (square chain) of land in case it discovers a void ore vein there. They are fairly rare, but it\u0027s still more common than blindly stumbling across an ore flower patch.",
 		  "items": [
 		    {
 			  "item": {
@@ -1130,7 +1128,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Giant Hiccoughing Dwarf",
 		  "longDescription": "It takes 4096 RF to makes this wheel turn, but at least it can wait the other tick while your three MV connectors valiantly try, and fail, to feed it enough power. Just think of the engine array you\u0027ll have to build to get even that much RF/t...",
 		  "items": [
@@ -1260,7 +1258,7 @@
 	},
 	{
 	  "name": "Baking on Purpose",
-	  "description": "There are four other heat-based machines available to build at this point in the progression: the Oven, Dryer, Roasting Oven, and Laminator. \n An Oven is simply a powered furnace, good for little else than cooking now. \n The Laminator will be responsible for putting the glass on Forestry Electron Tubes, but for now all it does is coat things in wax - preferably wooden things in fire-proof wax. \n The Dryer extracts Distilled Water from many sources, sometimes the solid by-product is actually enhanced by this. Perhaps you should put one between your boilers and the river (or now optionally ocean) so calcification stops being a problem.",
+	  "description": "There are four other heat-based machines available to build at this point in the progression: the Oven, Dryer, Roasting Oven, and Laminator. \n An Oven is simply a powered furnace, good for little else than cooking. \n The Laminator will be responsible for putting the glass on Forestry Electron Tubes, but for now all it does is coat things in wax - preferably wooden things in fire-proof wax. \n The Dryer extracts Distilled Water from many sources, sometimes the solid by-product is actually enhanced by this. Perhaps you should put one between your boilers and the river (or now optionally ocean) so calcification stops being a problem.",
 	  "x": 175,
 	  "y": 125,
 	  "icon": {
@@ -1272,9 +1270,9 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Heating Things",
-		  "longDescription": "Since you can already make tier 2 versions of these machines from Invar, I won\u0027t specify which one to get. The power input tier mechanics are standard across GregTech, although burning boxes rarely match standard denominations.",
+		  "longDescription": "Since you can already make tier 2 versions of these machines from Invar, I won\u0027t specify which one to get. The power input tier mechanics are standard across GregTech basic machines, although burning boxes rarely match standard denominations.",
 		  "items": [
 		    {
 			  "item": {
@@ -1331,6 +1329,12 @@
 				"damage": 20082
 			  },
 			  "precision": "NBT_FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 24820
+			  }
 			}
 		  ]
 		}

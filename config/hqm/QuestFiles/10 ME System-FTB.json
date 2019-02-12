@@ -4,7 +4,7 @@
   "quests": [
     {
       "name": "No-body said Aliens",
-      "description": "As a great industrial magnate, you don\u0027t need relics from long-dead super civilizations to perform hard sci-fi calculations.  Just write your own circuit presses (if you have a HV laser engraver), or get an earthly sponsor.",
+      "description": "As a great industrial magnate, you don\u0027t need relics from long-dead super civilizations to perform hard sci-fi calculations.  Just write your own circuit presses (if you have a HV laser engraver), or get an earthly sponsor. \n Such relics might still be found on distant worlds.",
       "x": 158,
       "y": 9,
       "icon": {
@@ -100,7 +100,7 @@
     },
     {
       "name": "Made Out of Buttons and Wires",
-      "description": "AE2 machines are hooked up and powered via Fluix conduits. Channels are a very special mechanic: most Busses or AE2 Machines take up a channel. ME glass or smart cables can only transfer 8 channels, and can have busses attached to them. The Dense ME Cable carries 32 channels but does not operate busses nor terminals.",
+      "description": "AE2 machines are hooked up and powered via Fluix conduits. Channels are a very special mechanic: most Busses or AE2 Machines take up a channel. ME glass or smart cables can only transfer 8 channels, and can have busses attached to them. The Dense ME Cable carries 32 channels but will not operate busses nor terminals.",
       "x": 158,
       "y": 109,
       "icon": {
@@ -222,7 +222,7 @@
     },
     {
       "name": "Not Actually Floppy",
-      "description": "Storage Cells are placed into the ME Drive. Every Storage Cell can only take 63 unique items, but the different tiers can hold certain amounts of bytes. 8 items take up 1 byte, no matter the size of a regular stack. Going straight for the max size Storage Cell isn\u0027t necessarily the best idea, because then you still only have 63 possible unique items, even if it\u0027s a lot more of those 63 items.",
+      "description": "Storage Cells are placed into the ME Drive. Every Storage Cell can only take 63 unique items, but the different tiers can hold certain amounts of bytes. 8 items take up 1 byte, no matter the size of a regular stack. Going straight for the max size Storage Cell isn\u0027t necessarily the best idea, because then you still only have 63 possible unique items in a cell, even if it is a lot more of those 63 items.",
       "x": 154,
       "y": 150,
       "icon": {
@@ -292,7 +292,7 @@
         {
           "type": "DETECT",
           "description": "Make an Import Bus",
-          "longDescription": "The Import Bus pulls items from an inventory in front of it into the ME System it is connected to. For example, if you want to move all your items out of chests into your ME System, you would use a Dolly to move all your chests so that they\u0027re connected to an Import Bus, which will suck out all the items and put them into the System. You can set a whitelist on what to import by opening it and putting items into it. By default, the whitelist can only have 1. With 2 Capacity Cards, it can have 9.",
+          "longDescription": "The Import Bus pulls items from an inventory in front of it into the ME System it is connected to. For example, if you want to move all your items out of chests into your ME System, you would use a Dolly to move all your chests so that they\u0027re connected to an Import Bus, which will suck out all the items and put them into the System. You can set a whitelist on what to import by opening it and putting items into it. By default, the whitelist can only have 1 entry. With 2 Capacity Cards it can have 9.",
           "items": [
             {
               "item": {
@@ -305,7 +305,7 @@
         {
           "type": "DETECT",
           "description": "Make an Export Bus",
-          "longDescription": "The Export Bus pushes items out of the ME System into the inventory it is facing. You have to open the Bus and put the items you want to push out into it. Without Capacity Cards, you only can export 1 item. With 2 Capacity Cards, you can export 9.",
+          "longDescription": "The Export Bus pushes items out of the ME System into the inventory it is facing. You have to open the Bus and put the items you want to push out into it. Without Capacity Cards you only can export 1 item. With 2 Capacity Cards you can export 9.",
           "items": [
             {
               "item": {
@@ -472,8 +472,8 @@
       },
       "prerequisites": [
         "Accessing Your Stuff",
-        "{Sufficiently Advanced Tech}[Crafting Like a Magician]",
-        "{Sufficiently Advanced Tech}[Thinking About Thaumaturgy]"
+        "{Different Knowledge}[Crafting Like a Magician]",
+        "{Different Knowledge}[Thinking About Thaumaturgy]"
       ],
       "tasks": [
         {
@@ -507,7 +507,7 @@
         {
           "type": "DETECT",
           "description": "Make ME Fluid Terminal",
-          "longDescription": "Put the thing you want to put the fluid into (bucket/can/whatever) into the left slot, and click what you want to put into it. Or, you can put a filled fluid container into the left slot, and it will go into the system.",
+          "longDescription": "Put the thing you want to put the fluid into (bucket/can/whatever) into the left slot, and click what you want to put into it. Or, you can put a filled fluid container into the left slot, and it will drain into the system.",
           "items": [
             {
               "item": {
@@ -532,7 +532,7 @@
       "prerequisites": [
         "Accessing Your Stuff",
 		"Not Actually Floppy",
-        "{Sufficiently Advanced Tech}[A Real Wand]",
+        "{Different Knowledge}[A Real Wand]",
 		"{Electric Revolution}[Dawn of Computing]"
       ],
       "tasks": [
@@ -551,7 +551,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Magical Disk Drive",
-		  "longDescription": "Only these magical chips can run the septinary code required for essentia storage natively. ",
+		  "longDescription": "Only these magical chips can run the septinary code required for essentia storage.",
 		  "items": [
 		    {
 			  "item": {
@@ -581,7 +581,7 @@
       ]
     },
     {
-      "name": "Now With USB4 Compatibility",
+      "name": "Now With USB5 Compatibility",
       "description": "The Wireless Universal Terminal gains new modes by crafting together with an Access Terminal of a new type (items, fluids, gasses, essentia). To switch modes, shift right click it.",
       "x": 264,
       "y": 68,
@@ -598,7 +598,7 @@
       "tasks": [
         {
           "type": "CRAFT",
-          "description": "Wireless Universal Terminal ",
+          "description": "Wireless Universal Terminal",
           "longDescription": "To add a mode, craft a Wireless Terminal with an Access Terminal that you want to add support for. To make the max upgraded one, craft the regular Wireless Access Terminal with either a Fluid Terminal or Essentia Terminal, then craft that with the other one, and finally with a vanilla crafting table.",
           "items": [
             {
@@ -661,7 +661,7 @@
       },
       "prerequisites": [
         "The Wheels on the Bus",
-        "{Sufficiently Advanced Tech}[A Real Wand]"
+        "{Different Knowledge}[A Real Wand]"
       ],
       "tasks": [
         {
@@ -701,13 +701,13 @@
         "id": "thaumicenergistics:thaumicenergistics.block.arcane.assembler"
       },
       "prerequisites": [
-        "{Sufficiently Advanced Tech}[Altar or Henge?]",
+        "{Different Knowledge}[Altar or Henge?]",
         "Autocrafting",
-        "{Sufficiently Advanced Tech}[Sceptre of Crafting]"
+        "{Different Knowledge}[Sceptre of Crafting]"
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "description": "Make the Knowledge Inscriber",
           "longDescription": "The Knowledge Inscriber works similar to the Pattern Terminal. Instead of Patterns, you need the Knowledge Core. Put in the recipe and save it to the Knowledge Core. The Knowledge Core can have 21 Recipes in it. \n Instead of putting patterns in a connected terminal(s), the Arcane Assembler takes one Knowledge Core internally. Therefore, unlike the normal Molecular Assembler, the Arcane Assembler does take up a network channel.",
           "items": [
@@ -741,14 +741,14 @@
         "id": "thaumicenergistics:thaumicenergistics.block.essentia.provider"
       },
       "prerequisites": [
-        "{Sufficiently Advanced Tech}[Altar or Henge?]",
+        "{Different Knowledge}[Altar or Henge?]",
         "Magic School Bus",
         "Autocrafting",
-        "{Sufficiently Advanced Tech}[Automated Alchemy]"
+        "{Different Knowledge}[Automated Alchemy]"
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "description": "Make the Essentia Provider",
 		  "longDescription": "It acts like a giant Buffer Tube.",
           "items": [
@@ -770,12 +770,12 @@
         "id": "thaumicenergistics:thaumicenergistics.block.infusion.provider"
       },
       "prerequisites": [
-        "{Sufficiently Advanced Tech}[Altar or Henge?]",
+        "{Different Knowledge}[Altar or Henge?]",
         "Magic School Bus"
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
           "description": "Make the Infusion Provider",
           "longDescription": "Place it as if it was the jar nearby your altar.",
           "items": [
@@ -838,7 +838,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Ring Gates",
-		  "longDescription": "Transdimensional I/O operations in the AE network require a horizontal ring around the core, into which the specific quantum-linked singularity will be placed. The ring has four (or twelve?) contacts for cable, and can transmit at least those 128 channels. \n Note that these structures do not care about distance, and could even be used as long-range, or simply wireless, connections on the same world.",
+		  "longDescription": "Transdimensional I/O operations in the AE network require a horizontal ring around the core, into which the specific quantum-linked singularity will be placed. The ring has four (or twelve?) contacts for cable, and can transmit at least those 128 channels. \n Note that these structures do not care about distance, and could even be used as long-range, or simply wireless, connections on the same world if the expense is acceptable.",
 		  "items": [
 		    {
 			  "item": {
@@ -892,7 +892,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "World in a Bottle",
-		  "longDescription": "The category of Spatial storage Disk defines the maximum side length of zone that can be scanned onto it by a Spatial I/O Port. \n Upon exploration, it turns out that entire cubic volume is made available in some virtual meta-reality. The Spatial Storage is a sort of key to the specific demi-plane, allowing parts of it to be swapped with whatever is inside the Spatial Pylons each time the Spatial I/O Port is activated with it. Time passes normally for all things in these demi-planes, one could even construct an inter-dimensional teleporter to access them directly (Stargates anyone?); Without such an internal link, the Spatial storage Disk would be the only way to access the contents of that demi-plane. \n One could get tricky with Quantum Link Chambers and a bookshelf.",
+		  "longDescription": "The category of Spatial storage Disk defines the maximum side length of zone that can be scanned onto it by a Spatial I/O Port. \n Upon exploration, it turns out that the entire cubic volume is made available in some virtual meta-reality. The Spatial Storage is a sort of key to the specific demi-plane, allowing parts of it to be swapped with whatever is inside the Spatial Pylons each time the Spatial I/O Port is activated with it. Time passes normally for all things in these demi-planes, one could even construct an inter-dimensional teleporter to access them directly (Stargates anyone?); Without such an internal link, the Spatial storage Disk would be the only way to access the contents of that demi-plane. \n One could get tricky with Quantum Link Chambers and a bookshelf.",
 		  "items": [
 		    {
 			  "item": {

@@ -12,9 +12,9 @@
 		"damage": 45
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Gleaning and Foraging]",
-		"{It Really is a Whole New Game}[Ferrous Metal Domination]",
-		"{It Really is a Whole New Game}[Mind the Splinters]"
+	    "{In Ages Past}[Strike a Light]",
+		"{In Ages Past}[Ferrous Metal Domination]",
+		"{In Ages Past}[Mind the Splinters]"
 	  ],
 	  "tasks": [
 	    {
@@ -1071,7 +1071,7 @@
 	  "description": "This quarry, well bore, bores straight on unto practically infinity; unlike most other quarries it doesn\u0027t strictly need to be relocated. One just needs power to run it and enough torque to break all blocks. It also ignores liquids so no problems there. Further, it silk touches spawners.",
 	  "x": 147,
 	  "y": 38,
-	  "bigicon": true
+	  "bigicon": true,
 	  "icon": {
 	    "id": "RotaryCraft:rotarycraft_item_machine",
 		"damage": 14

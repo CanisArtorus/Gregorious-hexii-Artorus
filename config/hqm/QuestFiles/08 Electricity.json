@@ -1,6 +1,6 @@
 {
   "name": "Electric Revolution",
-  "description": "Get ready to replace nearly everything, power conversions to and from EU combine with the ability to actually store it to radically change how a factory is laid out. Many other mods have also been defferred to this tech level, where central power generation meets improvements in general automation.",
+  "description": "Get ready to replace nearly everything, power conversions to and from EU combine with the ability to actually store it to radically change how a factory is laid out. Many other mods have also been defferred to this tech level, where frequent power conversion and transformation meets improvements in general automation.",
   "quests": [
 	{
 	  "name": "Galvan to the Rescue",
@@ -17,7 +17,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "A Deeper Bath",
 		  "longDescription": "Hey! Grab that stainless Bathing Pot! The metal can withstand molten Zinc. Toss in some steel components, stir, and presto! \n Do note that Galvanized Steel cannot be cut or extruded, it is a thin plating of zinc over the steel after all. Entire casings can be galvanized after construction though.",
 		  "items": [
@@ -193,7 +193,7 @@
 	},
 	{
 	  "name": "Galgadoria",
-	  "description": "Upgrading Steve\u0027s Cart for greater versatility, tool level, and reduced maintenance. \n This uses the Burner Mixer, that is originally intended for Titanium refining, of Tier 2 or higher.",
+	  "description": "Upgrading Steve\u0027s Cart for greater versatility, tool level, and reduced maintenance. \n This uses the Burner Mixer, that was originally intended for Titanium refining, of Tier 2 or higher.",
 	  "x": 120,
 	  "y": 10,
 	  "icon": {
@@ -221,7 +221,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "A Strange Eye",
-		  "longDescription": "The awareness module for all things cart-related. Open an Eye of Ender with Ur-Ghast Tears.",
+		  "longDescription": "The awareness module for all things cart-related. Open an Eye of Ender with Ur-Ghast Tears, or artifically enhanced normal ghast tears.",
 		  "items": [
 		    {
 			  "item": {
@@ -324,7 +324,7 @@
 		  ]
 		},
 		{
-		  "type": "DETECT",
+		  "type": "CRAFT",
 		  "description": "Cuboid Rhombic",
 		  "longDescription": "Ranging from 3x3x3 to 5x5x3, this multiblock is the iron standard for automated farming.",
 		  "items": [
@@ -347,7 +347,7 @@
 	},
 	{
 	  "name": "Electricity",
-	  "description": "Your factory has been converting power units since the dawn of Steam, but now so many more varities of power can be produced with the controlled application of Electric Units. Rotary RU is currently the only reversable transformation. No conversion is perfectly efficient, there are always losses. With simple machines, you will get 11 EU from the 16 RU produced by each 24 HU from a Burning Box, with fuel consumption also being affected by burning box efficiency from the theoretical maximum of 5000 HU per smelting operation of solid fuels. That energy could be used to produce 5.5 HU, RU, or KU, minus transmission line losses, with the appropriate convertor.",
+	  "description": "Your factory has been converting power units since the dawn of Steam, but now so many more varities of power can be produced with the controlled application of Electric Units. No conversion is perfectly efficient, there are always losses. With simple machines, you will get 11 EU from the 16 RU produced by each 24 HU from a Burning Box, with fuel consumption also being affected by burning box efficiency compared to the theoretical maximum of 5000 HU per smelting operation of solid fuels. That energy could be used to produce 5.5 HU, RU, or KU, minus transmission line losses, with the appropriate convertor.",
 	  "x": 80,
 	  "y": 70,
 	  "icon": {
@@ -360,7 +360,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Magnetic Shaft",
 		  "longDescription": "Have you done this yet? Remember NEI, you can only magnetize iron at all right now.",
 		  "items": [
@@ -388,7 +388,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Transmission Wire",
-		  "longDescription": "There are so many different types of transmission Wire due to the three characteristics they have. Maximum Voltage by material, Amperage by material and cross-section, and Resistance (line loss) by material - improved when wrapped in Rubber sheet insulation. \n These line losses per meter in every packet make getting the correct tier of energy to the final consumer an increasingly complicated proposition. Note: Even if the packet Voltage has gotten absurdly small, the Amperage count of packets in the wire remains the same until collected by a Battery Box. \n Each packet of power is routed from the producer to a consumer; one destination will be preferred until the next packet would put it over it\u0027s input limt, that one usually finds a new consumer (but occasionally takes the earlier route anyway - just long enough to overload wire amperage, to average at that machine\u0027s voltage limit).",
+		  "longDescription": "There are so many different types of transmission Wire due to the three characteristics they have. Maximum Voltage by material, Amperage by material and cross-section, and Resistance (line loss) by material - improved when wrapped in Rubber sheet insulation. \n These line losses per meter in every packet make getting the correct tier of energy to the final consumer an increasingly complicated proposition. Note: Even if the packet Voltage has gotten absurdly small, the Amperage count of packets in the wire remains the same until collected by a Battery Box or Transformer. \n Each packet of power is routed from the producer to a consumer; one destination will be preferred until the next packet would put it over it\u0027s input limt, that one usually finds a new consumer (but occasionally takes the earlier route anyway - just long enough to overload wire amperage - to average at that machine\u0027s voltage limit).",
 		  "items": [
 		    {
 			  "item": {
@@ -424,7 +424,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "B-Vector Field",
-		  "longDescription": "In order to use magnetic power - MU - it must be created from some EU in an Electromagnet, which operates similar to the Electric Motor with 50\u0025 loss. \n See also the Fluxomagnet series.",
+		  "longDescription": "In order to use magnetic power - MU - it must be created from some EU in an Electromagnet. While this process is lossless, the power is split in two even streams on opposite sides of the electromagnet. \n See also the Fluxomagnet series.",
 		  "items": [
 		    {
 			  "item": {
@@ -450,7 +450,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Playing with Sand",
-		  "longDescription": "Dry Sluice Sand in particular. The Magnetic Seperators turn this by-product of normal ore processing into a source of useful metals for the future: Cobalt, Neodymium, Manganese, Nickel, and Iron all dance from the waste under magnetic stimulation.",
+		  "longDescription": "Dry Sluice Sand in particular. The Magnetic Seperators turn this by-product of normal ore processing into a source of useful metals for the future: Cobalt, Neodymium, Manganese, Nickel, and Iron all dance from the waste under magnetic stimulation. \n\n This can also be used to Refine washed ores by drawing out thier magnetic contaminants; or conversely letting lie the non-magnetic components of magnetic ores.",
 		  "items": [
 		    {
 			  "item": {
@@ -484,7 +484,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Hot and Pumping",
-		  "longDescription": "Strongly limited by the second law of thermodynamics, the production of CU by a Thermoelectric Cooler produces an equal amount of Heat Units out the other side, with the two together adding up to half the EU consumed like normal for conversion machines.",
+		  "longDescription": "Strongly limited by the second law of thermodynamics, the production of CU by a ThermoElectric or ThermoFluxic Cooler produces an equal amount of Heat Units out the other side, with the two together adding up to half the EU consumed like normal for conversion machines.",
 		  "items": [
 		    {
 			  "item": {
@@ -526,7 +526,7 @@
 	},
 	{
 	  "name": "Electrolysis",
-	  "description": "The use of electric voltage to break up molecular materials into more basic, possibly atomic, materials. This process will vastly expand the variety of ores that can be used for any material, as it also improves the recovery rate of those components. Including one outrageous awfully difficult to purify material...",
+	  "description": "The use of electric voltage to break up molecular materials into more basic, possibly atomic, materials. This process will vastly expand the variety of ores that can be used for any material, as it also improves the recovery rate of those components. Including one outrageous and awfully difficult to purify material...",
 	  "x": 140,
 	  "y": 120,
 	  "icon": {
@@ -542,7 +542,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Platinum Contacts",
-		  "longDescription": " powered by Tin Cable, in a Galvanized Casing. Let the bubbles commence!",
+		  "longDescription": "... powered by Tin Cable, in a Galvanized Casing. Let the bubbles commence!",
 		  "items": [
 		    {
 			  "item": {
@@ -744,7 +744,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Bottles Too",
-		  "longDescription": "Did I mention Spray Cans? The joys of C-Foam embeding pipes, possibly some Spray Paint, or the utilitarian Fire Extinguisher - the only way to instantly turn off a Burning Box. \n Gas loading is done here, most importantly for the propane Lighters.",
+		  "longDescription": "Did I mention Spray Cans? The joys of C-Foam embeding pipes, possibly some Spray Paint, or the utilitarian Fire Extinguisher - the only way to instantly turn off a Burning Box. \n Gas loading is also done here, most importantly for the propane Lighters.",
 		  "items": [
 		    {
 			  "item": {
@@ -755,9 +755,9 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "And Blocks",
-		  "longDescription": "Most outputs of the Boxinator can be placed in-world. The compression recipes to each Block format are done here, as is the titular loading of a Crate. Unlike Forestry fruit crates, GT material crates store 16 units. \n Unboxing from crate can be done with a Crowbar in-world, or save the crate in the machine. Unboxinators will also de-compress storage Blocks.",
+		  "longDescription": "Most outputs of the Boxinator can be placed in-world. The compression recipes to each Block format are done here, as is the titular loading of a Crate. Unlike Forestry fruit crates, GT material crates store 16 units. \n Unboxing from a crate can also be done with a Crowbar or Screwdriver in-world. Unboxinators will also de-compress storage Blocks.",
 		  "items": [
 		    {
 			  "item": {
@@ -793,7 +793,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Insertion",
-		  "longDescription": "Mostly for cream Doughnuts and Soda, the Injectors have a few strange recipes of the Fluid Transposer variety, like medicinal Pills and Hot Sauce.",
+		  "longDescription": "Mostly for cream Doughnuts and Soda, the Injectors will also make Mana Potions for the sorcerers on your contact list.",
 		  "items": [
 		    {
 			  "item": {
@@ -830,7 +830,7 @@
 	},
 	{
 	  "name": "BATTERIES!!!",
-	  "description": "At long last, power can be stored! The cells emit precise flows of current. Alas these Battery Boxes do not listen to command signals, the best way to slect the output is by choosing how many battery cells are in it. Spare electricity can be wired into the battery box for voiding, it only breaks if it recieves a packet of too large a Voltage.",
+	  "description": "At long last, power can be stored! The cells emit precise flows of current. Alas these Battery Boxes do not listen to command signals, the best way to slect the output is by choosing how many battery cells are in it. Spare electricity can be wired into the battery box for voiding once full, it only breaks if it recieves a packet of too large a Voltage.",
 	  "x": 125,
 	  "y": 150,
 	  "icon": {
@@ -844,9 +844,9 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Car Batteries?",
-		  "longDescription": "The old kind. Wrap up some lead. You will need to fill each of these with Sulphuric Acid to be functional.",
+		  "longDescription": "The old kind. Wrap up some lead. You will need to fill each of these with Sulphuric Acid to be functional. A tap on the acid tank will do.",
 		  "items": [
 		    {
 			  "item": {
@@ -888,7 +888,7 @@
 	},
 	{
 	  "name": "Lazors!",
-	  "description": "Yet another power type on the horizon here, LU laser light. Use an electric voltage to pump an inverted population of gas particles, while the silver mirrors keep the rare spontaneous emission bouncing back and forth to collect additional photons in phase before leaving the chamber.",
+	  "description": "Yet another power type on the horizon here, LU laser light. Use an electric voltage to pump an inverted population of gas particles, while the not-perfect silver mirrors keep the rare spontaneous emission bouncing back and forth to collect additional photons in phase before leaving the chamber.",
 	  "x": 250,
 	  "y": 100,
 	  "icon": {
@@ -942,7 +942,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "No Peeking",
-		  "longDescription": "Once again, a 50\u0025 loss on conversion from EU. At least glass/diamond Laser Fiber is completely lossless (and limitless) power transfer of LU. Bloody expensive though.",
+		  "longDescription": "Once again, a 50\u0025 loss on conversion from EU. At least glass/diamond Laser Fiber provides completely lossless (and limitless) power transfer of LU. Bloody expensive though.",
 		  "items": [
 		    {
 			  "item": {
@@ -975,7 +975,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Carve That Path",
 		  "longDescription": "Making a better chip will require more precise wiring layout. Solder and hand wiring can only do so good. Use this Laser to Engrave the printing of a ciruit board with Gold.",
 		  "items": [
@@ -1009,7 +1009,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Improved Doping",
-		  "longDescription": "Alloy the Silicon with Redstone before growing a Boule under anoxic noble gas (for a whole hour each). Add some gold and signalum wiring, several Press stages, and good Solder for Elite tier 4 Circuits. \n Similarly, the use of Platinum will get tier 5 Master and 6 Ultimate Circuits",
+		  "longDescription": "Alloy the Silicon with Redstone before growing a Boule under anoxic noble gas (for a whole irl hour each, unless tiered up). Add some gold and signalum wiring, several Press stages, and good Solder for Elite tier 4 Circuits. \n Similarly, the use of Platinum will get tier 5 Master and 6 Ultimate Circuits",
 		  "items": [
 		    {
 			  "item": {
@@ -1029,7 +1029,7 @@
 	},
 	{
 	  "name": "Plug-in Tools",
-	  "description": "Hand Power Tools. Using those Battery Cells for properly portable power. Rather than wearing down and breaking into scrap, these tools will just run dry of juice. Mining Drills and Chainsaws operate much like the Pickaxe and Axe do, and are available in three voltages. \n The electric Wrenches can be toggled to Monkey mode easily, chose which model based on torque requirements. \n A mechanical whisk to do Hand Mixing in your Bowl with electricity instead of hunger. \n And a set of simple tools that are LV rechargable: Buzzsaw, Screwdriver, and hedge Trimmer.",
+	  "description": "Hand Power Tools. Using those Battery Cells for properly portable power. It takes much longer for them to wear down and break into scrap, these tools normally run dry of juice. Mining Drills and Chainsaws operate much like the Pickaxe and Axe do, and are available in three voltages. MV and HV tools use the extra power to increase thier effective mining level. \n The electric Wrenches can be toggled to Monkey mode easily, chose which model based on torque requirements. \n A mechanical whisk to do Hand Mixing in your Bowl with electricity instead of hunger. \n And a set of simple tools that are LV rechargable: Buzzsaw, Screwdriver, and hedge Trimmer.",
 	  "x": 230,
 	  "y": 175,
 	  "icon": {
@@ -1038,7 +1038,7 @@
 	  },
 	  "prerequisites": [
 	    "Advanced Circuitry",
-		"{It Really is a Whole New Game}[A. Crafting T.]"
+		"{In Ages Past}[A. Crafting T.]"
 	  ],
 	  "tasks": [
 	    {
@@ -1058,7 +1058,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Fire in the Hole!",
-		  "longDescription": "Power drills. A completely new thing; inserting rebar directly into blocks in world, or Dynamite sticks. Plus a few crafting recipes.",
+		  "longDescription": "Power drills. A completely new thing; inserting rebar directly into blocks in world. Or place Dynamite sticks in the mine face. Plus a few crafting recipes.",
 		  "items": [
 		    {
 			  "item": {
@@ -1143,7 +1143,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "A Flawless Diamond",
 		  "longDescription": "Cannot be artifically produced. Find one by getting lucky in the ores, or looting a tomb of someone who paid for that luck long ago.",
 		  "items": [
@@ -1176,7 +1176,7 @@
 	},
 	{
 	  "name": "Upgraded Logistics",
-	  "description": "While one was able to muddle through Logistics Pipes with Gears instead of Chipsets, such clunky crafting could only work for Modules and Pipes, not the Upgrades to Pipes. Now, with BC Chipsets made, the full power of LP is released to you. Try out these, and many other, things using this BC-Compatible network. Requests deserve special mention, as one can ask for a thing to be made and have the parts for it also made, if the system has knowledge of a recipe to make it and the parts or recipes for the parts of those recipes recursively. \n EU power transmission is disabled, like many other cases of IC2 compatability that don't actually work with GT6.",
+	  "description": "While one was able to muddle through Logistics Pipes with Gears instead of Chipsets, such clunky crafting could only work for Modules and Pipes, not the Upgrades to Pipes. Now, with BC Chipsets made, the full power of LP is released to you. Try out these, and many other, things using this BC-Compatible network. Requests deserve special mention, as one can ask for a thing to be made and have the parts for it also made, if the system has knowledge of a recipe to make it and the parts or recipes for the parts of those recipes recursively. \n EU power transmission is disabled, like many other cases of IC2 compatability that don't actually work directly with GT6.",
 	  "x": 35,
 	  "y": 180,
 	  "icon": {
@@ -1228,7 +1228,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Fetch!",
-		  "longDescription": "The Request Table is a crafting grid with interface to all the provided materials on the pipe network. It will make and recieve local manual requests for things, re-fill the grid form internal inventory like the A.C.T., and request a multiple of the materials for the active crafting recipe.",
+		  "longDescription": "The Request Table is a crafting grid with interface to all the provided materials on the pipe network. It will make and recieve local manual requests for things, re-fill the grid form internal inventory like the A.C.T., and can request a multiple of the materials for the active crafting recipe.",
 		  "items": [
 		    {
 			  "item": {
@@ -1248,7 +1248,7 @@
 	},
 	{
 	  "name": "Solar Power (GT)",
-	  "description": "The only form of free power in all of GregTech 6, sunshine. It comes in Ultra Low Voltage packets to force solar farms to not only be large, but to use step-up Transformers before shipping the power out to consumers. \n Due to the line loss resistance mechanic, it is a good idea to step-up transmission lines as high as stable to minimize the number of packets being shrunk in transit.",
+	  "description": "The first of two forms of free power in all of GregTech 6, sunshine. It comes in Ultra Low Voltage packets to force solar farms to not only be large, but to use step-up Transformers before shipping the power out to consumers. \n Due to the line loss resistance mechanic, it is a good idea to step-up all transmission lines as high as stable to minimize the number of packets being shrunk in transit between the power plant and the consuming factory. \n\n When you are ready for Lighning Rod power, it will come at ludicrous transmission voltage already.",
 	  "x": 120,
 	  "y": 180,
 	  "icon": {
@@ -1278,7 +1278,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Step-Up",
-		  "longDescription": "The 8 EU packets generated by Solar Panels will be harmlessly voided by any consumer of LV or higher; the ULV Transformer acts as ULV on five faces and LV on the front, tap it with a Monkey Wrench to change the LV face to be a source, called Step-Up Mode, instead of the default Step-Down Mode. Naturally, the transformer will only output LV packets if it gets at least 16 EU/t in total. If it gets more than four ULV packets, it will output a quater of them rounded up as equal sized LV packets (which could be ULV if the division goes badly).",
+		  "longDescription": "The 8 EU packets generated by Solar Panels will be harmlessly voided by any consumer of LV or higher; the ULV Transformer acts as ULV on five faces and LV on the front, tap it with a Monkey Wrench to change the LV face to be a source, called Step-Up Mode, instead of the default Step-Down Mode. Naturally, the output packet will only be LV if the transformer recieves at least 16 EU/t in total.",
 		  "items": [
 		    {
 			  "item": {
@@ -1321,7 +1321,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Proper Stops",
-		  "longDescription": "pair these items to make for an automated un/loading station for the cart. Any attached train will have to be handled the Railcraft way.",
+		  "longDescription": "Pair these blocks to make for an automated un/loading station for the cart. Any attached train will have to be handled the Railcraft way.",
 		  "items": [
 		    {
 			  "item": {
