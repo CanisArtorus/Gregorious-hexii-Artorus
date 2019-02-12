@@ -576,8 +576,10 @@ recipes.addShaped(<Forestry:apiaristBag>, [
 	// [cuirboulli, cuirboulli, cuirboulli]]);
 // --- Miner's Backpack
 recipes.addShaped(<Forestry:minerBag>, [
-	[cottonWeave, <ore:crushedPurifiedLignite>, cottonWeave],
-	[cuirboulli, <ore:crushedPurifiedLignite>, cuirboulli],
+//	[cottonWeave, <ore:crushedPurifiedLignite>, cottonWeave],
+//	[cuirboulli, <ore:crushedPurifiedLignite>, cuirboulli],
+	[cottonWeave, <gregtech:gt.meta.crushed:*>, cottonWeave],
+	[cuirboulli, <gregtech:gt.meta.crushed:*>, cuirboulli],
 	[cuirboulli, cuirboulli, cuirboulli]]);
 // --- Miner's Backpack Woven
 Carpenter.addRecipe(<Forestry:minerBagT2>, [[silkWoven, clasp, silkWoven],

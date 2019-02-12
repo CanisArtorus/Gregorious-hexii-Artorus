@@ -75,3 +75,9 @@ recipes.addShaped(floodLamp, [
 	[null, <ore:ingotHSLA>, plank],
 	[lensWhite, lumiumTwinPlate, wireStirling],
 	[obsidian, <ore:plateHSLA>, RoCScrew.reuse()]]);
+
+// use Dry Ice in the Cryotic excavator
+<ore:caLiqNitrogen>.add(<RotaryCraft:rotarycraft_item_powders:11>);
+
+// A bit more chemical re-usability
+# dry ice smelting
