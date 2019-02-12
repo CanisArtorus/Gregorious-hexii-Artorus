@@ -451,13 +451,13 @@ recipes.addShaped(CreosoteWood * 4, [
 [Plank, creosote, Plank],
 [SHammer, null, Saw]]);
 
-// Wood Slab
-recipes.addShaped(CreosoteSlab * 3, [
-[Slab, Slab, null],
-[creosote, Slab, null],
-[SHammer, null, Saw]]);
+// Wood Slab	- until 6.09.01
+// recipes.addShaped(CreosoteSlab * 3, [
+// [Slab, Slab, null],
+// [creosote, Slab, null],
+// [SHammer, null, Saw]]);
 
-// Wood Stairs
+// Wood Stairs	- new wood pattern of 6.08.04
 // recipes.addShaped(<Railcraft:stair:38> * 3, [
 // [<ore:stairWood>, <ore:stairWood>, null],
 // [creosote, <ore:stairWood>, null],
@@ -476,16 +476,16 @@ recipes.addShaped(<Railcraft:post> * 3, [
 [SHammer, Saw, null]]);
 
 // --- Ties ---
-// --- Wood
+// --- Wood	- until 6.09.01
 recipes.removeShaped(<Railcraft:part.tie>);
-recipes.addShaped(<Railcraft:part.tie>, [
+recipes.addShaped(<Railcraft:part.tie>*2, [
 [CreosoteSlab, CreosoteSlab, CreosoteSlab]]);
 // --- Stone
 
 // --- Slabs ---
 
 // --- Sandy Brick
-recipes.addShaped(<Railcraft:slab> * 2, [
+recipes.addShaped(<Railcraft:slab:0> * 2, [
 [Saw, <Railcraft:brick.sandy>]]);
 //-
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.cutter", true, 16, 64, [10000],

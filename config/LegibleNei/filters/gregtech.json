@@ -2,7 +2,7 @@
 gregtech: [
 	{keep:["gt.meta.", ["storage.*", bolt, chemtube, chunkGt, "crate.*", dustDiv72, dustSmall, dustTiny, foil, ingotDouble, ingotQuadruple, ingotQuintuple, ingotTriple, nugget, plate*, rockGt, scrapGt, screw, stick*, "crushed*"],[140]]};
 	{keep:["gt.meta.",[gemChipped, gemExquisite, gemFlawed, gemFlawless, gemLegendary],[8383]]};
-	{keep:["gt.meta.",["machine*", gearGt* , rotor, spring*, round, ring, casingSmall, wireFine, minecartWheels, toolHead*, arrowGtPlastic, arrowGtWood, bulletGt*],[600]]};
+	{keep:["gt.meta.",["machine*", gearGt* , rotor, spring*, round, ring, casingSmall, wireFine, minecartWheels, toolHead*, arrowGtPlastic, arrowGtWood, bulletGt*, chain],[600]]};
 	{show:["gt.meta.",[crate, storage],".gem", [8383]]};
 	{_hide:["gt.block.*", [slab, fresh], "*", []]};
 	{show:["gt.block.", ["*.slab.0"],[0]]};

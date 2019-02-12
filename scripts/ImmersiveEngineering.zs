@@ -610,11 +610,11 @@ var platVein	= mods.immersiveengineering.Excavator.getMineral("Platinum");
 var pyriteVein	= mods.immersiveengineering.Excavator.getMineral("Pyrite");
 var quarVein	= mods.immersiveengineering.Excavator.getMineral("Quartzite");
 var silVein		= mods.immersiveengineering.Excavator.getMineral("Silver");
-// var uraVein		= mods.immersiveengineering.Excavator.getMineral("Uranium");	// poof? -- gT meta.ore.*.* are dicted to "oreVanillastone*" :: 6.07.12
+var uraVein		= mods.immersiveengineering.Excavator.getMineral("Uranium");	// poof? -- gT meta.ore.*.* are dicted to "oreVanillastone*" :: 6.07.12
 var wolfVein	= mods.immersiveengineering.Excavator.getMineral("Wolframite");
 
 <ore:oreRutile>.addAll(<ore:oreVanillastoneRutile>);
-<ore:oreZirconium>.addAll(<ore:oreVanillastoneZirconium>);
+<ore:oreZircon>.addAll(<ore:oreVanillastoneZircon>);
 <ore:oreCassiterite>.addAll(<ore:oreVanillastoneCassiterite>);
 <ore:oreHuebnerite>.addAll(<ore:oreVanillastoneHuebnerite>);
 <ore:oreAnthracite>.addAll(<ore:oreVanillastoneAnthracite>);
@@ -650,7 +650,7 @@ bauxVein.removeOre("oreAluminium");
 bauxVein.removeOre("oreTitanium");
 bauxVein.addOre("oreBauxite", 0.90);
 bauxVein.addOre("oreRutile", 0.08);
-bauxVein.addOre("oreZirconium", 0.02);
+bauxVein.addOre("oreZircon", 0.02);
 
 casserVein.addOre("oreCassiterite", 1);
 casserVein.addOre("oreHuebnerite", 0.2);
@@ -691,9 +691,9 @@ quarVein.addOre("oreBarite", 0.1);
 
 silVein.addOre("oreBromargyrite", 0.05);
 
-mods.immersiveengineering.Excavator.addMineral("Uranite", 10, 50, ["orePitchblende", "oreUranium", "oreLead", "oreThorium", "oreVanillastonePlutonium"], [0.80, 0.55, 0.30, 0.25, 0.10]);
-// uraVein.addOre("orePitchblende", 0.8);
-// uraVein.addOre("oreThorium", 0.25);
+//mods.immersiveengineering.Excavator.addMineral("Uranite", 10, 50, ["orePitchblende", "oreUranium", "oreLead", "oreThorium", "oreVanillastonePlutonium"], [0.80, 0.55, 0.30, 0.25, 0.10]);
+uraVein.addOre("orePitchblende", 0.8);
+uraVein.addOre("oreThorium", 0.25);
 
 wolfVein.removeOre("oreTungsten");
 wolfVein.addOre("oreScheelite", 0.20);
@@ -703,12 +703,22 @@ wolfVein.addOre("oreRussellite", 0.10);
 wolfVein.addOre("oreMolybdenum", 0.025);
 wolfVein.addOre("oreBastnasite", 0.025);
 
-mods.immersiveengineering.Excavator.addMineral("Suffering", 100, 20, ["oreNetherQuartz", "stoneNetherrack", "soulsand", "oreNetherrackArsenopyrite", "oreNetherrackSphalerite", "oreNetherrackCelestine", "oreNetherrackVyroxeres", "oreNetherrackVulcanite", "oreNetherrackThulium", "oreNetherrackTechnetium", "orenetherrackPotassiumNitrate", "glowstone", "oreNetherrackShadowIron"], [0.15, 0.20, 0.20, 0.05, 0.05, 0.075, 0.01, 0.01, 0.02, 0.05, 0.05, 0.10, 0.02], [-1013, -1006, -1], false);
+mods.immersiveengineering.Excavator.addMineral("Suffering", 100, 20, ["oreNetherQuartz", "stoneNetherrack", "soulsand", "oreNetherrackArsenopyrite", "oreNetherrackSphalerite", "oreNetherrackCelestine", "oreNetherrackVyroxeres", "oreNetherrackVulcanite", "oreNetherrackThulium", "oreNetherrackTechnetium", "orenetherrackPotassiumNitrate", "glowstone", "oreNetherrackShadowIron", "blockDustAshVolcanic"], [0.15, 0.20, 0.20, 0.05, 0.05, 0.075, 0.01, 0.01, 0.02, 0.05, 0.05, 0.10, 0.02, 0.015], [-1012, -1006, -1], false);
+// [-1013, -1006, -31, -16, -15, -14, -1], false);
 
-mods.immersiveengineering.Excavator.addMineral("Chalk", 10, 5, ["oreLimestoneAsbestos", "oreLimestoneSoapstone", "oreLimestoneTalc", "oreLimestoneGypsum", "oreLimestoneGlauconite", "oreLimestoneBentonite", "oreLimestoneMagnesite", "oreLimestoneZeolite", "oreLimestoneBorax", "oreLimestoneIodineSalt", "oreLimestoneChalk", "oreLimestoneKaolinite", "oreLimestoneVermiculite"], [0.05, 0.10, 0.05, 0.05, 0.10, 0.05, 0.05, 0.10, 0.08, 0.05, 0.12, 0.10, 0.10], [-1025, -1024, -1013, -1012, -1010, -1009, -1005, -45, -44, -42, -41, -40, -30, -28, -27, -26, -19, -1, 1], true);
+mods.immersiveengineering.Excavator.addMineral("Chalk", 10, 5, ["oreLimestoneAsbestos", "oreLimestoneSoapstone", "oreLimestoneTalc", "oreLimestoneGypsum", "oreLimestoneGlauconite", "oreLimestoneBentonite", "oreLimestoneMagnesite", "oreLimestoneZeolite", "oreLimestoneBorax", "oreLimestoneIodineSalt", "oreLimestoneChalk", "oreLimestoneKaolinite", "oreLimestoneVermiculite"], [0.05, 0.10, 0.05, 0.05, 0.10, 0.05, 0.05, 0.10, 0.08, 0.05, 0.12, 0.10, 0.10], [-1030, -1015, -1014, -1007, -1006, -29, 0, 7, 17, 66], false);
+// [-1029, -1024, -1020, -1017, -1016, -1013, -1009, -1008, -1005, -45, -44, -42, -41, -40, -30, -28, -27, -26, -19, -1, 1], true);
+// [-1030, -1028, -1027, -1026, -1023, -1022, -1021, -1015, -1014, -1007, -1006, -39, -38, -34, -29, -22, -20, -14, 0, 7, 17, 66], false);
+// [-1029, -1025, -1024, -1020, -1019, -1018, -1017, -1016, -1013, -1012, -1011, -1010, -1009, -1008, -1005, -142, -119, -81, -80, -79, -78, -77, -76, -75, -74, -73, -72, -71, -70, -69, -68, -67, -66, -65, -64, -63, -62, -61, -60, -45, -44, -43, -42, -41, -40, -37, -36, -35, -33, -31, -30, -28, -27, -26, -21, -19, -18, -17, -16, -15, -13, -1, 1], true);
 
-mods.immersiveengineering.Excavator.addMineral("Magical", 10, 25, ["oreAmber", "oreChimerite", "oreCinnabar", "oreInfusedAir", "oreInfusedEarth", "oreInfusedEntropy", "oreInfusedFire", "oreInfusedOrder", "oreInfusedWater", "oreMoonstone", "oreSunstone"], [0.19, 0.10, 0.15, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.04, 0.04], [-1018, -1009, -42, -28, -19, -1, 1, 7, 17, 66], false); 
+mods.immersiveengineering.Excavator.addMineral("Magical", 10, 25, ["oreAmber", "oreChimerite", "oreCinnabar", "oreInfusedAir", "oreInfusedEarth", "oreInfusedEntropy", "oreInfusedFire", "oreInfusedOrder", "oreInfusedWater", "oreMoonstone", "oreSunstone"], [0.19, 0.10, 0.15, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.04, 0.04], [-1009, -42, -28, -19, -1, 1, 7, 17, 66], false);
+// [-1025, -1019, -1018, -1010, -1009, -142, -42, -41, -39, -28, -21, -19, -16, -15, -1, 1, 7, 17, 66], false); 
 
-mods.immersiveengineering.Excavator.addMineral("Animeyese", 5, 30, ["oreEndstoneCheese", "oreEndstoneDilithium", "oreEndstoneDuraniumHexaastatide", "oreEndstoneLemurite", "oreEndstoneMeteoricIron", "oreEndstoneNaquadah", "oreEndstoneOrichalcum", "oreEndstoneSelenium", "oreEndstoneTrinium", "oreEndstoneTritaniumHexaiodide", "oreEndstoneVibranium"], [0.15, 0.05, 0.10, 0.15, 0.10, 0.05, 0.05, 0.10, 0.05, 0.10, 0.005], [-1018, -1009, -1006, -42, -30, -29, 1, 7, 17], false);
+mods.immersiveengineering.Excavator.addMineral("Animeyese", 5, 30, ["oreEndstoneCheese", "oreEndstoneDilithium", "oreEndstoneDuraniumHexaastatide", "oreEndstoneLemurite", "oreEndstoneMeteoricIron", "oreEndstoneNaquadah", "oreEndstoneOrichalcum", "oreEndstoneSelenium", "oreEndstoneTrinium", "oreEndstoneTritaniumHexaiodide", "oreEndstoneVibranium"], [0.15, 0.05, 0.10, 0.15, 0.10, 0.05, 0.05, 0.10, 0.05, 0.10, 0.005], [-1030, -1017, -1015, -1008, -1007, -1006, -42, -30, -29, 1, 7, 17], false);
+// [-1030, -1028, -1021, -1017, -1015, -1008, -1007, -1006, -119, -42, -40, -38, -30, -29, -20, -18, -14, 1, 7, 17], false);
 
-mods.immersiveengineering.Excavator.addMineral("Adamant", 10, 50, ["oreKimberliteIlmenite", "oreKimberliteDiamond", "oreKimberliteAdamantine", "oreKimberliteFerberite", "oreKimberliteTantalite", "oreKimberliteAtlarus", "oreKimberliteDraconium", "oreKimberliteGraphene"], [0.25, 0.05, 0.10, 0.25, 0.15, 0.05, 0.05, 0.10], [-1017, -1012, -1011, -42, -29, -19, 1, 66], false);
+mods.immersiveengineering.Excavator.addMineral("Adamant", 10, 50, ["oreKimberliteIlmenite", "oreKimberliteDiamond", "oreKimberliteAdamantine", "oreKimberliteFerberite", "oreKimberliteTantalite", "oreKimberliteAtlarus", "oreKimberliteDraconium", "oreKimberliteGraphene"], [0.25, 0.05, 0.10, 0.25, 0.15, 0.05, 0.05, 0.10], [-1020, -42, -29, -19, 1, 66], false);
+// [-1020, -1012, -1011, -42, -36, -35, -33, -29, -19, 1, 66], false);
+
+mods.immersiveengineering.Excavator.addMineral("Cryotic", 25, 10, ["oreSpaceOureclase", "oreSpaceFrozenIron", "oreSpaceCeruclase", "oreInfusedWater", "oreInfusedEntropy", "blockDustBlizz", "dustCryotheum", "blockDustGlowstonePluto", "blockIce", "blockDustMethaneIce", "caEssenceIce", "caLiqNitrogen"], [0.05, 0.10, 0.05, 0.10, 0.05, 0.09, 0.01, 0.05, 0.15, 0.30, 0.10, 0.25], [-1020, -1017, -1009, -42, 1], false);
+// [-1020, -1018, -1017, -1009, -42, -41, -40, -36, -18, -17, 1], false);

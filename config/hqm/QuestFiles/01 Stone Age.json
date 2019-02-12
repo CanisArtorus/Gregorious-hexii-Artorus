@@ -1,15 +1,44 @@
 {
-  "name": "It Really is a Whole New Game",
-  "description": "Welcome to the Stone Age.  Let\u0027s discover Bronze! And Machinery!! \n\nAnd maybe one should make a giant notepad of where all these useless striped rocks were...",
+  "name": "In Ages Past",
+  "description": "Welcome to the Stone Age.  Let\u0027s discover Bronze! And Machinery!! \n\nAnd maybe one should make a giant notepad of where all these striped rocks were...",
   "quests": [
     {
 	  "name": "Gleaning and Foraging",
-	  "description": "You have likely just arrived in this world at a crossroads. Please be polite and let the roads lie for travelers that come after. Use the clearcut verge to pick up (right-click) sticks and rocks. Some of those rocks will be useful Flint or Meteorites; most rocks are indicators of a large ore deposit below. \n\n Remember: GT6 tools always have a single handle piece, so you can make a flint axe or knife in-hand. \n\n If you haven\u0027t struck coal or lignite, dry grass is your best early torch material.",
+	  "description": "You have likely just arrived in this world at a crossroads. Please be polite and let the roads lie for travelers that come after. Use the road and clearcut verge to find a nice place to set up camp. Somewhere near a freshwater river and highlands sounds good. Pick up (right-click) sticks and rocks you find lying about. Some of those rocks will be useful Flint or Meteorites; most rocks are indicators of a large ore deposit below.",
+	  "x": 130,
+	  "y": 80,
+	  "icon": {
+	    "id": "gregtech:gt.meta.rockGt",
+		"damage": 8500
+	  },
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Find rocks",
+		  "longDescription": "Future you will be thankful if markers are left to say which stripe the rocks in any particular area had. Maybe Journeymap waypoints.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.rockGt"
+			  },
+			  "precision": "FUZZY",
+			  "required": 6
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+	  "name": "Strike a Light",
+	  "description": "Prove you are human, ape. Master fire. \n\n Remember: GT6 tools always have a single handle piece, so you can make a flint axe or knife in-hand. \n\n If you haven\u0027t struck coal or lignite, dried grass is your best early torch material.",
 	  "x": 160,
 	  "y": 100,
 	  "icon": {
 	    "id": "minecraft:flint"
 	  },
+	  "prerequisites": [
+	    "Gleaning and Foraging"
+	  ],
 	  "tasks": [
 	    {
 		  "type": "DETECT",
@@ -30,9 +59,9 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Tinder",
-		  "longDescription": "Use a knife or sword to harvest tall grass, bale it up; and place it out in the warm sunshine to wait for dry grass. Alternately, right-click on a non-rotten log with an axe to get bark pieces instead. Either will work with in a two-stick fire drill. It\u0027s the crappiest fire starter, but you need one of some kind to make a common stone cooking furnace. \n N.B. Very few metals can be smelted in so crude an oven!",
+		  "longDescription": "Use a knife or sword to harvest tall grass, bale it up; and place it out in the warm sunshine to wait for dry grass. If in the desert, right-click on a dry log with an axe to get bark pieces instead. Either will work with in a two-stick fire drill. It\u0027s the crappiest fire starter, but you need one of some kind to make a common stone cooking furnace. \n N.B. Very few metals can be smelted in so crude an oven!",
 		  "items": [
 		    {
 			  "item": {
@@ -103,13 +132,13 @@
         "damage": 17000
       },
 	  "prerequisites": [
-	    "Gleaning and Foraging"
+	    "Strike a Light"
 	  ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Collect Coal Coke",
-          "longDescription": "Put regular Coal into the left side, give it 90 (or 180) seconds, and it turns into 500mB (half a bucket) of Creosote Oil and 1 Coal Coke.",
+          "longDescription": "Put regular Coal into the left side, give it 90 (or 180) seconds, and it turns into 500L (half a bucket) of Creosote Oil and 1 Coal Coke.",
           "items": [
             {
               "item": {
@@ -134,7 +163,7 @@
     },
 	{
 	  "name": "Stop. It\u0027s Time",
-	  "description": "The most pivotal pre-industrial tool in Gregtech: a Hammer. It Crushes, it flattens, it detects ore behind walls!\n\nStriped ore sample rocks cannot be used to make tools, but they do tell where large veins of material are below. \n\n Your reward of GtDynamite has a tiny explosion range, which is directed solidly into the wall; it also requires lighting with a firestarter, but does have Fortune level II as it drops everything.",
+	  "description": "The most pivotal pre-industrial tool in Gregtech: a Hammer. It Crushes, it flattens, it detects ore behind walls!\n\nStriped ore sample rocks cannot be used to make tools, but they do tell where large veins of material are below. \n\n Your reward of GtDynamite has a tiny explosion range; it also requires lighting with a firestarter, but does have Fortune level II as it drops everything.",
 	  "x": 108,
 	  "y": 75,
 	  "icon": {
@@ -142,11 +171,14 @@
 	    "damage": 12,
 		"nbt": "{GT.ToolStats: {a:8500s, c:8221s, j:1600s}}"
 	  },
+	  "prerequisites": [
+	    "Gleaning and Foraging"
+	  ],
 	  "tasks": [
 	    {
 	    "type": "CRAFT",
 		"description": "rocks, fundamental gleaning",
-		"longDescription": "You\u0027re first Hard Hammer will definitely be made of stone, and break quickly. You should be able to find six rocks of the same type of non-ore stone lying about during the first day. If not, you can make a cheap flint or vanilla pickaxe; mine some cobble; craft a stone Club. The Club acts like a hammer to crush (re-mine) cobblestone into rocks, but it\u0027s crudeness makes it more weapon than tool.",
+		"longDescription": "You\u0027re first Hard Hammer will definitely be made of stone, and break quickly. You should be able to find six rocks of the same type of non-ore stone lying about during the first day. If not, you can make a cheap flint or stone pickaxe; mine some cobble; craft a stone Club. The Club acts like a hammer to crush (re-mine) non-vanilla cobblestone into rocks, but its crudeness makes it more weapon than tool.",
 		"items": [
 		  {
 		    "item": {
@@ -169,6 +201,20 @@
 				"damage": -1
 			  },
 			  "precision": "FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Dwarven Woman?",
+		  "longDescription": "Hammers will have many applications in crafting. But first, in order to control how things are smashed, how better than to hold the target in place against a nigh-immobile base? Thus, the Hammer\u0027s wife - the Anvil. \n\nA stone anvil will be irritating if not Granite. Upgrading to metal is a solid choice. \n Use the Hammer on the Top of the anvil for normal recipes, the Left and Right halves of the sides do rolling recipes. An empty hand can be used to even out a pile of things on the anvil.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 32025
+			  },
+			  "precision": "ORE_DICTIONARY"
 			}
 		  ]
 		}
@@ -196,9 +242,9 @@
       ],
       "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Plates, flat metal",
-		  "longDescription": "The Hammer you invented for mineral prospecting and mining is also useful at home. First hammer two copper ingots together, then hammer it flat - now you have a nice flat piece of metal to work with.",
+		  "longDescription": "The Hammer you invented for mineral prospecting and mining is also useful at home. First hammer two individual copper ingots together atop the anvil, then hammer it flat - now you have a nice flat piece of metal to work with.",
 		  "items": [
 		    {
 			  "item": {
@@ -212,7 +258,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Your first File",
-		  "longDescription": "The File is made from two plates and a stick. It will sharpen things in crafting recipes; currently that is your method of getting a metal rod from the ingot. \n WHile Lead can make tools now, copper is better, and something you will need to fetch anyway. \n\n No idea why this setting is in the pocket multitool, Steve and Alex don\u0027t have fingernails...",
+		  "longDescription": "The File is made from two plates and a stick. It will sharpen things in crafting recipes; currently that is your method of getting a metal rod from the ingot. \n While Lead can make tools now, copper is better, and something you will need to fetch anyway. \n\n No idea why this setting is in the pocket multitool, Steve and Alex don\u0027t have fingernails...",
 		  "items": [
             {
               "item": {
@@ -264,7 +310,7 @@
     },
 	{
 	  "name": "Drawers of Storage",
-	  "description": "Whether one chooses the wooden drawers that hold many stacks of a single item per opening, or the metallic Compartment drawers that have a 36 slot chest behind each of their four openings, a wall of either will densely store many things.",
+	  "description": "Whether one chooses the wooden drawers or item barrels that hold many stacks of a single item per opening, or the metallic Compartment drawers that have a 36 slot chest behind each of their four openings, a wall of either will densely store many things.",
 	  "x": 250,
 	  "y": 155,
 	  "icon": {
@@ -296,7 +342,7 @@
 	},
 	{
 	  "name": "Metal Smelting",
-	  "description": "To smelt most metals, one requires a proper Crucible and a lot of carefully directed heat. The ceramic crucible will remain the best you can make for a while. For now, a solid fueled Burning Box is the best method to heat it.\n Since the crucible produces molten metals when given anything containing them (including ores), it is a great opportunity to cast the metal into a more useful shape using a Mold. Be sure the mold has the correct shape Chiseled into it, as be warned that the freshly poured molten metal is slow to cool - perhaps Pincers would be a good idea. \n The Crucible will recycle any item that hits it, so a Construction Pick will be very helpful for swapping Molds - it puts harvested blocks directly in your inventory.",
+	  "description": "To smelt most metals, one requires a proper Crucible and a lot of carefully directed heat. The ceramic crucible will remain the best you can make for a while. For now, a solid fueled Burning Box is the best method to heat it.\n Since the crucible produces molten metals when given anything containing them (including ores and sample rocks), it is a great opportunity to cast the metal into a more useful shape using a Mold. Be sure the mold has the correct shape Chiseled into it, and be warned that the freshly poured molten metal is slow to cool - perhaps Pincers would be a good idea. \n The Crucible will recycle any item that falls in, so a Construction Pick will be very helpful for swapping Molds - it puts harvested blocks directly in your inventory.",
 	  "x": 150,
 	  "y": 150,
 	  "icon": {
@@ -367,7 +413,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Tenon Saw",
-		  "longDescription": "Not particularly good at chopping down trees, the hand Saw is very good at separating planks. Craft this tool with wood logs to get four planks again, to split planks into sticks, or to chop long rods in twain. Or right-click a log to de-bark it. \n One of the stranger settings to be in the pocket multitool, probably for the wooden block harvesting options.",
+		  "longDescription": "Not particularly good at chopping down trees, the hand Saw is very good at separating planks. Craft this tool with wood logs to get four planks again, to split planks into sticks, or to chop long rods in twain. Or right-click a log to de-bark it. \n This is one of the stranger settings to be in the pocket multitool.",
 		  "items": [
 		    {
 			  "item": {
@@ -382,21 +428,14 @@
 		{
 		  "type": "DETECT",
 		  "description": "Making Curves",
-		  "longDescription": "Normally used in conjunction with a HardHammer, the bending cylinders provide hand recipes for rings, curved plates, and springs of their respective size. Other than a couple of clay forming recipes, these tools will be made completely obsolete by a fully stocked machine room during the steam age. \n Good news, since it doesn\u0027t need an edge, nearly any tool material can be used to make these.",
+		  "longDescription": "We now use the properly rounded sides of the crafting Anvil to bend things. Striking the Large lump or the Left side of the Anvil, will Curve Plates and Springs. Similarly striking the Small lump or the Right side of the Anvil, tightly rolls Foil and Rings. All of these hand methods are inefficient compared to a steam age machine room. \n\n Bending cylinders are nearly obsolete.",
 		  "items": [
 		    {
 			  "item": {
-			    "id": "gregtech:gt.metatool.01",
-				"damage": 54
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 32026
 			  },
-			  "precision": "NBT_FUZZY"
-			},
-			{
-			  "item": {
-			    "id": "gregtech:gt.metatool.01",
-				"damage": 56
-			  },
-			  "precision": "NBT_FUZZY"
+			  "precision": "ORE_DICTIONARY"
 			}
 		  ]
 		}
@@ -499,7 +538,7 @@
 		"damage": 32740
 	  },
 	  "prerequisites": [
-	    "Gleaning and Foraging",
+	    "Strike a Light",
 		"Habilus"
 	  ],
 	  "tasks": [
@@ -518,7 +557,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Get out of Momma\u0027s Kitchen!",
 		  "longDescription": "Mostly used for pizza and pasta, the Rolling Pin also sees use in a potter\u0027s studio.",
 		  "items": [
@@ -534,7 +573,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Jugs, not Amphorae",
-		  "longDescription": "Basically a 2000mB portable tank that won\u0027t connect to pipes. Be warned that meaterial properties apply to all greggy containers; the jug will break if Acidic fluids are poured in, and melt down if the fluid is too hot - above 2000K for ceramic. The porous material simply fails to contain gasses.",
+		  "longDescription": "Basically a 2000mB portable tank that won\u0027t connect to pipes. Be warned that material properties apply to all greggy containers; the jug will break if Acidic fluids are poured in, and melt down if the fluid is too hot - above 2000K for ceramic. The porous material also simply fails to contain gasses. \n Dionesysians will happy to know a placed jug can be drunk from directly (with empty hand), if it contains a potable fluid.",
 		  "items": [
 		    {
 			  "item": {
@@ -548,7 +587,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Handling fractions",
-		  "longDescription": "This cup acts as both a bucket and a 1000mB portable tank; so it is very useful for transfering liquids in Bathing pot or Mixing bowl recipes, or even remote molds if the smelt is cool enough (2000K, it is also ceramic).",
+		  "longDescription": "This cup acts as a cross between a bucket and a 1000mB portable tank; so it is very useful for transfering liquids in Bathing pot or Mixing bowl recipes (where it should be used on the side, rather than tossed in the open top), or even remote molds if the smelt is cool enough (2000K, it is also ceramic). When placed in world, it van be set to act as an even smaller tank by interacting with a side face.",
 		  "items": [
 		    {
 			  "item": {
@@ -582,6 +621,20 @@
 	    "Habilus"
 	  ],
 	  "tasks": [
+		{
+		  "type": "DETECT",
+		  "description": "Sheep Scissors",
+		  "longDescription": "A variation on vanilla Shears, these scissors are great for shaving Sheep and similar livestock. If one doesn\u0027t need lots of wool, just use this setting on the pocket multitool.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.metatool.01",
+				"damage": 64
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
 	    {
 		  "type": "CRAFT",
 		  "description": "Entomology",
@@ -621,20 +674,6 @@
 			    "damage": 40
 			  },
 			  "precision": "NBT_FUZZY"
-			}
-		  ]
-		},
-		{
-		  "type": "DETECT",
-		  "description": "Sheep Scissors",
-		  "longDescription": "A variation on vanilla Shears, these scissors are great for shaving Sheep and similar livestock. If one doesn\u0027t need lots of wool, just use this setting on the pocket multitool.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "gregtech:gt.metatool.01",
-				"damage": 64
-			  },
-			  "precision": "ORE_DICTIONARY"
 			}
 		  ]
 		},
@@ -701,7 +740,7 @@
 	},
 	{
 	  "name": "A Pail",
-	  "description": "The wooden bucket can only carry cold fluids like milk, water, dirty swamp water, sea water, or lubricant. The Infinite Swamp water and Sea water cannot even be placed back down, so take care what colour the water is -- fresh water doesn\u0027t have infinite minecraft physics in this universe. It is useful for filling your first cauldron though.",
+	  "description": "The wooden bucket can only carry cold fluids like milk, water, dirty swamp water, sea water, or lubricant. The Infinite Swamp water and Sea water cannot even be placed back down, so take care what colour the water is -- fresh water doesn\u0027t have infinite minecraft physics in this universe (except in the middle of Rivers). Such a pail is useful for filling your first cauldron though.",
 	  "x": 150,
 	  "y": 50,
 	  "icon": {
@@ -709,7 +748,7 @@
 		"damage": 2000
 	  },
 	  "prerequisites": [
-	    "Gleaning and Foraging",
+	    "Strike a Light",
 		"Stop. It\u0027s Time"
 	  ],
 	  "tasks": [
@@ -741,7 +780,7 @@
 	},
 	{
 	  "name": "Ferrous Metal Domination",
-	  "description": "Now that you\u0027ve figured out how to run a burning box + crucible, you may have noticed there is no pure iron ore. The ores of iron require \u0027alloying\u0027 with Dark Ashes gathered from burning coal (or lignite coal) in the burning box to form iron. Hematite even requires adding Calcite, from melting down limestone or marble, as a third ingredient.\n\n NEI does have full crucible and crucible alloying support - though there are very very many recycling recipes to scroll through.",
+	  "description": "Now that you\u0027ve figured out how to run a burning box + crucible, you may have noticed there is no pure iron ore. The ores of iron require \u0027alloying\u0027 with Dark Ashes gathered from burning coal (or lignite coal) in the burning box to form iron. Hematite even requires adding Calcite, from melting down limestone or marble, as a third ingredient.\n\n NEI does have full crucible and crucible alloying support - though there are very Very VERY many recycling recipes to scroll through.",
 	  "x": 192,
 	  "y": 75,
 	  "icon": {
@@ -784,11 +823,9 @@
 	  },
 	  "prerequisites": [
 	    "A Pail",
-		"Gleaning and Foraging",
-		"Ferrous Metal Domination",
-		"Pottery Works"
+		"Strike a Light",
+		"Ferrous Metal Domination"
 	  ],
-	  "parentrequirement": 3,
 	  "tasks": [
 	    {
 		  "type": "DETECT",
@@ -805,9 +842,9 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Where\u0027s my Pestle?",
-		  "longDescription": "The Mortar block is a manual tool. Right-click on the top with an item to grind said item into powder. \nThis is helpful to turn scraps into dust for mixing; and for milling grain to flour.",
+		  "longDescription": "The Mortar block is a manual tool. Right-click on the top with an item to grind said item into powder. \nThis is helpful to turn scraps into dust for mixing or dense storage; and for milling grain to flour.",
 		  "items": [
 		    {
 			  "item": {
@@ -819,7 +856,7 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Mixing it all Up",
 		  "longDescription": "Related to shapeless recipes, Mixing things together - like powders or liquids - works nicely in this large ceramic bowl.  Be mindful how tiring stirring can be ;)",
 		  "items": [
@@ -833,7 +870,7 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Bake Gently",
 		  "longDescription": "Simple, low temperature baking. Step carefully now, else it will not rise properly.",
 		  "items": [
@@ -873,17 +910,15 @@
 	},
 	{
 	  "name": "Washing Dirt",
-	  "description": "The crushed ore a hammer gets out of the ground still has a lot of useless stone in it, getting rid of that not only makes crucible operations simpler and safer, sometimes one finds useful impurities. \n Bonus: washed / purified ores smelt for more material than the crushed ore.",
+	  "description": "The crushed ore a hammer gets out of the ground still has a lot of useless stone in it, getting rid of that not only makes crucible operations simpler and safer, sometimes one finds useful impurities. \n Bonus: washed / purified ores smelt for more material than raw crushed ore.",
 	  "x": 100,
 	  "y": 15,
 	  "icon": {
 	    "id": "minecraft:cauldron"
 	  },
 	  "prerequisites": [
-	    "A Pail",
-		"Pottery Works"
+	    "A Pail"
 	  ],
-	  "parentrequirement": 1,
 	  "tasks": [
 	    {
 		  "type": "DETECT",
@@ -926,11 +961,11 @@
 	  },
 	  "prerequisites": [
 	    "Habilus",
-		"Gleaning and Foraging"
+		"Strike a Light"
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "In-World hand tool",
 		  "longDescription": "The liquid in the juicer can be plucked out with any bottle, measuring cup, pot, or similar device.",
 		  "items": [
@@ -981,7 +1016,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Liquid Drums",
-		  "longDescription": "Jugs are nice for on-hand liquids, but long-term liquid storage is the domain of barrels. Alas, greggy barrels do not naturally interact with buckets / portable tanks, attach the funnel and the tap for that functionality.\n\n By the way, a wooden or rubber mallet (soft hammer) can seal a barrel, casuing fermentation of its contents. Come back occasionally with a magnifying glass to detect when it\u0027s wine, lest you end up finding vinegar when you eventually open it.",
+		  "longDescription": "Jugs are nice for on-hand liquids, but long-term liquid storage is the domain of barrels. Alas, greggy barrels do not naturally interact with buckets or portable tanks, attach the funnel and the tap for that functionality. You may need a slim bending cylinder to make these.\n\n By the way, a wooden or rubber mallet (soft hammer) can seal a barrel, causing fermentation of its contents. Come back occasionally with a magnifying glass to detect when it\u0027s wine, lest you end up finding vinegar when you eventually open it.",
 		  "items": [
 		    {
 			  "item": {
@@ -1019,7 +1054,7 @@
 	},
 	{
 	  "name": "A. Crafting T.",
-	  "description": "The Advanced Crafting Tables are wonderful. The top face has a 16 slot inventory, plus the crafting grid which retains items. Similar to an AE crafting terminal, the grid re-strocks from both internal inventories and all contiguous GregTech Mass Storages. Also, the five top slots can have containers filled or drained by connected pipes. Adding a blueprint to the table makes it act like a single recipe autocrafter. \n\n Further, the front and back faces access an underslung 36 slot chest. \n Screwdriver and Monkey Wrench settings exist for automation features such as an existing item filter.",
+	  "description": "The Advanced Crafting Tables are wonderful. The top face has a 16 slot inventory, plus the crafting grid which retains items. Further, the front and back faces access an underslung 36 slot chest. Similar to an AE crafting terminal, the grid re-stocks from both internal inventories and all contiguous GregTech Mass Storages. Also, the five top slots can have containers (not buckets) filled or drained by connected pipes. Adding a blueprint to the table makes it act like a single recipe autocrafter. \n\n Screwdriver and Monkey Wrench settings exist for automation features such as an existing item filter.",
 	  "x": 50,
 	  "y": 185,
 	  "icon": {
@@ -1031,7 +1066,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Inexpensive Upgrade",
 		  "items": [
 		    {
@@ -1054,7 +1089,7 @@
 	},
 	{
 	  "name": "Bird Bath",
-	  "description": "This wooden basin will do nicely for low temperature, non-caustic, liquid soaking operations. For now, this means making paper from pulp, sealing wood with various oils, and Mercury density separation. \n\nSome crushed ores can be soaked in liquid mercury to extract Gold, Platinum, Silver, or Zinc from the now-washed ore (consuming the mercury as un-recoverable waste). It is good practice to check NEI on each ore type.",
+	  "description": "This wooden basin will do nicely for low temperature, non-caustic, liquid soaking operations. For now, this means making paper from pulp, sealing wood with various oils, and Mercury density separation. \nSome crushed ores can be soaked in liquid mercury to extract Gold, Platinum, Silver, or Zinc from the now-washed ore (consuming the mercury as un-recoverable waste). It is good practice to check NEI on each ore type.",
 	  "x": 110,
 	  "y": 33,
 	  "icon": {
@@ -1062,10 +1097,8 @@
 		"damage": 32721
 	  },
 	  "prerequisites": [
-	    "A Pail",
-		"Pottery Works"
+	    "A Pail"
 	  ],
-	  "parentrequirement": 1,
 	  "tasks": [
 	    {
 		  "type": "CRAFT",
@@ -1089,7 +1122,7 @@
 	},
 	{
 	  "name": "Temperature Control",
-	  "description": "Given how absolutely crucial temperature is to the operation of a crucible, and how completely necessary using the crucible is, it is a really very good idea to have better control than a calculator and a guess. \n The basis for of control is acutal measurements... \n\n On the subject of measuring and control, there are several other sensors available early game. The Chronometer can command things to happen the same time every minecraft day, to the second. Server politeness can be automated with the Player Counter and TPS Sensors. The Luminometer is a better version of the Daylight Sensor as it is easier to precisely calibrate (but requires a pure silicon plate that will take a Centrifuge to produce); and the Progress sensor that is basically only useful if you have a machine (or monster spawner) with progress to display.",
+	  "description": "Given how absolutely crucial temperature is to the operation of a crucible, and how completely necessary using the crucible is, it is a really very good idea to have better control than a calculator and a guess. \n The basis for control is acutal measurements... \n\n On the subject of measuring and control, there are several other sensors available early game. The Chronometer can command things to happen the same time every minecraft day, to the minecraft minute. Server politeness can be automated with the Player Counter and TPS Sensors. The Luminometer is a better version of the Daylight Sensor as it is easier to precisely calibrate (but requires a pure silicon plate that will take a Centrifuge to produce); and the Progress sensor that is basically only useful if you have a machine (or monster spawner) with progress to display.",
 	  "x": 200,
 	  "y": 185,
 	  "icon": {
@@ -1104,7 +1137,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Liquid Mercury",
-		  "longDescription": "Liquid quicksilver is required for a full-range thermometer. The magical Shimmerleaf can be juiced or squeezed for it, or simply smelt Cinnabar - the ore of mercury. An empty bottle, like any fluid container, can interact with a hot Crucbile by right-clikcing on the open top, or use a faucet to pour into a Bathing pot or Mixing bowl beneath.",
+		  "longDescription": "Liquid quicksilver is required for a full-range thermometer. The magical Shimmerleaf can be juiced or squeezed for it, or simply smelt Cinnabar - the ore of mercury. An empty bottle, like any fluid container, can interact with a hot Crucbile by right-clicking on the open top, or use a crucible faucet to pour into a Mixing bowl beneath.",
 		  "items": [
 		    {
 			  "item": {
@@ -1116,9 +1149,9 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Handy Thermometer",
-		  "longDescription": "The Quicksilver Thermometer can be right-clicked on any block to query the gtTemperature there, without using durability! (Be warned that this is only one of four temperature fields derived from the biome temperature in this pack. The results are effectively meaningless on other mod\u0027s tile entities.)",
+		  "longDescription": "The Quicksilver Thermometer can be right-clicked on anyheat-based gtTileentity to query either the gtTemperature there or the HU it contains, without using durability! (Be warned that this is only one of four temperature fields derived from the biome temperature in this pack. Other mod\u0027s ambient temperatures are only loosely correlated.)",
 		  "items": [
 		    {
 			  "item": {
@@ -1130,9 +1163,9 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Crucible Safety",
-		  "longDescription": "The Thermometer sensor will either display the current gtTemperature of the adjacent block it is pointing to, or emit a redstone signal comparing that temperature to a pre-set limit.  Place it on your crucible, Screwdriver the lower left icon area to cycle modes until the display prefix changes to a greater than sign \u0027\u003e\u0027. With empty hand, press the six buttons to adjust the set point temperature to something above the metling point of your desired alloy, but below the vapour point of anything inside the crucible (and below the crucible\u0027s own failure temperature - for ceramic this is 2500K).",
+		  "longDescription": "The Thermometer sensor will either display the current gtTemperature of the adjacent block it is pointing to, or emit a redstone signal comparing that temperature to a pre-set limit.  Place it on your crucible, Screwdriver the lower left icon area to cycle modes until the display prefix changes to a greater than sign \u0027\u003e\u0027. With empty hand, press the six buttons to adjust the set point temperature to something above the metling point of your desired alloy, but below the vapour point of anything inside the crucible (and below the crucible\u0027s own failure temperature - which is 2500K for ceramic).",
 		  "items": [
 		    {
 			  "item": {
@@ -1146,7 +1179,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Shutdown Valve",
-		  "longDescription": "Use some freestanding Red Alloy wire to carry the signal to a sticky piston that will snuff your burning box\u0027s air supply. Since the box doesn\u0027t care about air until it tries to grab another fuel item, switch to a liquid burner that drinks individual litres multiple times a second. \n Creosote from a bank of automated coke ovens is a valid and useful fuel.",
+		  "longDescription": "Use some freestanding Red Alloy wire to carry the signal to a sticky piston that will snuff your burning box\u0027s air supply. Since the box doesn\u0027t care about air until it tries to grab another fuel item, switch to a liquid burner that drinks individual litres multiple times a second. \n Creosote from a bank of automated coke ovens is a valid and useful liquid fuel.",
 		  "items": [
 		    {
 			  "item": {

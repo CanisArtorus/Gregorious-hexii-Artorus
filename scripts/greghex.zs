@@ -115,8 +115,8 @@ var treeWarning = format.red("This tree DESTROYS most ores!");
 if (loadedMods in "Magneticraft") {
 	// let that file do more with this loop
 } else { for IEBaux in [
-		// <GalacticraftCore:tile.gcBlockCore:7>, 
-		// <GalacticraftMars:tile.asteroidsBlock:3>, 
+		<GalacticraftCore:tile.gcBlockCore:7>, 
+		<GalacticraftMars:tile.asteroidsBlock:3>, 
 		<ImmersiveEngineering:ore:1>, 
 		<ElectriCraft:electricraft_block_ore:4>
 	] as IItemStack[] {
@@ -146,6 +146,10 @@ for i in metalMeta {
 	<ore:craftingSafe>.add(gtTile.makeStack(2000+i));	# the Mechanical (user-only 'combination') safes
 	<ore:caHopper>.add(gtTile.makeStack(8000+i));	# hoppers
 	<ore:caHopper>.add(gtTile.makeStack(8200+i));	# queue hoppers
+}
+
+for i in [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50] as int[] {
+	<ore:ca.craftAnvil>.add(gtTile.makeStack(32000+i));	# ingot / plate anvil
 }
 
 <ore:persulfDust>.add(<gregtech:gt.meta.dust:9822>);
@@ -192,7 +196,7 @@ var meta8 = [6999, 6998, 6997, 6996, 6995, 6994, 6993, 6992, 6991, 6990] as int[
 for i in meta8 {
 	<ore:massStorage>.add(gtTile.makeStack(i));
 }
-var meta9 = [32754, 32753, 32752, 32742, 32734, 32733, 32719, 32718, 32717, 32716, 32715, 32714] as int[];
+var meta9 = [32754, 32753, 32752, 32742, 32734, 32733, 32719, 32718, 32717, 32716, 32715, 32714, 32008, 32009, 32010, 32016, 32017, 32018, 32019, 32020, 32021, 32022, 32023, 32024] as int[];
 for i in meta9 {
 	<ore:liquidDrum>.add(gtTile.makeStack(i));
 }
@@ -375,7 +379,7 @@ var VbDust	= <gregtech:gt.meta.dust:1520>;
 // Vibramantium Vb.1, Ad.3	5281K
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 1024, 256, [10000], [VbDust, <gregtech:gt.meta.dust:2220> *3], <gregtech:gt.meta.dust:8706> *4);
 // Vibranium Silver 1:3	2138K
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.bath", true, 0, 12000, [10000], [VbDust], [<liquid:molten.silver> *432], [null] as ILiquidStack[], [<gregtech:gt.meta.dust:8705> *4]);
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.bath", true, 8, 12000, [10000], [VbDust], [<liquid:molten.silver> *432], [null] as ILiquidStack[], [<gregtech:gt.meta.dust:8705> *4]);
 // Vibranium Steel 1:3	2747K
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 256, 640, [10000], [VbDust], [<liquid:molten.steel> *432], [null] as ILiquidStack[], [<gregtech:gt.meta.dust:8704> *4]);
 
@@ -406,7 +410,7 @@ for mId in [900, 830, 820, 790, 780, 770, 760, 740, 600, 500, 470, 460, 420, 400
   recipes.addShapeless(<gregtech:gt.meta.rockGt:8518>*2, [gRock.makeStack(mId), gRock.makeStack(mId), gRock.makeStack(mId), gRock.makeStack(mId)]);
 }
 
-// Stairs fixes, 6.08.04
+// Stairs fixes, 6.08.04	- until 6.09.01
 var saw = <ore:craftingToolSaw>;
 // var plankAsper =	<erebus:planks:4>;
 // var plankBamboo =	<erebus:planks:8>;
@@ -421,7 +425,7 @@ var saw = <ore:craftingToolSaw>;
 // var plankScorched =	<erebus:planks_scorched>;
 // var plankVarnished =<erebus:planks_varnished>;
 // var plankWhite =	<erebus:planks:7>;
-
+/*
 val erebusSlabs = [<erebus:slabPlanksBaobab>, <erebus:slabPlanksEucalyptus>, <erebus:slabPlanksMahogany>,
 <erebus:slabPlanksMossbark>, <erebus:slabPlanksAsper>, <erebus:slabPlanksCypress>, <erebus:slabPlanksSap>, 
 <erebus:slabPlanksWhite>, <erebus:slabPlanksBamboo>, <erebus:slabPlanksRotten>, <erebus:slabPlanksMarshwood>] as IItemStack[];
@@ -434,8 +438,9 @@ for i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as int[] {
   recipes.addShaped(erebusStairs[i]*4, [[saw, erePlank],[erePlank, erePlank]]);
   recipes.addShaped(erebusStairs[i]*2, [[saw, erebusSlabs[i]], [erebusSlabs[i], erebusSlabs[i]]]);
 }
+*/
 
-// a temporary mixup by GregT
+/* a temporary mixup by GregT	6.08.04 - 6.09.04
 var spruce	= <minecraft:planks:1>;
 var birch	= <minecraft:planks:2>;
 var spr_slab= <minecraft:wooden_slab:1>;
@@ -451,6 +456,7 @@ recipes.remove(birchStair);
 recipes.addShaped(birchStair*4, [[saw, birch], [birch, birch]]);
 recipes.addShaped(birchStair*2, [[saw, brch_slb], [brch_slb, brch_slb]]);
 recipes.addShaped(birchStair*4, [[saw, chs_brch], [chs_brch, chs_brch]]);
+*/
 
 //vanilla improvements
 # Jason McRay
@@ -486,6 +492,10 @@ recipes.addShaped(chestWood * 2, [
     [logWood, logWood, logWood],
     [logWood, null, logWood],
     [logWood, logWood, logWood]]);
+recipes.addShaped(chestWood * 3, [
+	[logWood, logWood, logWood],
+	[logWood, <ore:craftingToolAxe>, logWood],
+	[logWood, logWood, logWood]]);
 recipes.addShaped(chestWood * 4, [
     [logWood, logWood, logWood],
     [logWood, saw, logWood],

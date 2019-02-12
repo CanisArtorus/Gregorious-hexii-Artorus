@@ -11,9 +11,8 @@
 	    "id": "gregtech:gt.multitileentity",
 		"damage": 32708
 	  },
-	  "bigicon": true,
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Ferrous Metal Domination]"
+	    "{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "tasks": [
 	    {
@@ -54,7 +53,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Mixing Acids and Gasses",
 		  "longDescription": "You can already make a tier 2 Steel Mixer, or just use a tier 1 Bronze Mixer. Note that many metals can be alloyed in the molten state by Mixing Recipes, so this machine is extremely versatile. Expect to make a lot of them, not just several.",
 		  "items": [
@@ -151,7 +150,7 @@
 	},
 	{
 	  "name": "Vitriolic",
-	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is required to make two of the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, alas it will take a MV Electrolyzer to process the various colours of mineralized vitriol - most of which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam. \n Carbonizing Sugar is a great renewable source of pure Carbon for your Steel-producing (and other oxide reductive smelting) efforts.",
+	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is useful for making the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, alas it will take a MV Electrolyzer to process the various colours of mineralized vitriol - which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam. \n Carbonizing Sugar is a great renewable source of pure Carbon for your Steel-producing (and other oxide reductive smelting) efforts.",
 	  "x": 125,
 	  "y": 70,
 	  "icon": {
@@ -202,7 +201,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Sulfuric Salt",
-		  "longDescription": "Either mix Salt (either NaCl or KCl) in Sulphuric Acid, or mix both oxygen and SO_2 with sodium Salt in over-saturated Salt Water.",
+		  "longDescription": "Either mix Salt (either NaCl or KCl) in Sulphuric Acid, or mix both oxygen and SO_2 with the sodium Salt in over-saturated Salt Water.",
 		  "items": [
 		    {
 			  "item": {
@@ -223,7 +222,7 @@
 	},
 	{
 	  "name": "Royal Water",
-	  "description": "A mixture of Nitric Acid and Hydrochloric Acid, Aqua Regia is used strictly for ore processing - it produces additional chances at the Platinum Group Sludge by-product from purified ores that might contain it. The sludge is then overclock centrifuged into approximately equal parts of all six platinum group metals: Ruthenium, Rhodium, Palladium, Platinum, Osmium, and Iridium. The Chloroplatinic Acid also produced by this process requires MV electrolysis to decompose, into more Platinum and other elements sufficient to re-constitute the Aqua Regia cyclically. \n\n It can also be used on purified Copper, Gold, Tin, and/or Cassiterite to get other chloro-acids and additional by-products.",
+	  "description": "A mixture of Nitric Acid and Hydrochloric Acid, Aqua Regia is used strictly for ore processing - it especially produces additional chances at the Platinum Group Sludge by-product from purified ores that might contain it. The sludge is then overclock centrifuged into approximately equal parts of all six platinum group metals: Ruthenium, Rhodium, Palladium, Platinum, Osmium, and Iridium. The Chloroplatinic Acid also produced by this process requires MV electrolysis to decompose into more Platinum and other elements sufficient to re-constitute the Aqua Regia cyclically. \n\n It can also be used on purified Copper, Gold, Tin, and/or Cassiterite to get other chloro-acids and additional by-products.",
 	  "x": 150,
 	  "y": 40,
 	  "icon": {
@@ -237,22 +236,8 @@
 	  "tasks": [
 	    {
 		  "type": "DETECT",
-		  "description": "Nitric Nitre",
-		  "longDescription": "Nitric Acid produciton is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "gregtech:gt.meta.dust",
-				"damage": 8205
-			  },
-			  "precision": "ORE_DICTIONARY"
-			}
-		  ]
-		},
-		{
-		  "type": "DETECT",
-		  "description": "Valuable Sludge",
-		  "longDescription": "Wash some ores containing Platinum, or it\u0027s siblings.",
+		  "description": "Nitric Nitre or Not",
+		  "longDescription": "Nitric Acid produciton is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly. \nAlternatively, use a Lightning discharge Processor to combine Oxygen and Nitrogen gasses, Mix in more Oxygen, and bubble through Water.\n\n Now, wash some ores containing Platinum, or it\u0027s siblings to get this valuable sludge.",
 		  "items": [
 		    {
 			  "item": {
@@ -326,7 +311,7 @@
 	},
 	{
 	  "name": "Steamed",
-	  "description": "The Autoclave machine block requires an input only of Steam and Time. It will be helpful for applied energistics, but first it is an essential part in the torturous Bauxite ore processing chain.",
+	  "description": "The Autoclave machine block requires an input only of Steam and Time. It will be helpful for applied energistics, but first it is an essential part in the torturous Bauxite ore processing chain. Thankfully, an Autoclave has a fixed steam capacity, and cannot explode due to over-pressure.",
 	  "x": 75,
 	  "y": 70,
 	  "icon": {
@@ -340,7 +325,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Quartz Crystal Growth Chamber",
-		  "longDescription": "No need for the AE2 puddle, this machine both grows the pure seeds and can re-constitute quartz-like gems from their dusts - to a selected quality!",
+		  "longDescription": "No need for the AE2 puddle, this machine both grows the pure seeds and can re-constitute quartz-like gems from their dusts - to a selected quality even!",
 		  "items": [
 		    {
 			  "item": {
@@ -426,7 +411,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Tower of Juice",
-		  "longDescription": "The front of this multiblock is only for the GUI, it\u0027s the back one really cares about. Also, the 3 by 9 cylinder is hollow, a heat acceptor and a tower part cap the ends.",
+		  "longDescription": "The front of this multiblock is only for the GUI, it\u0027s the back one really cares about. in case it was unlcear, the 3x9 cylinder is solid.",
 		  "items": [
 		    {
 			  "item": {
@@ -440,7 +425,7 @@
 			    "id": "gregtech:gt.multitileentity",
 				"damage": 18102
 			  },
-			  "required": 64
+			  "required": 71
 			},
 			{
 			  "item": {
@@ -453,7 +438,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Plastics!",
-		  "longDescription": "All three solids are output from the bottom port, so this is a good place to use Quadruple Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Like Rubber, Plastic burns when melted, loosing a third of the material each time; it also shapes well in a Steel low-heat Extruder.",
+		  "longDescription": "All three solids are output from the bottom port, so this is a good place to use Quadruple Item Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Like Rubber, Plastic burns when melted, loosing a third of the material each time; it also shapes well in a Steel low-heat Extruder.",
 		  "items": [
 		    {
 			  "item": {
@@ -478,7 +463,7 @@
 	},
 	{
 	  "name": "Encouraging Motion",
-	  "description": "Don\u0027t let the Electric in their names fool you, Compact Pumps and Conveyors are only made of the same tiering materials as electric machines, they don\u0027t actually require energy to run. You can already make UltraLowVoltage versions, and may be able to make LowVoltage versions also, of these as well as the Motor and Piston crafting components. Although you do have the materials for HV tier in general, you do not have the ability to magnetize steel just yet.",
+	  "description": "Don\u0027t let the Electric in their names fool you, Compact Pumps and Conveyors are only made of the same tiering materials as electric machines, they don\u0027t actually require energy to run. You can already make UltraLowVoltage versions, and may be able to make LowVoltage versions also, of these as well as the Motor and Piston crafting components. Although you do have the main materials for HV tier in general, you do not have the ability to magnetize steel for the HV motor just yet.",
 	  "x": 15,
 	  "y": 112,
 	  "icon": {
@@ -519,7 +504,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Pumped Pipes",
-		  "longDescription": "It may not like like a Cover in inventory, but the Compact Pump series of items can be placed as a Cover on any fluid Pipe from GregTech. By default they will suck the fluid out of the tank they are pointing at and pull it into the pipe. A Screwdriver can reverse the flow direction to forcefully empty a pipe into the tank (which needn\u0027t, and often shouldn\u0027t, be a connected direction). \n It might be an idea to use a Pressure Valve on pipes with forced inputs.",
+		  "longDescription": "It may not look like a Cover in inventory, but the Compact Pump series of items can be placed as a Cover on any fluid Pipe from GregTech. By default they will suck the fluid out of the tank they are pointing at and pull it into the pipe. A Screwdriver can reverse the flow direction to forcefully empty a pipe into the tank (which needn\u0027t, and often shouldn\u0027t, be a connected direction). \n It might be an idea to use a Pressure Valve on pipes with forced inputs.",
 		  "items": [
 		    {
 			  "item": {
@@ -615,7 +600,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Absolutely Pure",
-		  "longDescription": "To grow semiconductor wafers, one needs a surface that is both a good catalyst and never going to leech into the material. Iridium fits that role nicely, even better than platinum.\n This crucible can also be used in the temperature progression.",
+		  "longDescription": "To grow semiconductor wafers, one needs a surface that is both a good catalyst and never going to leech into the material. Iridium fits that role nicely, even better than platinum.\n This crucible can also be used in temperature progression.",
 		  "items": [
 		    {
 			  "item": {
@@ -649,7 +634,7 @@
 	},
 	{
 	  "name": "Extra Crispy",
-	  "description": "That Ceramic Crucible had to get replaced eventually; there are a good number of materials with melting and alloying temperatures above 2500K. One will need to make a Crucible, and enough molds, from a material that one is currently capable of working that will have a higher failure temperatue and thus be able to work other materials, and so on. \n The use of foreign \"magic\" processes can create soild ingots of materials that can be worked cold, with hand tools like in the Stone Age that can by-pass some steps of this ladder. \n These Crucibles do not have higher minimum HU/t tiers, 16 will still do, but reaching such high temperatures slowly can test one\u0027s patience.",
+	  "description": "That Ceramic Crucible had to get replaced eventually; there are a good number of materials with melting and alloying temperatures above 2500K. One will need to make a Crucible, and enough molds, from a material that one is currently capable of working that will have a higher failure temperatue and thus be able to work other materials, and so on. \n The use of foreign \"magic\" processes can create soild ingots of materials that can be worked cold, with hand tools like in the Stone Age, that can by-pass some steps of this ladder. \n These Crucibles do not have higher minimum HU/t tiers, 16 will still do, but reaching such high temperatures slowly will surely test one\u0027s patience.",
 	  "x": 190,
 	  "y": 118,
 	  "icon": {
@@ -657,13 +642,13 @@
 		"damage": 20241
 	  },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Metal Smelting]"
+	    "{In Ages Past}[Metal Smelting]"
 	  ],
 	  "tasks": [
 	    {
 		  "type": "DETECT",
 		  "description": "Better than Ceramics",
-		  "longDescription": "As I write this, the initial options for a better Crucible than Ceramic are, in order: Chromium, Meteoric Steel, Thaumium, and Niobium-Titanium alloy. All of them can (if not safely) melt and cast Iridium, some can also do other materials to be mentioned in the next section. You will need to keep the Iridium Crucible for other uses. \n Fiery Steel, Void Metal, and bedrock-steel alloy can be made into ingots directly, while also being valid materials for a GregTech Crucible.",
+		  "longDescription": "As I write this, the initial options for a better Crucible than Ceramic are, in order: Chromium, Meteoric Steel, Thaumium, and Niobium-Titanium alloy. All of them can (if not safely) melt and cast Iridium, some can also do other materials to be mentioned in the next section. You will need to keep the Iridium Crucible for other uses. \n Fiery Steel, Void Metal, and bedrock-steel alloy can be made into ingots or even plates directly, while also being valid materials for a GregTech Crucible.",
 		  "items": [
 		    {
 			  "item": {
@@ -677,7 +662,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Iridi-good",
-		  "longDescription": "Climbing the thermometer further: Iridium, Niobium, and Molybdenum can all melt and cast Osmium, and be themselves worked some of the crucibles from the previous list.",
+		  "longDescription": "Climbing the thermometer further: Iridium, Niobium, and Molybdenum can all melt and cast real elemental Osmium, and be themselves worked in some of the crucibles from the previous list.",
 		  "items": [
 		    {
 			  "item": {
@@ -704,7 +689,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Time to Smelt",
-		  "longDescription": "All the Smelter machines have a Tungsten Crucible at thier core. There may yet be a few alloying recipes that do not work in the Mixer with molten materials, so keeping this other Crucible around can be helpful. Only one mold is really needed though, since the Extruder can manipulate any material if it is of a high enough tier. Molds will cast when given molten output from the smelter machine, if one chooses that route; any pipe must have the ability to completely fill the mold, they do not have partial fill-states like the other smeltery mod.",
+		  "longDescription": "All the Smelter machines have a Tungsten Crucible at thier core. There may yet be a few alloying recipes that do not work in the Mixer with molten materials, so keeping a backup Crucible around can be helpful. Only one mold is really needed though, since the Extruder can manipulate any material if it is of a high enough tier. Molds will cast when given molten output from the smelter machine, if one chooses that route; any pipe must have the ability to completely fill the mold, they do not have partial fill-states like the other smeltery mod.",
 		  "items": [
 		    {
 			  "item": {
@@ -724,7 +709,7 @@
 	},
 	{
 	  "name": "Carbide",
-	  "description": "Tungsten itself is not a tiering material, but two of its alloys Tungsten Carbide and TungstenSteel are the Tier 4 construction materials for heat and mechanical machines, respectively. Creating these alloys requires molten Tungsten, hence the need for a crucible over 3700K.",
+	  "description": "Tungsten itself is not a tiering material, but two of its alloys Tungsten Carbide and TungstenSteel are the Tier 4 construction materials for heat and mechanical machines respectively. Creating these alloys requires molten Tungsten, hence the need for a crucible over 3700K.",
 	  "x": 225,
 	  "y": 118,
 	  "icon": {

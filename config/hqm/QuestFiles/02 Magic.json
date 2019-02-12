@@ -1,6 +1,6 @@
 {
-  "name": "Sufficiently Advanced Tech",
-  "description": "...is indistinguishable from magic, or as the saying goes. This chapter will walk you through the customizations that have been made to Thaumcraft and provide a basic run-down of Ars magica.",
+  "name": "Different Knowledge",
+  "description": "Sometimes multiple explanations can be true, and provide different predictions that also cannot be disproven. Thus the system known as \"Science and Technology\" cannot deny the reality of the system known as \"Magic\" (even when there are multiple types of magic). \nThis chapter will walk you through the customizations that have been made to Thaumcraft and provide a basic run-down of Ars magica.",
   "quests": [
     {
       "name": "Entrance to the Arcane",
@@ -11,8 +11,8 @@
         "id": "Thaumcraft:ItemThaumonomicon"
       },
 	  "prerequisites": [
-	    "{It Really is a Whole New Game}[Mind the Splinters]",
-		"{It Really is a Whole New Game}[Habilus]"
+	    "{In Ages Past}[Mind the Splinters]",
+		"{In Ages Past}[Habilus]"
 	  ],
       "tasks": [
         {
@@ -29,7 +29,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "A basic Wand",
 		  "longDescription": "Now that you have scribbled down the basic theory of thaumic resonance, craft a Copper Capped Wooden Wand, the simplest and crudest functional form of vis manipulation.",
 		  "items": [
@@ -97,7 +97,7 @@
 	  },
 	  "prerequisites": [
 	    "Entrance to the Arcane",
-		"{It Really is a Whole New Game}[Gleaning and Foraging]"
+		"{In Ages Past}[Strike a Light]"
 	  ],
 	  "tasks": [
         {
@@ -173,11 +173,11 @@
 	  "prerequisites": [
 	    "Crafting Like a Magician",
 		"Thinking About Thaumaturgy",
-		"{It Really is a Whole New Game}[Ferrous Metal Domination]"
+		"{In Ages Past}[Ferrous Metal Domination]"
 	  ],
 	  "tasks": [
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "Distillion appartatus",
 		  "longDescription": "The caustic properties of this gasseous essentia are far greater than any acid you have encountered in the workshop; specially built pipes will have to be constructed. Common cold iron seems oddly able to muffle the stranger outbursts, and quicksilver is the substance most resistant to contact corrosion; keeping the quicksilver spread over the entire inner surface takes a dash of magic. As a side-effect, any wand acts like the wrench for these tubes.",
 		  "items": [
@@ -193,7 +193,7 @@
 			  }
 		    },
 		    {
-		    "item": {
+		      "item": {
 			    "id": "Thaumcraft:blockJar"
 			  },
 			  "precision": "FUZZY"
@@ -222,7 +222,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Auotmate Alchemy",
 		  "longDescription": "",
 		  "items": [
@@ -266,7 +266,7 @@
 	    {
 	      "type": "DETECT",
 		  "description": "Careful Construction",
-		  "longDescription": "Alas, silver is too easily tarnished and retains the imprint of it\0027s construction, muddying it\u0027s ability to channel and shape arbitrary vis. Perhaps a dip in the essence of pure magic will help.",
+		  "longDescription": "Alas, silver is too easily tarnished and retains the imprint of it\u0027s construction, muddying it\u0027s ability to channel and shape arbitrary vis. Perhaps a dip in the essence of pure magic will help.",
 		  "items": [
 		  {
 		    "item": {
@@ -377,7 +377,7 @@
 		  ]
 	    },
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "Only Power Yields Power",
 		  "longDescription": "It must be the basic artificing method that is flawed, neither of these materials have reached their proper potential. And yet, still more focus is required...",
 		  "items": [
@@ -432,7 +432,7 @@
 	  ],
 	  "tasks": [
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "Choose your Weapon",
 		  "longDescription": "Working from the principle of a lens, Foci can be used to transform the raw vis you have been gathering into a material effect.",
 		  "items": [
@@ -464,7 +464,7 @@
 		  ]
 	    },
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "A Suitable Platform",
 		  "longDescription": "The six elemental wand cores\u0027 ability to self-generate vis of their specific element works wonders for simple combat foci. They merely need to be upgraded with Primal Charms and paired wand caps to become turgid with arcane might.",
 		  "items": [
@@ -567,7 +567,7 @@
       ],
       "tasks": [
         {
-          "type": "CRAFT",
+          "type": "DETECT",
 		  "description": "God Stick",
           "longDescription": "To unlock Ichor research, you need to research nearly all of regular Thaumcraft, and ALL non-Ichor related Thaumic Tinkerer research.  This means Basic Information, Thaumaturgy, half of Alchemy, most of Artiface, and Golemancy too.",
           "items": [
@@ -603,7 +603,7 @@
 	  ],
 	  "tasks": [
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "The Best Weapon",
 		  "longDescription": "Combining the basic foci from each of the four classical elements into a single unit sounded crazy not so long ago. But crazy lives downstairs, power has the penthouse.\n\n They have mentioned that you can make an ichorcloth strapped STAFF core, if you like. Ichorium adorning a Primal Staff Core sounds like a better idea though.",
 		  "items": [
@@ -712,7 +712,7 @@
 		  ]
 	    },
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "Appropriate Robes",
 		  "longDescription": "Lo! Ichorcloth is also far superior to simply enchanted fabric. These robes rival thaumium plate for turning aside harm, while simultaneously surpassing void-aspected robes for channeling vis. Crafting these makes the ichor... sceptre sound like a good idea. Doesn\u0027t it strike a further idea how each relates to a pure classical element?",
 		  "items": [
@@ -798,7 +798,7 @@
 	  ],
 	  "tasks": [
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "So Worth",
 		  "longDescription": "Obviously this will be expensive, difficult, and more than a little dangerous. One may wish to bling out the altar for maximum effect, garishness can be borne temporarily.",
 		  "items": [
@@ -918,6 +918,1236 @@
 		  "id": "Thaumcraft:BlockJarFilledItem",
 		  "nbt": "{Aspects: [0:{amount: 64, key: radio}]}",
 		  "amount": 4
+		}
+	  ]
+	},
+	{
+	  "name": "A Mystic Tome",
+	  "description": "Ars Magica. The craft of changing the world with grammar. And something about elemental essences being personified...",
+	  "x": 207,
+	  "y": 10,
+	  "icon": {
+	    "id": "arsmagica2:ArcaneCompendium"
+	  },
+	  "prerequisites": [
+	    "{In Ages Past}[Strike a Light]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Catch Widsom",
+		  "longDescription": "It is like a vapour wafting off the pools of Etherium. Use an item Frame to suspend a common Book there, the pages will be filled with what you need.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:ArcaneCompendium"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Gaze Within",
+		  "longDescription": "Only by using the eye as a mirror can one uncover the truth hidden behind your own eyes. inside each of us lies so much untapped potential.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:occulus"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "minecraft:feather",
+		  "amount": 7
+		}
+	  ]
+	},
+	{
+	  "name": "Basic Spellcraft",
+	  "description": "Time to spend two or all three of your starting skill points. With that, you can choose between seven common starting spells: three types of damage in an attack spell, an earth moving effect, placing lamps, buffing yourself, or healing. \nBe aware, choosing the Self shape requires Etherium power, see that quest for hints.",
+	  "x": 180,
+	  "y": 27,
+	  "icon": {
+	    "id": "arsmagica2:spellParchment"
+	  },
+	  "prerequisites": [
+	    "A Mystic Tome"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Some Infrastructure",
+		  "longDescription": "Set aside some room for magical experimentation. While the Inscription Table fits in the study, the spell crafting altar is a 5-cube structure that will later require power relayed to it.\nThe body of the structure is made of 38 blocks and 12 stairs of: vanilla cobblestone, vanilla wood planks, sandstone, vanilla stone bricks, Witchwood planks, bricks, nether bricks, or nether quartz. The five accent blocks can be glass, or any of the nine better options in the compendium.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:InscriptionTable"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:blockLectern"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:CraftingAltar"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:lever"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:magicWall"
+			  },
+			  "required": 6
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Core Ingredients",
+		  "longDescription": "Creating a spell is guarenteed to consume three things: a book and quill with which to draft the treatise, the blank rune to seed the reagents, and a spell scroll to hold the final product. \nThe treatise is naturally written at the Inscription table.",
+		  "items": [
+			{
+			  "item": {
+			    "id": "minecraft:writable_book"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:rune",
+				"damage": 1
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:spellParchment"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Eureka!",
+		  "longDescription": "To learn a spell: place the treatise on the lectern of the Crafting Altar structure. Toss a Blank Rune into the centre. In order, toss in each additional component as displayed by the book. Finish by tossing a Spell Parchment in. \nIf the book displays the glowing sparks of Etherium, use the crystal wrench to select the correct source, then pull the lever.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:spellBase"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:playerjournal"
+		}
+	  ]
+	},
+	{
+	  "name": "Harnessing the Etherial",
+	  "description": "Rather than the Mana you harness as a living being to power spells, structures use Etherium as their power source. The basic, Neutral, Etherium is released from where it has collected over the eons in nature. \nA Crystal Wrench is indispensable in routing this power; Magitech Staff and Goggles are informative tools to assist in managing power flow once you build a complicated network.",
+	  "x": 230,
+	  "y": 35,
+	  "icon": {
+	    "id": "arsmagica2:obelisk"
+	  },
+	  "prerequisites": [
+	    "A Mystic Tome"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Neutral Engine",
+		  "longDescription": "The Obelisk will generate Neutral Etherium by burning Vinteum Dust or iron Buckets of Liquid Etherium. This released potential can be projected up to 10m to a collector, relay, or consumer.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:obelisk"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Ritual improvements",
+		  "longDescription": "Adding some pillars to the noncardinals, and/or scribing a runic circle could isolate the obelisk from external influences and enlarge the resonant chamber. These additions should improve the efficiency and output of Neutral Etherium.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:stonebrick",
+				"damage": 0
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "minecraft:stonebrick",
+				"damage": 3
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:blueChalk"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:itemOre",
+		  "damage": 8,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Refinement of Essence",
+	  "description": "Oh, for NEI integration. Each essence can be crafted in the Essence Refiner as a shaped recipe of four things, an Arcane Ash, and some Etherium power. Whenever the recipe is changed, you will probably have to re-connect the refiner; keep the crystal wrench handy, and likely green shift-connected to your Obelisk or Black Aurem. \n This is also the first machine that accepts upgrade Foci (in the three slots at the top). Use Mana Foci for efficiency, and/or Charge Foci for speed.",
+	  "x": 245,
+	  "y": 60,
+	  "icon": {
+	    "id": "arsmagica2:essence"
+	  },
+	  "prerequisites": [
+	    "Harnessing the Etherial",
+		"{Dawn of Industry}[Familliar Old Hell]"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Bathe the Seed",
+		  "longDescription": "Focusing some Etherium onto Arcane Ash tinted with manifest materials produces a strange vapour. Condensing it upon the surface of a diamond crystal, a tangible pure elemental Essence can be harvested like distilled fruit.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:essenceRefiner"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Arcane",
+		  "longDescription": "The easiest recipe; surround the Arcane Ash with four more Arcane Ashes",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:itemOre",
+				"damage": 2
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Earth",
+		  "longDescription": "Dirt over Obsidian, flanked by Stone.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:dirt"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:stone"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:obsidian"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Fire",
+		  "longDescription": "Coal alternating with Blaze Powder.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:coal"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:blaze_powder"
+			  },
+			  "required": 2
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Water",
+		  "longDescription": "Wakebloom flowers alternate with Fresh Water in buckets or bottles. You get the empties back.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:wakebloom"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:potion",
+				"damage": 0
+			  },
+			  "required": 2
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Lightning",
+		  "longDescription": "Glowstone alternates Redstone. Must be an AC discharge.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:redstone"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:glowstone_dust"
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:rune",
+		  "damage": 17
+		}
+	  ],
+	  "rewardchoice": [
+	    {
+		  "id": "arsmagica2:essence",
+		  "damage": 0
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 1
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 3
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 4
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 7
+		}
+	  ]
+	},
+	{
+	  "name": "Extra Essences",
+	  "description": "These are a bit harder to get. Maybe summon and slay the bosses of these elements instead? If one can, that is...",
+	  "x": 255,
+	  "y": 78,
+	  "icon": {
+	    "id": "arsmagica2:essence",
+		"damage": 8
+	  },
+	  "prerequisites": [
+	    "Refinement of Essence"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Windy Air",
+		  "longDescription": "Feathers alternate Tarma Root.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:feather"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:TarmaRoot"
+			  },
+			  "required": 2
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Plant Nature",
+		  "longDescription": "The worst recipe. Leaves above Vines; Lily Pad left and Cactus right.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:leaves"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:waterlily"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:cactus"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:vine"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Winter Ice",
+		  "longDescription": "Ice alternates Snow. Chilly blocks.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:ice"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:snow"
+			  },
+			  "required": 2
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Immortal Life",
+		  "longDescription": "Gilded Apples alternate hens Eggs.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:golden_apple"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:egg"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Ender Void",
+		  "longDescription": "Eyes alternate Pearls.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:ender_eye"
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:ender_pearl"
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "rewardchoice": [
+	    {
+		  "id": "arsmagica2:essence",
+		  "damage": 2
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 6
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 8
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 9
+		}
+	  ]
+	},
+	{
+	  "name": "Armour Imbuement",
+	  "description": "Now to finally explain why every armour/clothing item has been tracking its own xp. One can use 30, 42, or 54 levels on a single piece of armour to add any of the thirtytwo imbuements to it at tier 1/2/3. \n\n Of special note is the calming Flicker Lure.",
+	  "x": 260,
+	  "y": 20,
+	  "icon": {
+	    "id": "arsmagica2:armorInfuser"
+	  },
+	  "prerequisites": [
+	    "A Mystic Tome"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "A different type of Enchantment",
+		  "longDescription": "This table uses xp absorbed by the armour itself to produce controllable improvements.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:armorInfuser"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:rune",
+		  "damage": 18
+		}
+	  ]
+	},
+	{
+	  "name": "Essence of Essences",
+	  "description": "There are four more things the Essence Refiner can do, all relate to having an even greater essence core. That will be useful for powerful magic, such as uncrafting.",
+	  "x": 265,
+	  "y": 96,
+	  "icon": {
+	    "id": "arsmagica2:essence",
+		"damage": 10
+	  },
+	  "prerequisites": [
+	    "Extra Essences"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "By your Essence combined",
+		  "longDescription": "The joining of the four classical elements seems rather inert. Further research yields a few ideas. \n Air above Earth, Water left of Fire right.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 12
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Heighten the Essence",
+		  "longDescription": "The higher essences combine as if they had some form of nascent similarity. I wonder what that is... \n Lighning over Arcane, Ice left of Nature.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 11
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Pure Essential Essence",
+		  "longDescription": "Assemble the combined Base essence below High essence into a Diamond. Death left of Life completes the set. \n This is even more magical than Arcanae essence. A few meta-magic uses for it can be imagined.",
+		  "items": [
+			{
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 9
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 8
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:diamond"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Anti-Essence",
+		  "longDescription": "Trying to focus the essence of disjunction is a bit finicky. Between a magma cream and obsidian, an emerald can be corrupted by Ender void essences. This should be useful to rip apart anything, in a controlled fashion. \n Naturally that process will also require Dark Etherium.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 9
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:magma_cream"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:obsidian"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:emerald"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:manaMartini"
+		}
+	  ]
+	},
+	{
+	  "name": "Drawing In Power",
+	  "description": "By the power of Chalk, we focus the flickering wards of Candle to mutate the Obelisk to focus new forms of Etherium. \n The compendium will mention these and other rituals when you investigate a rune drawn in chalk.",
+	  "x": 200,
+	  "y": 120,
+	  "icon": {
+	    "id": "arsmagica2:celestialPrism"
+	  },
+	  "prerequisites": [
+	    "Refinement of Essence",
+		"Basic Spellcraft"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Sunshine and Quartz",
+		  "longDescription": "Draw a chalk Cross around your Obelisk, place four candles in the corners, toss in these two reagents, and cast a Light Spell on the Obelisk. \n This Celestial Prism will passively generate Light Etherium during the day. Add back the chalk circle, with pillars of Quartz topped in Glass, Gold, or Diamond to augment it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:blueChalk"
+			  },
+			  "precision": "FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:wardingCandle"
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:itemOre",
+				"damage":7
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:manaFocus"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Keep some for later",
+		  "longDescription": "This mana battery will store a sizable amount of Etherium. When it is output, it will always be Neutral Etherium, allowing you to source it especially from the passive generation of the Celestial Prism. But, sources that require a special type must be done directly.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:manaBattery"
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Blood and Death",
+		  "longDescription": "Draw a lemniscate around your Obelisk, place four Candles in the loops, toss in these two reagents, and cast a Projectile of Fire damage onto the Obelisk. \n This Black Aurem produces Dark Etherium as it swallows mobs whole. Add back the small chalk circle, and pillars of Nether Brick topped with Gold, Diamond, or Chimerite to augment it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:itemOre",
+				"damage": 6
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:mobFocus"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:essenceConduit"
+		}
+	  ]
+	},
+	{
+	  "name": "Summoning Once More",
+	  "description": "Re-purpose those dungeon guardian devices for your own ends. All it takes is a few souls and a river of blood.",
+	  "x": 180,
+	  "y": 150,
+	  "icon": {
+	    "id": "arsmagica2:inertSpawner"
+	  },
+	  "prerequisites": [
+	    "Drawing In Power"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "A Captive Portal",
+		  "longDescription": "The Same Corruption Ritual used to create the Black Aurem is able to pick up a Spawner from the world. Fill the Crystal Phylactery with the dying souls of a particular mob (kill them while it is on your hotbar). Then the less inert spawner will consume Dark Etherium to spawn the selected mob.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:inertSpawner"
+			  },
+			  "precision": "FUZZY"
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:Crystal Phylactery"
+			  },
+			  "precision": "FUZZY"
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Flicking with the Best",
+	  "description": "You may have already stumbled across some little colored motes with humming wings, and they popped out of existance when you got too close. Those Flickers of the ten elements are in fact creatures that have skipped over from the elemental planes. They can only remain in this world in specially prepared spaces, where their continued presence can be leveraged to create an effect. \n\nThen again, they can interact with objects, maybe you can convince them to sort your stuff?",
+	  "x": 175,
+	  "y": 90,
+	  "icon": {
+	    "id": "arsmagica2:flickerJar",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "Basic Spellcraft"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "CRAFT",
+		  "description": "Catch a Flicker",
+		  "longDescription": "The extra mana of being subject to a Buff (or Debuff) will calm a Flicker substantially. Then they can be caught like butterflies in this special jar.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:flickerJar"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Build them a house.",
+		  "longDescription": "While flickers feel comfortable in this abode, you can put them to work by providing such accomadations. Put a set of inhabitants together in a Flicker Focus and they will do work in a 6m radius of their home. \n Special note is given for the Item Transport Focus, as it requires Crystal Markers to pattern how the Air Flicker carries items; which it can do in a 20m radius of its home. Also, solo Arcane or Lightning flickers as Jars in adjacent Habitats will upgrade it\u0027s speed and carrying capacity.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:elementalAttuner"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "CRAFT",
+		  "description": "Open an Invitation",
+		  "longDescription": "Since they are so useful, waiting for some Flickers to just wander across the veil is too regal a hunt. Why not bait a gateway in a controlled area?",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:flickerLure"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Put them to Work",
+		  "longDescription": "Flicker Foci housed in Habitats can do several useful things. Helper flickers in Jars in adjacent Habitats may be useful to some. \n The second focus worth calling out is that of Lunar Tides. It will re-direct the impact of a Moonstone meteor from a 128m area into the 8m directly around it, but only if they have Etherium. (And obviously, if a wizard of tenth rank or higher is nearby to cause the meteor to fall at all)",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:flickerJar",
+				"damage": 1
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:flickerJar",
+				"damage": 4
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:flickerJar",
+				"damage": 6
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:bookAffinity",
+		  "damage": 0
+		}
+	  ]
+	},
+	{
+	  "name": "Tangling with Eternals",
+	  "description": "Rather than refining the essence out of special mundane objects, one can directly summon incarnations of the elemental forces and carve the essence out of their corpses. \n\nKnowledge about these creatures begins appearing in the Compendium once you have achieved the fifteenth level of magickal proficiency.",
+	  "x": 240,
+	  "y": 120,
+	  "icon": {
+	    "id": "arsmagica2:rune",
+		"damage": 17
+	  },
+	  "prerequisites": [
+	    "A Mystic Tome"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Rain elemental - 10",
+		  "longDescription": "This floating jelly loves drowning folish wizards, but is vulneralbe to lightning strikes. \n\nBuild a ring inlayed with redstone in a wet locale, then toss in a Boat and iron Bucket of Water while it is raining.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:boat"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:water_bucket"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:redstoneInlay"
+			  },
+			  "required": 8
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Stone master - 25",
+		  "longDescription": "No statue so massive should levitate, but this golem does. Beware being squashed beneath his fists, and also be ready to dodge tossed boulders. Rock does not burn, and is awfully difficult to crack. \n\nBuild an obsidian ring inlayed with iron around a carved stone point. Surround with vinteum torches, toss in a Chimerite, then a Blue Topaz, and finally an Emerald. \nThis ritual focuses the durability of Earth so strongly that a cavernous area above it will immediately collapse.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:obsidian"
+			  },
+			  "required": 8
+			},
+		    {
+			  "item": {
+			    "id": "minecraft:stonebrick",
+				"damage": 3
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:ironInlay"
+			  },
+			  "required": 8
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:VinteumTorch"
+			  },
+			  "required": 4
+			},
+		    {
+			  "item": {
+			    "id": "minecraft:emerald"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:itemOre",
+				"damage": 4
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:itemOre",
+				"damage": 5
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:rune",
+		  "damage": 17
+		},
+		{
+		  "id": "arsmagica2:rune",
+		  "damage": 18
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 4,
+		  "amount": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 1,
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "Demoting Empyreals",
+	  "description": "These greater beings are much harder to summon, and even harder to defeat, than the weaker elemental masters\u0027 incarnations. \nThis knowledge appears in the Compendium only for those of the twenty-fifth wizarding rank.",
+	  "x": 250,
+	  "y": 140,
+	  "icon": {
+	    "id": "arsmagica2:rune",
+		"damage": 18
+	  },
+	  "prerequisites": [
+	    "Tangling with Eternals",
+		"Refinement of Essence"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Djinn of Wind - 35",
+		  "longDescription": "Only high above the clouds can pure wind be found, and does it ever love tossing wizards even higher into the sky. It will ignore any being that falls back to earth, and has a bit of a clothing fetish. \n\nInlay a ring of gold into any surface above the clouds, and seed an Air essence into it.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:goldInlay"
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 2
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Arch-lich - 45",
+		  "longDescription": "The incarnation of magic itself is formed of knowledge, obviously. It is a master wizard, ready to school challengers in offensive and defensive spells; be aware that it is resistant to blows, and also knows both Cure and Blink utility spells. \n\nInvite the spirit to read your Compendium by flanking it with towers of books. Into the iron ring set before it, toss a seed of Arcane essence.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:ironInlay"
+			  },
+			  "required": 8
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:blockLectern"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:ArcaneCompendium"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "minecraft:bookshelf"
+			  },
+			  "required": 6
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 0
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Humpty the First - 50",
+		  "longDescription": "Incarnating the source of all life is oddly simple, and utterly evil. She cannot fight for herself, but is completely protected by the children she births so quickly. \n\nDraw a square 5 wide, supplemented with candles at the cardinal points. During the night of a full moon, slay a sentient child in the circle, any baby villager should do.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:blueChalk"
+			  },
+			  "precision": "FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "arsmagica2:wardingCandle"
+			  },
+			  "required": 4
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Shocking - 70",
+		  "longDescription": "Attracting the attention of a Lightning Bolt is far less complicated than surviving that attention. \n\nA ring of conductive Gold, surounding a Mana Battery in order to colour the form of spark that strikes the Iron bars stacked atop it. The rod must be built while it is actively raining - your uncle may have mentioned Scottsmen accidentaly performing this ritual during golf.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:goldInlay"
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:manaBattery"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:iron_bars"
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:rune",
+		  "damage": 18,
+		  "amount": 2
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 2,
+		  "amount": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 0,
+		  "amount": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 8,
+		  "amount": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 7,
+		  "amount": 3
+		}
+	  ]
+	},
+	{
+	  "name": "Immortal, you say?",
+	  "description": "The beings incarnating the remaining elements wield might beyond that of mortal wizards. Should you see fit to challenge one, be prepared for a life and death struggle.",
+	  "x": 260,
+	  "y": 160,
+	  "icon": {
+	    "id": "arsmagica2:rune",
+		"damage": 19
+	  },
+	  "prerequisites": [
+	    "Demoting Empyreals"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Reaper of Kisses - 60",
+		  "longDescription": "This entish terror needs no invitation. It will attack by itself when his daughters cry out. Killing five Dryads with minimal gap will bring him forth. \nHe can block many projectiles with that shield, and strike against the distance between you.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 5
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Grumpy Claus - 70",
+		  "longDescription": "The gelid might of antarctic wind howls at intrusion into lonely places. Beware, lest your life be sapped away with the might of thy thews while in an icy grip. \n\nYou must travel to a land already frozen. There, inlay a ring of gold, and build in it a suitable raw golem of Blue Topaz crystal and Ice. Sufficient semblance of life will be provided by a trio of Snow Golems freshly built alongside this effigy.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "arsmagica2:goldInlay"
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:vinteumOre",
+				"damage": 7
+			  },
+			  "required": 2
+			},
+			{
+			  "item": {
+			    "id": "minecraft:ice"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:snow"
+			  },
+			  "required": 6
+			},
+			{
+			  "item": {
+			    "id": "minecraft:pumpkin"
+			  },
+			  "required": 3
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Everburning Efreeti - 90",
+		  "longDescription": "An inferno, feeding off the conflaguration it brings. One must be quick to remove it from the flames it summons - as like all elemental lords it absorbs damage of it\u0027s own type. \n\nIn the land of eternal flame, encircle a highly flammable block with solidified fire. Inlay that ring with gold, then toss in several Water essences to enrage the nascent flame into corporeal form.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:obsidian"
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "minecraft:coal_block"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:goldInlay"
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 4
+			  },
+			  "required": 2
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "arsmagica2:rune",
+		  "damage": 17,
+		  "amount": 2
+		},
+		{
+		  "id": "arsmagica2:rune",
+		  "damage": 19
+		},
+		{
+		  "id": "arsmagica2:arcane_spellbook"
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 5,
+		  "amount": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 6,
+		  "amount": 5
+		},
+		{
+		  "id": "arsmagica2:essence",
+		  "damage": 3,
+		  "amount": 5
+		}
+	  ]
+	},
+	{
+	  "name": "You... You---Ungh... WHAT!!?!",
+	  "description": "Of course there is an elemental master attuned to the Ender darkness between void space. Will all the magic an arch-wizard wield be enough? Have no illusions about mechanical or physical devices being particularly useful against this... demon.",
+	  "x": 200,
+	  "y": 180,
+	  "icon": {
+	    "id": "arsmagica2:essence",
+		"damage": 9
+	  },
+	  "prerequisites": [
+	    "Immortal, you say?",
+		"Drawing in Power",
+		"Extra Essences"
+	  ],
+	  "trigger": "ANTI_TRIGGER",
+	  "tasks": [
+		{
+		  "type": "DETECT",
+		  "description": "The Dark Lord",
+		  "longDescription": "One must already be in The End. there build a mirror black as pitch, and drive a Black Aurem into the space above it. Surround this with golden inlay, illumined on the cardinals with open flame. Only then can an Ender essence seed be fertilized with an open Eye of Ender. \nNow DIE! FOOL!!!!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "minecraft:coal_block"
+			  },
+			  "required": 9
+			},
+			{
+			   "item": {
+			     "id": "arsmagica2:goldInlay"
+			   },
+			   "required": 8
+			},
+			{
+			  "item": {
+			    "id": "minecraft:netherrack"
+			  },
+			  "required": 4
+			},
+			{
+			  "item": {
+			    "id": "arsmagica2:essence",
+				"damage": 9
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:ender_eye"
+			  }
+			}
+		  ]
 		}
 	  ]
 	}

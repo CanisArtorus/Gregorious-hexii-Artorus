@@ -108,9 +108,9 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Copy Print",
-		  "longDescription": "Just remember to bind the books afterward. The firmware can print the manual B\u0026W on paper if not given other scan data. \n Image scans fit on a USB 1, large or enchanted books may require tier 2 or 3 USB data.",
+		  "longDescription": "Just remember to bind the books afterward. The firmware can print the manual B\u0026W on paper if not given other scan data. \n Image scans definately fit on a USB 1, large or enchanted books may require tier 2 or 3 USB data.",
 		  "items": [
 		    {
 			  "item": {
@@ -192,7 +192,7 @@
 	},
 	{
 	  "name": "Programmable Thinking Machines",
-	  "description": "Not just flip-flop and conditional, proper LUA 5.2 / 5.3 programming. All ye script kiddies can enjoy Goggling some really kool shiznat about how to run things (like the RoC Extractor). Other folks may try their hand at perfecting other forms of machine, inventory, and world control.",
+	  "description": "Not just flip-flop and conditional, proper LUA 5.2 / 5.3 programming. All ye script kiddies can enjoy Goggling some really kool shiznat about how to run things (like the RoC Extractor). Other folks may try their hand at perfecting other forms of machine, inventory, and world control; possibly consider posting them for others to use and criticise.",
 	  "x": 60,
 	  "y": 150,
 	  "icon": {
@@ -323,7 +323,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Few are Required",
-		  "longDescription": "In terms of progression stoppers, the tier 3 Laser Engraver is the highest point; it is the only way to create AE2 presses from scratch. However, the tier 2 Laser Engraver is more important; when perfectly overclocked it is able to produce crystal processors from Ruby, Emerald, Sapphire, and Diamond. \n Remember that LU produced are only half the EU put into the laser. However, the overclocked battery trick can be used to step-up laser pulse intensity, instead of using a massive Electric Laser Emitter (capable of continuous emission). However these Crystal Chargers require storage Emerald Processors in addition to tiered normal Chips.",
+		  "longDescription": "In terms of progression stoppers, the tier 3 Laser Engraver is the highest point; it is the only way to create AE2 presses from scratch. However, the tier 2 Laser Engraver is more important; when perfectly overclocked it is able to produce crystal processors from Ruby, Emerald, Sapphire, and Diamond. \n Remember that LU produced are only half the EU put into the laser. However, the battery trick can be used to step-up laser pulse intensity, instead of using a massive Electric Laser Emitter (capable of continuous emission). However these Crystal Chargers require storage Emerald Processors in addition to tiered normal Chips.",
 		  "items": [
 		    {
 			  "item": {
@@ -392,7 +392,7 @@
 	},
 	{
 	  "name": "Massive Power",
-	  "description": "Using these multi-block structures will provide a higher efficiency steam power plant than using lots of the single-block parts; you will get an entire 12 EU per 24 HU fed in. You will need to put 4096 nominal HU/t into the eight Heat acceptors, and be able to recieve either 3072 RU/t or 2048 EU/t nominal (EV) at the output. Some steam sharing is possible, with the right pipes.",
+	  "description": "Using these multi-block structures will provide a higher efficiency steam power plant than using lots of the single-block parts; you will get an entire 12 EU per 24 HU fed in. You will need to put 4096 nominal HU/t into the eight Heat acceptors, and be able to recieve either 3072 RU/t or 2048 EU/t nominal (EV) at the output. Some steam sharing is possible, with the right pipes. \n One could also tap into the efficieny of the main Dynamo by up-gearing an array of small turbines with a pattern of Gearboxes.",
 	  "x": 160,
 	  "y": 150,
 	  "icon": {
@@ -407,7 +407,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Semi-Ultimate Steam Power",
-		  "longDescription": "There are three tiers of power plant above this, but there simply aren\u0027t eight Burning Boxes capable of providing HU of those tiers. \n Build instructions are in the tooltips; place the ring of Heat Acceptors on the bottom of the Boiler tower, from that Main Barometer the Pipe exits. The Pipe enters the centre of a Stainless Steel Wall disk, flanking a block of Magnalium Plate Blocks (magnesium - aluminium alloy) with the Turbine Main Housing. That, at least, can output directly into the Dynamo Wall disk flanking some Large annealed Copper Coil blocks. ",
+		  "longDescription": "There are three tiers of power plant above this, but they require specialized burning boxes. \n Build instructions are in the tooltips; place the ring of Heat Acceptors on the bottom of the Boiler tower, from that Main Barometer the Pipe exits. The Pipe enters the centre of a Stainless Steel Wall disk, flanking a block of Magnalium Plate Blocks (magnesium - aluminium alloy) with the Turbine Main Housing. That, at least, can output directly into the Dynamo Wall disk flanking some Large annealed Copper Coil blocks. ",
 		  "items": [
 		    {
 			  "item": {
@@ -496,7 +496,7 @@
 	},
 	{
 	  "name": "Quantum Replication",
-	  "description": "A far cry from UUMatter, a Matter Fabricator spends QU to break objects down into a mixture of Charged and Neutral Plasma. Pipe both plasmas (preferably by direct connection) into a Matter Replicator containing the scan data for some other elemental, or select molecular, material and apply more QU. \n Quantum power Units? This requires applying Laser energy Units to a Quantum Energizer. Naturally this conversion halves the energy flow. Note that both these machines\u0027 efficiency is tier dependent, only the T5 versions run without loss. However, due to the conversion limits it is currently impossible to get more than 8192 QU/t, and that requires using a tier 5 Crystal Charger with two Energium Crystals tier 5 in pulse operation or a pair of overclocked IV Electric CO2 Lasers. Lacking tier power cost multipliers, these machines actually use less total energy when done quickly at high tier. \n All four QU machines have Osmiridium as a major component. The alloy of two Platinum-group metals, this is awfully difficult to produce at scale; remember how bad the Crystalyzation Crucible was?",
+	  "description": "A far cry from UUMatter, a Matter Fabricator spends QU to break objects down into a mixture of Charged and Neutral Plasma. Pipe both plasmas (preferably by direct connection) into a Matter Replicator containing the scan data for some other elemental, or select molecular, material and apply more QU. \n Quantum power Units? This requires applying Laser energy Units to a Quantum Energizer. Naturally this conversion halves the energy flow. Note that both these machines\u0027 efficiency is tier dependent, only the T5 versions run without loss. However, due to the conversion limits it is currently impossible to get more than 8192 QU/t, and that requires using a tier 5 Crystal Charger with two Energium Crystals tier 5 in pulse operation or a pair of overclocked IV Electric CO2 Lasers. Lacking tier power cost multipliers, these machines actually use less total energy when done quickly at high tier. \n All four QU machines have Osmiridium as a major component. The alloy of two Platinum-group metals, this is awfully difficult to produce at scale; remember how bad building the Crystalyzation Crucible was?",
 	  "x": 260,
 	  "y": 150,
 	  "icon": {
@@ -544,7 +544,7 @@
 	},
 	{
 	  "name": "ZPM",
-	  "description": "Ancient Power devices, these hold unimaginable - and unmeasurable - amounts of raw power. Functionaly claiming to be single-use QU batteries, actually using the Zero Point Module is a mystery.",
+	  "description": "Ancient Power devices, these hold unimaginable - and unmeasurable - amounts of raw power. Functionaly single-use QU batteries, actually using the Zero Point Module is a mystery yet to be cracked by science.",
 	  "x": 300,
 	  "y": 130,
 	  "icon": {
@@ -582,7 +582,7 @@
 	},
 	{
 	  "name": "Eternal Mines",
-	  "description": "From beneath the Bedrock comes endless mineral wealth. However only in certian spots; in some biomes they are easy to spot by indicator plants, otherwise one must look for a hollow in the Bedrock interface, generally filled with a lump of equivalent common ore.",
+	  "description": "From beneath the Bedrock comes endless mineral wealth. However only in certian spots; in some biomes they are easy to spot by indicator plants, otherwise one must look for a hollow in the Bedrock interface, generally filled with an out-of-place lump of equivalent common ore.",
 	  "x": 300,
 	  "y": 70,
 	  "icon": {
@@ -633,7 +633,7 @@
 	},
 	{
 	  "name": "Adam Man",
-	  "description": "Less magical than Draconium, or even Bedrock-Steel Alloy, Adamantium is also a massively overpowered metal in its own way. It is also immensely rarer than either of those other two are supposed to be. In this pack, Draconium is actually more rare and less useful than Adamantine.",
+	  "description": "Less magical than Draconium, or even Bedrock-Steel Alloy, Adamantium is also a massively overpowered metal in its own way. It is also immensely rarer than either of those other two are supposed to be. Although in this pack, Draconium is actually more rare and less useful than Adamantine.",
 	  "x": 300,
 	  "y": 40,
 	  "icon": {

@@ -1,4 +1,53 @@
 
+:: 2.0.340 ::
+
+Update wood recipes for SawAxe option
+Slight change to IE excavator veins
+
+Decision
+: Split into version 2 branch
+ * config changes greatly transform worldgen
+ * re-writen HQM blanks all existing progress
+
+Quests
+ - Major changes to first page, for improved on-boarding
+  * and some mechanical updates
+ - pervasive copyediting
+ - add AM2 line
+ - replace Atum set
+ 
+Configs
+ - clean up some missed repair from the unstable era
+ 
+Added:
+: Regional Water
+ - Now buckets and digging will get also infinite fresh water in Rivers, Twilit Lakes, and on ocean worlds
+   * Actually in the biome, so many shore blocks along 'rivers' will not function this way.
+
+Updates
+: GregTech 6.10.03
+ - included the Erebus woods
+ - nicer Creosote treated slabs, and rail ties
+ - more metals for Drums, Item Pipes, and Cap-Cell-Containers
+ - Axles and Gearboxes !!!
+  * RU transmit / split & join / transform / convert to KU pair
+ - Anvils- qwertech style: durable hammer-partners for plate / ingot / rolling
+ - more miniportals than any sane person would use
+ - LuV lightning rod
+ - Robot Arms as covers - slot specific insert/extract
+ - Turf as peat bogs in Swamps
+ - New tier of Burning Boxes that only use charcoal / coal / coke / peat and take liquid Calcite to run
+   * Joy to Titanium and Tungstensteel super boiler / turbine / dynamo. And tier 4 HU machines
+ - Gas cylinders like measuring pots
+ - Cap Nozzle (ball cock) funnel-like for gasses upgrade to the tap-like Nozzles
+ - CU _*finally*_ cools down Molds and Basins for automating smeltery casting
+ - Button Panel, a temporary manual selector cover
+ 
+: OpenComputers 1.7.4.1692
+: GalaxySpace 1.2.8
+: Dragon Everything v22d
+
+
 :: mark 1.1r307 ::
 
 Attempting to improve new player welcome quests.
