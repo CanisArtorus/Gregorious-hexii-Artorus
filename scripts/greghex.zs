@@ -118,7 +118,6 @@ if (loadedMods in "Magneticraft") {
 		<GalacticraftCore:tile.gcBlockCore:7>, 
 		<GalacticraftMars:tile.asteroidsBlock:3>, 
 		<ImmersiveEngineering:ore:1>, 
-		<ElectriCraft:electricraft_block_ore:4>
 	] as IItemStack[] {
 	<ore:oreAluminum>.remove(IEBaux);
 	<ore:oreAluminium>.remove(IEBaux);
@@ -337,10 +336,10 @@ recipes.addShaped(<gregtech:gt.multitileentity:11164>, [
 	[<ore:cableGt01Naquadah>, <ore:plateQuadrupleSilicon>, Wrench],
 	[<ore:plateQuadrupleAnyCopper>, <ore:casingMachineEnderiumBase>, <ore:plateQuadrupleAnyCopper>],
 	[WirCut, <ore:plateQuadrupleSilicon>, <ore:cableGt01Naquadah>]]);
-recipes.addShaped(<gregtech:gt.multitileentity:11165>, [	// infinite RF cable
-	[<ElectriCraft:electricraft_item_placer:6>, <ore:plateQuintupleSilicon>, Wrench],
-	[<ore:plateQuintupleAnyCopper>, <ore:casingMachineEnderium>, <ore:plateQuintupleAnyCopper>],
-	[WirCut, <ore:plateQuintupleSilicon>, <ElectriCraft:electricraft_item_placer:6>]]);
+//recipes.addShaped(<gregtech:gt.multitileentity:11165>, [	// infinite RF cable
+	//[<ElectriCraft:electricraft_item_placer:6>, <ore:plateQuintupleSilicon>, Wrench],
+	//[<ore:plateQuintupleAnyCopper>, <ore:casingMachineEnderium>, <ore:plateQuintupleAnyCopper>],
+	//[WirCut, <ore:plateQuintupleSilicon>, <ElectriCraft:electricraft_item_placer:6>]]);
 
 // Recyling Them
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 11520, [10000, 10000, 10000], [<gregtech:gt.multitileentity:11001>], [leadDust *14, cuDust *2, indDust]);

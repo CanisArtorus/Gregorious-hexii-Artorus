@@ -129,7 +129,7 @@ var solarpanelULV       = <NuclearCraft:solarPanel>;	// <GalacticraftCore:item.b
 // var ducttape            = <StorageDrawers:tape>;	// <ore:craftingDuctTape>;
 var geothermal          = <ore:craftingGeothermalGenerator>;
 // geothermal.add(<GalaxySpace:geothermal>);
-geothermal.add(<ReactorCraft:reactorcraft_item_placer:20>);	# fluid heat exchange machine
+//geothermal.add(<ReactorCraft:reactorcraft_item_placer:20>);	# fluid heat exchange machine
 // var dusttungsten        = <ore:dustTungsten>;
 var dustdiamond         = <ore:dustDiamond>;	// metaitem.01:2500>;
 // var diasawblade         = <ore:craftingDiamondBlade>;

@@ -61,7 +61,7 @@ var compressorAirAdv = <PneumaticCraft:advancedAirCompressor>;
 var compressorElStatic = <PneumaticCraft:electrostaticCompressor>;
 var compressorLiquid = <PneumaticCraft:liquidCompressor>;
 var compressorLiquidAdv = <PneumaticCraft:advancedLiquidCompressor>;
-var computerMonitor = <RotaryCraft:rotarycraft_item_borecraft:5>;	// <gregtech:gt.metaitem.01:32740>;
+//var computerMonitor = <gregtech:gt.metaitem.01:32740>;
 var dataCircuit = <gregtech:gt.multiitem.technological:30315>;	// metaitem.01:32704>;
 var dispenser = <minecraft:dispenser>;
 // var drillHeadStainlessSteel = <ore:toolHeadDrillStainlessSteel>;
@@ -171,7 +171,7 @@ var pressureGauge = <PneumaticCraft:pressureGauge>;
 var processingPlant = <PneumaticCraft:thermopneumaticProcessingPlant>;
 var programmer = <PneumaticCraft:programmer>;
 // var pureNetherQuartz = <appliedenergistics2:item.ItemMultiMaterial:11>;
-var purpleLamp = <ReactorCraft:reactorcraft_block_lamp:11>;	// <ProjRed|Illumination:projectred.illumination.lamp:10>;
+//var purpleLamp = <ReactorCraft:reactorcraft_block_lamp:11>;	// <ProjRed|Illumination:projectred.illumination.lamp:10>;
 // var quiteClearGlass = plateGlass;	// <EnderIO:blockFusedQuartz:1>;
 var rangeUpgrade = <PneumaticCraft:machineUpgrade:8>;
 var redstoneTorch = <minecraft:redstone_torch>;
@@ -196,7 +196,7 @@ var slabCobble = <ore:slabCobblestone>;
 // var spiderEye = <minecraft:spider_eye>;
 // var steelHullBricked = <gregtech:gt.meta.machine.double:8630>;	// blockmachines:4>;
 // var sugar = <minecraft:sugar>;
-var teslaCoil = <RotaryCraft:rotarycraft_item_machine:103>;	// <IC2:blockMachine2:1>;
+//var teslaCoil = <RotaryCraft:rotarycraft_item_machine:103>;	// <IC2:blockMachine2:1>;
 // var tubeBurst = <PneumaticCraft:plasticElectronTube:8>;
 // var tubeChopper = <PneumaticCraft:plasticElectronTube:12>;
 // var tubeCreeper = <PneumaticCraft:plasticElectronTube:2>;
@@ -362,12 +362,12 @@ Assembly.addLaserRecipe(pressureChamberValve * 10, tubePressureAdv * 4);
 Assembly.removeDrillRecipe(pressureChamberValve);
 Assembly.addDrillRecipe(blockCompressedIron, pressureChamberValve * 10);
 
-recipes.remove(UVBox);
-recipes.addShaped(UVBox, [
+//recipes.remove(UVBox);
+//recipes.addShaped(UVBox, [
     // [purpleLamp, purpleLamp, purpleLamp],
-	[null, purpleLamp, null],
-    [plateCompressedIron, PCBBlueprint, tubePressure],
-    [plateCompressedIron, plateCompressedIron, plateCompressedIron]]);
+	//[null, purpleLamp, null],
+    //[plateCompressedIron, PCBBlueprint, tubePressure],
+    //[plateCompressedIron, plateCompressedIron, plateCompressedIron]]);
 recipes.remove(universalSensor);
 recipes.addShaped(universalSensor, [
     [plasticPurple, sensorLV, plasticPurple],
@@ -386,10 +386,10 @@ recipes.remove(compressorElStatic);
     // [teslaCoil, turbineRotor, teslaCoil],
     // [ironBars, compressorElectric, ironBars]]);
 // } else {
-  recipes.addShaped(compressorElStatic, [
-    [ironBars, plasticGray, ironBars],
-    [teslaCoil, turbineRotor, teslaCoil],
-	[ironBars, compressorAir, ironBars]]);
+  //recipes.addShaped(compressorElStatic, [
+    //[ironBars, plasticGray, ironBars],
+    //[teslaCoil, turbineRotor, teslaCoil],
+	//[ironBars, compressorAir, ironBars]]);
 // }
 recipes.remove(omniHopper);
 recipes.addShaped(omniHopper, [
@@ -404,16 +404,16 @@ recipes.addShaped(liquidHopper, [
 recipes.remove(elevatorCaller);
 // Assembler.addRecipe(elevatorCaller, plasticWhite * 4, plasticBrown * 4, moltenRedstone * 144, 200, 120);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.welder", true, 96, 200, [10000], [plasticWhite *4, plasticBrown *4, dustRedstone], elevatorCaller);
-recipes.remove(programmer);
-recipes.addShaped(programmer, [
-    [plasticRed, computerMonitor, plasticRed],
-    [turbineRotor, dataCircuit, turbineRotor],
-    [ingotCompressedIron, plasticRed, ingotCompressedIron]]);
-recipes.remove(securityStation);
-recipes.addShaped(securityStation, [
-    [plasticGray, computerMonitor, plasticGray],
-    [turbineRotor, PCB, turbineRotor],
-    [ingotCompressedIron, plasticGray, ingotCompressedIron]]);
+//recipes.remove(programmer);
+//recipes.addShaped(programmer, [
+    //[plasticRed, computerMonitor, plasticRed],
+    //[turbineRotor, dataCircuit, turbineRotor],
+    //[ingotCompressedIron, plasticRed, ingotCompressedIron]]);
+//recipes.remove(securityStation);
+//recipes.addShaped(securityStation, [
+    //[plasticGray, computerMonitor, plasticGray],
+    //[turbineRotor, PCB, turbineRotor],
+	//[ingotCompressedIron, plasticGray, ingotCompressedIron]]);
 recipes.remove(PCMixer);
 recipes.addShaped(PCMixer, [
     [glass, glass, glass],

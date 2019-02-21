@@ -35,7 +35,7 @@ var gtMarble = <gregtech:gt.stone.marble:1>;
 
 // --- Removing Recipes ---
 
-furnace.remove(<chisel:concrete>);
+//furnace.remove(<chisel:concrete>);
 
 // --- Cloud In A Bottle
 recipes.remove(BottledCloud);
