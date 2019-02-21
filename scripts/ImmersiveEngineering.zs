@@ -538,7 +538,6 @@ recipes.addShaped(blastFurn *2, [[nBrick, brick, nBrick],[brick, <gregtech:gt.me
 
 recipes.addShapeless(<ImmersiveEngineering:stoneDecoration:6>, [<ore:plateAnyIronSteel>, <Railcraft:machine.alpha:12>]);
 
-mods.immersiveengineering.BlastFurnace.addFuel(<RotaryCraft:rotarycraft_item_compacts:8>, 3200);
 mods.immersiveengineering.BlastFurnace.addFuel(<Railcraft:fuel.coke>, 3200);
 mods.immersiveengineering.BlastFurnace.addFuel(<gregtech:gt.meta.gem:8349>, 3200);
 mods.immersiveengineering.BlastFurnace.addFuel(<gregtech:gt.meta.crushedPurified:8349>, 4000);
