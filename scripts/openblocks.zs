@@ -49,7 +49,6 @@ recipes.remove(<OpenBlocks:technicolorGlasses>);
 
 // tweak the OP things.
 recipes.remove(<OpenBlocks:fan>);
-recipes.addShapeless(<OpenBlocks:fan> * 4, [<RotaryCraft:rotarycraft_item_enginecraft:0>, ULVmotor, <minecraft:stone_slab:*>]);
 recipes.addShapeless(<OpenBlocks:fan> * 3, [<ore:rotorTinAlloy>, ULVmotor, <minecraft:stone_slab:*>]);
 recipes.addShapeless(<OpenBlocks:fan> * 4, [<ore:rotorAnyIron>, ULVmotor, <minecraft:stone_slab:*>]);
 recipes.addShapeless(<OpenBlocks:fan> * 5, [<ore:rotorAnyIronSteel>, ULVmotor, <minecraft:stone_slab:*>]);
