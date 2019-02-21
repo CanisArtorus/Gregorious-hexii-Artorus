@@ -219,14 +219,6 @@ print('TC Recipes Removed');
 Research.moveResearch("JARLABEL", "ALCHEMY", 6, -3);	// Warded Jar
 Research.moveResearch("GT_CRYSTALLISATION", "ALCHEMY", -8, -2);
 
-//Modifying Rotarycraft research
-//Bedrock Helmet of Revealing
-Research.moveResearch("BEDREVEAL", "ARTIFICE", 4, -1);
-Research.clearPrereqs("BEDREVEAL");
-Research.addPrereq("BEDREVEAL", "GOGGLES", false);
-//Tab Removal
-Research.removeTab("rotarycraft");
-
 // Transmutations
 Research.moveResearch("GT_WOOD_TO_CHARCOAL", "ALCHEMY", 4, 0);
 Research.moveResearch("GT_FILL_WATER_BUCKET", "ALCHEMY", 4, 2);
@@ -809,8 +801,9 @@ Research.addArcanePage("ARCANEBORE", <Thaumcraft:blockWoodenDevice:4>);
 Research.addPage("ARCANEBORE", "tc.research_page.ARCANEBORE.3");
 
 // Thaumostatic Harness
-// Infusion.addRecipe("HOVERHARNESS", <GalaxySpace:item.JetPack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
-Infusion.addRecipe("HOVERHARNESS", <RotaryCraft:rotarycraft_item_jetpack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
+//restoring the Galaxyspace one is temporary until a better non-RotaryCraft recipe can be decided
+Infusion.addRecipe("HOVERHARNESS", <GalaxySpace:item.JetPack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
+//Infusion.addRecipe("HOVERHARNESS", <RotaryCraft:rotarycraft_item_jetpack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
 Infusion.addRecipe("HOVERGIRDLE", <Thaumcraft:ItemBaubleBlanks:2>, [<Thaumcraft:blockCrystal:0>, <chisel:cloud>, <gregtech:gt.meta.storage.solid:8217>, <gregtech:gt.multiitem.technological:12103>, <Thaumcraft:blockCrystal:3>, <Thaumcraft:blockCrystal:0>, <chisel:cloud>, <gregtech:gt.meta.storage.solid:8217>, <gregtech:gt.multiitem.technological:12103>, <Thaumcraft:blockCrystal:3>], "aer 48, iter 32, potentia 48, volatus 32", <Thaumcraft:ItemGirdleHover>, 8);
 
 // Infusion Altar
@@ -838,7 +831,8 @@ print('Artifice Majorly Gregged');
 // Thaumic Restorer
 Research.addPrereq("REPAIRER", "IT_TRANSFIERYSTEEL", true);
 Research.addPrereq("REPAIRER", "VOIDMETAL", true);
-Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <RotaryCraft:rotarycraft_item_enginecraft:13>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
+//Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <RotaryCraft:rotarycraft_item_enginecraft:13>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
+Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
 
 // Dynamism Tablet
 Research.addPrereq("ANIMATION_TABLET", "COREUSE", true);
