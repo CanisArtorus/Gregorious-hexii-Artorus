@@ -137,7 +137,7 @@ var ingotVoid           = <Thaumcraft:ItemResource:16>;
 var cocoa               = <minecraft:dye:3>;
 var greanheartFish      = <harvestcraft:greenheartfishItem>;
 var leaveJungle         = <minecraft:leaves:3>;
-//var energyCrystal       = <ElectriCraft:electricraft_item_crystal:2>;
+var energyCrystal       = <gregtech:gt.meta.gemFlawless:8298>;// <ElectriCraft:electricraft_item_crystal:2>;
 var dragonEgg           = <minecraft:dragon_egg>;
 var eel                 = <harvestcraft:eelrawItem>;
 var cakePineapple       = <harvestcraft:pineappleupsidedowncakeItem>;
@@ -151,8 +151,8 @@ var storageUpgrade13    = <StorageDrawers:upgrade:5>;
 var dropper             = <minecraft:dropper>;
 var blazePowder         = <minecraft:blaze_powder>;
 var feather             = <minecraft:feather>;
-var ingotDesh			= <NuclearCraft:material:7>;	// <GalacticraftMars:item.null:2>;	# tough Alloy
-//var ingotBedAlloy		= <RotaryCraft:rotarycraft_item_compacts:3>;
+var ingotDesh			= <GalacticraftMars:item.null:2>;
+var ingotBedAlloy		= <NuclearCraft:material:7>;	// <RotaryCraft:rotarycraft_item_compacts:3>; # tough Alloy
 var potionNVisonLong	= <minecraft:potion:8262>;
 // var potionNVisonLong2	= <minecraft:potion	>;
 var potionFResistLong	= <minecraft:potion:8259>;
@@ -219,8 +219,7 @@ Research.addPage("ICHORIUM", "kirara.research_page.IT_ICHORIUM.1");
 game.setLocalization("kirara.research_page.IT_ICHORIUM.1", "Constructing this divine metal requires combining supreme ingots from diverse fields of study. Yet, no metal you have ever encountered has the... raw greed to absorb them all. Hence you have had to invent the divine distillate of Lucrum - Midasium, it may also prove a useful in it\u0027s own right.");
 Arcane.addShaped("ICHORIUM", ingotMidasium, "aer 5, ignis 5, aqua 5, terra 5, ordo 5, perditio 5", [[ichor, ichor, ichor], [ichor, ingotRoseGold, ichor], [ichor, ichor, ichor]]);
 Research.addArcanePage("ICHORIUM", ingotMidasium);
-//Infusion.addRecipe("ICHORIUM", ingotMidasium, [ingotEGalgador, ingotVoid, ingotDesh, ingotBedAlloy, ingotEnderium, ingotAdamantium], "ordo 96", ichorium * 3, 15);
-Infusion.addRecipe("ICHORIUM", ingotMidasium, [ingotEGalgador, ingotVoid, ingotDesh, ingotEnderium, ingotAdamantium], "ordo 96", ichorium * 3, 15);
+Infusion.addRecipe("ICHORIUM", ingotMidasium, [ingotEGalgador, ingotVoid, ingotDesh, ingotBedAlloy, ingotEnderium, ingotAdamantium], "ordo 96", ichorium * 3, 15);
 Research.addInfusionPage("ICHORIUM", ichorium);
 
 // Ichorium Wand Caps
@@ -231,8 +230,7 @@ Research.refreshResearchRecipe("CAP_ICHOR");
 // Ichor Wand Core
 Research.clearPrereqs("ROD_ICHORCLOTH");
 Research.addPrereq("ROD_ICHORCLOTH", "ICHOR_CLOTH", false);
-//Infusion.addRecipe("ROD_ICHORCLOTH", rodSilverwood, [ichor, salisMundus, ichorcloth, salisMundus, vintuemWandCore, salisMundus, energyCrystal, salisMundus, visAmulet, salisMundus, ichorcloth, salisMundus], "instrumentum 64, superbia 32, praecantatio 256", rodIchor, 20);
-Infusion.addRecipe("ROD_ICHORCLOTH", rodSilverwood, [ichor, salisMundus, ichorcloth, salisMundus, vintuemWandCore, salisMundus, salisMundus, visAmulet, salisMundus, ichorcloth, salisMundus], "instrumentum 64, superbia 32, praecantatio 256", rodIchor, 20);
+Infusion.addRecipe("ROD_ICHORCLOTH", rodSilverwood, [ichor, salisMundus, ichorcloth, salisMundus, vintuemWandCore, salisMundus, energyCrystal, salisMundus, visAmulet, salisMundus, ichorcloth, salisMundus], "instrumentum 64, superbia 32, praecantatio 256", rodIchor, 20);
 Research.refreshResearchRecipe("ROD_ICHORCLOTH");
 
 // Feline Amulet

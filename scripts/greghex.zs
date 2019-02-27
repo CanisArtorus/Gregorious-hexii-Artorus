@@ -336,10 +336,10 @@ recipes.addShaped(<gregtech:gt.multitileentity:11164>, [
 	[<ore:cableGt01Naquadah>, <ore:plateQuadrupleSilicon>, Wrench],
 	[<ore:plateQuadrupleAnyCopper>, <ore:casingMachineEnderiumBase>, <ore:plateQuadrupleAnyCopper>],
 	[WirCut, <ore:plateQuadrupleSilicon>, <ore:cableGt01Naquadah>]]);
-//recipes.addShaped(<gregtech:gt.multitileentity:11165>, [	// infinite RF cable
-	//[<ElectriCraft:electricraft_item_placer:6>, <ore:plateQuintupleSilicon>, Wrench],
-	//[<ore:plateQuintupleAnyCopper>, <ore:casingMachineEnderium>, <ore:plateQuintupleAnyCopper>],
-	//[WirCut, <ore:plateQuintupleSilicon>, <ElectriCraft:electricraft_item_placer:6>]]);
+recipes.addShaped(<gregtech:gt.multitileentity:11165>, [
+	[<ore:cableGt02Naquadah>, <ore:plateQuintupleSilicon>, Wrench],
+	[<ore:plateQuintupleAnyCopper>, <ore:casingMachineEnderium>, <ore:plateQuintupleAnyCopper>],
+	[WirCut, <ore:plateQuintupleSilicon>, <ore:cableGt02Naquadah>]]);
 
 // Recyling Them
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 11520, [10000, 10000, 10000], [<gregtech:gt.multitileentity:11001>], [leadDust *14, cuDust *2, indDust]);
@@ -370,7 +370,7 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 4920, [10000, 10
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 8960, [10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11162>], [invarDust*8, cuDust *4, siliDust *4, <gregtech:gt.meta.dust:8225>, <gregtech:gt.meta.dustSmall:8600> *3]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 10480, [10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11163>], [elecDust *8, cuDust *6, siliDust *6, <gregtech:gt.meta.dust:8001>, <gregtech:gt.meta.dustSmall:8630> *3]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 13560, [10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11164>], [eBasDust *8, cuDust *8, siliDust *8, <gregtech:gt.meta.dust:1740>, <gregtech:gt.meta.dust:8217> *2]);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 14580, [10000, 10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11165>], [endDust *8, cuDust *10, siliDust *10, <gregtech:gt.meta.dustSmall:8333> *18, <gregtech:gt.meta.dustTiny:790> *10, <gregtech:gt.meta.dustSmall:8214> *9]);
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 14580, [10000, 10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11165>], [endDust *8, cuDust *10, siliDust *10,<gregtech:gt.meta.dust:1740> *2, <gregtech:gt.meta.dust:8217>*2]);
 
 
 // Stupid rare materials

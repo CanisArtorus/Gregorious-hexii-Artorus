@@ -113,7 +113,6 @@ recipes.addShaped(capacitorLarge, [
       // [capacitorLarge, circuitMaster, capacitorLarge]]);
   // NEI.overrideName(stargatePowerIC2, "EU Stargate Power Unit");
 // }
-//recipes.remove(stargatePowerRF);
 // if(loadedMods in "EnderIO") {
   // var capacitorBankBasic = <EnderIO:blockCapBank:1>;
   // var capacitorDL = <EnderIO:itemBasicCapacitor:1>;
@@ -122,11 +121,11 @@ recipes.addShaped(capacitorLarge, [
     // [capacitorDL, capacitorDL, capacitorDL],
     // [capacitorBankBasic, resonatorEnder,capacitorBankBasic],
     // [<ore:ingotSoularium>, <ore:ingotDarkSteel>, <ore:ingotSoularium>]]);
-// } else {
-  //recipes.addShaped(stargatePowerRF, [
-	//[<Forestry:chipsets:3>, <NuclearCraft:parts:9>, <ImmersiveEngineering:metalDevice:7>],	# intricate board, advanced plate
-	//[<ore:wireGt02Aluminum>, <ElectriCraft:electricraft_item_crystal:4>, <ore:wireGt02Steel>],	
-	//[<ImmersiveEngineering:metalDevice:7>, <RotaryCraft:rotarycraft_item_compacts:6>, <ore:oc:circuitChip2>]]);	# inductive alloy
+  recipes.remove(stargatePowerRF);
+  recipes.addShaped(stargatePowerRF, [
+	[<Forestry:chipsets:3>, <NuclearCraft:parts:9>, <ImmersiveEngineering:metalDevice:7>],	# intricate board, advanced plate
+	[<ore:wireGt02Aluminum>, <Thaumcraft:ItemResource:15>, <ore:wireGt02Steel>],	# primal charm
+	[<ImmersiveEngineering:metalDevice:7>, casingEV, <ore:oc:circuitChip2>]]);
 // }
 recipes.remove(irisBlade);
 recipes.remove(irisUpgrade);

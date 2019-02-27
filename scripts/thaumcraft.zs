@@ -838,8 +838,7 @@ print('Artifice Majorly Gregged');
 // Thaumic Restorer
 Research.addPrereq("REPAIRER", "IT_TRANSFIERYSTEEL", true);
 Research.addPrereq("REPAIRER", "VOIDMETAL", true);
-//Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <RotaryCraft:rotarycraft_item_enginecraft:13>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
-Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
+Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <gregtech:gt.meta.plate:8673>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
 
 // Dynamism Tablet
 Research.addPrereq("ANIMATION_TABLET", "COREUSE", true);
