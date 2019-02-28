@@ -207,7 +207,7 @@ Research.setAutoUnlock("DIMENSION_SHARDS", true);
 
 Research.moveResearch("ICHOR", "TT_CATEGORY", 9, 8);
 Warp.addToResearch("ICHOR", 5);
-Infusion.addRecipe("ICHOR", netherStar, [shardEnder, shardGluttony, shardLust, shardPride, shardNether, shardGreed, shardEnvy, shardWrath], "superbia 8, nebrisum 8, infernum 64, auram 32, spiritus 32", ichor, 10);
+Infusion.addRecipe("ICHOR", netherStar, [shardEnder, shardGluttony, shardLust, shardPride, shardNether, shardGreed, shardEnvy, shardWrath], "superbia 8, nebrisum 8, infernus 64, auram 32, spiritus 32", ichor, 10);
 Warp.addToItem(ichor, 1);
 Research.refreshResearchRecipe("ICHOR");
 
@@ -267,7 +267,7 @@ Research.refreshResearchRecipe("ICHOR_SHOVEL_GEM");
 Infusion.addRecipe("ICHOR_AXE_GEM", axeIchor, [ichorium, ichor, focusExcavation, shardSloth, blueTopazExquisite, axeElemental, ichorcloth], "aqua 128, messis 32, nebrisum 32, instrumentum 64, superbia 16, perfodio 128, invidia 32, arbor 64, desidia 32, magneto 32, luxuria 16, tempus 32", axeIchorAwake, 25);
 Research.refreshResearchRecipe("ICHOR_AXE_GEM");
 
-Infusion.addRecipe("ICHOR_SWORD_GEM", swordIchor, [ichorium, ichor, focusFrost, shardWrath, shardPride, shardEnvy, redgemExquisite, swordElemental, ichorcloth], "aer 128, ordo 32, nebrisum 32, telum 64, ira 64, potentia 64, fames 128, vitreus 32, infernum 64, superbia 16", swordIchorAwake, 25);
+Infusion.addRecipe("ICHOR_SWORD_GEM", swordIchor, [ichorium, ichor, focusFrost, shardWrath, shardPride, shardEnvy, redgemExquisite, swordElemental, ichorcloth], "aer 128, ordo 32, nebrisum 32, telum 64, ira 64, potentia 64, fames 128, vitreus 32, infernus 64, superbia 16", swordIchorAwake, 25);
 Research.refreshResearchRecipe("ICHOR_SWORD_GEM");
 
 // Armour
@@ -292,8 +292,8 @@ Research.refreshResearchRecipe("ICHORCLOTH_CHEST_GEM");
 
 Research.clearPrereqs("ICHORCLOTH_LEGS_GEM");
 Research.addPrereq("ICHORCLOTH_LEGS_GEM", "ICHORCLOTH_ARMOR", false);
-Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong, focusEfreet, nitorHyper, Firestone, dragonEgg, igneousRock], "nebrisum 16, infernum 128, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
-// Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong2, focusEfreet, nitorHyper, Firestone, dragonEgg, igneousRock], "nebrisum 16, infernum 128, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
+Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong, focusEfreet, nitorHyper, Firestone, dragonEgg, igneousRock], "nebrisum 16, infernus 128, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
+// Infusion.addRecipe("ICHORCLOTH_LEGS_GEM", legsIchor, [rubyExquisite, ichor, ichor, thaumonomicon, focusPrimal, fluxLegs, potionFResistLong2, focusEfreet, nitorHyper, Firestone, dragonEgg, igneousRock], "nebrisum 16, infernus 128, ignis 128, sano 64, lucrum 32, potentia 64, alienis 32, lux 128, tutamen 128", legsIchorGem, 30);
 Research.refreshResearchRecipe("ICHORCLOTH_LEGS_GEM");
 
 Research.clearPrereqs("ICHORCLOTH_BOOTS_GEM");

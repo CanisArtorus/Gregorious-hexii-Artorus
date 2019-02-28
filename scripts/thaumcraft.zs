@@ -219,14 +219,6 @@ print('TC Recipes Removed');
 Research.moveResearch("JARLABEL", "ALCHEMY", 6, -3);	// Warded Jar
 Research.moveResearch("GT_CRYSTALLISATION", "ALCHEMY", -8, -2);
 
-//Modifying Rotarycraft research
-//Bedrock Helmet of Revealing
-//Research.moveResearch("BEDREVEAL", "ARTIFICE", 4, -1);
-//Research.clearPrereqs("BEDREVEAL");
-//Research.addPrereq("BEDREVEAL", "GOGGLES", false);
-//Tab Removal
-//Research.removeTab("rotarycraft");
-
 // Transmutations
 Research.moveResearch("GT_WOOD_TO_CHARCOAL", "ALCHEMY", 4, 0);
 Research.moveResearch("GT_FILL_WATER_BUCKET", "ALCHEMY", 4, 2);
@@ -633,7 +625,7 @@ Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:f
 
 // Blink Focus
 Infusion.removeRecipe(<ForbiddenMagic:BlinkFocus>);
-Infusion.addRecipe("FOCUSBLINK", <gregtech:gt.meta.lens:8318>, [<ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>], "iter 25, perditio 20, desidia 15, infernum 10", <ForbiddenMagic:BlinkFocus>, 3);
+Infusion.addRecipe("FOCUSBLINK", <gregtech:gt.meta.lens:8318>, [<ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>], "iter 25, perditio 20, desidia 15, infernus 10", <ForbiddenMagic:BlinkFocus>, 3);
 Research.refreshResearchRecipe("FOCUSBLINK");
 
 // Celestial Recall
