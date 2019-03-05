@@ -57,35 +57,6 @@ var toughAlloy	= <NuclearCraft:material:7>;
 <ore:blockMagnesium>.addAll(<ore:blockIngotMagnesium>);
 <ore:blockMagnesium>.addAll(<ore:blockSolidMagnesium>);
 
-// ReactorCraft tri-pairing
-<ore:U238>.add(<ReactorCraft:reactorcraft_item_raw:2>);
-<ore:dustUranium235>.add(<ReactorCraft:reactorcraft_item_raw:1>);
-<ore:U235>.add(<ReactorCraft:reactorcraft_item_raw:1>);
-<ore:U235Oxide>.add(<ReactorCraft:reactorcraft_item_raw:1>);
-recipes.addShapeless(<ReactorCraft:reactorcraft_item_raw:1>, [<NuclearCraft:material:57>]);
-
-recipes.addShapeless(<NuclearCraft:fuel:68>,[<ReactorCraft:reactorcraft_item_depleted>, <NuclearCraft:fuel:33>]);
-
-// Terrible fluid non-compatibility
-var ncCell	= <NuclearCraft:fuel:45>;
-var ncO2	= <NuclearCraft:fuel:35>;
-var ncD2	= <NuclearCraft:fuel:37>;
-var rcCell	= <ReactorCraft:reactorcraft_item_canister:0>;
-var rcO2	= <ReactorCraft:reactorcraft_item_canister:8>;
-var rcD2	= <ReactorCraft:reactorcraft_item_canister:5>;
-
-// Deuterium
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [ncCell, rcD2], [rcCell, ncD2]);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [rcCell, ncD2], [ncCell, rcD2]);
-
-// Tritium
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [ncCell, <ReactorCraft:reactorcraft_item_canister:6>], [rcCell, <NuclearCraft:fuel:38>]);
-// tech requires one-way
-
-// Oxygen
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [ncCell, rcO2], [rcCell, ncO2]);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [rcCell, ncO2], [ncCell, rcO2]);
-
 // Naquadah Enriched nuclear fuels
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", true, 64, 400, [10000], [ncCapsule, <gregtech:gt.meta.dust:1741> *3], CfRTG);
 recipes.addShapeless(HEUox, [<ore:U238>, <ore:U238>, <ore:U238>, <ore:U235>, <ore:U235>, <gregtech:gt.meta.dustTiny:1740>, <ore:dustLead>, <ore:dustLead>]);
@@ -95,7 +66,7 @@ recipes.addShaped(<NuclearCraft:nuke>, [[null, duPlate, null],[duPlate, <gregtec
 recipes.addShaped(<NuclearCraft:antimatterBomb>, [[advPlate, advPlate, advPlate],[advPlate, <gregtech:gt.meta.dust:1742>, advPlate],[advPlate, advPlate,advPlate]]);
 
 // Dust Mixing by Machine
-for lapis in [<gregtech:gt.meta.dust:8332>, <NuclearCraft:material:10>, <ElectriCraft:electricraft_item_crafting:0>] as IItemStack[] {	// <ore:dustLapis>.items {
+for lapis in [<gregtech:gt.meta.dust:8332>, <NuclearCraft:material:10>] as IItemStack[] {	// <ore:dustLapis>.items {
 	mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 16, 32, [10000], [lapis, <minecraft:redstone>, <minecraft:sugar>], reactant *3);
 }
 // Tough Alloy	- make steel level (by power requirements), stainless by machine required

@@ -69,7 +69,7 @@ var controlRuby = <gregtech:gt.multiitem.technological:30402>;
 var convertSapph = <gregtech:gt.multiitem.technological:30404>;
 var transDimUpgrade = <SGCraft:sgChevronUpgrade>;
 var plateCurvedEnderium = <gregtech:gt.meta.plateCurved:8710>;
-var bedDust = <RotaryCraft:rotarycraft_item_powders:4>;
+var bedDust = <gregtech:gt.meta.dust:8599> // <RotaryCraft:rotarycraft_item_powders:4>;
 var meteorDust = <gregtech:gt.meta.dust:8649>;
 var triniumOre = <gregtech:gt.meta.crushedPurified:1260>;
 
@@ -113,7 +113,7 @@ recipes.addShaped(capacitorLarge, [
       // [capacitorLarge, circuitMaster, capacitorLarge]]);
   // NEI.overrideName(stargatePowerIC2, "EU Stargate Power Unit");
 // }
-recipes.remove(stargatePowerRF);
+if(loadedMods in "RotaryCraft") {
 // if(loadedMods in "EnderIO") {
   // var capacitorBankBasic = <EnderIO:blockCapBank:1>;
   // var capacitorDL = <EnderIO:itemBasicCapacitor:1>;
@@ -122,12 +122,14 @@ recipes.remove(stargatePowerRF);
     // [capacitorDL, capacitorDL, capacitorDL],
     // [capacitorBankBasic, resonatorEnder,capacitorBankBasic],
     // [<ore:ingotSoularium>, <ore:ingotDarkSteel>, <ore:ingotSoularium>]]);
-// } else {
+} else {
+  recipes.remove(stargatePowerRF);
   recipes.addShaped(stargatePowerRF, [
 	[<Forestry:chipsets:3>, <NuclearCraft:parts:9>, <ImmersiveEngineering:metalDevice:7>],	# intricate board, advanced plate
-	[<ore:wireGt02Aluminum>, <ElectriCraft:electricraft_item_crystal:4>, <ore:wireGt02Steel>],	
-	[<ImmersiveEngineering:metalDevice:7>, <RotaryCraft:rotarycraft_item_compacts:6>, <ore:oc:circuitChip2>]]);	# inductive alloy
+	[<ore:wireGt02Aluminum>, <Thaumcraft:ItemResource:15>, <ore:wireGt02Steel>],	# primal charm
+	[<ImmersiveEngineering:metalDevice:7>, casingEV, <ore:oc:circuitChip2>]]);
 // }
+}
 recipes.remove(irisBlade);
 recipes.remove(irisUpgrade);
 // Assembler.addRecipe(irisBlade, plateTitanium * 4, dustCarbon, 2400, 64);

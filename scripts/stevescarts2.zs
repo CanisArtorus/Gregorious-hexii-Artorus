@@ -122,14 +122,14 @@ var smallsteelpipe      = <ore:pipeSmallSteel>;
 var smallstainlesspipe  = <ore:pipeSmallStainlessSteel>;
 var ironfurnace         = <gregtech:gt.multitileentity:1100>;	// <ore:craftingIronFurnace>;	# burning box lead
 var largebronzeboiler   = <gregtech:gt.multitileentity:1202>;	// blockmachines:1020>;	# common, not dense
-var solarboiler         = <gregtech:gt.multitileentity:10050>;	// blockmachines:105>;	# solar panel = ULV
+var solarboiler         = <GalacticraftCore:item.basicItem:0>; //<gregtech:gt.multitileentity:10050>;	// blockmachines:105>;	# solar panel = ULV
 var solarpanelULV       = <NuclearCraft:solarPanel>;	// <GalacticraftCore:item.basicItem:0>;	// <gregtech:gt.metaitem.01:32750>;
 // var battery             = <ore:gt:re-battery1>;	// batteryBasic>;	# LV
 // var advbattery          = <ore:gt:re-battery2>;	// batteryAdvanced>;	# MV
 // var ducttape            = <StorageDrawers:tape>;	// <ore:craftingDuctTape>;
 var geothermal          = <ore:craftingGeothermalGenerator>;
-// geothermal.add(<GalaxySpace:geothermal>);
-geothermal.add(<ReactorCraft:reactorcraft_item_placer:20>);	# fluid heat exchange machine
+geothermal.add(<GalaxySpace:geothermal>);
+// geothermal.add(<ReactorCraft:reactorcraft_item_placer:20>);	# fluid heat exchange machine
 // var dusttungsten        = <ore:dustTungsten>;
 var dustdiamond         = <ore:dustDiamond>;	// metaitem.01:2500>;
 // var diasawblade         = <ore:craftingDiamondBlade>;
