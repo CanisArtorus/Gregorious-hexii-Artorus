@@ -409,7 +409,7 @@ powerConverter {
 powerDistributor {
   # 7 = CESU, MV battery charger 10082
   input: [["", plateAluminium, ""]
-          [capacitor, {item="gregtech:gt.multitileentity", subID=10082}, capacitor]
+          ["oc:capacitor", {item="gregtech:gt.multitileentity", subID=10082}, "oc:capacitor"]
 		  ["oc:materialCircuitBoardPrinted", plateAluminium, craftingToolWrench]]
 }
 rack {
