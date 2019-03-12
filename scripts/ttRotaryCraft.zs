@@ -2,6 +2,10 @@
 
 // By Canis Artorus
 
+import mods.thaumcraft.Research;
+import mods.thaumcraft.Infusion;
+
+
 var aluminumFoil = <gregtech:gt.meta.foil:130>;
 var ballBearings = <RotaryCraft:rotarycraft_item_borecraft:10>;
 var DUplate = <NuclearCraft:parts:8>;
@@ -86,13 +90,13 @@ recipes.addShaped(floodLamp, [
 mods.immersiveengineering.BlastFurnace.addFuel(<RotaryCraft:rotarycraft_item_compacts:8>, 3200);
 mods.railcraft.BlastFurnace.addFuel(<RotaryCraft:rotarycraft_item_compacts:8>);
 
-recipes.remove(stargatePowerRF);
-recipes.addShaped(stargatePowerRF, [
+recipes.remove(<SGCraft:rfPowerUnit>);
+recipes.addShaped(<SGCraft:rfPowerUnit>, [
 [<Forestry:chipsets:3>, <NuclearCraft:parts:9>, <ImmersiveEngineering:metalDevice:7>],	# intricate board, advanced plate
 [<ore:wireGt02Aluminum>, <ElectriCraft:electricraft_item_crystal:4>, <ore:wireGt02Steel>],	
 [<ImmersiveEngineering:metalDevice:7>, <RotaryCraft:rotarycraft_item_compacts:6>, <ore:oc:circuitChip2>]]);	# inductive alloy
 
-recipes.addShapeless(<OpenBlocks:fan> * 4, [<RotaryCraft:rotarycraft_item_enginecraft:0>, ULVmotor, <minecraft:stone_slab:*>]);
+recipes.addShapeless(<OpenBlocks:fan> * 4, [<RotaryCraft:rotarycraft_item_enginecraft:0>, <gregtech:gt.multiitem.technological:12000>, <minecraft:stone_slab:*>]);
 
 <ore:craftingGeothermalGenerator>.add(<ReactorCraft:reactorcraft_item_placer:20>);	# fluid heat exchange machine
 
@@ -107,6 +111,14 @@ Research.removeTab("rotarycraft");
 Infusion.addRecipe("HOVERHARNESS", <RotaryCraft:rotarycraft_item_jetpack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
 
 Infusion.addRecipe("REPAIRER", <OpenBlocks:autoanvil>, [<gregtech:gt.meta.plate:8610>, <gregtech:gt.meta.plate:8630>, <gregtech:gt.meta.plate:790>, <gregtech:gt.meta.plate:8675>, <RotaryCraft:rotarycraft_item_enginecraft:13>, <chisel:ballomoss>, <harvestcraft:hardenedleatherItem>, <Thaumcraft:ItemResource:7>, <NuclearCraft:parts:3>, <gregtech:gt.meta.plate:8679>, <gregtech:gt.meta.plate:8681>, <gregtech:gt.meta.plate:8669>], "fabrico 50, instrumentum 20, ordo 15, praecantatio 20", <ThaumicTinkerer:repairer>, 8);
+
+var ichor               = <ThaumicTinkerer:kamiResource:0>;
+var ichorcloth          = <ThaumicTinkerer:kamiResource:1>;
+var salisMundus         = <Thaumcraft:ItemResource:14>;
+Infusion.addRecipe("ROD_ICHORCLOTH", <Thaumcraft:WandRod:2>, [ichor, salisMundus, ichorcloth, salisMundus, <ForbiddenMagic:WandCores:4>, salisMundus, <ElectriCraft:electricraft_item_crystal:2>, salisMundus, <Thaumcraft:ItemAmuletVis:1>, salisMundus, ichorcloth, salisMundus], "instrumentum 64, superbia 32, praecantatio 256", <ThaumicTinkerer:kamiResource:5>, 20);
+
+Infusion.addRecipe("ICHORIUM", <gregtech:gt.meta.ingot:8677>, [<StevesCarts:ModuleComponents:47>, <Thaumcraft:ItemResource:16>, <NuclearCraft:material:7>, <RotaryCraft:rotarycraft_item_compacts:3>, <gregtech:gt.meta.ingot:8710>, <gregtech:gt.meta.ingot:2220>], "ordo 96", <ThaumicTinkerer:kamiResource:2> * 3, 15);
+
 
 // NuclearCraft
 // ReactorCraft tri-pairing
@@ -138,4 +150,11 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000]
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [ncCell, rcO2], [rcCell, ncO2]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", false, 16, 20, [10000, 10000], [rcCell, ncO2], [ncCell, rcO2]);
 
+// reactant
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 16, 32, [10000], [<ElectriCraft:electricraft_item_crafting:0>, <minecraft:redstone>, <minecraft:sugar>], <NuclearCraft:parts:4> *3);
+
+
+// reload proofing???!???
+<ore:plankSealedWood>.addAll(<ore:plankTreatedWood>);
+<ore:plankAnyWood>.addAll(<ore:plankTreatedWood>);
+<ore:plankTreatedWood>.mirror(<ore:plankSealedWood>);
