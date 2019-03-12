@@ -191,6 +191,8 @@ var meta7 = [1, 2, 3 ,4] as int[];	// mechanical machine tiers
 for i in meta7 {
 	<ore:compressorMachine>.add(gtTile.makeStack(20100 + i));
 	<ore:crusherMachine>.add(gtTile.makeStack(20020 + i));
+	<ore:ca.petrolCracker>.add(gtTile.makeStack(20480+i));
+	<ore:ca.petrolCracker>.add(gtTile.makeStack(20490+i));
 }
 var meta8 = [6999, 6998, 6997, 6996, 6995, 6994, 6993, 6992, 6991, 6990] as int[];
 for i in meta8 {

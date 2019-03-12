@@ -17,7 +17,7 @@ var witchSlab		= <arsmagica2:witchwoodSingleSlab>;
 // Less expensive Essence
 recipes.addShaped(<arsmagica2:essenceRefiner>, [[plank, <ore:gemZircon>, plank], [obs, arcAsh, obs], [plank, plank, plank]]);
 // More expensive Deconstructor
-recipes.remove{<arsmagica2:deficitCrystal>};
+recipes.remove(<arsmagica2:deficitCrystal>);
 
 // fix mis-diagnoses by GregTech parsing.
 <ore:oreMoonAnyStone>.remove(moonstoneOre);
