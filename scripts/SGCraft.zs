@@ -69,7 +69,7 @@ var controlRuby = <gregtech:gt.multiitem.technological:30402>;
 var convertSapph = <gregtech:gt.multiitem.technological:30404>;
 var transDimUpgrade = <SGCraft:sgChevronUpgrade>;
 var plateCurvedEnderium = <gregtech:gt.meta.plateCurved:8710>;
-var bedDust = <RotaryCraft:rotarycraft_item_powders:4>;
+var bedDust = <gregtech:gt.meta.dust:8599>; // <RotaryCraft:rotarycraft_item_powders:4>;
 var meteorDust = <gregtech:gt.meta.dust:8649>;
 var triniumOre = <gregtech:gt.meta.crushedPurified:1260>;
 
@@ -113,7 +113,7 @@ recipes.addShaped(capacitorLarge, [
       // [capacitorLarge, circuitMaster, capacitorLarge]]);
   // NEI.overrideName(stargatePowerIC2, "EU Stargate Power Unit");
 // }
-recipes.remove(stargatePowerRF);
+if(loadedMods in "RotaryCraft") {
 // if(loadedMods in "EnderIO") {
   // var capacitorBankBasic = <EnderIO:blockCapBank:1>;
   // var capacitorDL = <EnderIO:itemBasicCapacitor:1>;
@@ -122,12 +122,14 @@ recipes.remove(stargatePowerRF);
     // [capacitorDL, capacitorDL, capacitorDL],
     // [capacitorBankBasic, resonatorEnder,capacitorBankBasic],
     // [<ore:ingotSoularium>, <ore:ingotDarkSteel>, <ore:ingotSoularium>]]);
-// } else {
+} else {
+  recipes.remove(stargatePowerRF);
   recipes.addShaped(stargatePowerRF, [
 	[<Forestry:chipsets:3>, <NuclearCraft:parts:9>, <ImmersiveEngineering:metalDevice:7>],	# intricate board, advanced plate
-	[<ore:wireGt02Aluminum>, <ElectriCraft:electricraft_item_crystal:4>, <ore:wireGt02Steel>],	
-	[<ImmersiveEngineering:metalDevice:7>, <RotaryCraft:rotarycraft_item_compacts:6>, <ore:oc:circuitChip2>]]);	# inductive alloy
+	[<ore:wireGt02Aluminum>, <Thaumcraft:ItemResource:15>, <ore:wireGt02Steel>],	# primal charm
+	[<ImmersiveEngineering:metalDevice:7>, casingEV, <ore:oc:circuitChip2>]]);
 // }
+}
 recipes.remove(irisBlade);
 recipes.remove(irisUpgrade);
 // Assembler.addRecipe(irisBlade, plateTitanium * 4, dustCarbon, 2400, 64);
@@ -147,7 +149,7 @@ recipes.addShaped(transDimUpgrade, [[plateCurvedEnderium, emitterEV, motorEV],
 
 # Recipe Creation
 # ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 512, 320, [10000], [bedDust, meteorDust], [<liquid:molten.tungstensteel> * 144, <liquid:molten.titanium> *288, <liquid:molten.iridium> *36, <liquid:helium> *250, <liquid:potion.strength.strong> *250, <liquid:xpjuice> *20], [<liquid:waterdirty> *250], [triniumOre *3]);
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 512, 320, [10000], [bedDust, meteorDust], [<liquid:molten.tungstensteel> * 144, <liquid:molten.titanium> *288, <liquid:molten.iridium> *9, <liquid:helium> *100, <liquid:potion.strength.strong> *250, <liquid:xpjuice> *20], [<liquid:waterdirty> *250], [triniumOre *4]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 75, [10000], [<gregtech:gt.meta.dustTiny:60>, <gregtech:gt.meta.dustTiny:1260> *6, <gregtech:gt.meta.dustTiny:1740> *2], <gregtech:gt.meta.dust:8684>);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 175, [10000], [<gregtech:gt.meta.dustSmall:60>, <gregtech:gt.meta.dustSmall:1260> *6, <gregtech:gt.meta.dustSmall:1740> *2], <gregtech:gt.meta.dustSmall:8684> *9);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 680, [10000], [<gregtech:gt.meta.dust:60>, <gregtech:gt.meta.dust:1260> *6, <gregtech:gt.meta.dust:1740> *2], <gregtech:gt.meta.storage.dust:8684>);

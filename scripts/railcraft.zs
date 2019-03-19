@@ -1023,7 +1023,6 @@ recipes.addShaped(rcWaterTank, [
 // for iCoke in <ore:coalCoke>.items {
 	// mods.railcraft.BlastFurnace.addFuel(iCoke);
 // }
-mods.railcraft.BlastFurnace.addFuel(<RotaryCraft:rotarycraft_item_compacts:8>);
 mods.railcraft.BlastFurnace.addFuel(<ImmersiveEngineering:material:6>);
 mods.railcraft.BlastFurnace.addFuel(<gregtech:gt.meta.gem:8349>);
 mods.railcraft.BlastFurnace.addFuel(<gregtech:gt.meta.crushedPurified:8349>);

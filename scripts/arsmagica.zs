@@ -17,12 +17,12 @@ var witchSlab		= <arsmagica2:witchwoodSingleSlab>;
 // Less expensive Essence
 recipes.addShaped(<arsmagica2:essenceRefiner>, [[plank, <ore:gemZircon>, plank], [obs, arcAsh, obs], [plank, plank, plank]]);
 // More expensive Deconstructor
-recipes.remove{<arsmagica2:deficitCrystal>};
+recipes.remove(<arsmagica2:deficitCrystal>);
 
 // fix mis-diagnoses by GregTech parsing.
 <ore:oreMoonAnyStone>.remove(moonstoneOre);
 <ore:oreMoonMoonstone>.add(moonstoneOre);
-mods.MTUtilsGT.removeRecipe("gt.recipe.crusher", [moonstoneOre], [<gregtech:gt.meta.crushed:8500>*2, <gregtech:gt.meta.dust:8513>]);
+// mods.MTUtilsGT.removeRecipe("gt.recipe.crusher", [moonstoneOre], [<gregtech:gt.meta.crushed:8500>*2, <gregtech:gt.meta.dust:8513>]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, [7500, 10000], [moonstoneOre *1], [moonstoneGem *2, <gregtech:gt.meta.dust:8513>]);	# moon rock
 
 // add missing compatibility
