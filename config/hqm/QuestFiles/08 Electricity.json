@@ -54,7 +54,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "A Direct Kinetic Dynamo",
 		  "longDescription": "Power comes out the top.\n Three Waterwheels could be stacked upon each of these blocks for a reasonable and eternal power supply. Or one Improved Windmill, if you have free sky space for it and don\u0027t mind storm wind fluctuations.",
 		  "items": [
@@ -68,7 +68,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Awful Racket",
 		  "longDescription": "There is nothing to be done about the noise, but 4096 RF/t is worth having. Alas, you will have difficulty getting all that power out, even split over three potential contacts. Though originally designed to run on Biodiesel, this engine actually lasts longer on the Diesel and Gasoline fractions of petroleum.",
 		  "items": [
@@ -265,7 +265,7 @@
 	{
 	  "name": "Carpentry",
 	  "description": "All about horticulture, with a foray into other agrarian pasttimes such as apiary, brewing, farming, and arborculture, Forestry is an aptly-named mod. \n Fermentation and comb processing have also been done (often better) by other mods, though the Moistener is one of the very few ways to create Mycelium.",
-	  "x": 10,
+	  "x": 12,
 	  "y": 110,
 	  "icon": {
 	    "id": "Forestry:sturdyMachine"
@@ -324,7 +324,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Cuboid Rhombic",
 		  "longDescription": "Ranging from 3x3x3 to 5x5x3, this multiblock is the iron standard for automated farming.",
 		  "items": [
@@ -470,7 +470,7 @@
 	},
 	{
 	  "name": "Frosty",
-	  "description": "Ice machines are nice if one needs to re-create wintery conditions with a Freezer; or like Ice Cream from the Cryo-Mixer. Sooner or later the Cold Units of energy might actually be useful for chilling fresh-cast parts.",
+	  "description": "Ice machines are nice if one needs to re-create wintery conditions with a Freezer; or like Ice Cream from the Cryo-Mixer. These Cryo Units of energy are also useful for chilling fresh-cast parts in a Mold, or emergency quenching a Crucible.",
 	  "x": 110,
 	  "y": 60,
 	  "icon": {
@@ -570,7 +570,7 @@
 	  "name": "Density Shuffling",
 	  "description": "Instead of using water to Sluice raw ore, it can be Bathed in a dense liquid to selectively extract certain desirable impurities. We did this with Mercury back in the Forge Age to get more royal metals; now we can use Persulfate solution for several bi-valent cations - Cobalt, Copper, Nickel, and Zinc.",
 	  "x": 155,
-	  "y": 140,
+	  "y": 150,
 	  "icon": {
 	    "id": "gregtech:gt.multitileentity",
 		"damage": 32721
@@ -620,7 +620,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Autocrafted",
-		  "longDescription": "Remote Arms, thankfully not internally powered and self-replicating (yet).",
+		  "longDescription": "Remote Arms, thankfully not internally powered and self-replicating (yet). \n They can also be used as a Cover for slot-specific insertion or removal for a tileentity with an inventory.",
 		  "items": [
 		    {
 			  "item": {
@@ -744,7 +744,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Bottles Too",
-		  "longDescription": "Did I mention Spray Cans? The joys of C-Foam embeding pipes, possibly some Spray Paint, or the utilitarian Fire Extinguisher - the only way to instantly turn off a Burning Box. \n Gas loading is also done here, most importantly for the propane Lighters.",
+		  "longDescription": "Did I mention Spray Cans? The joys of C-Foam embeding pipes, possibly some Spray Paint, or the utilitarian Fire Extinguisher - the only way to instantly turn off a Burning Box. \n Gas loading is also done here, most importantly for the propane Lighters. Although a Nozzle will do in most cases.",
 		  "items": [
 		    {
 			  "item": {
@@ -791,7 +791,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Insertion",
 		  "longDescription": "Mostly for cream Doughnuts and Soda, the Injectors will also make Mana Potions for the sorcerers on your contact list.",
 		  "items": [
@@ -804,7 +804,7 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Dicey",
 		  "longDescription": "Strictly for food processing, the Slicer machines cut fruit, vegtables, and bread in ways you are not skilled enough to do with a knife.",
 		  "items": [
@@ -940,7 +940,7 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "No Peeking",
 		  "longDescription": "Once again, a 50\u0025 loss on conversion from EU. At least glass/diamond Laser Fiber provides completely lossless (and limitless) power transfer of LU. Bloody expensive though.",
 		  "items": [
@@ -963,7 +963,7 @@
 	},
 	{
 	  "name": "Advanced Circuitry",
-	  "description": "Those copper circuits are strongly limited to simple calculations. With better conductors, in finer patterns, one can automate much more complicated tasks. Especially the ability to produce higher tier electric machinery. Too bad direct HV production is nearly impossible right now, you could have been able to actually use that machine tier. \n If you have Tungsten Carbide, you\u0027ll also be able to miniturize a cobble generator to fit in the input slot of a machine - making infinite vanilla stone products. \n Improvements in chip production here spill over into better chips elsewhere; Forestry, Open Computers, and PneumaticCraft will be unfettered.",
+	  "description": "Those copper circuits are strongly limited to simple calculations. With better conductors, in finer patterns, one can automate much more complicated tasks. Especially the ability to produce higher tier electric machinery. Too bad direct HV production is nearly impossible right now, you could have been able to actually use that machine tier. \n If you have Tungsten Carbide, you\u0027ll also be able to miniturize a cobble generator to fit in the input slot of a machine - making infinite vanilla stone products. \n Improvements in chip production here spill over into better chips elsewhere; Forestry, Open Computers, and others will be unfettered.",
 	  "x": 250,
 	  "y": 150,
 	  "icon": {
@@ -1080,7 +1080,7 @@
 	},
 	{
 	  "name": "Block Extensions",
-	  "description": "There were only six faces to any block... Now there can be thirty. The Extenders for Items, Fluids, Both, and Everything turn the attached face into four input sides and move any output to a configurable side (with Monkey Wrench). The nature of what can be accepted, pulled, pushed, or extracted from those faces is still determined by the face the extender is placed against. \n The Universal Extender includes redstone signals and most forms of power, along with items and fluids. These three extra input faces can be very helpful in overclocking recipes.",
+	  "description": "There were only six faces to any block... Now there can be thirty. The Extenders for Items, Fluids, Both, and Everything turn the attached face into four input sides and move any output to a configurable side (with Monkey Wrench). \n The Universal Extender includes redstone signals and most forms of power, along with items and fluids. These three extra input faces can be very helpful in overclocking recipes.",
 	  "x": 225,
 	  "y": 140,
 	  "icon": {

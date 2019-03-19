@@ -94,7 +94,7 @@
 	},
     {
 	  "name": "Document Printer",
-	  "description": "The Guettenburg press in Bibliocraft is perfectly capable of replicating books, even enchanted ones. But without a Scanner (Visuals) and a USB 1 stick to transfer that data, this printer can only make Forestry Stamps and Letters or Thaumcraft Jar Labels. \n With the data from a scanner however, it will not only copy books and maps, but recipe Blueprints, Galacticraft Schematics, and put the texture of any block onto some canvas. It only takes oil-stabilized Chemical Dye, and uses an equal CMYK mix for colour applications.",
+	  "description": "The Guettenburg press in Bibliocraft is perfectly capable of replicating books, even enchanted ones. But without a Scanner (Visuals) and a USB 1 stick to transfer that data, this printer can only make Forestry Stamps and Letters or Thaumcraft Jar Labels. \n With the data from a scanner however, it will not only copy books and maps, but recipe Blueprints, Galacticraft Schematics, and put the texture of any block onto some canvas. It will only accept oil-stabilized Chemical Dye, and uses an equal CMYK mix for colour applications.",
 	  "x": 20,
 	  "y": 130,
 	  "icon": {
@@ -192,7 +192,7 @@
 	},
 	{
 	  "name": "Programmable Thinking Machines",
-	  "description": "Not just flip-flop and conditional, proper LUA 5.2 / 5.3 programming. All ye script kiddies can enjoy Goggling some really kool shiznat about how to run things (like the RoC Extractor). Other folks may try their hand at perfecting other forms of machine, inventory, and world control; possibly consider posting them for others to use and criticise.",
+	  "description": "Not just flip-flop and conditional, proper LUA 5.2 / 5.3 programming. All ye script kiddies can enjoy Goggling some really kool shiznat about how to run things (like iris control codes). Other folks may try their hand at perfecting other forms of machine, inventory, and world control; possibly consider posting them for others to use and criticise.",
 	  "x": 60,
 	  "y": 150,
 	  "icon": {
@@ -273,7 +273,7 @@
 	},
 	{
 	  "name": "More Volts!",
-	  "description": "As we now have the correct casing material for MV (GT) machinery, we can use transformers to interchange the higher tiers of electricaly powered machines. Electrical machines follow the same power tiering mechanics as heat, rotation, and oscillation kinetic machines do; the ability to transform electricity into a different tier after generation provides many opportunites. \n Electric machines that contain chips have a minimum chip tier equal to their power tier (1 LV to 5 IV). The Ultimate tier 6 chips are for multiblocks and specialty purposes. \n Since the Graphene wire required for Ludicrous Voltage is currently unimplemented, the transmission line voltage tiers (6 - 9) are nearly unusable.",
+	  "description": "As we now have the correct casing material for MV (GT) machinery, we can use transformers to interchange the higher tiers of electricaly powered machines. Electrical machines follow the same power tiering mechanics as heat, rotation, and oscillation kinetic machines do; the ability to transform electricity into a different tier after generation provides many opportunites. \n Electric machines that contain chips have a minimum chip tier equal to their power tier (1 - LV to 5 - IV). The Ultimate tier 6 chips are for multiblocks and specialty purposes. \n Since the Graphene wire required for Ludicrous Voltage is my gift to you, enjoy the transmission line voltage tiers (6 - 9).",
 	  "x": 160,
 	  "y": 100,
 	  "icon": {
@@ -321,7 +321,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Few are Required",
 		  "longDescription": "In terms of progression stoppers, the tier 3 Laser Engraver is the highest point; it is the only way to create AE2 presses from scratch. However, the tier 2 Laser Engraver is more important; when perfectly overclocked it is able to produce crystal processors from Ruby, Emerald, Sapphire, and Diamond. \n Remember that LU produced are only half the EU put into the laser. However, the battery trick can be used to step-up laser pulse intensity, instead of using a massive Electric Laser Emitter (capable of continuous emission). However these Crystal Chargers require storage Emerald Processors in addition to tiered normal Chips.",
 		  "items": [
@@ -356,7 +356,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Mineral Recovery",
 		  "longDescription": "The MV Electrolyzer is also super important, as it now allows for all those liquid Vitriol and Chlor-acidic by-products of ore washing to be recovered for even more material; this is in addition to all the electrolytic molecular decomposition recipes that stretch up to HV.",
 		  "items": [
@@ -392,7 +392,7 @@
 	},
 	{
 	  "name": "Massive Power",
-	  "description": "Using these multi-block structures will provide a higher efficiency steam power plant than using lots of the single-block parts; you will get an entire 12 EU per 24 HU fed in. You will need to put 4096 nominal HU/t into the eight Heat acceptors, and be able to recieve either 3072 RU/t or 2048 EU/t nominal (EV) at the output. Some steam sharing is possible, with the right pipes. \n One could also tap into the efficieny of the main Dynamo by up-gearing an array of small turbines with a pattern of Gearboxes.",
+	  "description": "Using these multi-block structures will provide a higher efficiency steam power plant than using lots of the single-block parts; you will get an entire 12 EU per 24 HU fed in. You will need to put 4096 nominal HU/t into the eight Heat acceptors, and be able to recieve either 3072 RU/t or 2048 EU/t nominal (EV) at the output. Some steam sharing is possible, with the right pipes. \n One could also tap into the efficieny of the main Dynamo by up-gearing an array of small turbines with a pattern of Gearboxes. Or by using the new Gas Turbine to get better energy density out of seven specific gasseous fuels and skip the steam conversion step entirely.",
 	  "x": 160,
 	  "y": 150,
 	  "icon": {
@@ -510,7 +510,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Destructive Testing",
-		  "longDescription": "Sacrifice an item to attempt to read its molecular make-up in this sub-atomic Scanner. You will require a T3 (or T4) USB or HDD to store the data. This part takes specifically tier 3 QU power, and is awfully slow. \n By the way, this molecular scan data can be printed into a Material Data book by the Printer.",
+		  "longDescription": "Sacrifice an item to attempt to read its molecular make-up in this sub-atomic Scanner. You will require a T3 (or T4) USB or HDD to store the data. This part takes specifically tier 3 QU power, and is awfully slow. \n By the way, this molecular scan data can be printed into a Material Dictionary book by the Printer.",
 		  "items": [
 		    {
 			  "item": {
@@ -532,6 +532,19 @@
 			  "required": 2
 			}
 		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Data Selection",
+		  "longDescription": "Rather than replacing the USB3 Stick in the Scanner or Replicator, use a USB Switch or HDD Switch block and this USB data Cable. Unfortunately it\u0027s a very short cable, and will only connect to an adjacent block. Which one of the sixteen (virtual) data slots is chosen by a Selector cover. For creating material in the Replicator, the temporary selection of a Button Panel with auto-resest mode screwed in can be very nice. A sticky button panel is equivalent to a Manual Selector cover in this case.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 32013
+			  }
+			}
+		  ]
 		}
 	  ],
 	  "reward": [
@@ -544,7 +557,7 @@
 	},
 	{
 	  "name": "ZPM",
-	  "description": "Ancient Power devices, these hold unimaginable - and unmeasurable - amounts of raw power. Functionaly single-use QU batteries, actually using the Zero Point Module is a mystery yet to be cracked by science.",
+	  "description": "Ancient power devices, these hold unimaginable - and unmeasurable - amounts of raw power. Functionaly single-use QU batteries, actually using the Zero Point Module is a mystery yet to be cracked by science.",
 	  "x": 300,
 	  "y": 130,
 	  "icon": {
@@ -596,7 +609,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Heavy Bore",
 		  "longDescription": "Rather a lot of Titanium goes into this device, not to mention the TungstenSteel. At least it has four inputs for the 1024 to 4096 total RU/t. Find a way to input Lubricant. Items will come out the main block in the top, including the occasional Bedrock Dust - the expected source of Adamantium.",
 		  "items": [
@@ -724,7 +737,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "So much Centrifuge",
 		  "longDescription": "Hence the need for extra strong TungstenSteel throughout.",
 		  "items": [

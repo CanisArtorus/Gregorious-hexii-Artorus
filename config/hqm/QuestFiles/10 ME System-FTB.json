@@ -604,7 +604,7 @@
             {
               "item": {
                 "id": "extracells:terminal.universal.wireless",
-                "nbt": "{type:3b,modules:15b}"
+                "nbt": "{type:3b,modules:31b}"
               },
               "precision": "NBT_FUZZY"
             }
@@ -836,7 +836,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Ring Gates",
 		  "longDescription": "Transdimensional I/O operations in the AE network require a horizontal ring around the core, into which the specific quantum-linked singularity will be placed. The ring has four (or twelve?) contacts for cable, and can transmit at least those 128 channels. \n Note that these structures do not care about distance, and could even be used as long-range, or simply wireless, connections on the same world if the expense is acceptable.",
 		  "items": [

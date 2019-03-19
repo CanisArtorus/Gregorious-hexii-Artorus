@@ -61,7 +61,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Tinder",
-		  "longDescription": "Use a knife or sword to harvest tall grass, bale it up; and place it out in the warm sunshine to wait for dry grass. If in the desert, right-click on a dry log with an axe to get bark pieces instead. Either will work with in a two-stick fire drill. It\u0027s the crappiest fire starter, but you need one of some kind to make a common stone cooking furnace. \n N.B. Very few metals can be smelted in so crude an oven!",
+		  "longDescription": "Use a knife or sword to harvest tall grass, bale it up; and place it out in the warm sunshine to wait for dry grass. If in the desert, right-click on a dry log with an axe to get bark pieces instead. Either will work with in a two-stick fire drill. It\u0027s the crappiest fire starter, but you need one of some kind to make a common flagstone cooking furnace. \n N.B. Very few metals can be smelted in so crude an oven!",
 		  "items": [
 		    {
 			  "item": {
@@ -176,7 +176,7 @@
 	  ],
 	  "tasks": [
 	    {
-	    "type": "CRAFT",
+	    "type": "DETECT",
 		"description": "rocks, fundamental gleaning",
 		"longDescription": "You\u0027re first Hard Hammer will definitely be made of stone, and break quickly. You should be able to find six rocks of the same type of non-ore stone lying about during the first day. If not, you can make a cheap flint or stone pickaxe; mine some cobble; craft a stone Club. The Club acts like a hammer to crush (re-mine) non-vanilla cobblestone into rocks, but its crudeness makes it more weapon than tool.",
 		"items": [
@@ -377,7 +377,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Stoke the Flames",
-		  "longDescription": "Any burning box must be lit with a firestarter after the fuel is put in; and it will continue putting out heat until it can\u0027t grab fuel with air. Use a shovel to remove ashes from the hot box regularly, the fire can choke if the stack overflows. \n Be warned an operational burning box acts like a pool of lava by setting fire to all nearby wooden things.",
+		  "longDescription": "Any burning box must be lit with a firestarter after the fuel is put in; and it will continue putting out heat until it can\u0027t grab fuel with air. Use a shovel (or hopper) to remove ashes from the hot box regularly, the fire can choke if the stack overflows. \n Be warned an operational burning box acts like a pool of lava by setting fire to all nearby wooden things.",
 		  "items": [
 		    {
 			  "item": {
@@ -753,7 +753,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Banded wood",
 		  "longDescription": "You can\u0027t drink from a wooden bucket silly! Use a Cup! \n Right, you\u0027ll need to handle the other fractional fluid amount... perhaps a Measuring Pot?",
 		  "items": [
@@ -872,7 +872,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Bake Gently",
-		  "longDescription": "Simple, low temperature baking. Step carefully now, else it will not rise properly.",
+		  "longDescription": "Simple, low temperature baking. Step carefully now, else it may not rise properly.",
 		  "items": [
 		    {
 			  "item": {
@@ -1016,7 +1016,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Liquid Drums",
-		  "longDescription": "Jugs are nice for on-hand liquids, but long-term liquid storage is the domain of barrels. Alas, greggy barrels do not naturally interact with buckets or portable tanks, attach the funnel and the tap for that functionality. You may need a slim bending cylinder to make these.\n\n By the way, a wooden or rubber mallet (soft hammer) can seal a barrel, causing fermentation of its contents. Come back occasionally with a magnifying glass to detect when it\u0027s wine, lest you end up finding vinegar when you eventually open it.",
+		  "longDescription": "Jugs are nice for on-hand liquids, but long-term liquid storage is the domain of barrels. Alas, greggy barrels do not naturally interact with buckets or portable tanks, attach the Funnel and the Tap for that functionality. You may need a slim bending cylinder to make these.\n\n By the way, a wooden or rubber mallet (soft hammer) can seal a barrel, causing fermentation of its contents. Come back occasionally with a magnifying glass to detect when it\u0027s wine, lest you end up finding vinegar when you eventually open it.",
 		  "items": [
 		    {
 			  "item": {
@@ -1151,7 +1151,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Handy Thermometer",
-		  "longDescription": "The Quicksilver Thermometer can be right-clicked on anyheat-based gtTileentity to query either the gtTemperature there or the HU it contains, without using durability! (Be warned that this is only one of four temperature fields derived from the biome temperature in this pack. Other mod\u0027s ambient temperatures are only loosely correlated.)",
+		  "longDescription": "The Quicksilver Thermometer can be right-clicked on any heat-based gtTileentity to query either the gtTemperature there or the HU it contains, without using durability! (Be warned that other mod\u0027s ambient temperatures are only loosely correlated.)",
 		  "items": [
 		    {
 			  "item": {
@@ -1179,7 +1179,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Shutdown Valve",
-		  "longDescription": "Use some freestanding Red Alloy wire to carry the signal to a sticky piston that will snuff your burning box\u0027s air supply. Since the box doesn\u0027t care about air until it tries to grab another fuel item, switch to a liquid burner that drinks individual litres multiple times a second. \n Creosote from a bank of automated coke ovens is a valid and useful liquid fuel.",
+		  "longDescription": "Use some freestanding Red Alloy wire to carry the signal to a sticky piston that will snuff your burning box\u0027s air supply. Since the box doesn\u0027t care about air until it tries to grab another fuel item, switch to a liquid burner that drinks individual litres multiple times a second. \n Creosote from a bank of automated coke ovens is a valid and useful liquid fuel. \n\n This same circuit can be expanded later to actively cool off the Crucible, once you can make CU from some type of cooling machine.",
 		  "items": [
 		    {
 			  "item": {
