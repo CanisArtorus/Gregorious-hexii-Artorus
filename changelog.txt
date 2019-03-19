@@ -1,5 +1,58 @@
 
-:: 2.0.340 ::
+:: 3.0.366 ::
+Fix the RoC/ElC dependancies discovered by theFirstPaige
+Disable Railcraft Tanks
+
+Remove
+: all of Reika's mods
+ - DragonAPI
+ - RotaryCraft
+ - ReactorCraft
+ - ElectriCraft
+ - Expanded Redstone
+: Electrical Age (ELN)
+: PneumaticCraft
+
+Add:
+: Thaumic Fixer 1.2
+: Symcalc 0.14
+ - Readout of Infusion altar stability.
+: Automagy
+ - Redlogic crystals
+ - Nethermind, creature and block conjuring
+ - Inventarium & Essentia Loci, magical AE system
+ - Golem Workbench, actual autocrafting
+: Thaumic Bases
+ - Aura node management
+ - Overchanting
+ - resource crops (tbd)
+ - Magic weed pipe (tbd)
+ - Spawn obelisks [crying obsidian]
+
+:: mark 2.1.351 ::
+Someone tried to add Galacticraft to CurseForge, but was confused about file structure. Do not 'update' it.
+
+Made nuclear more coherent
+Fixed some erroring / non-functional tweaks
+
+Writing quest updates. But actually updating the quests file invalidates existing completion in the world.
+ + I am including alternate versions of the quest file, so that users can load the one they want. 
+   go to $instances$/Gregorius hexii Artorus/config/hqm/ and rename any of the quests.hqm-version-x to override the default quests.hqm file there.
+
+Updates:
+: GT6.10.07
+ - Petroleum Chemistry. 
+  -- Ethylene and Propylene, steam & catalytic cracked fractions, liquifacted coals, new Plastic recipe
+  -- Biomass fractional distillation in the tower
+ - Gas Turbine multiblock direct power
+ - River Water (infinite fresh water) is worldgen, and an obvious block with WAILA.
+  * Drains still work the old way, and RiverWater cannot be picked up by anything (always gives normal fresh Water) [nor can creative mode place it]. It will expand like vanilla water would have.
+
+Added:
+: Symcalc 0.14
+ - In-game check of Infusion Altar stability rating.
+
+:: mark 2.0.340 ::
 
 Update wood recipes for SawAxe option
 Slight change to IE excavator veins
