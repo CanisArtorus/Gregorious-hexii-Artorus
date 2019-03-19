@@ -8,12 +8,13 @@ gregtech: [
 	{show:["gt.block.", ["*.slab.0"],[0]]};
 	{keep-oned:["gt.block.", [concrete, concrete.reinforced, cfoam, glass*],[]]};
 	{hide:["gt.meta.", [dustImpure, dustPure, ingotHot, plantGt*], []]};
+	{show:[["gt.meta.dustImpure"],[8500, 8599]]};
 	{keep-onei:[[gt.meta.ore.*], []]};
 	{keep-one:[["gt.multitileentity"],[32700, 32745]]};
 	{hide:[["gt.multitileentity"], [25*0* , 26* , 28* , 29* , 30* , 40* , 5* , 60* , 7* , 8* ]]};
 	{show:[["gt.multitileentity"],[25*2 , 2500* , 26*0 , 2602* , 284* , 28*0 , 28*6 , 29*0 , 29*6 , 30, 3000* , 40, 4000, 5, 500, 5000, 5500, 6000, 7, 7000, 7100, 7300, 7500, 8, 8000, 8200]]};
 	{keep-one:[["gt.multiitem.books"],[32002]]};
-	{keep:[["gt.stone.*"],[0]]};
+	{keep:[["gt.stone.*", "gt.block.paths"],[0]]};
 	{show:[["gt.stone.granite.red*"],[]]};
 ]
 }
