@@ -392,7 +392,11 @@ hologram2 {
           [craftingLensRed, craftingLensGreen, craftingLensBlue]
 		  [ringBlaze, casingMachineMagnalium, gemExquisiteDiamond]]
 }
-# keyboard { fallback to default }
+keyboard {
+	# 1027 = Button Panel Selector
+  input: [[{item="gregtech:gt.multiitem.technological", subID=1027}, "oc:materialButtonGroup", craftingToolScrewdriver]
+          [platePlastic, "oc:materialArrowKey", "oc:materialNumPad"]]
+}
 # motionSensor {default}
 # netSplitter {default}
 printer {
