@@ -140,6 +140,10 @@ for fill in <ore:dustAnySiliconDioxide>.items {
 
 recipes.remove(remoteKeyboard);
 recipes.addShaped(remoteKeyboard, [
-	[duckEars, screwdriver, <minecraft:ender_pearl>],
-	[<ore:oc:materialButtonGroup>, <ore:oc:materialButtonGroup>, <ore:oc:materialNumPad>], 
-	[<ore:oc:materialButtonGroup>, <ore:oc:materialButtonGroup>, <ore:oc:materialArrowKey>]]);
+	[<ore:screwAnyCopper>, duckEars, <minecraft:ender_pearl>],
+	[<gregtech:gt.multiitem.technological:1027>, <ore:oc:materialButtonGroup>, screwdriver],
+	[<ore:plateTinAlloy>, <ore:oc:materialArrowKey>, <ore:oc:materialNumPad>]]);
+recipes.addShaped(remoteKeyboard, [
+	[duckEars, <minecraft:ender_pearl>],
+	[<ore:screwAnyCopper>, screwdriver],
+	[<OpenComputers:keyboard>, null]]);
