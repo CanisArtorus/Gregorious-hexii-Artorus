@@ -1056,7 +1056,7 @@ Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:ItemResource:8>, "ordo 5, aqua 5"
 // Alembic
 Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua 5", 
 	[[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateCurvedGold>], 
-	[<ore:plateIron>, <ore:bucketEmpty>, <ore:plateIron>], 
+	[<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>], 
 	[<ore:plateIron>, null, <ore:plateIron>]]);
 
 // Crystallizer
