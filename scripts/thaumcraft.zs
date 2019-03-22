@@ -775,7 +775,7 @@ game.setLocalization("item.ItemResource.5.name", "Dull Zombie Brain");
 print('Artifice mildly Gregged');
 
 // Thaumium
-Crucible.addRecipe("THAUMIUM", <gregtech:gt.meta.nugget:8679> * 3, <ore:dustTinyAnyThaumicCrystal>, "metallum 3, praecantatio 1");
+Crucible.addRecipe("THAUMIUM", <gregtech:gt.meta.nugget:8679> * 7, <ore:gemChippedAnyThaumicCrystal>, "metallum 7, ordo 3, praecantatio 1");
 Arcane.addShaped("THAUMIUM", <Railcraft:tool.crowbar.magic>, "ordo 8", [[null, <ore:dyeRed>, <ore:ingotThaumium>], [<ore:dyeRed>, <ore:ingotThaumium>, <ore:dyeRed>], [<ore:ingotThaumium>, <ore:dyeRed>, null]]);
 Research.clearPages("THAUMIUM");
 Research.addPage("THAUMIUM", "tc.research_page.THAUMIUM.1");
@@ -1054,6 +1054,10 @@ Arcane.addShaped("DECONSTRUCTOR", <Thaumcraft:blockTable:14>, "perditio 20, ordo
 Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:ItemResource:8>, "ordo 5, aqua 5", [[<ore:plateGold>, <Thaumcraft:blockWoodenDevice:7>, <ore:plateGold>]]);
 
 // Alembic
+Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua 5", 
+	[[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateCurvedGold>], 
+	[<ore:plateIron>, <ore:plateCurvedLead>, <ore:plateIron>], 
+	[<ore:plateIron>, null, <ore:plateIron>]]);
 Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua 5", 
 	[[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateCurvedGold>], 
 	[<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>], 
