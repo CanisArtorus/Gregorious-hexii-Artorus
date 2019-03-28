@@ -623,7 +623,7 @@ Research.clearPages("thaumicenergistics.TEFOCUSWRENCH");
 Research.addPage("thaumicenergistics.TEFOCUSWRENCH", "kirara.research_page.TEFOCUSWRENCH.1");
 game.setLocalization("kirara.research_page.TEFOCUSWRENCH.1", "This wand focus interacts with blocks and machinery as if it were an AE2 wrench. Interestingly the incredible complexity of such an interaction prevents you from using your normal lenses instead requiring the use of carefully created crystals attuned to the machines.<BR>Sneak + left click: Rotate.<BR>Sneak + right click: Dismantle.");
 Arcane.removeRecipe(<thaumicenergistics:focus.aewrench>);
-Arcane.addShaped("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>, "aer 10, ignis 10", [[<ore:crystalNetherQuartz>, <ore:ringGalvanizedSteel>, <ore:crystalCertusQuartz>], [<ore:ringGalvanizedSteel>, <ore:crystalPureFluix>, <ore:ringStainlessSteel>], [<ore:crystalCertusQuartz>, <ore:ringStainlessSteel>, <ore:crystalNetherQuartz>]]);
+Arcane.addShaped("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>, "aer 10, ignis 10", [[<ore:crystalNetherQuartz>, <ore:ringSteelGalvanized>, <ore:crystalCertusQuartz>], [<ore:ringSteelGalvanized>, <ore:crystalPureFluix>, <ore:ringStainlessSteel>], [<ore:crystalCertusQuartz>, <ore:ringStainlessSteel>, <ore:crystalNetherQuartz>]]);
 Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>);
 
 // // Crafting Focus
