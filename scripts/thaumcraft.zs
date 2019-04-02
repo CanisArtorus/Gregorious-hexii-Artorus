@@ -633,7 +633,7 @@ Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:f
 
 // Blink Focus
 Infusion.removeRecipe(<ForbiddenMagic:BlinkFocus>);
-Infusion.addRecipe("FOCUSBLINK", <gregtech:gt.meta.lens:8318>, [<ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>], "iter 25, perditio 20, desidia 15, infernum 10", <ForbiddenMagic:BlinkFocus>, 3);
+Infusion.addRecipe("FOCUSBLINK", <gregtech:gt.meta.lens:8318>, [<ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>], "iter 25, perditio 20, desidia 15, infernus 10", <ForbiddenMagic:BlinkFocus>, 3);
 Research.refreshResearchRecipe("FOCUSBLINK");
 
 // Celestial Recall
@@ -1062,7 +1062,7 @@ Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua
 	[[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateCurvedGold>], 
 	[<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>], 
 	[<ore:plateIron>, null, <ore:plateIron>]]);
-
+	
 // Crystallizer
 Arcane.addShaped("ESSENTIACRYSTAL", <Thaumcraft:blockTube:7>, "terra 15, aqua 5, ordo 5", 
 	[[null, <gregtech:gt.multitileentity:22004>, null], 
