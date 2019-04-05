@@ -8,6 +8,15 @@ Thaumcraft Tweaks for Gregtech 6
 //
 //
 // Changelog:
+	v2.2.1:
+		* Fixed ringSteelGalvanized in the AE Wrench Focus
+	v2.2:
+		* Fixed Alembics
+		+ switched Thaumium nuggets recipe to be Chipped Any Shards
+	v2.1:
+		- Removed all the RotaryCraft references, pending removal from the pack
+		+ Re-instated the Galacticraft references, since it now works well enough to be included
+			- most of these are a direct swap
 	v0.8:
 		- Disabled references to IC2 as it is being removed form the modpack
 		- Book Infusion enchantments disabled pending completion of translation to GT6

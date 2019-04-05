@@ -118,7 +118,7 @@ if (loadedMods in "Magneticraft") {
 		<GalacticraftCore:tile.gcBlockCore:7>, 
 		<GalacticraftMars:tile.asteroidsBlock:3>, 
 		<ImmersiveEngineering:ore:1>, 
-		<ElectriCraft:electricraft_block_ore:4>
+		// <ElectriCraft:electricraft_block_ore:4>
 	] as IItemStack[] {
 	<ore:oreAluminum>.remove(IEBaux);
 	<ore:oreAluminium>.remove(IEBaux);
@@ -130,12 +130,19 @@ furnace.addRecipe(<ImmersiveEngineering:metal:1>, <ore:dustAluminium>);
 
 var diamond = <ore:diamond>;
 var obsidian = <ore:obsidian>;
+var plateObsidian = <ore:plateObsidian>;
 
 // option both magic books
 recipes.addShaped( <minecraft:enchanting_table>, [
 	[null, <arsmagica2:ArcaneCompendium>, null],
 	[diamond, obsidian, diamond],
 	[obsidian, obsidian, obsidian]]);
+	
+// Miner's trash, option from the Hunter's trash
+recipes.addShaped(<gregtech:gt.multitileentity:327809>,[
+	[plateObsidian, plateObsidian, plateObsidian],
+	[plateObsidian, <ore:container1000lava>, plateObsidian],
+	[<ore:plateAnyIronOrSteel>, <ore:dustInfusedEntropy>, <ore:plateAnyIronOrSteel>]]);
 
 // Let the Dict of Ores commence
 var gtTile = <gregtech:gt.multitileentity>.definition;
@@ -152,13 +159,13 @@ for i in [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42
 	<ore:ca.craftAnvil>.add(gtTile.makeStack(32000+i));	# ingot / plate anvil
 }
 
+// Quest management
 <ore:persulfDust>.add(<gregtech:gt.meta.dust:9822>);
 <ore:persulfDust>.add(<gregtech:gt.meta.dust:8022>);
 <ore:ca.spatialDisk>.add(<appliedenergistics2:item.ItemMultiMaterial:32>);
 <ore:ca.spatialDisk>.add(<appliedenergistics2:item.ItemMultiMaterial:33>);
 <ore:ca.spatialDisk>.add(<appliedenergistics2:item.ItemMultiMaterial:34>);
 	
-// Quest management
 var meta1 = [2000, 2100, 2200, 2300, 2400, 2500, 2600, 2700] as int[];
 for i in meta1 {
 	<ore:woodBuckets>.add(<gregtech:gt.multiitem.randomtools>.definition.makeStack(i) );
@@ -212,12 +219,12 @@ for i in [1, 2, 3, 4, 5] as int[] {	// electric machine tiers
 	<ore:steamTurbine>.add(gtTile.makeStack(11020 + i));	// flux motors
 }
 
-// RFlux accepting machines
+// RFlux accepting machines		until 6.10.08
 var HHammer = <ore:craftingToolHardHammer>;
 var Screwdriver = <ore:craftingToolScrewdriver>;
 var WirCut	= <ore:craftingToolWireCutter>;
 var Wrench	= <ore:craftingToolWrench>;
-
+/*
 var tripLead	= <ore:plateTripleLead>;
 var tripInvar	= <ore:plateTripleInvar>;
 var tripElect	= <ore:plateTripleElectrum>;
@@ -374,7 +381,7 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 8960, [10000, 10
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 10480, [10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11163>], [elecDust *8, cuDust *6, siliDust *6, <gregtech:gt.meta.dust:8001>, <gregtech:gt.meta.dustSmall:8630> *3]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 13560, [10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11164>], [eBasDust *8, cuDust *8, siliDust *8, <gregtech:gt.meta.dust:1740>, <gregtech:gt.meta.dust:8217> *2]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 14580, [10000, 10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11165>], [endDust *8, cuDust *10, siliDust *10,<gregtech:gt.meta.dust:1740> *2, <gregtech:gt.meta.dust:8217>*2]);
-
+*/
 
 // Stupid rare materials
 var VbDust	= <gregtech:gt.meta.dust:1520>;
@@ -476,7 +483,6 @@ var ingotEnderium = <ore:ingotEnderium>;
 var logWood = <ore:logWood>;
 var Plank = <ore:plankWood>;
 var plateDiamond = <ore:plateDiamond>;
-var plateObsidian = <ore:plateObsidian>;
 var Stick = <minecraft:stick>;
 
 var IronScrew = <ore:screwAnyIron>;

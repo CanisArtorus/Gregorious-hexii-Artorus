@@ -623,7 +623,7 @@ Research.clearPages("thaumicenergistics.TEFOCUSWRENCH");
 Research.addPage("thaumicenergistics.TEFOCUSWRENCH", "kirara.research_page.TEFOCUSWRENCH.1");
 game.setLocalization("kirara.research_page.TEFOCUSWRENCH.1", "This wand focus interacts with blocks and machinery as if it were an AE2 wrench. Interestingly the incredible complexity of such an interaction prevents you from using your normal lenses instead requiring the use of carefully created crystals attuned to the machines.<BR>Sneak + left click: Rotate.<BR>Sneak + right click: Dismantle.");
 Arcane.removeRecipe(<thaumicenergistics:focus.aewrench>);
-Arcane.addShaped("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>, "aer 10, ignis 10", [[<ore:crystalNetherQuartz>, <ore:ringGalvanizedSteel>, <ore:crystalCertusQuartz>], [<ore:ringGalvanizedSteel>, <ore:crystalPureFluix>, <ore:ringStainlessSteel>], [<ore:crystalCertusQuartz>, <ore:ringStainlessSteel>, <ore:crystalNetherQuartz>]]);
+Arcane.addShaped("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>, "aer 10, ignis 10", [[<ore:crystalNetherQuartz>, <ore:ringSteelGalvanized>, <ore:crystalCertusQuartz>], [<ore:ringSteelGalvanized>, <ore:crystalPureFluix>, <ore:ringStainlessSteel>], [<ore:crystalCertusQuartz>, <ore:ringStainlessSteel>, <ore:crystalNetherQuartz>]]);
 Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:focus.aewrench>);
 
 // // Crafting Focus
@@ -633,7 +633,7 @@ Research.addArcanePage("thaumicenergistics.TEFOCUSWRENCH", <thaumicenergistics:f
 
 // Blink Focus
 Infusion.removeRecipe(<ForbiddenMagic:BlinkFocus>);
-Infusion.addRecipe("FOCUSBLINK", <gregtech:gt.meta.lens:8318>, [<ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>], "iter 25, perditio 20, desidia 15, infernum 10", <ForbiddenMagic:BlinkFocus>, 3);
+Infusion.addRecipe("FOCUSBLINK", <gregtech:gt.meta.lens:8318>, [<ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>, <ForbiddenMagic:NetherShard:5>, <gregtech:gt.meta.ring:8710>], "iter 25, perditio 20, desidia 15, infernus 10", <ForbiddenMagic:BlinkFocus>, 3);
 Research.refreshResearchRecipe("FOCUSBLINK");
 
 // Celestial Recall
@@ -775,7 +775,7 @@ game.setLocalization("item.ItemResource.5.name", "Dull Zombie Brain");
 print('Artifice mildly Gregged');
 
 // Thaumium
-Crucible.addRecipe("THAUMIUM", <gregtech:gt.meta.nugget:8679> * 3, <ore:dustTinyAnyThaumicCrystal>, "metallum 3, praecantatio 1");
+Crucible.addRecipe("THAUMIUM", <gregtech:gt.meta.nugget:8679> * 7, <ore:gemChippedAnyThaumicCrystal>, "metallum 7, ordo 3, praecantatio 1");
 Arcane.addShaped("THAUMIUM", <Railcraft:tool.crowbar.magic>, "ordo 8", [[null, <ore:dyeRed>, <ore:ingotThaumium>], [<ore:dyeRed>, <ore:ingotThaumium>, <ore:dyeRed>], [<ore:ingotThaumium>, <ore:dyeRed>, null]]);
 Research.clearPages("THAUMIUM");
 Research.addPage("THAUMIUM", "tc.research_page.THAUMIUM.1");
@@ -1056,9 +1056,13 @@ Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:ItemResource:8>, "ordo 5, aqua 5"
 // Alembic
 Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua 5", 
 	[[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateCurvedGold>], 
-	[<ore:plateIron>, <ore:bucketEmpty>, <ore:plateIron>], 
+	[<ore:plateIron>, <ore:plateCurvedLead>, <ore:plateIron>], 
 	[<ore:plateIron>, null, <ore:plateIron>]]);
-
+Arcane.addShaped("DISTILESSENTIA", <Thaumcraft:blockMetalDevice:1>, "aer 5, aqua 5", 
+	[[<Thaumcraft:ItemResource:8>, <ore:plateIron>, <ore:plateCurvedGold>], 
+	[<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>], 
+	[<ore:plateIron>, null, <ore:plateIron>]]);
+	
 // Crystallizer
 Arcane.addShaped("ESSENTIACRYSTAL", <Thaumcraft:blockTube:7>, "terra 15, aqua 5, ordo 5", 
 	[[null, <gregtech:gt.multitileentity:22004>, null], 

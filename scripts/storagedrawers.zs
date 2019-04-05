@@ -82,6 +82,7 @@ mods.storagedrawers.OreDictionaryBlacklist.add("steamPiston");
 mods.storagedrawers.OreDictionaryBlacklist.add("ca.plugBench");
 mods.storagedrawers.OreDictionaryBlacklist.add("ca.spatialDisk");
 mods.storagedrawers.OreDictionaryBlacklist.add("ca.craftAnvil");
+mods.storagedrawers.OreDictionaryBlacklist.add("ca.petrolCracker");
 
 // and the irritations that could happen.
 mods.storagedrawers.OreDictionaryBlacklist.add("beamWood");
