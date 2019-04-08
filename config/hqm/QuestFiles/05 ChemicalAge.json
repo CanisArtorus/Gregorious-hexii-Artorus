@@ -4,7 +4,7 @@
   "quests": [
 	{
 	  "name": "Without Blemish",
-	  "description": "The Art of Chemistry cannot be done in a dirty space. One must first craft a container that will not itself react with the substances of interest. It\u0027s a bit of a stretch of imagination, but Stainless Steel is a good game-y choice for that material. \n It also makes a gas-tight, acid-safe, medium-temperature Tank and Drum larger than the Wooden Tank or Barrel. This Bathing Pot will hold some molten metals (the steel can melt), and is acid-safe like the Measuring Pot (beaker) upgrade.",
+	  "description": "The Art of Chemistry cannot be done in a dirty space. One must first craft a container that will not itself react with the substances of interest. It\u0027s a bit of a stretch of imagination, but Stainless Steel is a good game-y choice for that material. \n It also makes a gas-tight, acid-safe, medium-temperature Tank and Drum larger than the Wooden Tank or Barrel. This Bathing Pot will hold some molten metals (the steel can melt), and is acid-safe like the Measuring Pot (beaker) and Gas Cylinder upgrades.",
 	  "x": 50,
 	  "y": 100,
 	  "icon": {
@@ -109,7 +109,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Vintage",
 		  "longDescription": "The Fermenter operates on pure Time, making alcohol and other yeasty goodness. But, unlike a sealed Barrel or Drum, it only ever goes a single step, and it is capable of admixing a solid into the recipe. Thus, biomass digestion and glycerol production (the precursor to dynamite). \n A Distilley machine requires heat, and performs potion brewing much like a common Brewing Stand would, along with the production of distilled spirits. Note that many such products make for tolerable liquid fuel.",
 		  "items": [
@@ -150,8 +150,8 @@
 	},
 	{
 	  "name": "Vitriolic",
-	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is useful for making the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, alas it will take a MV Electrolyzer to process the various colours of mineralized vitriol - which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam. \n Carbonizing Sugar is a great renewable source of pure Carbon for your Steel-producing (and other oxide reductive smelting) efforts.",
-	  "x": 125,
+	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is useful for making the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, alas it will take a MV Electrolyzer to process the various colours of mineralized vitriol byproduct - which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam. \n Carbonizing Sugar is a great renewable source of pure Carbon for your Steel-producing (and other oxide reductive smelting) efforts.",
+	  "x": 175,
 	  "y": 70,
 	  "icon": {
 	    "id": "gregtech:gt.meta.chemtube",
@@ -164,7 +164,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Fuming Vitriol",
-		  "longDescription": "The final step is to Mix SO_3 gas into Water. \n If you have some Black Sand to centrifuge into Vanadium Pentoxide, or have a Platinum dust lying about, either will catalyze the mixture of SO_2 and O_2 gases. You can just use breathable Air for that Oxygen; the sulfurous fumes come from Roasting. \n Alternately, use a tier 2 Steel Centrifuge on Gypsum to get calcium sulphate, which can be mixed with glass or Flint dust (mortared from the scrap of your original tools) to release some SO_3 without a catalyst.",
+		  "longDescription": "The final step is to Mix SO_3 gas into Water. \n If you have some Black Sand to centrifuge into Vanadium Pentoxide, or have a Platinum Dust lying about, either will catalyze the mixture of SO_2 and O_2 gases. You can just use breathable Air for that Oxygen; the sulfurous fumes come from Roasting. \n Alternately, use a tier 2 Steel Centrifuge on Gypsum to get calcium sulphate, which can be mixed with glass or Flint dust (mortared from the scrap of your original tools) to release some SO_3 without a catalyst.",
 		  "items": [
 		    {
 			  "item": {
@@ -186,8 +186,8 @@
 	},
 	{
 	  "name": "Acid Gas",
-	  "description": "Since Hydrochloric Acid is naturally a gas, the Bath machine must be used to bathe ores in it. Note that only the nine ores with Manganese as a by-product can be Refined this way; HCl bathing is also a step in processing some tungstic oxide ores as dust. \n The Chlorine Gas released by Manganese ore refining is itself useful to un-dye anything bathed in it (and to refine titanium).",
-	  "x": 175,
+	  "description": "Since Hydrochloric Acid is naturally a gas, the Bath machine must be used to bathe ores in it. Note that only the nine ores with Manganese as a by-product can be Refined this way; HCl bathing is also a step in processing some tungstic oxide ores as dust. \n The Chlorine Gas released by Manganese ore refining is itself useful to un-dye anything bathed in it (and to refine titanium, or produce plastic).",
+	  "x": 125,
 	  "y": 70,
 	  "icon": {
 	    "id": "gregtech:gt.meta.chemtube",
@@ -237,7 +237,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Nitric Nitre or Not",
-		  "longDescription": "Nitric Acid produciton is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly. \nAlternatively, use a Lightning discharge Processor to combine Oxygen and Nitrogen gasses, Mix in more Oxygen, and bubble through Water.\n\n Now, wash some ores containing Platinum, or it\u0027s siblings to get this valuable sludge.",
+		  "longDescription": "Nitric Acid produciton is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly. \nAlternatively, use a Lightning discharge Processor to combine Oxygen and Nitrogen gasses, Mix in more Oxygen, and bubble through Water.\n\n Now, wash some ores containing Platinum, or its siblings to get this valuable sludge.",
 		  "items": [
 		    {
 			  "item": {
@@ -263,8 +263,8 @@
 	{
 	  "name": "Titanic",
 	  "description": "Titanium, the Tier 3 metal for both heat and mechanical machinery. \n Note that smelting is simply insufficient to liberate useable Titanium from its ores, time to start building dedicated ore processing machine chains.",
-	  "x": 225,
-	  "y": 70,
+	  "x": 100,
+	  "y": 40,
 	  "icon": {
 	    "id": "gregtech:gt.meta.ingot",
 		"damage": 220
@@ -313,7 +313,7 @@
 	  "name": "Steamed",
 	  "description": "The Autoclave machine block requires an input only of Steam and Time. It will be helpful for applied energistics, but first it is an essential part in the torturous Bauxite ore processing chain. Thankfully, an Autoclave has a fixed steam capacity, and cannot explode due to over-pressure.",
 	  "x": 75,
-	  "y": 70,
+	  "y": 130,
 	  "icon": {
 	    "id": "gregtech:gt.multitileentity",
 		"damage": 22004
@@ -397,9 +397,9 @@
 	},
 	{
 	  "name": "Simple Fractions",
-	  "description": "Time for those grand Tanks to be used. The Oil Distillation Tower splits most varieties of Oil into two gases (Propane and Butane), five liquids (Lubricant, Petrol, Fuel Oil / gasoline, Diesel, and Kerosene), and a blend of three solids (Asphalt, Plastic, and Parrafin Wax). All seven fluids have dedicated output hatches, in order of condensation temperatures, above the item output hatch. Input the Oil into any of the other 11 faces on the base ring of the Tower Parts and controller, while supplying a total of 64 to 256 HU/t via the bottom of the nine Heat Acceptors. \n Many of the liquid fractions, and both gasses, are fuels; it is thus possible to make the distillation tower self-sustaining. While one may need a Bucket or Generifier, the GT Lubricant is easy to use as RoC lubricant, and GT machine recipes requiring Lubricant generally accept the RoC version natively.",
+	  "description": "Time for those grand Tanks to be used. The oil Distillation Tower splits most varieties of Oil into two gases (Propane and Butane), five liquids (Lubricant, Petrol, Fuel Oil / gasoline, Diesel, and Kerosene), and a blend of two solids (Asphalt and Parrafin Wax). All seven fluids have dedicated output hatches, in order of condensation temperatures, above the item output hatch. Input the Oil into any of the other 11 faces on the base ring of the Tower Parts and controller, while supplying HU from Burning Boxes via the bottom of the nine Heat Acceptors. \n Both solids are output from the bottom port, so this is a good place to use Quadruple Item Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Many of the liquid fractions, and both gasses, are fuels; it is thus possible to make the distillation tower self-sustaining. \n\n The Distillation Tower can also be used to fractionate Liquifacted Coal (which was Burn Mixed under water) in much the same way, although the gasseous fractions are bound together as Coal Gas that will need to be fractionally distilled a second time at a higher power tier. Fractionally distilling Biomass is also possible, but only a good idea if you want Glycerol, Ethanol, and Methane in the supplied ratio.",
 	  "x": 75,
-	  "y": 130,
+	  "y": 70,
 	  "icon": {
 	    "id": "gregtech:gt.meta.chemtube",
 		"damage": 9850
@@ -409,7 +409,7 @@
 	  ],
 	  "tasks": [
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Tower of Juice",
 		  "longDescription": "The front of this multiblock is only for the GUI, it\u0027s the back one really cares about. in case it was unlcear, the 3x9 cylinder is solid.",
 		  "items": [
@@ -434,11 +434,41 @@
 			  }
 			}
 		  ]
-		},
+		}
+	  ]
+	},
+	{
+	  "name": "Plastics!",
+	  "description": "Time for some basic synthetic chemistry. Plastic doesn\u0027t just fall out of oil, it has to be created from tiny monomers. It won\u0027t matter whether you use Propylene or Ethylene for your monomer, so plastic can be made from the Gasoline (fuel oil), Petrol, Butane, or Propane fractions.",
+	  "x": 75,
+	  "y": 40,
+	  "icon": {
+	    "id": "gregtech:gt.meta.chain",
+		"damage": 8218
+	  },
+	  "prerequisites": [
+	    "Simple Fractions",
+		"Titanic"
+	  ],
+	  "tasks": [
 	    {
+		  "type": "CRAFT",
+		  "description": "All Cracked Up",
+		  "longDescription": "The saturated alkane gasses (Butane and Propane) can be de-saturated into viable monomers by Steam Cracking in a dedicated machine. Be prepared to deal with all four gasseous outputs from this tiny fractionation reaction chamber. \n A mixture of monomers can also be cracked out of liquid hydrocarbons in a Catalytic Cracker. This requires Platinum Dust as the catalyst, and must be built with Zeolite Dust for a medium. Zeolite veins occur where Basalt covers blue sodium Salt layers underground, I have also added some to IE chalk veins to be found on the Overworld and other appropriate planets.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20491
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+		{
 		  "type": "DETECT",
-		  "description": "Plastics!",
-		  "longDescription": "All three solids are output from the bottom port, so this is a good place to use Quadruple Item Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Like Rubber, Plastic burns when melted, loosing a third of the material each time; it also shapes well in a Steel low-heat Extruder.",
+		  "description": "Long Polymers",
+		  "longDescription": "Polymerization is quite quick, when some gasseous monomer is Mixed with Magnesium Chloride and a drop of Titanium Tetrachloride. You should have plenty of both from your Titanium processing line. \n Like Rubber, Plastic burns when melted, loosing a third of the material each time; it also shapes well in a Steel low-heat Extruder.",
 		  "items": [
 		    {
 			  "item": {
@@ -489,7 +519,7 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Motor",
 		  "longDescription": "Even though they don\u0027t actually consume EU, most automated motion devices have this properly constructed electromagnetic brush motor as a component.",
 		  "items": [
@@ -502,9 +532,9 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Pumped Pipes",
-		  "longDescription": "It may not look like a Cover in inventory, but the Compact Pump series of items can be placed as a Cover on any fluid Pipe from GregTech. By default they will suck the fluid out of the tank they are pointing at and pull it into the pipe. A Screwdriver can reverse the flow direction to forcefully empty a pipe into the tank (which needn\u0027t, and often shouldn\u0027t, be a connected direction). \n It might be an idea to use a Pressure Valve on pipes with forced inputs.",
+		  "longDescription": "It may not look like a Cover in inventory, but the Compact Pump series of items can be placed as a Cover on any fluid Pipe from GregTech. By default they will suck the fluid out of the tank they are pointing at and pull it into the pipe. A Screwdriver can reverse the flow direction to forcefully empty a pipe into the tank (which needn\u0027t, and often shouldn\u0027t, be a connected direction). \n It might be an idea to use a Pressure Valve on pipes with forced pull.",
 		  "items": [
 		    {
 			  "item": {
@@ -515,9 +545,9 @@
 		  ]
 		},
 	    {
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Convey Items",
-		  "longDescription": "The Compact Conveyor looks even less like a Cover, but acts identically to the Compact Pump when used to Cover an Item Pipe from GregTech.",
+		  "longDescription": "The Compact Conveyor looks even less like a Cover, but acts identically to the Compact Pump when used to Cover an Item Pipe from GregTech towards an inventory.",
 		  "items": [
 		    {
 			  "item": {
@@ -538,7 +568,7 @@
 	},
 	{
 	  "name": "Wolf Ram I Am at Heart",
-	  "description": "W. Tungsten. A famously strong material for high-temperature acid-safe applications. Little surprise it requires advanced chemistry to extract from the ore. \n Tungsten will make a good material for beakers, Tanks, Taps / Funnels, and Pipes, once you can actually work it.",
+	  "description": "W. Tungsten. A famously strong material for high-temperature acid-safe applications. Little surprise it requires advanced chemistry to extract from the ore. \n Tungsten will make a good material for beakers, Tanks, Taps / Funnels, (Cap) Nozzles, and Pipes, once you can actually work it.",
 	  "x": 200,
 	  "y": 100,
 	  "icon": {
@@ -586,7 +616,7 @@
 	},
 	{
 	  "name": "Crock Pot",
-	  "description": "An early step, but a very long one, in the production of electronic devices is the production of conrolled semi-conductor wafers. Elemental Silicon is a good material, alloying it with Redstone seems to be even better. Naturally, letting the boule grow from seed dust in liquid must be done with a non-reactive atmosphere; a noble gas, Helium, Neon, Argon, etc., is the best way to keep all the other gases from leaking in and contaminating the material. Like finding the minerals in Sluice Juice, getting the specific gasses out of Air is a perfect 64 RU/t Centrifuge recipe.",
+	  "description": "An early step, but a VERY long one, in the production of electronic devices is the production of conrolled semi-conductor wafers. Elemental Silicon is a good material, alloying it with Redstone seems to be even better. Naturally, letting the boule grow from seed dust in liquid must be done with a non-reactive atmosphere. A noble gas, Helium, Neon, Argon, etc., is the best way to keep all the other gases from leaking in and contaminating the material. Like finding the minerals in Sluice Juice, getting the specific gasses out of Air is a perfect 64 RU/t Centrifuge recipe.",
 	  "x": 200,
 	  "y": 136,
 	  "icon": {
@@ -675,7 +705,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Toungue Stan",
-		  "longDescription": "Almost there. Void Metal, Tantalum, and Osmium can all melt and cast Tungsten, while being shaped themselves even in an Iridium forge. \n Fiery Steel can only be melted in these crucibles, even though it can be worked as steel before conversion in the medium-temperature Bath, but cannot survive molten Tungsten. Bedrock-HSLA steel Alloy could be worked solid, like Void Metal, skipping directly to Tungsten, or worked in a Ta or Os crucible.",
+		  "longDescription": "Almost there. Void Metal, Tantalum, and Osmium can all melt and cast Tungsten, while being shaped themselves even in an Iridium forge. \n Fiery Steel can only be melted in these crucibles, even though it can be worked as steel before conversion in the medium-temperature Bath, but cannot survive molten Tungsten.",
 		  "items": [
 		    {
 			  "item": {
@@ -903,7 +933,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Itty-Bitty Infinity",
-		  "longDescription": "Radio-Thermal Generators will provide a steady stream of RF for ever (while chunkloaded), without any further fuel input. The Weak RTG is easy to make, and pitiful; artificial isotopes can make much better RTGs. \n This can be made directly in the Heavy Duty Workspace.",
+		  "longDescription": "Radio-Thermal Generators will provide a steady stream of RF forever (while chunkloaded), without any further fuel input. The Weak RTG is easy to make, and pitiful; artificial isotopes can make much better RTGs. \n This can be made directly in the Heavy Duty Workspace.",
 		  "items": [
 		    {
 			  "item": {
@@ -989,7 +1019,7 @@
 	},
 	{
 	  "name": "Atomic POWER!",
-	  "description": "Full 3D, but no neutron flux; the NC fission reactors are very different to build from RoC, BR, or IC2 fission reactors. Due to the coolers having double effect under certain conditions, stacking a 2D representation will not scale well in general. Due to the square-cube relationship, designing an optimal medium size NC reactor is outrageously more complex than optimizing the maximum size of RoC, IC2, or BR reactor. \n The casing does not require edges or corners, and the controller only works when facing outwards in an edge position. \n Always check your specific fuel\u0027s heat and power in the tooltip before operating the reactor.",
+	  "description": "Full 3D, but no neutron flux; the NC fission reactors are very different to build from RoC, BR, or IC2 fission reactors. Due to the coolers having double effect under certain conditions, stacking a 2D representation will not scale well in general. Due to the square-cube relationship, designing an optimal medium size NC reactor is outrageously more complex than optimizing the maximum size of RoC or IC2 reactor. \n The casing does not require edges or corners, and the controller only works when facing outwards in an edge position. \n Always check your specific fuel\u0027s heat and power in the tooltip before operating the reactor.",
 	  "x": 75,
 	  "y": 190,
 	  "icon": {
@@ -1002,7 +1032,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "A Puzzler",
-		  "longDescription": "Reactor internal design is a great in-depth topic. While searching the external resources, be aware that NC 1.9 for 1.7.10 has different cooler mechanics than modern NC 2.7 / 2.10; tooltips are your local resource.",
+		  "longDescription": "Reactor internal design is a great in-depth topic. While searching the external resources, be aware that NC 1.9 for 1.7.10 has different cooler mechanics than modern NC 2.7 / 2.13; tooltips are your local resource.",
 		  "items": [
 		    {
 			  "item": {
@@ -1027,8 +1057,8 @@
 	},
 	{
 	  "name": "Atomise Steam",
-	  "description": "Upgrade that Fission reactor Controller to a Steam Fission reactor Controller; fluid Steam is the same for GregTech, Railcraft, Immersive Engineering, Forestry, Buildcraft, RotaryCraft, and NuclearCraft. However, if you have a powerful recator, NC will output Dense or Superdense Steam instead; this ensures a 2B/t pipe will be sufficient, and requires Steam Decompressor machines to convert into normal Steam that generators can use. The water is created by an internal infinite source, so no need to worry about active cooling.",
-	  "x": 50,
+	  "description": "Upgrade that Fission reactor Controller to a Steam Fission reactor Controller; fluid Steam is the same for GregTech, Railcraft, Immersive Engineering, Forestry, Buildcraft, and NuclearCraft. However, if you have a powerful recator, NC will output Dense or Superdense Steam instead; this ensures a 2B/t pipe will be sufficient, and requires Steam Decompressor machines to convert into normal Steam that generators can use. The water is created by an internal infinite source, so no need to worry about active cooling (that\u0027s strictly a safety concern here).",
+	  "x": 45,
 	  "y": 190,
 	  "icon": {
 	    "id": "NuclearCraft:parts",
@@ -1161,7 +1191,7 @@
 	},
 	{
 	  "name": "RF Fusion",
-	  "description": "A very square, solidly encased, Tokamak variation is chosen by NC for the Fusion Reactor. Two fuels enter, four of six products leave. \n Each and every Electromagnet consumes 100 RF/t to be plasma-solid (aka not explode when active); the core requires high RF power input to reach an enormous reaction temperature. But once at or above the particular temperature, and with room in the output slots, the core emits a massive stream of power for a modest and constant stream of fuel.",
+	  "description": "A very square, solidly encased, Tokamak variation is chosen by NC for the Fusion Reactor. Two fuels enter, up to four of six products leave. \n Each and every Electromagnet consumes 100 RF/t to be plasma-solid (aka not explode when active); the core requires high RF power input to reach an enormous reaction temperature. But once at or above the particular temperature, and with room in the output slots, the core emits a massive stream of power for a modest and constant stream of fuel. \n Being able to re-purpose those released Neutrons for material fabrication with Quantum power is a nice bonus.",
 	  "x": 100,
 	  "y": 130,
 	  "icon": {
@@ -1221,7 +1251,7 @@
 	},
 	{
 	  "name": "Eat Death",
-	  "description": "The Pistol can only fire Depleted Uranium Bullets, but it sure packs a whallop. \n\n Compare and Contrast the IE Revolver or Railgun, RoC GravelGun or Fire Charge Launcher, PneumaticCraft minigun, TC combat Wand Foci, and AM combat spell options in a tweleve page essay please. References to Botania Mana Blaster and Rods, Blood Magic procedural Spells, Witchery Infused Gestures, Tech Guns everything, Thaumic Bases Revolver, and MFR hand cannon will be awarded or penalized on merit.",
+	  "description": "The Pistol can only fire Depleted Uranium Bullets, but it sure packs a whallop. \n\n Compare and Contrast the IE Revolver or Railgun, Thaumic Bases Revolver, TC combat Wand Foci, and AM combat spell options in a tweleve page essay please. References to Botania Mana Blaster and Rods, Blood Magic procedural Spells, Witchery Infused Gestures, RoC GravelGun or Fire Charge Launcher, PneumaticCraft minigun, MFR hand cannon, Tech Guns everything, and GregTech Weapon Works will be awarded or penalized on merit.",
 	  "x": 125,
 	  "y": 190,
 	  "icon": {

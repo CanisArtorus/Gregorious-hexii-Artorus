@@ -4,7 +4,7 @@
   "quests": [
     {
       "name": "The Twilight Zone",
-      "description": "The Twilight Forest is a dimension filled with dungeons and magic. Beware, however. The Twilight Forest is fairly server intensive. \n\n Check out the Miniature Twilight Portal for transferring loot to and from the Overworld. It treats space as equal scale just like the portal, but has a vast (512m) allowance for endpoint connections so that one can avoid locked biomes. \n RotaryCraft Shafts will transfer power through the orignal portal just fine.",
+      "description": "The Twilight Forest is a dimension filled with dungeons and magic. Beware, however. The Twilight Forest is fairly server intensive. \n\n Check out the Miniature Twilight Portal for transferring loot to and from the Overworld. It treats space as equal scale just like the portal, but has a vast (512m) allowance for endpoint connections so that one can avoid locked biomes.",
       "x": 270,
       "y": 30,
       "bigicon": true,
@@ -1298,7 +1298,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "The Fourth Portal",
-		  "longDescription": "Lay down a shallow pool in sandstone. A complete 5x5 foundation below the ring layer. Add two block pillars to the four corners. \n The same structure can be built of atum limestone large bricks to return. \n\n Because the base is required, Rotary shaft power cannot be transmitted to this dimension. There is however a Miniature Portal to link any-Greggy-thing.",
+		  "longDescription": "Lay down a shallow pool in sandstone. A complete 5x5 foundation below the ring layer. Add two block pillars to the four corners. \n The same structure can be built of atum limestone Large Bricks to return elsewhere. \n\n There is also a Miniature Portal to link any-Greggy-thing to and fro.",
 		  "items": [
 		    {
 			  "item": {
@@ -1336,11 +1336,14 @@
 	{
 	  "name": "Ancient lootz",
 	  "description": "Pyramids here are much better defended than those still in the Overworld. They are nearly unbreakable structures. Each has a single entrance that leads into a tight and winding corridor filled with traps designed to foil builders and sappers. At the heart of this maze is a ladder up to the burial chamber. The noble was generally intered with their personal riches, but generally dislikes being robbed in thier sleep.",
-	  "x": 40,
-	  "y": 15,
+	  "x": 50,
+	  "y": 18,
 	  "icon": {
 	    "id": "atum:item.scepter"
 	  },
+	  "prerequisites": [
+	    "A Haze of Sand"
+	  ],
 	  "tasks": [
 	    {
 		  "type": "DETECT",
@@ -1366,12 +1369,15 @@
 	{
 	  "name": "Land of Riches",
 	  "description": "In this gently rolling land, huge veins of ore can be found. The old-style ore sandwiches exist, one per nine chunks, in a nice regular pattern across the world. When they are near the surface, it becomes strange sand ore, which is processed in the Sifter instead of the Sluice. \n There are also bedrock ore veins to be found. Some indicator flowers may grow above them.",
-	  "x": 20,
-	  "y": 35,
+	  "x": 24,
+	  "y": 50,
 	  "icon": {
 	    "id": "gregtech:gt.meta.ore.normal.sand.atum",
 		"damage": 820
 	  },
+	  "prerequisites": [
+	    "A Haze of Sand"
+	  ],
 	  "tasks": [
 	    {
 		  "type": "DETECT",
@@ -1401,7 +1407,7 @@
 	},
 	{
 	  "name": "The Lost Ones",
-	  "description": "You have discovered a strange and wonderous artifact: the Ring of Worlds. Or one of them that is. When you place down the final block (or tag the controller of a built ring) it will whisper to you a sequence of nine characters, which we map to the alpha-numerics for ease of reference. Hopefully you have also found a carved obsidian altar bearing those symbols nearby, a DHD. If not, you will need to program an OC computer to dial out. And it does operate much like dialing a phone, enter a string of seven symbols into the nearby DHD or attached dialing computer that correspond to a ring in this world. An amount of power will be spent, and a gateway to that place opened for a while.",
+	  "description": "You have discovered a strange and wonderous artifact: the Ring of Worlds. Or one of them that is. When you place down the final block it will whisper to you a sequence of nine characters, which we map to the alpha-numerics for ease of reference. These symbols are also engraved on every part of the ring (in the GUI). Hopefully you have also found a carved obsidian altar bearing those symbols nearby, a DHD. If not, you will need to program an OC computer to dial out. And it does operate much like dialing a phone, enter a string of seven symbols into the nearby DHD or attached dialing computer that correspond to a ring in this world. An amount of power will be spent, and a gateway to that place opened for a while.",
 	  "x": 210,
 	  "y": 155,
 	  "icon": {

@@ -223,7 +223,7 @@
 	  "tasks": [
 	    {
 		  "type": "DETECT",
-		  "description": "Auotmate Alchemy",
+		  "description": "Automate Alchemy",
 		  "longDescription": "",
 		  "items": [
 		    {
@@ -637,7 +637,7 @@
 	  "trigger": "ANTI_TRIGGER",
 	  "tasks": [
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "More Parts, More Precise Power",
 		  "longDescription": "Too bad it doesn\u0027t self-recharge, otherwise this would be perfect for handling all the arcane crafting still to be done.",
 		  "items": [
@@ -866,7 +866,7 @@
 	  ],
 	  "tasks": [
 	    {
-	      "type": "CRAFT",
+	      "type": "DETECT",
 		  "description": "The Eye Sees",
 		  "longDescription": "The cult of crimson were small-minded, this is so obvious!",
 		  "items": [
@@ -1577,7 +1577,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Keep some for later",
-		  "longDescription": "This mana battery will store a sizable amount of Etherium. When it is output, it will always be Neutral Etherium, allowing you to source it especially from the passive generation of the Celestial Prism. But, sources that require a special type must be done directly.",
+		  "longDescription": "This mana battery will store a sizable amount of Etherium. When it is output it will always be Neutral Etherium, allowing you to source it from the passive generation of the Celestial Prism. But, things that require a special type of Etherium must be done directly.",
 		  "items": [
 		    {
 			  "item": {
@@ -1682,7 +1682,7 @@
 		  ]
 		},
 		{
-		  "type": "CRAFT",
+		  "type": "DETECT",
 		  "description": "Open an Invitation",
 		  "longDescription": "Since they are so useful, waiting for some Flickers to just wander across the veil is too regal a hunt. Why not bait a gateway in a controlled area?",
 		  "items": [
