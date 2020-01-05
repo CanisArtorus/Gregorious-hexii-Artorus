@@ -118,6 +118,9 @@ if (loadedMods in "Magneticraft") {
 		<GalacticraftCore:tile.gcBlockCore:7>, 
 		<GalacticraftMars:tile.asteroidsBlock:3>, 
 		<ImmersiveEngineering:ore:1>, 
+		<libVulpes:libVulpesore0:9>,
+		<GalaxySpace:marsoresblocks:5>,
+		<GalaxySpace:europablocks:5>
 		// <ElectriCraft:electricraft_block_ore:4>
 	] as IItemStack[] {
 	<ore:oreAluminum>.remove(IEBaux);
@@ -127,6 +130,8 @@ if (loadedMods in "Magneticraft") {
 }}
 furnace.remove(<ore:ingotAluminium>);
 furnace.addRecipe(<ImmersiveEngineering:metal:1>, <ore:dustAluminium>);
+
+<ore:barsIron>.add(<gregtech:gt.block.bars.steel>);
 
 var diamond = <ore:diamond>;
 var obsidian = <ore:obsidian>;
@@ -182,14 +187,18 @@ var meta3 = [1100, 1101, 1102, 1103] as int[];
 for i in meta3 {
 	<ore:solidBurning>.add(gtTile.makeStack(i) );
 }
-var meta4 = [1402, 1403, 1404, 1405, 1406, 1407, 1408, 1452, 1453, 1454, 1455, 1456, 1457, 1458] as int[];
+var meta4 = [1402, 1403, 1404, 1405, 1406, 1407, 1408, 1409, 1452, 1453, 1454, 1455, 1456, 1457, 1458, 1459] as int[];
 for i in meta4 {
 	<ore:liquidBurning>.add(gtTile.makeStack(i));
 }
 var meta5 = [1200, 1201 ,1202, 1203, 1204, 1205, 1206, 1207, 1208, 1250, 1251, 1252, 1253, 1254, 1255, 1256, 1257, 1258] as int[];
 for i in meta5 {
 	<ore:steamBoiler>.add(gtTile.makeStack(i));
+	<ore:ca.fluidBurner>.add(gtTile.makeStack(i+7800));	//90yx Fluidized bed
 }
+<ore:ca.fluidBurner>.add(gtTile.makeStack(9009));
+<ore:ca.fluidBurner>.add(gtTile.makeStack(9059));
+
 var meta6 = [1512, 1515, 1518, 1522, 1525, 1527, 1528, 1529, 1530, 1531, 1535, 1538, 1540, 1545, 1548] as int[];
 for i in meta6 {
 	<ore:steamTurbine>.add(gtTile.makeStack(i));
@@ -205,7 +214,7 @@ var meta8 = [6999, 6998, 6997, 6996, 6995, 6994, 6993, 6992, 6991, 6990] as int[
 for i in meta8 {
 	<ore:massStorage>.add(gtTile.makeStack(i));
 }
-var meta9 = [32754, 32753, 32752, 32742, 32734, 32733, 32719, 32718, 32717, 32716, 32715, 32714, 32008, 32009, 32010, 32016, 32017, 32018, 32019, 32020, 32021, 32022, 32023, 32024] as int[];
+var meta9 = [32754, 32753, 32752, 32742, 32734, 32733, 32719, 32718, 32717, 32716, 32715, 32714, 32008, 32009, 32010, 32016, 32017, 32018, 32019, 32020, 32021, 32022, 32023, 32024, 32063] as int[];
 for i in meta9 {
 	<ore:liquidDrum>.add(gtTile.makeStack(i));
 }
@@ -218,6 +227,16 @@ for i in [1, 2, 3, 4, 5] as int[] {	// electric machine tiers
 	<ore:steamPiston>.add(gtTile.makeStack(11010 + i));	// flux shakers
 	<ore:steamTurbine>.add(gtTile.makeStack(11020 + i));	// flux motors
 }
+for i in [3, 7, 8, 9] as int[] {	// liquid-liquid heat exchangers
+	<ore:ca.heatcross>.add(gtTile.makeStack(9100 + i));
+	<ore:ca.heatcross>.add(gtTile.makeStack(9150 + i));
+}
+for i in [75, 76, 735] as int[] {
+	<ore:ca.mortar>.add(gtTile.makeStack(32000 + i));	// hand -mortar blocks
+}
+
+<ore:ca.ZPMdias>.add(<gregtech:gt.multitileentity:11170>);
+<ore:ca.ZPMdias>.add(<gregtech:gt.multitileentity:11171>);
 
 // RFlux accepting machines		until 6.10.08
 var HHammer = <ore:craftingToolHardHammer>;
@@ -383,7 +402,8 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 13560, [10000, 1
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", false, 16, 14580, [10000, 10000, 10000, 10000, 10000, 10000], [<gregtech:gt.multitileentity:11165>], [endDust *8, cuDust *10, siliDust *10,<gregtech:gt.meta.dust:1740> *2, <gregtech:gt.meta.dust:8217>*2]);
 */
 
-// Stupid rare materials
+// Stupid rare materials	until 6.11.25
+/*
 var VbDust	= <gregtech:gt.meta.dust:1520>;
 // Vibramantium Vb.1, Ad.3	5281K
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 1024, 256, [10000], [VbDust, <gregtech:gt.meta.dust:2220> *3], <gregtech:gt.meta.dust:8706> *4);
@@ -391,13 +411,14 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 1024, 256, [10000], [VbD
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.bath", true, 8, 12000, [10000], [VbDust], [<liquid:molten.silver> *432], [null] as ILiquidStack[], [<gregtech:gt.meta.dust:8705> *4]);
 // Vibranium Steel 1:3	2747K
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 256, 640, [10000], [VbDust], [<liquid:molten.steel> *432], [null] as ILiquidStack[], [<gregtech:gt.meta.dust:8704> *4]);
+*/
 
-
-// Irritating cobble stairs
+// Irritating cobble stairs	// Until 6.11.12
+/*
 for cobS in [<gregtech:gt.stone.quartzite:1>, <gregtech:gt.stone.greenschist:1>, <gregtech:gt.stone.komatiite:1>, <gregtech:gt.stone.granite:1>, <gregtech:gt.stone.diorite:1>, <gregtech:gt.stone.andesite:1>] as IIngredient[] {
   recipes.addShaped(<minecraft:stone_stairs> *4, [[cobS, null, null], [cobS, cobS, null], [cobS, cobS, cobS]]);
 }
-
+*/
 var kimber = <gregtech:gt.stone.kimberlite:1>;
 recipes.addShaped(<erebus:umbercobbleStairs1> *4, [[kimber, null, null],[kimber, kimber, null],[kimber, kimber, kimber]]);
 
@@ -466,6 +487,9 @@ recipes.addShaped(birchStair*4, [[saw, birch], [birch, birch]]);
 recipes.addShaped(birchStair*2, [[saw, brch_slb], [brch_slb, brch_slb]]);
 recipes.addShaped(birchStair*4, [[saw, chs_brch], [chs_brch, chs_brch]]);
 */
+
+// exploit patch
+recipes.remove(<gregtech:gt.multitileentity:29800>);	// graphene wire
 
 //vanilla improvements
 # Jason McRay
@@ -564,3 +588,43 @@ recipes.addShaped(Fence* 4, [
 [Stick, Plank, Stick],
 [Stick, Plank, Stick]]);
 
+// non-ic2 crop supporting
+/*
+barley - gt.multiitem.food:12006
+cranberry - .food:140 , ExtraTrees:food:46
+oats - .food:12005
+onion - .food:30
+peanut - .food:250
+pineapple - .food:270
+rye -.food:12004
+lemon -.food:0
+rice -.food:12007
+tea -.plantGtBlossom:9792
+blackberry -.food:180 , ET:43
+blueberry -.food:110, ET:45
+candleberry -.food:130
+chili -.food:50, ET:55
+cucumber -.food:40
+grapes -.food:60,63,66,70
+raspberry -.food:190, ET:44,49
+strawberry -.food:200
+tomato -.food:10, 20
+apple - .food:210, 220, 240, ET:0
+banana - .food:90, ET:28, 29
+pomegranite - .food:100
+cinnamon - .food:280
+goosberry -.food:120, ET:48
+currant ++.food:150, 160, 170; ET:41,42
+
+grapeGreen !60
+grapeWhite !63
+grapePurple !70
+currantsBlack !150
+currantsWhite !160
+currantsRed !170
+appleGreen !210
+appleYellow !220
+appleDarkRed !240
+hazelnut ++.food:260, ET:24
+
+*/

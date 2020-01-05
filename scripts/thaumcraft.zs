@@ -1,4 +1,4 @@
-#modloaded Thaumcraft gregapi_post ThaumicTinkerer SGCraft Railcraft TwilightForest OpenComputers chisel
+#modloaded Thaumcraft gregapi_post ThaumicTinkerer SGCraft Railcraft TwilightForest OpenComputers chisel libVulpes
 
 //***************************
 // ITTweak - Thaumcraft
@@ -811,6 +811,9 @@ Research.addPage("ARCANEBORE", "tc.research_page.ARCANEBORE.3");
 // Thaumostatic Harness
 Infusion.addRecipe("HOVERHARNESS", <GalaxySpace:item.JetPack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
 // Infusion.addRecipe("HOVERHARNESS", <RotaryCraft:rotarycraft_item_jetpack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
+Research.refreshResearchRecipe("HOVERHARNESS");
+Infusion.addRecipe("HOVERHARNESS", <advancedRocketry:item.jetPack>, [<Thaumcraft:BlockJarFilledItem>.withTag({Aspects: [{amount: 64, key: "potentia"}]}), <Thaumcraft:blockTube:1>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.plateDouble:8679>, <Thaumcraft:ItemShard:0>, <gregtech:gt.meta.rotor:130>, <Thaumcraft:blockTube:1>], "iter 32, machina 32, potentia 32, volatus 96", <Thaumcraft:HoverHarness>, 6);
+Research.addInfusionPage("HOVERHARNESS", <Thaumcraft:HoverHarness>);
 Infusion.addRecipe("HOVERGIRDLE", <Thaumcraft:ItemBaubleBlanks:2>, [<Thaumcraft:blockCrystal:0>, <chisel:cloud>, <gregtech:gt.meta.storage.solid:8217>, <gregtech:gt.multiitem.technological:12103>, <Thaumcraft:blockCrystal:3>, <Thaumcraft:blockCrystal:0>, <chisel:cloud>, <gregtech:gt.meta.storage.solid:8217>, <gregtech:gt.multiitem.technological:12103>, <Thaumcraft:blockCrystal:3>], "aer 48, iter 32, potentia 48, volatus 32", <Thaumcraft:ItemGirdleHover>, 8);
 
 // Infusion Altar
@@ -1163,7 +1166,7 @@ Research.moveResearch("SCEPTRE", "THAUMATURGY", 0, 4);
 
 print('Wands warped');
 
-/* // Change Magic Energy/Absorber Generators - don't exist in GT6 (yet)
+/* // Change Magic Energy/Absorber Generators - don't exist in GT6
 // Research.addPrereq("GT_MAGICENERGY", "IT_TRANSFIERYSTEEL", true);
 // Infusion.removeRecipe(<gregtech:gt.blockmachines:1123>);
 // Infusion.addRecipe("GT_MAGICENERGY", <gregtech:gt.blockmachines:11>, [<minecraft:beacon>, <gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.01:17346>, <gregtech:gt.metaitem.01:32690>, <Thaumcraft:blockStoneDevice:0>, <gregtech:gt.metaitem.01:32702>, <gregtech:gt.metaitem.01:17346>, <gregtech:gt.metaitem.01:32690>], "potentia 16, machina 32, praecantatio 16, electrum 32", <gregtech:gt.blockmachines:1123>, 5);
@@ -1199,7 +1202,7 @@ print('Wands warped');
 // print('Magic Generators Unfuseable');	*/
 
 // Naquadah
-Research.addResearch("IT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, tenebrae 2, vitreus 2, nebrisum 2", -3, 0, 1, <gregtech:gt.meta.nugget:1740>);
+Research.addResearch("IT_TRANSNAQUADAH", "ELDRITCH", "auram 2, radio 2, alienis 2, tenebrae 2, vitreus 2, nebrisum 2", -3 as int, 0, 1, <gregtech:gt.meta.nugget:1740>);
 game.setLocalization("tc.research_name.IT_TRANSNAQUADAH", "Naquadah Transmutation");
 game.setLocalization("tc.research_text.IT_TRANSNAQUADAH", "[IT] And now I understand, for I decided to learn of nothing except the void");
 Research.addPage("IT_TRANSNAQUADAH", "kirara.research_page.IT_TRANSNAQUADAH.1");
@@ -1226,7 +1229,7 @@ Research.setConcealed("IT_TRANSNAQUADAH2", true);
 Warp.addToResearch("IT_TRANSNAQUADAH2", 1);
 
 // Vinteum Crystal
-Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11, -2, 2, gemVinteum);
+Research.addResearch("AM_GEMVINTEUM", "ALCHEMY", "praecantatio 2, auram 2, tenebrae 2, alienis 2, permutatio 2, vitreus 2", -11 as int, -2 as int, 2, gemVinteum);
 game.setLocalization("tc.research_name.AM_GEMVINTEUM", "Vinteum Crystal");
 game.setLocalization("tc.research_text.AM_GEMVINTEUM", "[AM] Not quite the philosopher's stone");
 Research.addPage("AM_GEMVINTEUM", "kirara.research_page.AM_GEMVINTEUM.1");
@@ -1320,7 +1323,7 @@ val potionTravel4 = <minecraft:potion:8490>.withTag({CustomPotionEffects: [{Dura
 
 
 // Thaumcraft Potions
-Research.addResearch("IT_BREWING", "ALCHEMY", "fabrico 4, praecantatio 4, aqua 4", 1, -3, 1, <minecraft:brewing_stand>);
+Research.addResearch("IT_BREWING", "ALCHEMY", "fabrico 4, praecantatio 4, aqua 4", 1, -3 as int, 1, <minecraft:brewing_stand>);
 game.setLocalization("tc.research_name.IT_BREWING", "Potion Brewing");
 game.setLocalization("tc.research_text.IT_BREWING", "Hellfire Elixirs");
 Research.addPage("IT_BREWING", "kirara.research_page.IT_BREWING.1");
@@ -1332,7 +1335,7 @@ Arcane.addShaped("IT_BREWING", <minecraft:brewing_stand>, "aqua 30",
 	[<Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>, <Thaumcraft:blockCosmeticSolid:6>]]);
 Research.addArcanePage("IT_BREWING", <minecraft:brewing_stand>);
 
-Research.addResearch("IT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -5, 3, <minecraft:potion:8259>);
+Research.addResearch("IT_ADVANCED_BREWING", "ALCHEMY", "fabrico 8, auram 4, praecantatio 4, aqua 4", 1, -5 as int, 3, <minecraft:potion:8259>);
 game.setLocalization("tc.research_name.IT_ADVANCED_BREWING", "Advanced Brewing");
 game.setLocalization("tc.research_text.IT_ADVANCED_BREWING", "Infusing potions with essentia");
 Research.addPage("IT_ADVANCED_BREWING", "kirara.research_page.IT_ADVANCED_BREWING.1");
@@ -1357,7 +1360,7 @@ Research.addInfusionPage("IT_ADVANCED_BREWING", potionJump4);
 Research.setConcealed("IT_ADVANCED_BREWING", true);
 
 // Healing
-Research.addResearch("IT_BREWHEAL", "ALCHEMY", "sano 4, auram 2, victus 2", -1, -5, 2, <minecraft:potion:8197>);
+Research.addResearch("IT_BREWHEAL", "ALCHEMY", "sano 4, auram 2, victus 2", -1 as int, -5 as int, 2, <minecraft:potion:8197>);
 game.setLocalization("tc.research_name.IT_BREWHEAL", "Potion of Healing");
 game.setLocalization("tc.research_text.IT_BREWHEAL", "Improved Potion of Healing");
 Research.addPage("IT_BREWHEAL", "kirara.research_page.IT_BREWHEAL.1");
@@ -1374,7 +1377,7 @@ Research.addInfusionPage("IT_BREWHEAL", potionHealing4S);
 Research.setConcealed("IT_BREWHEAL", true);
 
 // Regeneration
-Research.addResearch("IT_BREWREGEN", "ALCHEMY", "sano 4, auram 2, humanus 2", 0, -6, 2, <minecraft:potion:8193>);
+Research.addResearch("IT_BREWREGEN", "ALCHEMY", "sano 4, auram 2, humanus 2", 0, -6 as int , 2, <minecraft:potion:8193>);
 game.setLocalization("tc.research_name.IT_BREWREGEN", "Potion of Regeneration");
 game.setLocalization("tc.research_text.IT_BREWREGEN", "Improved Potion of Regeneration");
 Research.addPage("IT_BREWREGEN", "kirara.research_page.IT_BREWREGEN.1");
@@ -1387,7 +1390,7 @@ Research.addInfusionPage("IT_BREWREGEN", potionRegeneration4);
 Research.setConcealed("IT_BREWREGEN", true);
 
 // Absorption
-Research.addResearch("IT_BREWABSORPTION", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 1, -7, 2, <minecraft:potion:8195>);
+Research.addResearch("IT_BREWABSORPTION", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 1, -7 as int, 2, <minecraft:potion:8195>);
 game.setLocalization("tc.research_name.IT_BREWABSORPTION", "Potion of Absorption");
 game.setLocalization("tc.research_text.IT_BREWABSORPTION", "An apple a day keeps the doctor away");
 Research.addPage("IT_BREWABSORPTION", "kirara.research_page.IT_BREWABSORPTION.1");
@@ -1406,7 +1409,7 @@ Research.addInfusionPage("IT_BREWABSORPTION", potionAbsorption5);
 Research.setConcealed("IT_BREWABSORPTION", true);
 
 // Haste
-Research.addResearch("IT_BREWHASTE", "ALCHEMY", "permutatio 4, auram 2, perfodio 2", 2, -6, 2, <minecraft:potion:8228>);
+Research.addResearch("IT_BREWHASTE", "ALCHEMY", "permutatio 4, auram 2, perfodio 2", 2, -6 as int, 2, <minecraft:potion:8228>);
 game.setLocalization("tc.research_name.IT_BREWHASTE", "Potion of Haste");
 game.setLocalization("tc.research_text.IT_BREWHASTE", "Furiously move your arm up and down");
 Research.addPage("IT_BREWHASTE", "kirara.research_page.IT_BREWHASTE.1");
@@ -1441,7 +1444,7 @@ Warp.addToResearch("IT_BREWHASTE", 1);
 // Research.setConcealed("IT_BREWJUMP", true);
 
 // Travel
-Research.addResearch("IT_BREWTRAVEL", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 3, -5, 2, <minecraft:potion:8258>);
+Research.addResearch("IT_BREWTRAVEL", "ALCHEMY", "permutatio 4, auram 2, volatus 2", 3, -5 as int, 2, <minecraft:potion:8258>);
 game.setLocalization("tc.research_name.IT_BREWTRAVEL", "Potion of Travel");
 game.setLocalization("tc.research_text.IT_BREWTRAVEL", "Getting high off a mysterious liquid");
 Research.addPage("IT_BREWTRAVEL", "kirara.research_page.IT_BREWTRAVEL.1");
@@ -1634,7 +1637,7 @@ Research.addPrereq("IT_FARMLAND", "GT_FILL_WATER_BUCKET", false);
 Research.setConcealed("IT_FARMLAND", true);
 
 // Pyrotheum
-Research.addResearch("IT_PYROTHEUM", "ALCHEMY", "ignis 2, potentia 2, ordo 2", 3, -3, 2, dustPyrotheum);
+Research.addResearch("IT_PYROTHEUM", "ALCHEMY", "ignis 2, potentia 2, ordo 2", 3, -3 as int, 2, dustPyrotheum);
 game.setLocalization("tc.research_name.IT_PYROTHEUM", "Pyrotheum");
 game.setLocalization("tc.research_text.IT_PYROTHEUM", "[IT] Eternal heat - of sorts");
 Research.addPage("IT_PYROTHEUM", "kirara.research_page.IT_PYROTHEUM.1");
@@ -1722,7 +1725,7 @@ Research.addArcanePage("CAP_silver", <Thaumcraft:WandCap:5>);
 Research.addCruciblePage("CAP_silver", <Thaumcraft:WandCap:4>);
 
 // Quarried Stone
-Research.addResearch("RC_QUARRIED_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -7, -3, 1, <Railcraft:cube:7>);
+Research.addResearch("RC_QUARRIED_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -7 as int, -3 as int, 1, <Railcraft:cube:7>);
 game.setLocalization("tc.research_name.RC_QUARRIED_STONE", "Quarried Stone");
 game.setLocalization("tc.research_text.RC_QUARRIED_STONE", "[RC] Stone to marble in one simple step");
 Research.addPage("RC_QUARRIED_STONE", "kirara.research_page.RC_QUARRIED_STONE.1");
@@ -1733,7 +1736,7 @@ Research.addCruciblePage("RC_QUARRIED_STONE", <Railcraft:cube:7>);
 Research.setConcealed("RC_QUARRIED_STONE", true);
 
 // Abyssal Stone
-Research.addResearch("RC_ABYSSAL_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -9, -3, 1, <Railcraft:cube:6>);
+Research.addResearch("RC_ABYSSAL_STONE", "ALCHEMY", "ordo 2, permutatio 1, terra 2", -9 as int, -3 as int, 1, <Railcraft:cube:6>);
 game.setLocalization("tc.research_name.RC_ABYSSAL_STONE", "Abyssal Stone");
 game.setLocalization("tc.research_text.RC_ABYSSAL_STONE", "[RC] Stone to darker marble(?) in one simple step");
 Research.addPage("RC_ABYSSAL_STONE", "kirara.research_page.RC_ABYSSAL_STONE.1");
@@ -1744,7 +1747,7 @@ Research.addCruciblePage("RC_ABYSSAL_STONE", <Railcraft:cube:6>);
 Research.setConcealed("RC_ABYSSAL_STONE", true);
 
 // Peat
-Research.addResearch("IT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7, -1, 2, <Forestry:peat>);
+Research.addResearch("IT_MATURE_PEAT", "ALCHEMY", "ignis 3, aqua 1, permutatio 1, potentia 3", -7 as int, -1 as int, 2, <Forestry:peat>);
 game.setLocalization("tc.research_name.IT_MATURE_PEAT", "Alchemical Peat Formation");
 game.setLocalization("tc.research_text.IT_MATURE_PEAT", "[IT] Technomagical peat manufacture");
 Research.addPage("IT_MATURE_PEAT", "kirara.research_page.IT_MATURE_PEAT.1");
@@ -1756,7 +1759,7 @@ Research.addCruciblePage("IT_MATURE_PEAT", <Forestry:peat>);
 Research.setConcealed("IT_MATURE_PEAT", true);
 
 // Bituminous peat
-Research.addResearch("IT_BITUMINOUS_PEAT", "ALCHEMY", "ignis 6, perditio 3, permutatio 3, terra 3, potentia 6", -9, -1, 2, <Forestry:bituminousPeat>);
+Research.addResearch("IT_BITUMINOUS_PEAT", "ALCHEMY", "ignis 6, perditio 3, permutatio 3, terra 3, potentia 6", -9 as int, -1 as int, 2, <Forestry:bituminousPeat>);
 game.setLocalization("tc.research_name.IT_BITUMINOUS_PEAT", "Alchemical Peat Refining");
 game.setLocalization("tc.research_text.IT_BITUMINOUS_PEAT", "[IT] Alchemically treated peat");
 Research.addPage("IT_BITUMINOUS_PEAT", "kirara.research_page.IT_BITUMINOUS_PEAT.1");
@@ -1769,7 +1772,7 @@ Research.setConcealed("IT_BITUMINOUS_PEAT", true);
 // Coal coke
 Research.moveResearch("ETHEREALBLOOM", "ALCHEMY", -2, -4); 
 
-Research.addResearch("IT_COAL_COKE", "ALCHEMY", "ignis 5, permutatio 5, terra 2, potentia 5", -3, -2, 2, <Railcraft:fuel.coke>);
+Research.addResearch("IT_COAL_COKE", "ALCHEMY", "ignis 5, permutatio 5, terra 2, potentia 5", -3 as int, -2 as int, 2, <Railcraft:fuel.coke>);
 game.setLocalization("tc.research_name.IT_COAL_COKE", "Refining Coal");
 game.setLocalization("tc.research_text.IT_COAL_COKE", "[IT] Alchemically refining coal");
 Research.addPage("IT_COAL_COKE", "kirara.research_page.IT_COAL_COKE.1");
@@ -1870,7 +1873,7 @@ Research.refreshResearchRecipe("RUNICKINETIC");
 Research.refreshResearchRecipe("MIRROR");
 Research.refreshResearchRecipe("MIRRORHAND");
 Research.refreshResearchRecipe("MIRRORESSENTIA");
-Research.refreshResearchRecipe("HOVERHARNESS");
+// Research.refreshResearchRecipe("HOVERHARNESS");
 Research.refreshResearchRecipe("HOVERGIRDLE");
 Research.refreshResearchRecipe("COREGATHER");
 Research.refreshResearchRecipe("CAP_silver");
@@ -1919,7 +1922,7 @@ var plateVoid = <gregtech:gt.meta.plate:8681>;
 var plateCurvedEnderium = <gregtech:gt.meta.plateCurved:8710>;
 
 // Naquadria
-Research.addResearch("GHA_TRANSNAQUADAH", "ALCHEMY", "venenum 7, perditio 5, radio 3, potentia 3", -8, -5, 2, <gregtech:gt.meta.crushedPurifiedTiny:1740>);
+Research.addResearch("GHA_TRANSNAQUADAH", "ALCHEMY", "venenum 7, perditio 5, radio 3, potentia 3", -8 as int, -5 as int, 2, <gregtech:gt.meta.crushedPurifiedTiny:1740>);
 game.setLocalization("tc.research_name.GHA_TRANSNAQUADAH", "Naquadah Multiplication");
 game.setLocalization("tc.research_text.GHA_TRANSNAQUADAH", "[GHA] Expanding your Naquadah supply");
 Research.addPage("GHA_TRANSNAQUADAH", "kirara.research_page.GHA_TRANSNAQUADAH.1");
@@ -1933,7 +1936,7 @@ Research.setConcealed("GHA_TRANSNAQUADAH", true);
 Warp.addToResearch("GHA_TRANSNAQUADAH", 7);
 
 // Stargate Core and Control Crystals
-Research.addResearch("GHA_SGCRYSTALS", "ELDRITCH", "iter 16, alienis 4, vitreus 4, cognitio 2, nebrisum 1", -5, -2, 2, <SGCraft:sgCoreCrystal>);
+Research.addResearch("GHA_SGCRYSTALS", "ELDRITCH", "iter 16, alienis 4, vitreus 4, cognitio 2, nebrisum 1", -5 as int, -2 as int, 2, <SGCraft:sgCoreCrystal>);
 Research.addPrereq("GHA_SGCRYSTALS", "WARP_GATE", true);
 Research.addPrereq("GHA_SGCRYSTALS", "GHA_TRINIUM", true);
 game.setLocalization("tc.research_name.GHA_SGCRYSTALS", "Stargate Crystals");
@@ -1962,7 +1965,7 @@ Research.setConcealed("GHA_TRINIUM", true);
 Warp.addToResearch("GHA_TRINIUM", 2);
 
 // Stargate construction
-Research.addResearch("GHA_GATEBUILDER", "ARTIFICE", "iter 5, fabrico 3, tempus 1", 2, -4, 2, <SGCraft:stargateRing:1>);
+Research.addResearch("GHA_GATEBUILDER", "ARTIFICE", "iter 5, fabrico 3, tempus 1", 2, -4 as int, 2, <SGCraft:stargateRing:1>);
 Research.addPrereq("GHA_GATEBUILDER", "GHA_SGCRYSTALS", true);
 Research.addPrereq("GHA_GATEBUILDER", "GHA_TRINIUM", true);
 Research.addPrereq("GHA_GATEBUILDER", "IT_TRANSNAQUADAH", true);

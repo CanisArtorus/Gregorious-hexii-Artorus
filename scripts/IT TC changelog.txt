@@ -8,6 +8,9 @@ Thaumcraft Tweaks for Gregtech 6
 //
 //
 // Changelog:
+	v3.1:
+		- Replacing Galacticraft with Advanced Rocketry (oh my, the hoverharness is getting dizzy)
+		- Add lots of aspect compat
 	v2.2.1:
 		* Fixed ringSteelGalvanized in the AE Wrench Focus
 	v2.2:

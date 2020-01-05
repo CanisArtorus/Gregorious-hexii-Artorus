@@ -52,8 +52,8 @@ foodSalt.remove(saltPHC);
 itemSalt.remove(saltPHC);
 dustSalt.remove(saltPHC);
 <ore:dustAnySalt>.remove(saltPHC);
-// itemSalt.remove(saltGT);
-// dustSalt.remove(saltGT);
+foodSalt.remove(saltGT);
+itemSalt.remove(saltGT);
 foodSalt.addAll(<ore:dustTinySalt>);
 foodSalt.addAll(<ore:dustTinyRockSalt>);
 furnace.addRecipe(<gregtech:gt.meta.dustTiny:8204>, <ore:container1000water>);
@@ -71,7 +71,7 @@ recipes.remove(fishingtrapBait);
 recipes.addShapeless(fishingtrapBait * 4, [<minecraft:string>, fishBait, fishBait, fishBait]);
 
 // ----------------------------------------
-// And Cooking fro Blockheads
+// And Cooking for Blockheads
 // by Canis Artorus
 
 var counter		= <cookingbook:cookingtable>;
@@ -99,3 +99,9 @@ recipes.remove(counter);
 for counterTop in [<minecraft:stained_hardened_clay:15>, <gregtech:gt.stone.granite.slab.0:7>, <gregtech:gt.stone.granite.black.slab.0:7>, <gregtech:gt.stone.granite.red.slab.0:7>, <gregtech:gt.stone.marble.slab.0:7>, <chisel:granite:1>] as IItemStack[] {
 	recipes.addShaped(counter, [[counterTop, <cookingbook:recipebook:*>, counterTop],[log, <minecraft:crafting_table>, log],[log,<ore:craftingToolSaw>,log]]);
 }
+
+// ------------------------------
+// some useful Erebus interchange
+recipes.addShaped(<erebus:materials:11>, [[null, null],[<harvestcraft:bambooshootItem>, null]]);
+
+<ore:listAllherb>.addAll(<ore:cropOnion>);

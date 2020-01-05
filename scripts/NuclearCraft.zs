@@ -4,6 +4,7 @@
 // by Canis Artorus
 
 import minetweaker.item.IItemStack;
+import minetweaker.liquid.ILiquidStack;
 
 var CfRTG 	= <NuclearCraft:fuel:140>;
 var HEC7 	= <NuclearCraft:fuel:88>;

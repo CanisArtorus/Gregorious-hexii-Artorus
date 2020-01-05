@@ -122,7 +122,7 @@ var smallsteelpipe      = <ore:pipeSmallSteel>;
 var smallstainlesspipe  = <ore:pipeSmallStainlessSteel>;
 var ironfurnace         = <gregtech:gt.multitileentity:1100>;	// <ore:craftingIronFurnace>;	# burning box lead
 var largebronzeboiler   = <gregtech:gt.multitileentity:1202>;	// blockmachines:1020>;	# common, not dense
-var solarboiler         = <GalacticraftCore:item.basicItem:0>; //<gregtech:gt.multitileentity:10050>;	// blockmachines:105>;	# solar panel = ULV
+var solarboiler         = <gregtech:gt.multitileentity:10050>;	// blockmachines:105>;	# solar panel = ULV
 var solarpanelULV       = <NuclearCraft:solarPanel>;	// <GalacticraftCore:item.basicItem:0>;	// <gregtech:gt.metaitem.01:32750>;
 // var battery             = <ore:gt:re-battery1>;	// batteryBasic>;	# LV
 // var advbattery          = <ore:gt:re-battery2>;	// batteryAdvanced>;	# MV
