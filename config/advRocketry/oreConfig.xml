@@ -1,0 +1,89 @@
+<OreConfig>
+	<oreGen pressure="0">
+		<!-- gas dwarf -->
+		<ore block="GalaxySpace:venusblocks" meta="3" minHeight="5" maxHeight="10" clumpSize="8" chancePerChunk="1" /> <!-- diamond -->
+		<ore block="GalaxySpace:venusblocks" meta="2" minHeight="5" maxHeight="15" clumpSize="8" chancePerChunk="1" /> <!-- sulphur -->
+		<ore block="GalacticraftMars:tile.mars" meta="2" minHeight="10" maxHeight="90" clumpSize="10" chancePerChunk="1" /> <!-- desh -->
+		<ore block="gregtech:gt.block.rockores" meta="0" minHeight="40" maxHeight="100" clumpSize="12" chancePerChunk="1" /> <!-- coal -->
+		<ore block="gregtech:gt.block.rockores" meta="1" minHeight="80" maxHeight="200" clumpSize="16" chancePerChunk="2" /> <!-- lignite -->
+		<ore block="gregtech:gt.block.rockores" meta="2" minHeight="60" maxHeight="200" clumpSize="6" chancePerChunk="1" /> <!-- natrum -->
+		<ore block="gregtech:gt.block.rockores" meta="3" minHeight="60" maxHeight="200" clumpSize="6" chancePerChunk="1" /> <!-- rock salt -->
+		<ore block="gregtech:gt.block.rockores" meta="4" minHeight="70" maxHeight="250" clumpSize="10" chancePerChunk="2" /> <!-- bauxite -->
+		<ore block="gregtech:gt.block.rockores" meta="5" minHeight="50" maxHeight="250" clumpSize="30" chancePerChunk="1" /> <!-- oilshale -->
+		<ore block="SGCraft:naquadahOre" minHeight="2" maxHeight="100" clumpSize="4" chancePerChunk="1" />
+	</oreGen>
+	<oreGen pressure="1">
+		<!-- pern -->
+		<ore block="minecraft:gold_ore" minHeight="20" maxHeight="40" clumpSize="4" chancePerChunk="1" />
+		<ore block="minecraft:iron_ore" minHeight="40" maxHeight="80" clumpSize="24" chancePerChunk="1" />
+		<ore block="minecraft:lapis_ore" minHeight="20" maxHeight="40" clumpSize="4" chancePerChunk="1" />
+		<ore block="minecraft:diamond_ore" minHeight="5" maxHeight="10" clumpSize="2" chancePerChunk="1" />
+		<ore block="minecraft:redstone_ore" minHeight="5" maxHeight="20" clumpSize="8" chancePerChunk="1" />
+		<ore block="gregtech:gt.block.rockores" meta="0" minHeight="60" maxHeight="100" clumpSize="24" chancePerChunk="1" /> <!-- coal -->
+		<ore block="gregtech:gt.block.rockores" meta="1" minHeight="50" maxHeight="130" clumpSize="30" chancePerChunk="1" /> <!-- lignite -->
+		<ore block="gregtech:gt.block.rockores" meta="2" minHeight="40" maxHeight="80" clumpSize="6" chancePerChunk="1" /> <!-- salt -->
+		<ore block="gregtech:gt.block.rockores" meta="3" minHeight="40" maxHeight="80" clumpSize="6" chancePerChunk="1" /> <!-- red salt -->
+		<ore block="gregtech:gt.block.rockores" meta="4" minHeight="50" maxHeight="90" clumpSize="10" chancePerChunk="1" /> <!-- bauxite -->
+		<ore block="gregtech:gt.block.rockores" meta="5" minHeight="30" maxHeight="120" clumpSize="20" chancePerChunk="1" /> <!-- oilshale -->
+	</oreGen>
+	<oreGen pressure="1" temp="1">
+		<!-- dune -->
+		<ore block="atum:tile.goldOre" minHeight="20" maxHeight="40" clumpSize="4" chancePerChunk="2" />
+		<ore block="atum:tile.lapisOre" minHeight="20" maxHeight="40" clumpSize="2" chancePerChunk="1" />
+		<ore block="atum:tile.ironOre" minHeight="40" maxHeight="80" clumpSize="24" chancePerChunk="1" />
+		<ore block="atum:tile.diamondOre" minHeight="5" maxHeight="10" clumpSize="2" chancePerChunk="1" />
+		<ore block="atum:tile.redstoneOre" minHeight="5" maxHeight="20" clumpSize="8" chancePerChunk="1" />
+		<ore block="atum:tile.coalOre" minHeight="60" maxHeight="100" clumpSize="16" chancePerChunk="1" />
+		<ore block="Railcraft:ore" meta="1" minHeight="10" maxHeight="70" clumpSize="8" chancePerChunk="1" /> <!-- saltpeter -->
+		<ore block="gregtech:gt.block.rockores" meta="1" minHeight="50" maxHeight="130" clumpSize="16" chancePerChunk="1" /> <!-- lignite -->
+		<ore block="gregtech:gt.block.rockores" meta="2" minHeight="40" maxHeight="80" clumpSize="6" chancePerChunk="1" /> <!-- sodium salt -->
+		<ore block="gregtech:gt.block.rockores" meta="3" minHeight="40" maxHeight="80" clumpSize="6" chancePerChunk="1" /> <!-- potassium salt -->
+		<ore block="gregtech:gt.block.rockores" meta="4" minHeight="50" maxHeight="110" clumpSize="16" chancePerChunk="2" /> <!-- bauxite -->
+		<ore block="SGCraft:naquadahOre" minHeight="5" maxHeight="60" clumpSize="8" chancePerChunk="1" />
+	</oreGen>
+	<oreGen pressure="1" temp="4">
+		<!-- icy -->
+		<ore block="GalaxySpace:europablocks" meta="3" minHeight="5" maxHeight="250" clumpSize="1" chancePerChunk="3" /> <!-- emerald -->
+		<ore block="gregtech:gt.block.rockores" meta="0" minHeight="60" maxHeight="100" clumpSize="20" chancePerChunk="1" /> <!-- coal -->
+		<ore block="gregtech:gt.block.rockores" meta="1" minHeight="50" maxHeight="130" clumpSize="30" chancePerChunk="1" /> <!-- lignite -->
+		<ore block="gregtech:gt.block.rockores" meta="2" minHeight="40" maxHeight="80" clumpSize="6" chancePerChunk="1" /> <!-- salt -->
+		<ore block="gregtech:gt.block.rockores" meta="3" minHeight="40" maxHeight="80" clumpSize="6" chancePerChunk="1" /> <!-- pink salt -->
+		<ore block="gregtech:gt.block.rockores" meta="4" minHeight="50" maxHeight="90" clumpSize="10" chancePerChunk="1" /> <!-- bauxite -->
+		<ore block="gregtech:gt.block.rockores" meta="5" minHeight="20" maxHeight="90" clumpSize="10" chancePerChunk="1" /> <!-- oil -->
+	</oreGen>
+	<oreGen pressure="2">
+		<!-- blue mars -->
+		<ore block="GalaxySpace:marsoresblocks" meta="1" minHeight="20" maxHeight="40" clumpSize="4" chancePerChunk="1" /> <!-- gold -->
+		<ore block="GalaxySpace:marsoresblocks" meta="0" minHeight="5" maxHeight="10" clumpSize="2" chancePerChunk="1" /> <!-- diamond -->
+		<ore block="GalaxySpace:marsoresblocks" meta="3" minHeight="5" maxHeight="20" clumpSize="8" chancePerChunk="1" /> <!-- redstone -->
+		<ore block="GalaxySpace:marsoresblocks" meta="2" minHeight="40" maxHeight="100" clumpSize="8" chancePerChunk="1" /> <!-- coal -->
+		<ore block="GalacticraftMars:tile.mars" meta="3" minHeight="40" maxHeight="80" clumpSize="24" chancePerChunk="2" /> <!-- iron -->
+		<ore block="GalacticraftMars:tile.mars" meta="0" minHeight="60" maxHeight="120" clumpSize="16" chancePerChunk="2" /> <!-- copper -->
+		<ore block="GalacticraftMars:tile.mars" meta="1" minHeight="60" maxHeight="120" clumpSize="16" chancePerChunk="2" /> <!-- tin -->
+		<ore block="gregtech:gt.block.rockores" meta="1" minHeight="50" maxHeight="150" clumpSize="12" chancePerChunk="1" /> <!-- lignite -->
+		<ore block="gregtech:gt.block.rockores" meta="4" minHeight="50" maxHeight="100" clumpSize="16" chancePerChunk="1" /> <!-- bauxite -->
+		<ore block="gregtech:gt.block.rockores" meta="5" minHeight="30" maxHeight="100" clumpSize="16" chancePerChunk="1" /> <!-- oil -->
+		<ore block="SGCraft:naquadahOre" minHeight="2" maxHeight="90" clumpSize="4" chancePerChunk="1" />
+	</oreGen>
+	<oreGen temp="0">
+		<!-- vulcan -->
+		<ore block="Railcraft:ore" meta="4" minHeight="20" maxHeight="40" clumpSize="2" chancePerChunk="1" /> <!-- lapis -->
+		<ore block="Railcraft:ore" meta="2" minHeight="5" maxHeight="10" clumpSize="4" chancePerChunk="1" /> <!-- diamond -->
+		<ore block="Railcraft:ore" meta="3" minHeight="1" maxHeight="250" clumpSize="1" chancePerChunk="2" /> <!-- emerald -->
+		<ore block="Railcraft:ore" meta="5" minHeight="1" maxHeight="200" clumpSize="1" chancePerChunk="1" /> <!-- firestone -->
+		<ore block="erebus:oreEncrustedDiamond" minHeight="5" maxHeight="15" clumpSize="4" chancePerChunk="1" />
+		<ore block="GalaxySpace:ioblocks" meta="3" minHeight="60" maxHeight="120" clumpSize="16" chancePerChunk="2" /> <!-- copper -->
+		<ore block="GalaxySpace:ioblocks" meta="4" minHeight="5" maxHeight="60" clumpSize="16" chancePerChunk="1" /> <!-- sulphur -->
+		<ore block="gregtech:gt.block.rockores" meta="4" minHeight="70" maxHeight="200" clumpSize="32" chancePerChunk="2" /> <!-- bauxite -->
+		<ore block="SGCraft:naquadahOre" minHeight="2" maxHeight="250" clumpSize="2" chancePerChunk="1" />
+	</oreGen>
+	<oreGen temp="5">
+		<!-- muspiel -->
+		<ore block="GalaxySpace:europablocks" meta="3" minHeight="5" maxHeight="250" clumpSize="1" chancePerChunk="2" /> <!-- emerald -->
+		<ore block="GalaxySpace:europablocks" meta="5" minHeight="50" maxHeight="150" clumpSize="20" chancePerChunk="1" /> <!-- bauxite -->
+		<ore block="GalaxySpace:mirandablocks" meta="4" minHeight="5" maxHeight="250" clumpSize="32" chancePerChunk="1" /> <!-- dolomite -->
+		<ore block="SGCraft:naquadahOre" minHeight="5" maxHeight="100" clumpSize="16" chancePerChunk="1" />
+	</oreGen>
+	<oreGen pressure="3">
+	</oreGen>
+</OreConfig>

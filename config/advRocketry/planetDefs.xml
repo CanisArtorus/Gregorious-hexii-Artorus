@@ -1,0 +1,649 @@
+<galaxy>
+	<star name="Sol" temp="100" x="0" y="0" size="1.0" numPlanets="0" numGasGiants="0">
+		<planet name="Earth" DIMID="0" dimMapping="">
+			<isKnown>true</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>1.0,1.0,1.0</skyColor>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalPhi>0</orbitalPhi>
+			<orbitalTheta>0</orbitalTheta>
+			<rotationalPeriod>24000</rotationalPeriod>
+			<atmosphereDensity>100</atmosphereDensity>
+			<planet name="Luna" DIMID="2" customIcon="moon">
+				<isKnown>true</isKnown>
+				<fogColor>1.0,1.0,1.0</fogColor>
+				<skyColor>1.0,1.0,1.0</skyColor>
+				<gravitationalMultiplier>25</gravitationalMultiplier>
+				<orbitalDistance>100</orbitalDistance>
+				<orbitalPhi>-5</orbitalPhi>
+				<orbitalTheta>0</orbitalTheta>
+				<rotationalPeriod>192000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<biomeIds>110,119</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Hermes" DIMID="105" customIcon="lava">
+			<biomeIds>112,229</biomeIds>
+			<fillerBlock>erebus:umberstone</fillerBlock>
+			<skyColor>0,0,0</skyColor>
+			<atmosphereDensity>20</atmosphereDensity>
+			<gravitationalMultiplier>38</gravitationalMultiplier>
+			<orbitalDistance>40</orbitalDistance>
+			<orbitalPhi>7</orbitalPhi>
+			<rotationalPeriod>1400000</rotationalPeriod>
+			<seaLevel>32</seaLevel>
+		</planet>
+		<planet name="Venus" DIMID="-1006" dimMapping="" customIcon="lava">
+			<isKnown>true</isKnown>
+			<skyColor>0,0,0</skyColor>
+			<fogColor>0.9,0.9,0.9</fogColor>
+			<atmosphereDensity>150</atmosphereDensity>
+			<gravitationalMultiplier>90</gravitationalMultiplier>
+			<orbitalDistance>72</orbitalDistance>
+			<orbitalPhi>3</orbitalPhi>
+			<rotationalPeriod>2784000</rotationalPeriod>
+		</planet>
+		<planet name="Ares" DIMID="102" customIcon="marslike">
+			<isKnown>true</isKnown>
+			<biomeIds>112,121</biomeIds>
+			<skyColor>1,0.2,0</skyColor>
+			<fogColor>0.9,0.6,0.1</fogColor>
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>105</orbitalDistance>
+			<orbitalPhi>-2</orbitalPhi>
+			<gravitationalMultiplier>38</gravitationalMultiplier>
+			<rotationalPeriod>25000</rotationalPeriod>
+		</planet>
+		<planet name="Law Belt" DIMID="-30" dimMapping="">
+			<skyColor>0x000000</skyColor>
+			<fogColor>0xffffee</fogColor>
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>110</orbitalDistance>
+			<gravitationalMultiplier>0</gravitationalMultiplier>
+			<rotationalPeriod>20000000</rotationalPeriod>
+		</planet>
+		<planet name="Vesta" DIMID="121" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>109</orbitalDistance>
+			<orbitalPhi>-7</orbitalPhi>
+			<gravitationalMultiplier>15</gravitationalMultiplier>
+			<rotationalPeriod>5300</rotationalPeriod>
+			<biomeIds>119</biomeIds>
+		</planet>
+		<planet name="Juno" DIMID="120" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>111</orbitalDistance>
+			<orbitalPhi>13</orbitalPhi>
+			<orbitalTheta>120</orbitalTheta>
+			<gravitationalMultiplier>10</gravitationalMultiplier>
+			<rotationalPeriod>7200</rotationalPeriod>
+			<biomeIds>119</biomeIds>
+		</planet>
+		<planet name="Ceres" DIMID="107" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>112</orbitalDistance>
+			<orbitalPhi>11</orbitalPhi>
+			<gravitationalMultiplier>20</gravitationalMultiplier>
+			<rotationalPeriod>9000</rotationalPeriod>
+			<biomeIds>110,119</biomeIds>
+		</planet>
+		<planet name="Pallas" DIMID="119" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>113</orbitalDistance>
+			<orbitalPhi>-35</orbitalPhi>
+			<orbitalTheta>240</orbitalTheta>
+			<gravitationalMultiplier>15</gravitationalMultiplier>
+			<rotationalPeriod>8000</rotationalPeriod>
+			<biomeIds>110,119</biomeIds>
+		</planet>
+		<planet name="Hygiea" DIMID="122" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>116</orbitalDistance>
+			<orbitalPhi>4</orbitalPhi>
+			<orbitalTheta>260</orbitalTheta>
+			<gravitationalMultiplier>15</gravitationalMultiplier>
+			<rotationalPeriod>18000</rotationalPeriod>
+			<biomeIds>110</biomeIds>
+		</planet>
+		<planet name="Hektor" DIMID="123" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>124</orbitalDistance>
+			<orbitalPhi>-18</orbitalPhi>
+			<orbitalTheta>100</orbitalTheta>
+			<gravitationalMultiplier>12</gravitationalMultiplier>
+			<rotationalPeriod>7000</rotationalPeriod>
+			<biomeIds>110</biomeIds>
+		</planet>
+		<planet name="Achilles" DIMID="128" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>124</orbitalDistance>
+			<orbitalTheta>260</orbitalTheta>
+			<orbitalPhi>-10</orbitalPhi>
+			<gravitationalMultiplier>8</gravitationalMultiplier>
+			<rotationalPeriod>7000</rotationalPeriod>
+			<biomeIds>119</biomeIds>
+		</planet>
+		<planet name="Jupiter" DIMID="104" customIcon="gasgiantred">
+			<GasGiant>true</GasGiant>
+			<gas>hydrogen</gas>
+			<gas>helium</gas>
+			<orbitalDistance>125</orbitalDistance>
+			<orbitalPhi>-1</orbitalPhi>
+			<rotationalPeriod>9900</rotationalPeriod>
+			<planet name="Almathea" DIMID="126" customIcon="lava">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>10</gravitationalMultiplier>
+				<orbitalDistance>10</orbitalDistance>
+				<orbitalPhi>0</orbitalPhi>
+				<orbitalTheta>330</orbitalTheta>
+				<rotationalPeriod>12000</rotationalPeriod>
+				<biomeIds>101,112</biomeIds>
+				<oceanBlock>minecraft:lava</oceanBlock>
+			</planet>
+			<planet name="Io" DIMID="-1013" dimMapping="" customIcon="lava">
+				<isKnown>true</isKnown>
+				<atmosphereDensity>10</atmosphereDensity>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>20</orbitalDistance>
+				<rotationalPeriod>44000</rotationalPeriod>
+			</planet>
+			<planet name="Europa" DIMID="-1014" dimMapping="" customIcon="waterworld">
+				<isKnown>true</isKnown>
+				<atmosphereDensity>15</atmosphereDensity>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>30</orbitalDistance>
+				<orbitalTheta>90</orbitalTheta>
+				<rotationalPeriod>60000</rotationalPeriod>
+			</planet>
+			<planet name="Ganymede" DIMID="-1015" dimMapping="" customIcon="moon">
+				<isKnown>true</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>35</gravitationalMultiplier>
+				<orbitalDistance>40</orbitalDistance>
+				<orbitalTheta>180</orbitalTheta>
+				<rotationalPeriod>72000</rotationalPeriod>
+			</planet>
+			<planet name="Callisto" DIMID="224" customIcon="moon">
+				<isKnown>true</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>60</orbitalDistance>
+				<orbitalPhi>0</orbitalPhi>
+				<orbitalTheta>270</orbitalTheta>
+				<rotationalPeriod>90000</rotationalPeriod>
+				<biomeIds>110,119</biomeIds>
+			</planet>
+			<planet name="Himalia" DIMID="127" customIcon="moon">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>10</gravitationalMultiplier>
+				<orbitalDistance>120</orbitalDistance>
+				<orbitalPhi>28</orbitalPhi>
+				<orbitalTheta>240</orbitalTheta>
+				<rotationalPeriod>120000</rotationalPeriod>
+				<biomeIds>0,24</biomeIds>
+				<oceanBlock>minecraft:gravel</oceanBlock>
+				<seaLevel>40</seaLevel>
+			</planet>
+		</planet>
+		<planet name="Saturn" DIMID="107" customIcon="gasgiantred">
+			<isKnown>true</isKnown>
+			<GasGiant>true</GasGiant>
+			<gas>heliumhydrogen</gas>
+			<gas>hydrogen</gas>
+			<hasRings>true</hasRings>
+			<orbitalDistance>140</orbitalDistance>
+			<orbitalPhi>2</orbitalPhi>
+			<rotationalPeriod>10600</rotationalPeriod>
+			<planet name="Mimas" DIMID="129" customIcon="lava">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>10</atmosphereDensity>
+				<gravitationalMultiplier>15</gravitationalMultiplier>
+				<orbitalDistance>10</orbitalDistance>
+				<orbitalPhi>2</orbitalPhi>
+				<orbitalTheta>30</orbitalTheta>
+				<rotationalPeriod>16000</rotationalPeriod>
+				<biomeIds>57,101</biomeIds>
+				<oceanBlock>minecraft:netherrack</oceanBlock>
+			</planet>
+			<planet name="Enceledus" DIMID="-1016" dimMapping="" customIcon="moon">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>15</gravitationalMultiplier>
+				<orbitalDistance>15</orbitalDistance>
+				<orbitalTheta>200</orbitalTheta>
+				<orbitalPhi>0</orbitalPhi>
+				<rotationalPeriod>25000</rotationalPeriod>
+			</planet>
+			<planet name="Tethys" DIMID="130" customIcon="moon">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>20</gravitationalMultiplier>
+				<orbitalDistance>20</orbitalDistance>
+				<orbitalTheta>300</orbitalTheta>
+				<rotationalPeriod>25000</rotationalPeriod>
+				<biomeIds>117</biomeIds>
+				<oceanBlock>Forestry:fluid.bioethanol</oceanBlock>
+				<fillerBlock>minecraft:stone</fillerBlock>
+			</planet>
+			<planet name="Dione" DIMID="131" customIcon="moon">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>20</gravitationalMultiplier>
+				<orbitalDistance>25</orbitalDistance>
+				<orbitalPhi>0</orbitalPhi>
+				<orbitalTheta>130</orbitalTheta>
+				<rotationalPeriod>32000</rotationalPeriod>
+				<biomeIds>119</biomeIds>
+			</planet>
+			<planet name="Rhea" DIMID="-39" customIcon="moon">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>30</atmosphereDensity>
+				<gravitationalMultiplier>30</gravitationalMultiplier>
+				<orbitalDistance>35</orbitalDistance>
+				<orbitalPhi>0</orbitalPhi>
+				<orbitalTheta>230</orbitalTheta>
+				<rotationalPeriod>56000</rotationalPeriod>
+				<biomeIds>118</biomeIds>
+				<oceanBlock>GalaxySpace:liquidethanemethane</oceanBlock>
+			</planet>
+			<planet name="Titan" DIMID="-1017" dimMapping="" customIcon="earthlike">
+				<isKnown>true</isKnown>
+				<skyColor>1.0,0.5,0.3</skyColor>
+				<atmosphereDensity>50</atmosphereDensity>
+				<gravitationalMultiplier>50</gravitationalMultiplier>
+				<orbitalDistance>50</orbitalDistance>
+				<orbitalTheta>120</orbitalTheta>
+				<rotationalPeriod>12000</rotationalPeriod>
+			</planet>
+			<planet name="Iapetus" DIMID="-43" customIcon="moon">
+				<isKnown>false</isKnown>
+				<atmosphereDensity>10</atmosphereDensity>
+				<gravitationalMultiplier>25</gravitationalMultiplier>
+				<orbitalDistance>100</orbitalDistance>
+				<orbitalPhi>15</orbitalPhi>
+				<orbitalTheta>70</orbitalTheta>
+				<rotationalPeriod>100000</rotationalPeriod>
+				<biomeIds>119,112</biomeIds>
+			</planet>
+		</planet>
+		<planet name="Chiron" DIMID="124" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>145</orbitalDistance>
+			<orbitalPhi>7</orbitalPhi>
+			<gravitationalMultiplier>15</gravitationalMultiplier>
+			<rotationalPeriod>14000</rotationalPeriod>
+			<biomeIds>119,112</biomeIds>
+		</planet>
+		<planet name="Uranus" DIMID="109" customIcon="gasgiantblue">
+			<GasGiant>true</GasGiant>
+			<gas>water</gas>
+			<gas>ammonia</gas>
+			<gas>methane</gas>
+			<hasRings>true</hasRings>
+			<orbitalDistance>150</orbitalDistance>
+			<orbitalPhi>-1</orbitalPhi>
+			<rotationalPeriod>17250</rotationalPeriod>
+			<planet name="Miranda" DIMID="-1029" dimMapping="" customIcon="moon">
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>20</gravitationalMultiplier>
+				<orbitalDistance>10</orbitalDistance>
+				<orbitalPhi>80</orbitalPhi>
+				<rotationalPeriod>28000</rotationalPeriod>
+			</planet>
+			<planet name="Ariel" DIMID="132" customIcon="moon">
+				<atmosphereDensity>10</atmosphereDensity>
+				<gravitationalMultiplier>15</gravitationalMultiplier>
+				<orbitalDistance>15</orbitalDistance>
+				<orbitalPhi>-4</orbitalPhi>
+				<orbitalTheta>80</orbitalTheta>
+				<rotationalPeriod>26000</rotationalPeriod>
+				<biomeIds>117</biomeIds>
+				<oceanBlock>GalaxySpace:liquidethanemethane</oceanBlock>
+				<fillerBlock>GalacticraftMars:tile.asteroidsBlock</fillerBlock>
+			</planet>
+			<planet name="Umbriel" DIMID="133" customIcon="moon">
+				<atmosphereDensity>5</atmosphereDensity>
+				<gravitationalMultiplier>15</gravitationalMultiplier>
+				<orbitalDistance>20</orbitalDistance>
+				<orbitalPhi>75</orbitalPhi>
+				<orbitalTheta>160</orbitalTheta>
+				<rotationalPeriod>24000</rotationalPeriod>
+				<biomeIds>118</biomeIds>
+				<oceanBlock>GalaxySpace:liquidethanemethane</oceanBlock>
+				<fillerBlock>GalacticraftMars:tile.asteroidsBlock</fillerBlock>
+			</planet>
+			<planet name="Titania" DIMID="134" customIcon="moon">
+				<atmosphereDensity>10</atmosphereDensity>
+				<gravitationalMultiplier>20</gravitationalMultiplier>
+				<orbitalDistance>25</orbitalDistance>
+				<orbitalPhi>82</orbitalPhi>
+				<orbitalTheta>80</orbitalTheta>
+				<rotationalPeriod>32000</rotationalPeriod>
+				<biomeIds>111,117</biomeIds>
+				<oceanBlock>Forestry:fluid.biomass</oceanBlock>
+				<seaLevel>70</seaLevel>
+			</planet>
+			<planet name="Oberon" DIMID="118" customIcon="iceworld">
+				<atmosphereDensity>10</atmosphereDensity>
+				<gravitationalMultiplier>19</gravitationalMultiplier>
+				<orbitalDistance>32</orbitalDistance>
+				<orbitalPhi>78</orbitalPhi>
+				<orbitalTheta>240</orbitalTheta>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<biomeIds>118,10,54</biomeIds>
+				<oceanBlock>GalaxySpace:liquidethanemethane</oceanBlock>
+				<fillerBlock>GalacticraftMars:tile.denseIce</fillerBlock>
+			</planet>
+		</planet>
+		<planet name="Pholus" DIMID="125" customIcon="moon">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>151</orbitalDistance>
+			<orbitalPhi>24</orbitalPhi>
+			<gravitationalMultiplier>10</gravitationalMultiplier>
+			<rotationalPeriod>18000</rotationalPeriod>
+			<biomeIds>119,110</biomeIds>
+		</planet>
+		<planet name="Neptune" DIMID="-18" customIcon="gasgiantblue">
+			<biomeIds>115,117,232</biomeIds>
+			<oceanBlock>advancedRocketry:tile.oxygenFluidBlock</oceanBlock>
+			<skyColor>0,0.5,1</skyColor>
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>180</orbitalDistance>
+			<orbitalPhi>-2</orbitalPhi>
+			<gravitationalMultiplier>130</gravitationalMultiplier>
+			<rotationalPeriod>16000</rotationalPeriod>
+			<planet name="Proteus" DIMID="219" customIcon="iceworld">
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>15</gravitationalMultiplier>
+				<orbitalDistance>15</orbitalDistance>
+				<orbitalPhi>-34</orbitalPhi>
+				<orbitalTheta>320</orbitalTheta>
+				<rotationalPeriod>26000</rotationalPeriod>
+				<biomeIds>115</biomeIds>
+				<oceanBlock>advancedRocketry:tile.nitrogenFluidBlock</oceanBlock>
+				<seaLevel>68</seaLevel>
+			</planet>
+			<planet name="Triton" DIMID="-1020" dimMapping="" customIcon="iceworld">
+				<atmosphereDensity>15</atmosphereDensity>
+				<gravitationalMultiplier>25</gravitationalMultiplier>
+				<orbitalDistance>25</orbitalDistance>
+				<orbitalPhi>160</orbitalPhi>
+				<orbitalTheta>40</orbitalTheta>
+				<rotationalPeriod>48000</rotationalPeriod>
+			</planet>
+			<planet name="Nereid" DIMID="135" customIcon="iceworld">
+				<atmosphereDensity>0</atmosphereDensity>
+				<gravitationalMultiplier>10</gravitationalMultiplier>
+				<orbitalDistance>130</orbitalDistance>
+				<orbitalPhi>6</orbitalPhi>
+				<orbitalTheta>120</orbitalTheta>
+				<rotationalPeriod>64000</rotationalPeriod>
+				<biomeIds>110</biomeIds>
+				<seaLevel>70</seaLevel>
+				<oceanBlock>advancedRocketry:tile.nitrogenFluidBlock</oceanBlock>
+			</planet>
+		</planet>
+		<planet name="Pluto" DIMID="108" customIcon="iceworld">
+			<biomeIds>140,12</biomeIds>
+			<skyColor>0xaaeeff</skyColor>
+			<fogColor>0xffffff</fogColor>
+			<atmosphereDensity>15</atmosphereDensity>
+			<gravitationalMultiplier>30</gravitationalMultiplier>
+			<orbitalDistance>190</orbitalDistance>
+			<orbitalPhi>17</orbitalPhi>
+			<orbitalTheta>220</orbitalTheta>
+			<rotationalPeriod>36000</rotationalPeriod>
+			<planet name="Charon"  DIMID="136" customIcon="iceworld">
+				<biomeIds>12,13</biomeIds>
+				<gravitationalMultiplier>20</gravitationalMultiplier>
+				<rotationalPeriod>36000</rotationalPeriod>
+				<atmosphereDensity>0</atmosphereDensity>
+				<skyColor>0xaaeeff</skyColor>
+				<fogColor>0xffffff</fogColor>
+				<orbitalDistance>5</orbitalDistance>
+				<orbitalPhi>40</orbitalPhi>
+			</planet>
+		</planet>
+		<planet name="Eris-Xena" DIMID="-21" customIcon="iceworld">
+			<biomeIds>112,115</biomeIds>
+			<gravitationalMultiplier>35</gravitationalMultiplier>
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>199</orbitalDistance>
+			<orbitalPhi>45</orbitalPhi>
+			<orbitalTheta>130</orbitalTheta>
+			<rotationalPeriod>48000</rotationalPeriod>
+		</planet>
+		<planet name="Kuiper Belt" DIMID="-1009" dimMapping="">
+			<atmosphereDensity>0</atmosphereDensity>
+			<orbitalDistance>200</orbitalDistance>
+			<rotationalPeriod>2000000000</rotationalPeriod>
+			<gravitationalMultiplier>0</gravitationalMultiplier>
+		</planet>
+	</star>
+	<star name="Dreams" temp="100" x="-500" y="1000" size="1.0" numPlanets="0" numGasGiants="0">
+		<star temp="10" separation="3.0" />
+		<star temp="190" separation="1.5" />
+		<planet name="Twilight Forest" DIMID="7" customIcon="earthlike" dimMapping="">
+			<artifact>minecraft:bed 0 1</artifact>
+			<atmosphereDensity>100</atmosphereDensity>
+			<orbitalDistance>100</orbitalDistance>
+			<orbitalPhi>0</orbitalPhi>
+			<orbitalTheta>0</orbitalTheta>
+			<gravitationalMultiplier>100</gravitationalMultiplier>
+			<planet name="Deciet" DIMID="140" customIcon="gasgiantblue">
+				<GasGiant>true</GasGiant>
+				<gas>deuterium</gas>
+				<gas>squidink</gas>
+				<orbitalDistance>150</orbitalDistance>
+				<orbitalTheta>90</orbitalTheta>
+			</planet>
+			<planet name="Veritas" DIMID="141" customIcon="gasgiantred">
+				<GasGiant>true</GasGiant>
+				<gas>liquidessence</gas>
+				<gas>fluidpure</gas>
+				<orbitalDistance>150</orbitalDistance>
+				<orbitalTheta>-90</orbitalTheta>
+			</planet>
+		</planet>
+	</star>
+	<star name="Wolf 12" temp="10" x="300" y="-200" size="1.0" numPlanets="0" numGasGiants="0">
+		<star temp="130" separation="2.5"  /> <!-- max 5.0 -->
+		<planet name="Atum" DIMID="17" dimMapping="" customIcon="marslike">
+			<artifact>atum:item.scarab 0 1</artifact>
+			<gravitationalMultiplier>105</gravitationalMultiplier>
+			<orbitalDistance>32</orbitalDistance>
+			<orbitalPhi>-3</orbitalPhi>
+			<rotationalPeriod>15780</rotationalPeriod>
+			<atmosphereDensity>120</atmosphereDensity>
+		</planet>
+		<planet name="Rocky" DIMID="23">
+			<isKnown>false</isKnown>
+			<fogColor>1.0,1.0,1.0</fogColor>
+			<skyColor>0.8,0.963839,0.991553</skyColor>
+			<gravitationalMultiplier>130</gravitationalMultiplier>
+			<orbitalDistance>80</orbitalDistance>
+			<orbitalPhi>-8</orbitalPhi>
+			<rotationalPeriod>10923</rotationalPeriod>
+			<atmosphereDensity>90</atmosphereDensity>
+			<biomeIds>122</biomeIds>
+			<!-- <spawnable weight="10" groupMin="1" groupMax="5">am2.entities.EntityDryad</spawnable> not in this edition -->
+			<OreGen> <!-- complete replacement -->
+				<ore block="minecraft:iron_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="4" />
+			</OreGen>
+			<seaLevel>32</seaLevel>
+			<fillerBlock>gregtech:gt.stone.andesite</fillerBlock>
+			<oceanBlock>gregtech:gt.stone.kimberlite</oceanBlock>
+		</planet>
+	</star>
+	<!--
+	Ocean options:
+	Buildcraft|Energy:blockFuel
+	Buildcraft|Energy:blockOil
+	Buildcraft|Energy:blockRedPlasma
+	Forestry:fluid.bioethanol
+	Forestry:fluid.biomass
+	Forestry:fluid.glass
+	Forestry:fluid.ice
+	Forestry:fluid.juice
+	Forestry:fluid.mead
+	Forestry:fluid.milk
+	Forestry:fluid.seedoil
+	Forestry:fluid.short.mead
+	GalacticraftMars:tile.sludge
+	GalaxySpace:helium3
+	GalaxySpace:heliumhydrogen
+	GalaxySpace:hydrogen2
+	GalaxySpace:liquidethanemethane
+	GalaxySpace:sulfuricacid
+	NuclearCraft:denseSteamBlock
+	NuclearCraft:liquidHeliumBlock
+	NuclearCraft:steamBlock
+	NuclearCraft:superdenseSteamBlock
+	Railcraft:fluid.creosote
+	Railcraft:fluid.steam
+	Thaumcraft:blockFluidDeath
+	Thaumcraft:blockFluidPure
+	Thaumcraft:blockFluxGoo		?
+	TwilightForest:tile.WispyCloud	(tile.FluffyCloud)?
+	advancedRocketry:tile.hydrogenFluidBlock
+	advancedRocketry:tile.nitrogenFluidBlock
+	advancedRocketry:tile.oxygenFluidBlock
+	advancedRocketry:tile.rocketFuelBlock
+	arsmagica2:liquidEssence
+	erebus:honeyBlock
+	gregtech:gt.block.fluid.oil.extraheavy	?
+	gregtech:gt.block.fluid.oil.heavy	?
+	gregtech:gt.block.fluid.oil.light	?
+	gregtech:gt.block.fluid.oil.medium	?
+	gregtech:gt.block.ocean
+	gregtech:gt.block.river
+	gregtech:gt.block.swamp
+	minecraft:ice
+	minecraft:lava
+	minecraft:water
+	-->
+	<!--
+	Good world stones:
+	ForbiddenMagic:TaintBlock	=
+	Foresty:soil	=
+	GalacticraftMars:tile.asteroidsBlock	=	dark space stone
+	GalacticraftMars:tile.denseIce
+	GalaxySpace:surfaceice
+	GalaxySpace:mercuryblocks	= surface rock
+	GalaxySpace:venusblocks	= surface rock
+	GalaxySpace:ceresblocks	= surface rock
+	GalaxySpace:plutoblocks	= surface grunt
+	GalaxySpace:europablocks	= surface grunt
+	GalaxySpace:titanblocks	= surface grunt
+	GalaxySpace:mirandablocks	= surface grunt
+	GalaxySpace:tritonblocks	= surface grunt
+	GalaxySpace:ioblocks	= surface rock
+	GalaxySpace:ganymedeblocks	= surface rock
+	GalaxySpace:callistoblocks	= surface rock
+	GalaxySpace:enceledusblocks	= ice
+	ImmersiveEngineering:metalDecoration	=
+	ImmersiveEngineering:metalDecoration2	=
+	ImmersiveEngineering:stoneDecoration	=
+	NuclearCraft:graphiteBlock
+	OpenComputers:chameliumBlock	?
+	Railcraft:brick.abyssal
+	Railcraft:brick.bleachedbone
+	Railcraft:brick.bloodstained
+	Railcraft:brick.frostbound
+	Railcraft:brick.infernal
+	Railcraft:brick.nether
+	Railcraft:brick.quarried
+	Railcraft:brick.sandy
+	Railcraft:cube	=
+	Thaumcraft:blockCosmeticOpaque	=
+	Thaumcraft:blockCosmeticSolid	=
+	Thaumcraft:blockEldritch	=
+	Thaumcraft:blockEldritchNothing	=
+	Thaumcraft:blockTaint	=
+	TwilightForest:tile.AuroraPillar
+	TwilightForest:tile.CastleBrick
+	TwilightForest:tile.TFDeadrock
+	TwilightForest:tile.TFMazestone
+	TwilightForest:tile.TFNagastone
+	TwilightForest:tile.TFRoots
+	TwilightForest:tile.TFUnderBrick
+	TwilightForest:tile.TrollSteinn
+	advancedRocketry:blockHotTurf
+	advancedRocketry:moonTurf
+	advancedRocketry:moonTurf_dark
+	advancedRocketry:tile.concrete
+	advancedRocketry:tile.geode
+	advancedRocketry:tile.vitrifiedSand
+	appliedenergistics2:tile.BlockSkyStone
+	atum:tile.sand
+	atum:tile.stone
+	chisel:amber
+	chisel:andesite
+	chisel:concrete
+	chisel:diorite
+	chisel:end_Stone
+	chisel:granite
+	chisel:grimstone
+	chisel:holystone
+	chisel:ice
+	chisel:lavastone
+	chisel:limestone
+	chisel:marble
+	chisel:mossy_templeblock
+	chisel:nation
+	chisel:obsidian
+	chisel:packedice
+	chisel:purpur
+	chisel:rebel
+	chisel:sandstone
+	chisel:tallow
+	chisel:voidstone
+	chisel:voidstone2
+	chisel:waterstone
+	chisel:woolen_clay
+	erebus:anthillBlock
+	erebus:blockSilk
+	erebus:gneiss
+	erebus:mud
+	erebus:umberGravel
+	erebus:umberstone
+	erebus:volcanicRock
+	gregtech:gt.block.diggable	= Mud
+	gregtech:gt.block.sands		= Black Sand
+	gregtech:gt.block.rockores	= Anthracite Coal
+	gregtech:gt.stone.andesite
+	gregtech:gt.stone.basalt
+	gregtech:gt.stone.blueschist
+	gregtech:gt.stone.diorite
+	gregtech:gt.stone.granite
+	gregtech:gt.stone.granite.black
+	gregtech:gt.stone.granite.red
+	gregtech:gt.stone.greenschist
+	gregtech:gt.stone.kimberlite
+	gregtech:gt.stone.komatiite
+	gregtech:gt.stone.limestone
+	gregtech:gt.stone.marble
+	gregtech:gt.stone.prismarine.dark
+	gregtech:gt.stone.prismarine.light
+	gregtech:gt.stone.quartzite
+	minecraft:brown_mushroom_block
+	minecraft:clay
+	minecraft:dirt
+	minecraft:end_stone
+	minecraft:gravel
+	minecraft:hardened_clay
+	minecraft:mossy_cobblestone
+	minecraft:netherrack
+	minecraft:obsidian
+	minecraft:packed_ice
+	minecraft:red_mushroom_block
+	minecraft:sand
+	minecraft:sandstone
+	minecraft:snow
+	minecraft:stone	*with no toppings
+	minecraft:wool
+	-->
+</galaxy>

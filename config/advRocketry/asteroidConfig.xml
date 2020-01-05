@@ -1,0 +1,36 @@
+<Asteroids>
+	<asteroid name="Small Asteroid" distance="10" mass="128" massVariability="0.5" minLevel="0" probability="10" richness="0.2" richnessVariability="0.5">
+		<ore itemStack="minecraft:iron_ore" chance="15" />
+		<ore itemStack="minecraft:gold_ore" chance="10" />
+		<ore itemStack="minecraft:redstone_ore" chance="10" />
+	</asteroid>
+	<asteroid name="Iridium Enriched asteroid" distance="100" mass="32" massVariability="0.5" minLevel="0" probability="1" richness="0.5" richnessVariability="0.3" timeMultiplier="0.75">
+		<ore itemStack="minecraft:iron_ore" chance="25" />
+		<ore itemStack="gregtech:gt.meta.ore.normal.gc.asteroids.dark 770" chance="5" />
+		<ore itemStack="gregtech:gt.meta.ore.normal.gc.asteroids.dark 780" chance="5" />
+		<ore itemStack="gregtech:gt.meta.storage.dust 8103" chance="5" />
+	</asteroid>
+	<asteroid name="Moon Crystal aggregate" distance="120" mass="16" massVariability="0.125" minLevel="0" probability="0.5" richness="0.875" richnessVariability="0.1428" timeMultiplier="1.5">
+		<ore itemStack="arsmagica2:vinteumOre 3" chance="100" />
+	</asteroid>
+	<asteroid name="Sun Crystal formation" distance="75" mass="16" massVariability="0.125" minLevel="0" probability="0.5" richness="0.875" richnessVariability="0.1428">
+		<ore itemStack="arsmagica2:vinteumOre 4" chance="100" />
+	</asteroid>
+	<asteroid name="Carbonaceous Asteroid" distance="50" mass="256" massVariability="0.5" minLevel="0" probability="5" richness="1.0" richnessVariability="0.0" timeMultiplier="0.10">
+		<ore itemStack="gregtech:gt.meta.storage.dust 8390" chance="75" />
+		<ore itemStack="gregtech:gt.meta.storage.gem 8334" chance="25" />
+	</asteroid>
+	<asteroid name="Chondrite" distance="25" mass="256" massVariability="0.75" minLevel="0" probability="5" richness="0.5" richnessVariability="0.5" timeMultiplier="0.5">
+		<ore itemStack="gregtech:gt.storage.dust 8202" chance="10" />
+		<ore itemStack="gregtech:gt.storage.dust 9003" chance="25" />
+		<ore itemStack="gregtech:gt.storage.dust 9004" chance="25" />
+		<ore itemStack="gregtech:gt.storage.dust 9005" chance="10" />
+	</asteroid>
+	<asteroid name="Meteroid" distance="20" mass="64" massVariability="0.9" minLevel="0" probability="20" richness="0.8" richnessVariability="0.2">
+		<ore itemStack="minecraft:block_iron" chance="10" />
+		<ore itemStack="gregtech:gt.storage.dust 8649" chance="10" />
+		<ore itemStack="gregtech:gt.storage.dust 8661" chance="25" />
+		<ore itemStack="gregtech:gt.meta.ore.normal.gc.asteroids.light 8750" chance="7" />
+		<ore itemStack="ImmersiveEngineering:storage 4" chance="18" />
+	</asteroid>
+</Asteroids>
