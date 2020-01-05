@@ -1,0 +1,1355 @@
+{
+  "name": "Futures in Space",
+  "description": "Heading to other planets with technology! Let there be Advanced Rocketry! Build StarGates! \n Oh, and maybe do some end-game GT6 stuff.",
+  "quests": [
+    {
+      "name": "Logistical Control",
+      "description": "With enough computing power, sorting an arbitrary variety of goods and products through a slim set of cables can be done. And with the complexity of byproducts a proper gregtechnological ore processing chain has, a very good idea. \n Unlike the other logistic network mods, this one does not include manual crafting convenience functions (an ACT has more); in fact it has no manual access functions at all. This includes the absence of remote craft-by-request mechanics - an Autocrafter with a button on an Auto Redstone Machine Switch is the closest.",
+      "x": 30,
+      "y": 180,
+      "icon": {
+        "id": "gregtech:gt.multitileentity",
+		"damage": 18200
+      },
+	  "prerequisites": [
+	    "{Modern Era}[Enhanced Lasers]"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Optical computing",
+          "longDescription": "Next-gen computers like this only run off electricity, they actually think with light. Hence you will need to holographically engrave the inside of some crystals with wave-form architecture; and then mount them in a case.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18200
+			  }
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Heart and Mind",
+          "longDescription": "The server rack for this Logistics network is a 5-cube. The 27 internal spaces can be any mixture of the five Quadcore Processor blocks and blank Galvanized Steel Walls, but must be solid to function. Each colour of processor included improves the capabilities of the core in a certain way. But the standby EU consumption increases a little for every processor of any type.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage":17997
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18008
+			  },
+			  "required": 44
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18299
+			  },
+			  "required": 53
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Busses on many networks",
+          "longDescription": "Just like the other item network mods, the core doesn\u0027t actually do anything useful in isolation. Slap a Logistics Bus cover on any face of the controller (or wire) to do things. This Generic Import Bus will take any item or fluid into the system, if it has somewhere to go. \n A small internal storage buffer in the core is planned.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1097
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 24901,
+		  "amount": 6
+		}
+	  ]
+	},
+    {
+      "name": "Going the distance",
+      "description": "The Logistics network is not limited to being directly attached to a core; heck, it can even have multiple cores sharing the load by overlapping networks on the same wires. There is a bounding box projected from each core whose size is based on the number of Crystal Processor (Ruby) controllers it has, inside which it will perform Logic Diamond operations per second to connected tanks and inventories. \n Through coordinate virtualization, Miniature Portals can bring the logistics network connection outside of the bounding box, even to other planes, but only to the directly attached parts - they will conduct the network no further.",
+      "x": 60,
+      "y": 180,
+      "icon": {
+        "id": "gregtech:gt.multitileentity",
+		"damage": 24901
+      },
+	  "prerequisites": [
+	    "Logistical Control"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Posh Cable",
+          "longDescription": "Such versatile operations take special wire. Upgrade some of that diamond glass Laser Wire into Logistics Wire with some Osmium thread.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 24901
+			  },
+			  "required": 16
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "More connection types",
+          "longDescription": "The Importers will attempt to send things to Exporters, then to Storages. Then Storages send things to Exporters, both preferring the more general import and most specific filtered export. A bored system will defragment the generic storage into filtered and semi-filtered storages; finally, it will clean out items in Generic Storage that do not match any filter anywhere by sending them to a Dump.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1093
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1090
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1098
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multitileentity",
+		  "damage": 18202
+		}
+	  ]
+	},
+    {
+      "name": "Stores-All",
+      "description": "These Mass Storages have a built-in Logistic Wire and Semi-Filtered Logistic Storage Bus, with economy of design. They also have the maximum capacity. Since they also refill any attached ACT, a parts wall of these can provide some ease of use to manual crafting.",
+      "x": 90,
+      "y": 180,
+      "icon": {
+        "id": "gregtech:gt.multitileentity",
+		"damage": 6218
+      },
+	  "prerequisites": [
+	    "{Modern Era}[Enhanced Lasers]"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "The Plasma Bottle",
+          "longDescription": "This drum can contain an absurd amount of any single fluid. The built-in Semi-Filtered Logistics Storage Bus has been adapted to isolate the contents; the fluid never even touches the drum envelope, so it is impervious to all damage from within.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 32072
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "Keeping an eye on mind",
+      "description": "As your logistics system grows, it is important to know which of the four types of processor is being overworked. Hence we have four colour-coded readout panels. \n * Logic Diamonds - operation thread count \n * Control Rubies - coverage area \n * Storage Emeralds - internal buffer size [NYI] \n * Conversion Sapphires - stacks moved per thread per second (or 16B)",
+      "x": 15,
+      "y": 160,
+      "icon": {
+        "id": "gregtech:gt.multiitem.technological",
+		"damage": 1088
+      },
+	  "prerequisites": [
+	    "Logistical Control"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Readout panels",
+          "longDescription": "These give a visual indicator of the workload each type of crystal is carrying. Any colour that is completely full should probably get more copies added to that core.  They also emit a scaled redstone signal. \n Due to network overlap, it is best to put these directly on the core.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1086
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1087
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1088
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 1089
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 30501,
+		  "amount": 4
+		},
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 30502,
+		  "amount": 1
+		},
+	    {
+		  "id": "gregtech:gt.multiitem.technological",
+		  "damage": 30504,
+		  "amount": 2
+		}
+	  ]
+	},
+    {
+      "name": "Pre-Launch",
+      "description": "Even if you have a grand machining factory, there are a number of technologies that will need to be put in place to enter the space age. Advanced Rocketry does provide RF-powered small multiblock machines that overlap with the Rolling Mill, Cutter, Crystallization Crucible, Lathe, and Electrolyzer; none of them replace the GT machine. \n Make sure to have plenty of Steel and Titanium on hand.",
+      "x": 90,
+      "y": 20,
+      "icon": {
+        "id": "advancedRocketry:launchpad"
+      },
+	  "prerequisites": [
+		"{Dawn of Industry}[the Riddle of Steel]"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Instructions",
+          "longDescription": "All of the AR multiblock machines are complicated to construct. Use this hand-held hologram projector to provide hints.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "libVulpes:item.holoProjector"
+			  }
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Alternate circuit Assembly",
+          "longDescription": "Put some robots in a miniature clean room on an assembly line, they can do a mixture of laser welding, pressing, and cutting all in one multiblock machine. Rather than using basic computation circuits or logic chips, space age technology will take dedicated and specially constructed chips in many varieties.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:precisionassemblingmachine"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:libVulpescoil0"
+			  },
+			  "precision": "FUZZY",
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockStructureBlock"
+			  },
+			  "required": 23
+			},
+		    {
+			  "item": {
+			    "id": "minecraft:glass"
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:rfBattery"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockHatch",
+				"damage": 0
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockHatch",
+				"damage": 1
+			  }
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Sheet panels?",
+          "longDescription": "Thinner than Plate, larger than Item Casing, less flexible than Foil, only a few relevant materials have a Sheet form. Mostly it acts like Curved Plate as an intermediate in constructing tanks. They can only be produced in the Roller.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.rollingMachine"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:rfBattery"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:libVulpescoil0"
+			  },
+			  "precision": "FUZZY",
+			  "required":2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockHatch",
+				"damage": 0
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockHatch",
+				"damage": 1
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockHatch",
+				"damage": 2
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockStructureBlock"
+			  },
+			  "required": 6
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "Up, Up, and Away",
+      "description": "Since the whole point of AR is going to space, how do we actually get to space? In a rocket! \n We have complete freedom to design these launch vehicles as we desire (Kerbal flashbacks). Set up your personal VAB, it will need an RF source. Some form of propellant will also be required - Rocket Fuel (AR), rocket Fuel (GC), or Strong Jump Potions. Consider building a Chemical Reactor multiblock to mix the fuel. \n At least rockets on the pad can be disassembled back into their component blocks, when it is time to decommission or modify a pattern.",
+      "x": 60,
+      "y": 60,
+      "icon": {
+        "id": "advancedRocketry:rocketmotor"
+      },
+	  "prerequisites": [
+	    "Pre-Launch"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Construction Gantry",
+          "longDescription": "Make a rectangle of launchpad concrete, sink a tower in next to it, and place the Rocket Assembler against the air on its surface. The assembler requires some RF to scan and build rockets from the collection of blocks above the pad up to the tower height.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:launchpad"
+			  },
+			  "required": 16
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:rocketBuilder"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:structureTower"
+			  },
+			  "required": 7
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Rocket Man",
+          "longDescription": "Just like KSP... Add Enginges to have enough Thrust to lift the Mass of all the blocks in the rocket, while ensuring they have enough Fuel Tanks on them to perform the mission. Without a Guidance Computer, the rocket will go into orbit (releasing a satellite or station) and then be lost. You need to have a programmable Planet ID Chip to go to a new planet or moon; a pre-programmed Station Chip or Planet ID Chip can also be used to go there. \n Inventories and fluid tanks can be placed on board for cargo, each Seat allows passengers (including a pilot).",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:seat"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:rocketmotor"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:fuelTank"
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.guidanceComputer"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.planetIdChip"
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "No Air Up There",
+		  "longDescription": "Wearing a full Spacesuit (or gear fully enchanted with AirTight Seal) will allow you to breathe in areas that do not have external air. Like space. Stand on a Gas Charge Pad, that has Oxygen piped into the underside, in order to fill the 30 minute integrated tank in the chestpiece. \n The Spacesuit also accepts a number of upgrade modules in a Suit Workstation. Like the EVA maneuvering rig (jetpack).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.oxygenCharger"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.spaceHelmet"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.spaceBoots"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.spaceChest"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.spaceLeggings"
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "To the Moon!",
+      "description": "Make a Planet ID chip to put in your rocket\u0027s Guidance Computer. Either from keybind while in the Seat or maybe by shift-right-clicking the rocket, set the destination (SET DST) to LUNA. You may want to schedule a long return trip, as there are copious Dilithium deposits on most moons. \n\n Unless you have Linked your rocket to a Rocket Monitoring Station, only launch it from inside.",
+      "x": 30,
+      "y": 60,
+      "icon": {
+        "id": "advancedRocketry:moonTurf"
+      },
+	  "prerequisites": [
+	    "Up, Up, and Away"
+	  ],
+      "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Infrastructure",
+		  "longDescription": "Rather than bucketing the fuel in by hand, why not pipe it in via a Fuelling Station. This block can be Linked to the specific rocket, but is more useful when Linked to the landing pad (i.e. the Rocket Assembler of the pad).",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "libVulpes:Linker"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:fuelingStation"
+			  }
+			}
+		  ]
+		},
+        {
+          "type": "LOCATION",
+          "description": "Inaugural Flight",
+          "longDescription": "Landing gently on the moon will consume a little bit of fuel in addition to what the rocket required to reach orbit. And since the rocket may well be your only way to get back to earth from the moon, it has to reach orbit from there and safely descend again. It may be an idea to carry some backup fuel with you to re-fill while up there. \n Just like KSP, do not expect your first design to fulfill all mission parameters efficiently.",
+          "locations": [
+            {
+              "name": "Luna",
+              "icon": {
+                "id": "advancedRocketry:moonTurf"
+              },
+              "x": 28,
+              "y": 69,
+              "z": -2,
+              "dim": 2,
+              "radius": -1
+            }
+          ]
+		}
+	  ]
+	},
+    {
+      "name": "Another World",
+      "description": "The next teasing gem, achieve inter-planetary flight. In addition to a slightly larger rocket, you will need to upgrade the guidance computer to do all the transit orbits and encounter rendezvous planning.",
+      "x": 30,
+      "y": 20,
+      "icon": {
+        "id": "advancedRocketry:blockHotTurf"
+      },
+	  "prerequisites": [
+	    "Up, Up, and Away"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Navigation Upgrade",
+          "longDescription": "With this block somewhere on the rocket, the Guidance Computer can now compute multi-stage trajectories to other planetary systems in your current solar system; we will get to discover other planets and suns once we have a mother starship. The procedure for selecting destinations has not changed.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.warpCore"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "LOCATION",
+		  "description": "To the Red Planet",
+		  "longDescription": "Remember to bring enough fuel with you.",
+          "locations": [
+            {
+              "name": "Ares",
+              "icon": {
+                "id": "gregtech:gt.meta.gear",
+				"damage": 8784
+              },
+              "x": 6,
+              "y": 69,
+              "z": -4,
+              "dim": 102,
+              "radius": -1
+            }
+          ]
+		}
+	  ]
+	},
+    {
+      "name": "Satellites",
+      "description": "There are many more objects out there than can be seen in the night sky. Sending some observation devices above the atmosphere into eternal night should a clearer picture of what is truly out there. There are also some types of sensor that simply do not work near a large planet, so experiment with entirely new ways of looking out into the cosmos on these remote eyes. \n\n Also consider the Microwave Transmitter for orbital solar power arrays, and an Ore Mapper to operate an OreScanner down on the surface; they will use something other than a Sattellite Terminal since they send down something other than data.",
+      "x": 120,
+      "y": 60,
+      "icon": {
+        "id": "advancedRocketry:item.sattellite"
+      },
+	  "prerequisites": [
+	    "Pre-Launch"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Source Workshop",
+          "longDescription": "The sattellite payload is made in a special two-block machine. The Satellite Builder must be on top of an Input Plug with RF power to function.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:blockSatelliteBuilder"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:rfBattery"
+			  }
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Raw Data",
+          "longDescription": "Make one sattellite to gather each of the three data types, as decided by their main item. Each must have some form of power, and some amount of data storage on board in the six expansion slots to function. Things can be done on pure Distance (optical) data, but are far better with the full set.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:sattellitePrimaryFunction",
+				"damage": 0
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:sattellitePrimaryFunction",
+				"damage": 1
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:sattellitePrimaryFunction",
+				"damage": 2
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:dataUnit"
+			  },
+			  "precision": "FUZZY",
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:sattellitePowerSource"
+			  },
+			  "precision": "FUZZY",
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.satelliteIdChip"
+			  },
+			  "required": 3,
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Delivery Vehicle",
+		  "longDescription": "One has the option to build disposable launch vehicles for sattellites, as long as it gets into orbit it will work. Alternately, Link the rocket to a Remote Monitoring Station (in a command building perhaps) for remote or robot launch, and load it with a Guidance Computer and destination chip for where it should land after depositing the satellite in space.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 1
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:rocketmotor"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:fuelTank"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Ground Station",
+		  "longDescription": "Put the built sattellite into a Sattellite Bay on a rocket, and put the Sattellite ID Chip into a dedicated Satellite Terminal. Once the rocket reaches orbit, the payload sattellite will be deployed, and begin acquiring data of the selected type. The Terminal takes a trickle of RF to download that data. You will then use Wireless Transcievers to get that data to a machine that needs it; or put it into Data Storage Units by hand. \n N.B. Greentooth data transfer protocol can only operate in strict two partner linked directed pairs, up to a 100m range.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.satelliteMonitor"
+			  },
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.wirelessTransciever"
+			  },
+			  "required": 6
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:Linker"
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "Remote Mining Operations",
+      "description": "Amoung the easiest discoveries from all that satellite data are the existence of asteroids. These tiny non-planet not-moon rocks in space can be found with as little as 100 Distance Data. Your other sensor inventions can detect valuable, even rare, materials in high concentrations in some of these rocks. Now to figure out how to mine rocks in SPACE!",
+      "x": 150,
+      "y": 20,
+      "icon": {
+        "id": "advancedRocketry:blockMonitoringStation"
+      },
+	  "prerequisites": [
+	    "Satellites"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Ground-Based Observations",
+          "longDescription": "While trying to calculate exactly what and where an asteroid is, improvements to ground-based telescopy present themselves. While this structure can see through atmospheric distortions (at night), it has a very narrow filed of view. Upload the wide-angle orbiting pictures (some Distance Data) to identify potential targets. \n Once found, additional Composition and Mass Data (up to 2000 of each) can be cross-referenced to provide actionable intel. The Observatory structure should be able to do this, though a dedicated Astrobody Data Processor lab could do it too.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:observatory"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "minecraft:stone"
+			  },
+			  "required": 45
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.lens"
+			  },
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 0
+			  },
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:rfBattery"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "minecraft:iron_block"
+			  },
+			  "required": 19
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.asteroidChip"
+			  }
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Return Cargo",
+          "longDescription": "The rocket you send up to meet the asteroid (by having that Asteroid ID Chip in its Guidance Computer) will need to disassociate some of that rock - like drilling. Naturally, the rocket must also have cargo inventory. Now seems like a great time to build an automatic cargo unloader; just like the fuelling station, link it to the pad and not the rocket. \n You are confident additional Mass data helps get larger returns, and Composition data allows for less overburden to be included with your ore.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.drill"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 2
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:blockMonitoringStation"
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "Breathing Clear",
+      "description": "In many non-terrestrial locations, one will need to bring their own air to breathe. Constantly being in a Spacesuit can be uncomfortable, or impractical. Thus, fill airtight rooms with some nice artificial atmosphere. \n The Atmosphere Detector can be used to rig decompression alarms via redstone signals.",
+      "x": 30,
+      "y": 100,
+      "icon": {
+        "id": "advancedRocketry:tile.oxygenVent"
+      },
+	  "prerequisites": [
+	    "Up, Up, and Away"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Pressurization",
+          "longDescription": "When provided with fluid Oxygen and continuous RF, the Oxygen Vent will fill all sealed rooms next to it (up to 32m wide) with good air. Putting a CO2 Scrubber or two next to it reduces the amount of oxygen used (to zero) by increasing the power requirement, but only while the cartridges in them last - about a day.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.scrubber"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.carbonScrubberCartridge"
+			  },
+			  "precision": "FUZZY"
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.oxygenVent"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.smallAirlock"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.sealDetector"
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "In Space to Stay",
+      "description": "In addition to small autonomous sattellites, you can build a mannable space station in orbit. When designing this void base, be aware that incoming rockets will default to landing on the top centre of the original design. Either be ready for this, or put a dedicated landing pad (or Docking Pad) on top somewhere before sending any rocket there. \n Consider building a pair of Space Elevators to get up here without using passenger rockets all the time.",
+      "x": 60,
+      "y": 140,
+      "icon": {
+        "id": "advancedRocketry:tile.stationMonitor"
+      },
+	  "prerequisites": [
+	    "Breathing Clear"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Station Modules",
+          "longDescription": "Each section of a station is built on a VAB gantry that is identical to the rocket launchpad (with a new controller). Co-using a pad is only safe when there are no automated missions looking for a place to return to on that planet (i.e. never in MP); but, replacing the control block will work perfectly. Unlike the Rocket Assembler, a Station Builder needs to be given an ID Chip (like the Sattellite Builder) and also a Sattelite Bay in which to pack all the fairings.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.stationAssembler"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:item.stationChip"
+			  },
+			  "required": 3
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 1
+			  },
+			  "required": 2
+			}
+		  ]
+		},
+        {
+          "type": "DETECT",
+          "description": "Jigsaw Buildings",
+          "longDescription": "Modules can also be sent up to an existing station, to be added to the structure. In order to do this, a Station Docking Port with a unique name must be present on the station already, and be facing out into the void. Build the next module with another Station Docking Port on the edge so that the parts can interface, and write that name into this one\u0027s target field. Package this new module using a copy of the existing Station ID Chip. The expansion module will be translated and rotated so the two Docking Ports clamp together when it is added to the station in orbit. \n Naturally, you could also just bring materials up and build the void base normally. But this way is much more immersively fun.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.stationMarker"
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 1
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "Upward Base",
+      "description": "Building a void base in orbit is only so useful, it needs to have a method for transporting goods to and from the world below. At least it can communicate with any sattellites in the same orbit space. Perhaps we can upgrade the Warp Core to move the entire station from one planet\u0027s orbit into another? Yes, even to another star system!",
+      "x": 90,
+      "y": 100,
+      "icon": {
+        "id": "advancedRocketry:tile.circleLight"
+      },
+	  "prerequisites": [
+	    "In Space to Stay"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "the Warp Core",
+          "longDescription": "Put the Station Monitor on your bridge; it acts a bit like the observatory to detect new planets and stars, and also like a guidance computer to command your soon-to-be starship to travel into orbit above other worlds. The Warp Core multiblock needs to be assembled on board and fed with some Dilithium Crystals. You have gone mining on a moon, right?",
+          "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.warpCore"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockStructureBlock"
+			  },
+			  "required": 4
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:blockHatch",
+				"damage": 0
+			  }
+			},
+			{
+			  "item": {
+			    "id": "minecraft:gold_block"
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:libVulpesmetal0",
+				"damage": 7
+			  },
+			  "required": 15
+			},
+			{
+			  "item": {
+			    "id": "advancedRocketry:stationMonitor"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Cargo Shuttles",
+		  "longDescription": "By using the redstone signal emission properties of loaders and unloaders, it is possible to automate robot launches. These could be used for repeat trips to an asteroid mine (expect decreasing returns), or like trains to send resources back and forth from another place. \n Link the Guidance Hatch to a rocket or pad, it allows automation to swap out the ID Chip in the destination slot for re-directing robot flights. Never have multiple Guidance Computers on a vessel, it is undefined which one will set the destination on any particular flight. \n\n See also the item throwing Railgun, and the world-eating Orbital Laser Drill",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 6
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.dockingPad"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 2
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 3
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:fuelingStation"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:blockMonitoringStation"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "libVulpes:Linker"
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "Sucks so Good",
+	  "description": "When we take a closer look at gas giants, it becomes apparent their upper atmospheres occasionally contain fluids of value. Let us now attempt to skim some of that off and into our pockets (maw). Fuel requirements for this sort of mission are generally very low, as it is best launched for orbit of the planet itself, rather than from a planet somewhere else in the system of an asteroid.",
+	  "x": 150,
+	  "y": 100,
+	  "icon": {
+	    "id": "advancedRocketry:tile.pressurizedTank"
+	  },
+	  "prerequisites": [
+	    "In Space to Stay",
+		"Remote Mining Operations"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Drone Bay",
+		  "longDescription": "Designed to be launched from orbit around the atmosphere we wish to harvest, let us drop a lighter craft from the station. Extend a gantry from the sides and top of an Unmanned Vehicle Assembler, with a crane-like spur on top to define the length of the bay. The vehicle might launch downwards before going forwards, so be careful about walls and floors. Other than being built sideways, this acts just like a Rocket Assembler and its launch pad.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:structureTower"
+			  },
+			  "required": 12
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.deployableRocketAssembler"
+			  }
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Hose Tool",
+		  "longDescription": "Just like the asteroid mining missions, we need the drone to have the ability to pick up fluids, tanks to store it in, and an unloader to get the loot out with. Unlike asteroid mining, gas giant siphoning never runs out.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.gasIntake"
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "advancedRocketry:tile.loader",
+				"damage": 4
+			  }
+			}
+		  ]
+		}
+	  ]
+	},
+    {
+      "name": "Plasma-fication",
+      "description": "Rather than waiting for a few atoms to disintegrate in a small Matter Fabricator, why not apply mass scale QU to reduce the strong force so that all the nucleons just fly apart?",
+      "x": 150,
+      "y": 180,
+      "icon": {
+        "id": "gregtech:gt.multitileentity",
+		"damage": 17199
+      },
+	  "prerequisites": [
+	    "{Modern Era}[Quantum Replication]"
+	  ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "To Quarks!",
+          "longDescription": "This process has very little waste radiation, over a metre of solid lead sheeting should make it safe. \n Like most multiblocks, multiple operations can run in parallel.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17199
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18044
+			  },
+			  "required": 26
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18031
+			  },
+			  "required": 97
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18299
+			  },
+			  "required": 16
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18200
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18202
+			  },
+			  "required": 4
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18204
+			  },
+			  "required": 4
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Controlled Fusion",
+		  "longDescription": "This T5 Matter Replicator is an efficient use of QU to make atoms and molecules out of the plasma.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20435
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "repeat": {
+	    "type": "TIME",
+		"days": 64,
+		"hours": 0
+	  },
+	  "rewardchoice": [
+	  {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 1450,
+		  "amount": 3
+		},
+	    {
+		  "id": "gregtech:gt.meta.dust",
+		  "damage": 1250,
+		  "amount": 4
+		},
+	    {
+		  "id": "gregtech:gt.meta.crate.64.plate",
+		  "damage": 8273
+		},
+	    {
+		  "id": "gregtech:gt.meta.gem",
+		  "damage": 8317,
+		  "amount": 16
+		},
+	    {
+		  "id": "gregtech:gt.meta.ingot",
+		  "damage": 8634,
+		  "amount": 5
+		}
+	  ]
+	},
+    {
+      "name": "Fusion Octogon?",
+      "description": "Even though a ring looks like magnets, that is only to keep the world from melting. This is an inertial confinement reactor, using lasers to create pockets of fusion temperature in the plasma. \n Input some light elemental material (or some mixtures), then pump T5 LU (8192) into the glass ring until it starts to glow. Once the reaction becomes self-sustaining it will output 8192 EU split across the four contacts until the fuel is exhausted (or changed). \n You need to put a Selector Tag 1 or 2 in the core block, liquid and gas reactants are then piped into the ring (anywhere, there are no dedicated ports). The product fluids, and possibly Vibranium dust, must be extracted from the ring by Compact Pump or Logistic Bus.",
+      "x": 120,
+      "y": 140,
+      "icon": {
+        "id": "gregtech:gt.multitileentity",
+		"damage": 17198
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Core and Ring",
+          "longDescription": "Set aside a 19x5x19 zone, the EU out contacts are in the centre of the sides. \n In the centre, build a computer core as if it was the logistics multiblock; except that the other three sides have a spoke of Galvanized Steel Wall interrupting the vents, plus two blocks. Two blocks further out, put the thin Stainless Steel Wall ring - five on each side, plus diagonals. Totally wrap that ring in Large Iridium Coils. And finally fill out the torus by wrapping it in TungstenSteel Walls. \n The controller\u0027s GUI has a drawing of the layout in it for reference.",
+          "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17198
+			  }
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18200
+			  },
+			  "required": 3
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18201
+			  },
+			  "required": 12
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18202
+			  },
+			  "required": 12
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18008
+			  },
+			  "required": 53
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18299
+			  },
+			  "required": 50
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18002
+			  },
+			  "required": 36
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18045
+			  },
+			  "required": 144
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18003
+			  },
+			  "required": 576
+			}
+		  ]
+		}
+	  ]
+	},
+	{
+	  "name": "ZPM",
+	  "description": "Ancient power devices, these hold unimaginable - and unmeasurable - amounts of raw power. Functionally single-use QU batteries, actually using the Zero Point Module is a mystery only recently re-discovered.",
+	  "x": 210,
+	  "y": 20,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 14999
+	  },
+	  "trigger": "TASK_TRIGGER",
+	  "triggertasks": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Atlantean Loot",
+		  "longDescription": "Obviously you\u0027ve been dungeon diving.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 14999
+			  },
+			  "precision": "NBT_FUZZY"
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Dias Pedestal",
+		  "longDescription": "It is your choice whether to extract zero-point energy from a pocket dimension as pure QU (to run a multiblock Matter Fabricator) or as ZPM voltage EU (that very few wires can transmit) that absolutely must be stepped-down before use. Each module should last for about 55 hours before the attached pocket universe suffers heat death.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 11170
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregtech:gt.meta.machine",
+		  "damage": 8682,
+		  "amount": 2
+		}
+	  ]
+	},
+	{
+	  "name": "GateBuilder",
+	  "description": "Not quite as difficult as matter replication, the establishment of meta-stable wormholes between pre-designated and controlled loci also requires crystalline control units, and a special alloy. At least the power supply is simpler.",
+	  "x": 180,
+	  "y": 60,
+	  "icon": {
+	    "id": "SGCraft:stargateRing",
+		"damage": 1
+	  },
+	  "prerequisites": [
+	    "{Modern Era}[Enhanced Lasers]",
+		"{Different Knowledge}[Altar or Henge?]"
+	  ],
+	  "parentrequirement": 1,
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Hyper-Fine Control",
+		  "longDescription": "To upgrade a Sapphire Conversion crystal to the stargate Core requires running it through the T2 Laser Engraver again, using a different colour on a different axis to program via wave interference patterns. The Ruby variant can similarly be used as the basis for a dialing Control Crystal, but is harder to perform, if less likely to fail. \n Thaumaturgical methods also exist to imbue such a crystal, and may actually be easier.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "SGCraft:sgCoreCrystal"
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Source the Ke",
+		  "longDescription": "Actually channeling the wormhole apparently requires Trinium specifically. Unless you\u0027ve tapped an Animey-ese vein somewhere, this material will have to be synthesized chemically (or alchemically). A (T3) Titanium Mixer should suffice, but the list of reactants reads like crockery: \n Titanium,  Bedrock dust, Meteoric iron dust, TungstenSteel, Iridium, Helium, Strong Strength Potions, and liquid XP!",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.meta.dust",
+				"damage": 1260
+			  },
+			  "precision": "ORE_DICTIONARY"
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "A Great Ring",
+		  "longDescription": "Some old Pyramids contain functional Cha\u0027apa\u0027ai above the treasure shaft. Regardless it is now possible to build more from raw materials; although Naquadah may take some finding. Obviously this ring is 5x5 with a three metre passage. \n RF power and OC control can be supplied from below; Iris control, if installed, takes redstone signals from the sides while redstone signals are output on these same sides for wormhole activity (any raw redstone connection thus makes for a permanently locked death trap). Thankfully, the Gate Controller will relay any OC Wireless signals through the connection.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "SGCraft:stargateBase"
+			  }
+			},
+			{
+			  "item": {
+			    "id": "SGCraft:stargateRing",
+				"damage": 0
+			  },
+			  "required": 8
+			},
+			{
+			  "item": {
+			    "id": "SGCraft:stargateRing",
+				"damage": 1
+			  },
+			  "required": 7
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "The Eighth Chevron",
+		  "longDescription": "Since each world is so enormous, seven digit dialing will only reach locations on the same dimension of existence. Attach some Enderium reflectors in this augment to allow for nine-digit dialing; thereby Stargates built in any dimension on any world can be accessed. \n Your continuing missions will occasionally retrieve useful material.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "SGCraft:sgChevronUpgrade"
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "repeat": {
+	    "type": "TIME",
+		"days": 32,
+		"hours": 0
+	  },
+	  "reward": [
+	    {
+		  "id": "SGCraft:naquadah"
+		}
+	  ]
+	}
+  ],
+  "reputationBar": []
+}

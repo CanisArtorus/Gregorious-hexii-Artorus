@@ -46,7 +46,7 @@
     },
     {
       "name": "Energy Conversion",
-      "description": "An ME System normally runs on internal AE, but Greggy-EU will work (the AE system has a HV limit before EXPLODING). You can convert RF, EU, or shaft power into AE by connecting it into the Energy Acceptor and piping it out with Fluix Cables or Quartz Fibres. You can also supply power through the ME Controller, but then that is one less side you can pull channels from.",
+      "description": "An ME System normally runs on internal AE, but Greggy-EU will work (the AE system has a HV limit). You can convert RF or EU into AE by connecting it into the Energy Acceptor and piping it out with Fluix Cables or Quartz Fibres. You can also supply power through the ME Controller, but then that is one less side you can pull channels from.",
       "x": 184,
       "y": 28,
       "icon": {
@@ -59,7 +59,7 @@
         {
           "type": "CRAFT",
           "description": "Make an Energy Acceptor",
-          "longDescription": "1EU \u003d 2 AE. 1 AE \u003d 2 RF. 160 Nm * rad/s \u003d 1 AE/t",
+          "longDescription": "1EU \u003d 2 AE. 1 AE \u003d 2 RF.",
           "items": [
             {
               "item": {
@@ -346,7 +346,7 @@
         {
           "type": "DETECT",
           "description": "Set up the Crafting CPU",
-          "longDescription": "The Crafting CPU is a multiblock. It must be a cuboid, meaning it has 6 sides maximum. It is made up of Crafting Co-Processing Units and Crafting Storages. The more Crafting CPUs, the more parts can be crafted in parrallel. The more Crafting Storage you have, the more complicated of a recipe you can make. Having multiple Multiblocks allows you to autocraft multiple things at once.",
+          "longDescription": "The Crafting CPU is a multiblock. It must be a cuboid, meaning it has 6 sides maximum. It is made up of Crafting Co-Processing Units and Crafting Storages. The more Crafting CPUs, the more parts can be crafted in parallel. The more Crafting Storage you have, the more complicated of a recipe you can make. Having multiple Multiblocks allows you to autocraft multiple things at once.",
           "items": [
             {
               "item": {
@@ -790,7 +790,7 @@
     },
 	{
 	  "name": "Entanglo-portation",
-	  "description": "There are some places it is just impossible to run (dense) cable to, like other planets or planes of existence. For those situations, AE2 suggests the creation of an artifically stabilized Einstein-Rosen bridge, better known as a micro wormhole. No coherent matter can pass through, but thankfully you have in place a system to transmit and store material as pure information.",
+	  "description": "There are some places it is just impossible to run (dense) cable to, like other planets or planes of existence. For those situations, AE2 suggests the creation of an artificially stabilized Einstein-Rosen bridge, better known as a micro wormhole. No coherent matter can pass through, but thankfully you have in place a system to transmit and store material as pure information.",
 	  "x": 120,
 	  "y": 10,
 	  "icon": {
@@ -872,7 +872,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "We Need More Pylons.",
-		  "longDescription": "Time to brush up on subnets (or just build it seperately); each network can only contain ONE Spatial I/O Port, and exactly THREE Spatial Pylons. The Pylons must be offset from the IO Port along each of the cardinal axes, as they define the region that will be scanned in to (or re-constituted from) the disk in it. \n Apply a rising edge redstone signal to the I/O Port to swap the contents of the disk and the space. This will only work if the local network has (Dense) Energy Cells with sufficient charge to INSTANTLY supply the full energy cost of transmogrificating every entity and block in the space.",
+		  "longDescription": "Time to brush up on subnets (or just build it separately); each network can only contain ONE Spatial I/O Port, and exactly THREE Spatial Pylons. The Pylons must be offset from the IO Port along each of the cardinal axes, as they define the region that will be scanned in to (or re-constituted from) the disk in it. \n Apply a rising edge redstone signal to the I/O Port to swap the contents of the disk and the space. This will only work if the local network has (Dense) Energy Cells with sufficient charge to INSTANTLY supply the full energy cost of transmogrificating every entity and block in the space.",
 		  "items": [
 		    {
 			  "item": {

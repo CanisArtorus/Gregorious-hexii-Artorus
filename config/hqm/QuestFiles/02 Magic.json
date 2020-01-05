@@ -223,7 +223,7 @@
 	  "tasks": [
 	    {
 		  "type": "DETECT",
-		  "description": "Auotmate Alchemy",
+		  "description": "Automate Alchemy",
 		  "longDescription": "",
 		  "items": [
 		    {
@@ -676,7 +676,7 @@
 	},
 	{
 	  "name": "Maximum Utility",
-	  "description": "Since the wand was such a resounding success, maybe ichor will be outstanding at other Thaumaturgic tasks? \n\n Isn\u0027t it notable how each relates to a pure classical element?",
+	  "description": "Since the wand was such a resounding success, maybe ichor will be outstanding at other Thaumaturgic tasks?",
 	  "x": 111,
 	  "y": 160,
 	  "icon": {

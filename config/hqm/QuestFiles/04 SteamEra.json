@@ -1,6 +1,6 @@
 {
   "name": "Dawn of Industry",
-  "description": "Use that Bronze and Iron to craft better tools. Build a basic steam powered machine factory! \n Steel will come. And with it come many oportunities for industrial upgrading.",
+  "description": "Use that Bronze and Iron to craft better tools. Build a basic steam powered machine factory! \n Steel will come. And with it come many opportunities for industrial upgrading.",
   "quests": [
 	{
 	  "name": "Steam Age",
@@ -54,7 +54,7 @@
 	},
 	{
 	  "name": "Turbine be Mine",
-	  "description": "This device consumes steam to produce RU, rotary power - not to be confused with RoC Shaft Power. This is used by GT machines that need to spin in any way. As a by-product, if a tank or pipe is on any of the sides of this device, it will return most of the water content of the steam (by GT standards) as pure Distilled water. \n\n Naturally, if it gets provided steam over the limit (twice nominal flow), it will make a god-awful racket for a second or two and then violently explode. Prehaps selecting the steam input pipe to transfer less than the limit per tick is wise (exploding pipes are relatively cheap, and one can make a pipe release valve).",
+	  "description": "This device consumes steam to produce RU, rotary power. This is used by GT machines that need to spin in any way. As a by-product, if a tank or pipe is on any of the sides of this device, it will return most of the water content of the steam (by GT standards) as pure Distilled water. \n\n Naturally, if it gets provided steam over the limit (twice nominal flow), it will make a god-awful racket for a second or two and then violently explode. Perhaps selecting the steam input pipe to transfer less than the limit per tick is wise (exploding pipes are relatively cheap, and one can make a pipe release valve).",
 	  "x": 75,
 	  "y": 125,
 	  "icon": {
@@ -91,7 +91,7 @@
 	},
 	{
 	  "name": "Pounding Power",
-	  "description": "The reciprocating piston Engines provide alternating KU, kinetic power, used by GT machines that need to shake or press. A Screwdriver (or Selector Cover) can be used to cycle them to faster or slower beat cycles - which can be very important to some consumers and some recipes. in general, shorter term recipes want faster engines than the long term recipes. \n\n They also emit RF natively, if a compatible device is placed on the output.",
+	  "description": "The reciprocating piston Engines provide alternating KU, kinetic power, used by GT machines that need to shake or press. A Screwdriver (or Selector Cover) can be used to cycle them to faster or slower beat cycles - which can be very important to some consumers and some recipes. In general, shorter term recipes want faster engines than long term recipes do. \n\n They also emit RF natively, if a compatible device is placed on the output.",
 	  "x": 75,
 	  "y": 25,
 	  "icon": {
@@ -106,7 +106,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "A Piston Engine",
-		  "longDescription": "Wheter steam or flux, these will shake, pound, and rachet away at any task set before them.",
+		  "longDescription": "Whether steam or flux, these will shake, pound, and ratchet away at any task set before them.",
 		  "items": [
 		    {
 			  "item": {
@@ -128,7 +128,7 @@
 	},
 	{
 	  "name": "Drain Pipe",
-	  "description": "The Drain cover takes any fluid that would try to flow through its face, were the pipe removed, and puts it into the pipe. This can be used to drain lava, oil, fresh water, or etherium pools. It can also collect rain if pointed up into an exposed sky while it is raining (not snowing). \n\n Most importantly, in a River Biome it collects fresh Water without removing the source block (but only inside the River Biome, not the visible feature). Similarly, Riverwater will provide infinite fresh Water, and Seawater provides infinite briney SeaWater. \n A drain never overfills the pipe, and can only pick up one block of liquid at a time.",
+	  "description": "The Drain cover takes any fluid that would try to flow through its face, were the pipe removed, and puts it into the pipe. This can be used to drain lava, oil, fresh water, or etherium pools. It can also collect rain if pointed up into an exposed sky while it is raining (not snowing). \n\n Riverwater will provide infinite fresh Water, and Seawater provides infinite briney SeaWater. \n A drain never overfills the pipe, and can only pick up one block of liquid at a time.",
 	  "x": 25,
 	  "y": 175,
 	  "icon": {
@@ -223,7 +223,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Washing Machine",
-		  "longDescription": "Now you can retire that cauldron. But, washing ore is a 32RU/t job that takes plenty of clean Water (not seawater). Thus you will need at least an Invar Turbine to run this consistently. Your choose whether to store or void the sluice juice until getting the overclocked centrifuge running. Check out some multiblock tank options.",
+		  "longDescription": "Now you can retire that cauldron. But, washing ore is a 32RU/t job that takes plenty of clean Water (not seawater). Thus you will need at least an Invar Turbine to run this consistently. Your choice whether to store or void the sluice juice until getting the overclocked centrifuge running. Check out some multiblock tank options.",
 		  "items": [
 		    {
 			  "item": {
@@ -236,7 +236,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "A Centrifuge (GT)",
-		  "longDescription": "For now, you probably only have materials for the tier 1 Bronze Centrifuge. And unless you have Bees or Bumblebees, there are very few easy centrifuge recipes to care about. It does a lot of de-alloying, for materials of the machine\u0027s tier, and can refine a select few washed ores. But the major reason everyone should get a centrifuge already is the processing of Sluice Juice - which is a 64RU/t recipe (and so is the non-optional reason to need one later). And that is exactly its failure limit!",
+		  "longDescription": "For now, you probably only have materials for the tier 1 Bronze Centrifuge. And unless you have Bees or Bumblebees, there are very few easy centrifuge recipes to care about. It does a lot of de-alloying, for materials of the machine\u0027s tier, and can refine a select few washed ores. But the major reason everyone should get a centrifuge already is the processing of Sluice Juice - which is a 64RU/t recipe. And that is exactly its failure limit!",
 		  "items": [
 		    {
 			  "item": {
@@ -250,7 +250,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Perfectly Overclocked",
-		  "longDescription": "Remember that part about machines blowing up when they exceed their power limits? Well, the centrifuge is part of the ore processing chain only when powered to exactly its limit, and powered at that level continuously: two ticks lower in a minute and the recipe fails. This means the boiler must be producing exactly the right amount of steam (no pipe has 192mB/t bandwidth \u003d flow rate); and that means it must be in perfect condition with ZERO calcification. So only run this Strong Bronze Boiler (192mB/t steam) on pure distilled water that you have collected as condensate from running less fussy machines. Remember to put in EXACTLY 96HU/t, like a Dense Bronze Burning Box. \n While you\u0027re at it, better use a Bronze Axle fuse. The axle will pop off into the world if it gets overpowered, with no loss in material if it gets picked up (perhaps by a hopper, robot, worker ant, golem, magnet obelisk, or whatever).",
+		  "longDescription": "Remember that part about machines blowing up when they exceed their power limits? Well, the centrifuge is part of the ore processing chain only when powered to exactly its limit, and powered at that level continuously: two ticks lower in a minute and the recipe fails. This means the boiler must be producing exactly the right amount of steam (no pipe has 192mB/t bandwidth \u003d flow rate); and that means it must be in perfect condition with ZERO calcification. So only run this Strong Bronze Boiler (192mB/t steam) on pure distilled water that you have collected as condensate from running less fussy machines. Remember to put in EXACTLY 96HU/t, like a Dense Bronze Burning Box. \n While you\u0027re at it, better use a Bronze Axle as a transmission. The axle will pop off into the world if it gets overpowered, with no loss in material if it gets picked up (perhaps by a hopper, robot, worker ant, golem, magnet obelisk, or whatever).",
 		  "items": [
 		    {
 			  "item": {
@@ -437,7 +437,7 @@
 	},
 	{
 	  "name": "Sifting for Loot",
-	  "description": "If you have picked up some Sand Ore (in a desert) or Gravel Ore in a pocket, you will have noticed they cannot be washed in a Sluice or Cauldron. These ores are \"washed\" dry by the sifter. \n Also, Crushed gem-like or crystal-type ores, which includes the coal varieties, can be sifted to retrieve a mixture of Gem items and Dust piles. True crystalline gems come in several varieties / denominations, which can be broken down but some recipes require the larger ones.",
+	  "description": "If you have picked up some Sand Ore (in a desert) or Gravel Ore in a pocket, you will have noticed they cannot be washed in a Sluice or Cauldron. These ores are \"washed\" dry by the sifter. \n Also, Crushed gem-like or crystal-type ores, which includes the coal varieties, can be sifted to retrieve a mixture of Gem items and Dust piles. True crystalline gems come in several varieties / denominations, which can be broken down but some recipes require the larger ones. \n\n An Implosion Compressor multiblock can eventually be used to re-constitute the dust portion into gems of selected quality. Until then, it\u0027s waste chemistry fodder.",
 	  "x": 25,
 	  "y": 25,
 	  "icon": {
@@ -524,7 +524,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Flux that Redstone!",
-		  "longDescription": "Pre-Iron engines - Forestry: Peat Engine, Clockwork Engine; BuildCraft: Sterling Engine; Railcraft: Hobbyist\u0027s Steam Engine; Gregtech: Engines (KU is auto-converted to RF). \n Iron Age engines - Railcraft: Commecial Steam Engine; BuildCraft: Combustion Engine. \n Steel Age engines - Railcraft: Industrial Steam Engine.",
+		  "longDescription": "Pre-Iron engines - Forestry: Peat Engine, Clockwork Engine; BuildCraft: Sterling Engine; Railcraft: Hobbyist\u0027s Steam Engine; Gregtech: Engines (KU is auto-converted to RF), Flux Dynamo. \n Iron Age engines - Railcraft: Commercial Steam Engine; BuildCraft: Combustion Engine. \n Steel Age engines - Railcraft: Industrial Steam Engine.",
 		  "items": [
 		    {
 			  "item": {
@@ -581,7 +581,7 @@
 	},
 	{
 	  "name": "Item Transport",
-	  "description": "Hoppers don\u0027t move things very fast or very far, going beyond input and output buffer chests on your machines requires actual transport. GT Item Pipes of various materials work well, as do IE Conveyor Belts.",
+	  "description": "Hoppers don\u0027t move things very fast or very far (although they can drop them very nicely when bumped by a button), going beyond input and output buffer chests on your machines requires actual transport. GT Item Pipes of various materials work well, as do IE Conveyor Belts.",
 	  "x": 175,
 	  "y": 25,
 	  "icon": {
@@ -595,7 +595,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "The Easy Road",
-		  "longDescription": "Conveyor Belts not only move items, they also pull entities along, and are components in several IE multiblock machines. Alas, they move items as entity stacks so it is very suceptible to interference and takes render effort.",
+		  "longDescription": "Conveyor Belts not only move items, they also pull entities along, and are components in several IE multiblock machines. Alas, they move items as entity stacks so it is very susceptible to interference and takes render effort.",
 		  "items": [
 		    {
 			  "item": {
@@ -651,7 +651,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Routed and Stupid Pipes",
-		  "longDescription": "The super cheap unrouted pipe gets very confused if it is an intersection, make sure Basic Pipe or any specific pipe made from them are used at every potential branch in the path. Yes, they take diamond gems, but the batch size is large (64 per 2 diamonds and 8 gold gears or BC chips). \n The pipe can always accept items being pushed into it, but will only send it\u0027s contents into the one block it is facing - generally the block it was placed against, but it will select a valid inventory side if placed against a wall.",
+		  "longDescription": "The super cheap un-routed pipe gets very confused if it is an intersection, make sure Basic Pipe or any specific pipe made from them are used at every potential branch in the path. Yes, they take diamond gems, but the batch size is large (64 per 2 diamonds and 8 gold gears or BC chips). \n The pipe can always accept items being pushed into it, but will only send it\u0027s contents into the one block it is facing - generally the block it was placed against, but it will select a valid inventory side if placed against a wall.",
 		  "items": [
 		    {
 			  "item": {
@@ -671,7 +671,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Actual Routing",
-		  "longDescription": "Open the GUI on one Basic Logistics Pipe with a BC-compatible Wrench, and it can be set to DEFAULT to drop all un-routed overflow into the connected inventory. Pre-sorted inventories should use a Logistics Chassis with a Polymorphic ItemSink Module to accept only more copies of what is already inside, while single item mass storages of any kind can get away with a basic ItemSink Module in thier Logistics Chassis. The system input can work on any inventory by using an Extractor Module, likely a mk2 or mk3 for speed, and optionally Advanced Extractor Module for filtering.",
+		  "longDescription": "Open the GUI on one Basic Logistics Pipe with a BC-compatible Wrench, and it can be set to DEFAULT to drop all un-routed overflow into the connected inventory. Pre-sorted inventories should use a Logistics Chassis with a Polymorphic ItemSink Module to accept only more copies of what is already inside, while single item mass storages of any kind can get away with a basic ItemSink Module in their Logistics Chassis. The system input can work on any inventory by using an Extractor Module, likely a mk2 or mk3 for speed, and optionally Advanced Extractor Module for filtering.",
 		  "items": [
 		    {
 			  "item": {
@@ -698,7 +698,7 @@
 		{
 		  "type": "CRAFT",
 		  "description": "Automation",
-		  "longDescription": "Simply choosing destinations for incoming items won\u0027t run an ore processing plant, the input batch size is simply too large. Rather, put Provider Pipes or Modules on the raw material (ore) storage, probably as the second slot in their Chassis, and Supplier Pipes or Modules on the machine to keep it full of the selected things. Remember to allow the outputs to be pushed into the system, and have somewhere for them to route to (or enough space in the defualt). \n Similarly, fluids can be extracted, insterted, default routed, and provided to machines via suppliers - but only with specific Pipes as there are no liquid modules. Therefore, the only benefit over GT (multi-)pipes is routing.",
+		  "longDescription": "Simply choosing destinations for incoming items won\u0027t run an ore processing plant, the input batch size is simply too large. Rather, put Provider Pipes or Modules on the raw material (ore) storage, probably as the second slot in their Chassis, and Supplier Pipes or Modules on the machine to keep it full of the selected things. Remember to allow the outputs to be pushed into the system, and have somewhere for them to route to (or enough space in the default). \n Similarly, fluids can be extracted, inserted, default routed, and provided to machines via suppliers - but only with specific Pipes as there are no liquid modules. Therefore, the only benefit over GT (multi-)pipes is routing.",
 		  "items": [
 		    {
 			  "item": {
@@ -719,7 +719,7 @@
 	},
 	{
 	  "name": "Familliar Old Hell",
-	  "description": "Of great import is the Miniature Nether Portal. It follows the same 8 to 1 spatial compression, fuzzy endpoint detection, and iginition trigger as the full-size portal does, opening many useful ways to exploit the territory. It cannot transport entities, rather it acts like a trans-dimensional universal extender, any-Greggy-thing piped or wired in one side will be piped or wired out the other as if the nexus was the same type of pipe or wire. Items, fluids, redstone signals, and power (EU, LU, RU, even RF) all work this way.",
+	  "description": "Of great import is the Miniature Nether Portal. It follows the same 8 to 1 spatial compression, fuzzy endpoint detection, and ignition trigger as the full-size portal does, opening many useful ways to exploit the territory. It cannot transport entities, rather it acts like a trans-dimensional universal extender, any-Greggy-thing piped or wired in one side will be piped or wired out the other as if the nexus did not exist. Items, fluids, redstone signals, and power (EU, LU, RU, even RF) all work this way. Even faucets and molds treat the miniature portal as if it was the block on the other side of (all) the linked miniature portal(s). Shenanigans with multiple connections are supported and encouraged.",
 	  "x": 150,
 	  "y": 50,
 	  "icon": {
@@ -732,7 +732,7 @@
 	    {
 		  "type": "LOCATION",
 		  "description": "Burning in the Deeps",
-		  "longDescription": "I won\u0027t mention how to build the portal frame, only that any firestarter will do.",
+		  "longDescription": "I won\u0027t mention how to build the portal frame, only that any fire starter will do.",
 		  "locations": [
             {
               "name": "the Nether",
@@ -808,7 +808,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Greggy Orbs",
-		  "longDescription": "Only the iron-bound Wooden Tank can be built without Chemical Era metals, but it still holds 16B per block (Unlike the item storages, GT Drums and Tanks do get bigger when made of stronger metals). Be aware that it is made of wood, so it cannot hold gasses, and will burn up if exposed to hot molten liquids. \n The singular main valve block, placed in the centre of any face, will auto-emit if in a side, and the top or bottom will also depending on whether the fluid is lighter or heavier than air (see tooltips in NEI recipe lookup). Pipes can connect anywhere on the structure to input to, or actively pull from, the tank.",
+		  "longDescription": "Only the iron-bound Wooden Tank can be built without Chemical Era metals, but it still holds 16B per block (Unlike the item storages, GT Drums and Tanks do get bigger when made of stronger metals). Be aware that it is made of wood, so it cannot hold gasses, and will burn up if exposed to hot molten liquids. \n The singular main valve block, placed in the centre of any face, will auto-emit if in a side, and the top or bottom will also depending on whether the fluid is lighter or heavier than air (see tooltips in NEI recipe lookup). Pipes can connect anywhere on the structure to input to, or actively pull from, the tank. \n Eventually you can make dense, large, or even large dense versions of these tanks.",
 		  "items": [
 		    {
 			  "item": {
@@ -828,7 +828,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "IE\u0027s Pretty Orb",
-		  "longDescription": "A building made of sheet metal blocks held up by treated wood fences, the fixed size IE tank remains competitive due to fair capacity coupled with custom model aesthetics. The redstone dependent auto-emit feature on the bottom block is also quite nice.",
+		  "longDescription": "A building made of sheet metal blocks held up by treated wood fences, the fixed size IE tank remains competitive due to a fair capacity coupled with custom model aesthetics. The redstone dependent auto-emit feature on the bottom block is also quite nice.",
 		  "items": [
 		    {
 			  "item": {
@@ -840,7 +840,7 @@
 			{
 			  "item": {
 			    "id": "ImmersiveEngineering:metalDecoration",
-				"damage": 2
+				"damage": 10
 			  },
 			  "required": 34
 			}
@@ -860,7 +860,7 @@
 	},
 	{
 	  "name": "the Riddle of Steel",
-	  "description": "There are many types of steel, and sometimes they are interchangable. Other things require simple, common, carbon steel. \n Always made from Iron, there are several ways to addmix and modify the material into a steel state. One of them even goes directly to a specific sub-type of steel.\n\n Steel is much stronger than Iron, allowing more machines to be built from it, and providing somewhat more useful in the construction of tools. It also allows the creation of Weight and Volume Sensors to assist in inventory automation and crucible fuel calculations.",
+	  "description": "There are many types of steel, and sometimes they are interchangeable. Other things require simple, common, carbon steel. \n Always made from Iron, there are several ways to addmix and modify the material into a steel state. One of them even goes directly to a specific sub-type of steel.\n\n Steel is much stronger than Iron, allowing more machines to be built from it, and providing somewhat more useful in the construction of tools. It also allows the creation of Weight and Volume Sensors to assist in inventory automation and crucible fuel calculations.",
 	  "x": 225,
 	  "y": 125,
 	  "icon": {
@@ -868,9 +868,8 @@
 		"damage": 1
 	  },
 	  "prerequisites": [
-	    "Down the Sluice!",
+	    "Pounding Power",
 		"Blast that Furnace!",
-		"{In Ages Past}[Washing Dirt]",
 		"{Rotational Engineering}[Heart of the Dragon]",
 		"{Different Knowledge}[Toil and Trouble]"
 	  ],
@@ -878,8 +877,8 @@
 	  "tasks": [
 	    {
 		  "type": "DETECT",
-		  "description": "Doped up Iron",
-		  "longDescription": "50 parts Wrought Iron, 1 part pure Carbon. Pure Carbon!? Hopefully some washed off your diamonds, or you found a full vein of graphite (with the diamonds embedded therein), or you\u0027ll have to melt down diamonds to get it. 51 parts, but the crucible only holds 16! \n I guess quarters will do, or two nineths.",
+		  "description": "Pumped up Iron",
+		  "longDescription": "The GT way to make steel is as an alloy of Wrought Iron and Air. Normal Iron will be wrought by the alloying temperature regardless. The Air can be pumped into a Crucible by any KU-producing Engine. So it\u0027s basically like the steel-producing crucible needs both HU and KU to operate.",
 		  "items": [
 		    {
 			  "item": {
@@ -1095,7 +1094,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Prospecting",
-		  "longDescription": "Much like picking up rocks to find ore veins, the Core Sample Drill must be operated in every \"chunk\" (square chain) of land in case it discovers a void ore vein there. They are fairly rare, but it\u0027s still more common than blindly stumbling across an ore flower patch.",
+		  "longDescription": "Much like picking up rocks to find ore veins, the Core Sample Drill must be operated in every \"chunk\" (square chain) of land in case it discovers a void ore vein there. They are fairly rare, but it\u0027s still more common than blindly stumbling across an ore flower patch. \n The Prospector\u0027s Journal should note down these core sample results too.",
 		  "items": [
 		    {
 			  "item": {
@@ -1167,7 +1166,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Diamond edged Blade",
-		  "longDescription": "This does everything you think an industrial table saw should do, including needing a supply of lubricant - though it can usually make do with water or grease. \n No, you cannot make a tier 2 one yet.",
+		  "longDescription": "This does everything you think an industrial table saw should do, including needing a supply of lubricant - though it can usually make do with water. \n No, you cannot make a tier 2 one until the Modern Era.",
 		  "items": [
 		    {
 			  "item": {
@@ -1223,7 +1222,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Gas Canisters",
-		  "longDescription": "A form that can only be extruded, it has no crafting recipe, the Capsule-Cell-Container is your gas-tight cup. They do have not have the bonus to safety temperature that molds, pipes, and tanks enjoy, and are all a single bucket size, but also only take a single unit of material to make. \n Gas Cylinders on the other hand can be crafted and hold up to 8 cubes; they can even be placed in world and given a volume limiter. Cap-Cells make for a grand way to move small amounts of fluid between a source machine\u0027s Nozzle, a storage Cylinder or Drum, and a consumer machine\u0027s Cap Nozzle.",
+		  "longDescription": "A form that can only be extruded, it has no crafting recipe, the Capsule-Cell-Container is your gas-tight cup. They do have not have the bonus to temperature that molds, pipes, and tanks enjoy (actually having a negative safety penalty), and are all a single bucket size, but also only take a single unit of material to make. \n Gas Cylinders on the other hand can be crafted and hold up to 8 cubes; they can even be placed in world and given a volume limiter by interacting with their side. Cap-Cells make for a grand way to move small amounts of fluid between a source machine\u0027s Nozzle, a storage Cylinder or Drum, and a consumer machine\u0027s Cap Nozzle.",
 		  "items": [
 		    {
 			  "item": {
@@ -1286,7 +1285,7 @@
 	},
 	{
 	  "name": "Tier Up",
-	  "description": "You may have guessed that all those bronze machines were a low-tier (1) version; Steel is the base material for Tier 2 kinetic (KU) and rotation (RU) machines, which require at least 64 U/t to operate, and fail (violently) if given more than 256 U/t. \n Greg\u0027s power tiering system bears explaining here though. Those 64 RU/t overclocked recipes are ALWAYS overclocking recipes! The tier 2 machine can only enhance recipes with a base cost less than both the tier limit and one-quarter of the actual power used. Using the higher tier machine then takes only half as much time, at four times the power, for a total of twice the energy.",
+	  "description": "You may have guessed that all those bronze machines were a low-tier (1) version; Steel is the base material for Tier 2 kinetic (KU) and rotation (RU) machines, which require at least 64 U/t to operate, and fail (violently) if given more than 256 U/t. \n Greg\u0027s power tiering system bears explaining here though. The tiered machine can only enhance recipes with a base cost less than one-quarter of the actual power used. Using the higher tier machine then takes only half as much time, at four times the power, for a total of twice the energy.",
 	  "x": 175,
 	  "y": 175,
 	  "icon": {
@@ -1300,7 +1299,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "De-Alloying",
-		  "longDescription": "Amoung the machines that can be upgraded, the centrifuge has the most new recipes: the alloy separation class. Nearly anything that can be made in a Mixer or Mixing Bowl, or is the result of shapelessly crafting dusts, or mixed alloys in the crucible, can be reduced to component parts by a centrifuge recipe. Most of these are higher tier than the recipe to make the material mind. Some natural materials, like redstone, glowstone, clay, and sand, can also be decomposed. This is in addition to the wider variety of Purified ores that can be Refined. \n Getting 256 RU/t constantly to double-quick sluice juice centrifugation will be less of a challenge once your Dryer is operational.",
+		  "longDescription": "Amoung the machines that can be upgraded, the centrifuge has the most new recipes: the alloy separation class. Nearly anything that can be made in a Mixer or Mixing Bowl, or is the result of shapelessly crafting dusts, or mixed alloys in the crucible, can be reduced to component parts by a centrifuge recipe. Most of these are higher tier than the recipe to make the material mind. Some natural materials, like redstone, glowstone, clay, and sand, can also be decomposed. This is in addition to the wider variety of Purified ores that can be Refined. \n Getting 256 RU/t constantly to double-quick sluice juice centrifugation will be less of a challenge once your Dryer is operational. This machine can centrifuge Sluice Juice safely though, which is still a serious improvement.",
 		  "items": [
 		    {
 			  "item": {

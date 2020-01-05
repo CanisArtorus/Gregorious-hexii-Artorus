@@ -1,6 +1,6 @@
 {
   "name": "Modern Era",
-  "description": "Now comes the Age of the Transformers! Full computer control of your highly digitised and automated factory systems paves the way for highly satisfying matter-energy conversion and re-orginaization at the sub-atomic level.",
+  "description": "Now comes the Age of the Transformers! Full computer control of your highly digitised and automated factory systems paves the way for highly satisfying matter-energy conversion and re-orginization at the sub-atomic level.",
   "quests": [
 	{
 	  "name": "Alumin-in-inium",
@@ -20,7 +20,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Dedicated Refinery Three",
-		  "longDescription": "Getting the Alumina (oxide) out of Bauxite is awfully slow, and almost as complex as Titanium or Tungsten refining was. You may have some Alumina already from Sapphire or Emerald deposits. \n The ground Bauxite Dust needs to be Autoclaved in the presence of Lye - sodium or potassium Hydroxide. The alkali Aluminate is then Bathed in fresh Water to release the catalyst Lye and produce Aluminum triHydroxide. Smelting that finally produces useable Alumina.",
+		  "longDescription": "Getting the Alumina (oxide) out of Bauxite is awfully slow, and almost as complex as Titanium or Tungsten refining was. You may have some Alumina already from Sapphire or Emerald deposits. \n The ground Bauxite Dust needs to be Autoclaved in the presence of Lye - sodium or potassium Hydroxide. The alkali Aluminate is then Bathed in fresh Water to release the catalyst Lye and produce Aluminum triHydroxide. Smelting that finally produces usable Alumina.",
 		  "items": [
 		    {
 			  "item": {
@@ -46,7 +46,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Fluor-ed",
-		  "longDescription": "Where most ores and compounds can be split into component pure elements by the Elctrolyzer, Alumina requires several auxilliary compounds to also be present. Some Coke or Carbon for reduction is unsurprsing, but Cryolite and liquid Aluminum Fluoride? \n Well, start by mixing Fluorite dust with Oil of Vitriol to make the glass eating acid. With some of it dissolve glass (or flint) dust, and mix the product with Alumina for the AlF3 which will also need to be melted. Another portion of acid is to be mixed with Alumina and NaOH directly for the Cryolite.",
+		  "longDescription": "Where most ores and compounds can be split into component pure elements by the Electrolyzer, Alumina requires several auxiliary compounds to also be present. Some Coke or Carbon for reduction is unsurprising, but Cryolite and liquid Aluminum Fluoride? \n Well, start by mixing Fluorite dust with Oil of Vitriol to make the glass eating acid. With some of it dissolve glass (or flint) dust, and mix the product with Alumina for the AlF3 which will also need to be melted. Another portion of acid is to be mixed with Alumina and NaOH directly for the Cryolite.",
 		  "items": [
 		    {
 			  "item": {
@@ -94,7 +94,7 @@
 	},
     {
 	  "name": "Document Printer",
-	  "description": "The Guettenburg press in Bibliocraft is perfectly capable of replicating books, even enchanted ones. But without a Scanner (Visuals) and a USB 1 stick to transfer that data, this printer can only make Forestry Stamps and Letters or Thaumcraft Jar Labels. \n With the data from a scanner however, it will not only copy books and maps, but recipe Blueprints, Galacticraft Schematics, and put the texture of any block onto some canvas. It will only accept oil-stabilized Chemical Dye, and uses an equal CMYK mix for colour applications.",
+	  "description": "The Guettenburg press in Bibliocraft is perfectly capable of replicating books, even enchanted ones. But without a Scanner (Visuals) and a USB 1 stick to transfer that data, this electric printer can only make Forestry Stamps and Letters or Thaumcraft Jar Labels. \n With the data from a scanner however, it will not only copy books and maps, but recipe Blueprints and Galacticraft Schematics, and put the texture of any block onto some canvas. It will only accept oil-stabilized Chemical Dye, and uses an equal CMYK mix for colour applications.",
 	  "x": 20,
 	  "y": 130,
 	  "icon": {
@@ -110,7 +110,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Copy Print",
-		  "longDescription": "Just remember to bind the books afterward. The firmware can print the manual B\u0026W on paper if not given other scan data. \n Image scans definately fit on a USB 1, large or enchanted books may require tier 2 or 3 USB data.",
+		  "longDescription": "Just remember to bind the books afterward. The firmware can print the manual B\u0026W on paper if not given other scan data. \n Image scans definitely fit on a USB 1, large or enchanted books may require tier 2 USB data.",
 		  "items": [
 		    {
 			  "item": {
@@ -273,7 +273,7 @@
 	},
 	{
 	  "name": "More Volts!",
-	  "description": "As we now have the correct casing material for MV (GT) machinery, we can use transformers to interchange the higher tiers of electricaly powered machines. Electrical machines follow the same power tiering mechanics as heat, rotation, and oscillation kinetic machines do; the ability to transform electricity into a different tier after generation provides many opportunites. \n Electric machines that contain chips have a minimum chip tier equal to their power tier (1 - LV to 5 - IV). The Ultimate tier 6 chips are for multiblocks and specialty purposes. \n Since the Graphene wire required for Ludicrous Voltage is my gift to you, enjoy the transmission line voltage tiers (6 - 9).",
+	  "description": "As we now have the correct casing material for MV (GT) machinery, we can use transformers to interchange the higher tiers of electrically powered machines. Electrical machines follow the same power tiering mechanics as heat, rotation, and oscillation kinetic machines do; the ability to transform electricity into a different tier after generation provides many opportunities. \n Electric machines that contain chips have a minimum chip tier equal to their power tier (1 - LV to 5 - IV). The Ultimate tier 6 chips are for multiblocks and specialty purposes.",
 	  "x": 160,
 	  "y": 100,
 	  "icon": {
@@ -287,7 +287,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Step Along Now",
-		  "longDescription": "You may have used the ULV transformer for a Solar Panel power system. The same mechanics apply to the other seven tranformer tiers, which are very useful for centralizing power production at a plant; the higher ones will be necessary to achieve voltages above that of the power plant components.",
+		  "longDescription": "You may have used the ULV transformer for a Solar Panel power system. The same mechanics apply to the other seven transformer tiers, which are very useful for centralizing power production at a plant; the higher ones will be necessary to achieve voltages above that of the power plant components.",
 		  "items": [
 		    {
 			  "item": {
@@ -308,7 +308,7 @@
 	},
 	{
 	  "name": "Enhanced Lasers",
-	  "description": "Much like the T1 Laser Engraver showed great value in contstructing better Circuit Boards, T2 and T3 will provide new recipes important for continued progression. \n See also the Bumblyzers and Plantalyzers for breeding program assitance.",
+	  "description": "Much like the T1 Laser Engraver showed great value in constructing better Circuit Boards, T2 and T3 will provide new recipes important for continued progression. \n See also the Bumblyzers and Plantalyzers for breeding program assistance. \n\n A tiered up Crystalyzation Crucible can make Sapphire boules of any colour (including real Rubies) simply by doping liquid Alumina with a metal dust; cutting the boule produces Ruby and Sapphire Crystalline Plates. The Implosion Compressor multiblock (which takes crystal processors) can turn Emerald and Diamond dusts back into gems, which can also be cut into crystalline plates.",
 	  "x": 260,
 	  "y": 100,
 	  "icon": {
@@ -323,7 +323,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Few are Required",
-		  "longDescription": "In terms of progression stoppers, the tier 3 Laser Engraver is the highest point; it is the only way to create AE2 presses from scratch. However, the tier 2 Laser Engraver is more important; when perfectly overclocked it is able to produce crystal processors from Ruby, Emerald, Sapphire, and Diamond. \n Remember that LU produced are only half the EU put into the laser. However, the battery trick can be used to step-up laser pulse intensity, instead of using a massive Electric Laser Emitter (capable of continuous emission). However these Crystal Chargers require storage Emerald Processors in addition to tiered normal Chips.",
+		  "longDescription": "In terms of progression stoppers, the tier 3 Laser Engraver is the highest point; it is the only way to create AE2 presses from scratch. However, the tier 2 Laser Engraver can do; when perfectly overclocked it is able to produce crystal processors from Ruby, Emerald, Sapphire, and Diamond Crystalline Plates. \n Remember that LU produced are only half the EU put into the laser. However, the battery trick can be used to step-up laser pulse intensity, instead of using a massive Electric Laser Emitter (capable of continuous emission). However these Crystal Chargers require storage Emerald Processors in addition to tiered normal Chips.",
 		  "items": [
 		    {
 			  "item": {
@@ -342,32 +342,19 @@
 	  ]
 	},
 	{
-	  "name": "Acid Washed",
-	  "description": "The use of Vitriol or Aqua Regia to refine washed ores requires better Electrolysis to recover not only the full amount of additional resources, but also components for re-building the acid used.",
+	  "name": "Black Up",
+	  "description": "Raising the voltage on your Electrolyzer adds many molecular decomposition recipes. Hidden amoung them is the production of your next economical tool material.",
 	  "x": 160,
 	  "y": 50,
 	  "icon": {
-	    "id": "gregtech:gt.meta.chemtube",
-		"damage": 8401
+	    "id": "gregtech:gt.meta.toolHeadPickaxe",
+		"damage": 8003
 	  },
 	  "prerequisites": [
 	    "{Electric Revolution}[Electrolysis]",
 		"More Volts!"
 	  ],
 	  "tasks": [
-	    {
-		  "type": "DETECT",
-		  "description": "Mineral Recovery",
-		  "longDescription": "The MV Electrolyzer is also super important, as it now allows for all those liquid Vitriol and Chlor-acidic by-products of ore washing to be recovered for even more material; this is in addition to all the electrolytic molecular decomposition recipes that stretch up to HV.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "gregtech:gt.multitileentity",
-				"damage": 20092
-			  }
-			}
-		  ]
-		},
 		{
 		  "type": "DETECT",
 		  "description": "Super, Cheap, Tools",
@@ -391,8 +378,67 @@
 	  ]
 	},
 	{
+	  "name": "Carbon Fibre",
+	  "description": "Shuffle around some common carbon atoms with molecular tweezers and you get a really good working material. This nanofab makes Carbon Crucibles and Graphene wire. Alas it took a Sapphire Conversion Circuit to run.",
+	  "x": 220,
+	  "y": 70,
+	  "icon": {
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 20443
+	  },
+	  "prerequisites": [
+	    "Enhanced Lasers"
+	  ],
+	  "tasks": [
+	    {
+		  "type": "DETECT",
+		  "description": "Tiny fabrication",
+		  "longDescription": "Select which form the pure carbon dust should take, and go! Sugar carbonizes really well with sulphuric acid.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30504
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 30306
+			  },
+			  "required": 2
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 11004
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 11003
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multiitem.technological",
+				"damage": 11005
+			  }
+			}
+		  ]
+		}
+	  ],
+	  "reward": [
+	    {
+		  "id": "gregapi:gt.integrated_circuit",
+		  "amount": 4
+		}
+	  ]
+	},
+	{
 	  "name": "Massive Power",
-	  "description": "Using these multi-block structures will provide a higher efficiency steam power plant than using lots of the single-block parts; you will get an entire 12 EU per 24 HU fed in. You will need to put 4096 nominal HU/t into the eight Heat acceptors, and be able to recieve either 3072 RU/t or 2048 EU/t nominal (EV) at the output. Some steam sharing is possible, with the right pipes. \n One could also tap into the efficieny of the main Dynamo by up-gearing an array of small turbines with a pattern of Gearboxes. Or by using the new Gas Turbine to get better energy density out of seven specific gasseous fuels and skip the steam conversion step entirely.",
+	  "description": "Using these multi-block structures will provide a higher efficiency steam power plant than using lots of the single-block parts; you will get an entire 12 EU per 24 HU fed in. You will need to put 4096 nominal HU/t into the eight Heat acceptors, and be able to receive either 3072 RU/t or 2048 EU/t nominal (EV) at the output. Some steam sharing is possible since the Turbine accepts steam from 21 faces. \n One could also tap into the efficiency of the main Dynamo by up-gearing an array of small turbines with a pattern of Gearboxes. Or by using the new Gas Turbine to get better energy density out of seven specific gasseous fuels and skip the steam conversion step entirely.",
 	  "x": 160,
 	  "y": 150,
 	  "icon": {
@@ -407,12 +453,12 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Semi-Ultimate Steam Power",
-		  "longDescription": "There are three tiers of power plant above this, but they require specialized burning boxes. \n Build instructions are in the tooltips; place the ring of Heat Acceptors on the bottom of the Boiler tower, from that Main Barometer the Pipe exits. The Pipe enters the centre of a Stainless Steel Wall disk, flanking a block of Magnalium Plate Blocks (magnesium - aluminium alloy) with the Turbine Main Housing. That, at least, can output directly into the Dynamo Wall disk flanking some Large annealed Copper Coil blocks. ",
+		  "longDescription": "There are three tiers of power plant above this, but they require specialized burning boxes. \n Build instructions are in the tooltips; place the ring of Heat Acceptors on the bottom of the Boiler tower, the steam exits from the centre of all five boiler faces. The steam enters a Stainless Steel Wall disk, flanking a block of Magnalium Plate Blocks (magnesium - aluminium alloy) with the Turbine Main Housing. That single face outputs directly into the Dynamo Wall disk flanking some Large annealed Copper Coil blocks. ",
 		  "items": [
 		    {
 			  "item": {
 			    "id": "gregtech:gt.multitileentity",
-				"damage": 17201
+				"damage": 17205
 			  }
 			},
 		    {
@@ -434,19 +480,26 @@
 			  },
 			  "required": 9
 			},
-		    {
+			{
 			  "item": {
 			    "id": "gregtech:gt.multitileentity",
-				"damage": 18040
+				"damage": 18027
 			  },
-			  "required": 18
+			  "required": 25
 			},
 		    {
 			  "item": {
 			    "id": "gregtech:gt.multitileentity",
 				"damage": 18022
 			  },
-			  "required": 77
+			  "required": 52
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18040
+			  },
+			  "required": 18
 			}
 		  ]
 		}
@@ -461,7 +514,7 @@
 	},
 	{
 	  "name": "Ultra-sliced",
-	  "description": "Now for (nearly) lossless cutting of Diamond Plates. Really helpful for utilizing those industrial Diamonds from other mods compressors. Making any Shredder beforehand was rather expensive, for a pure recycling machine.",
+	  "description": "Now for (nearly) lossless cutting of Diamond Plates. Really helpful for utilizing those industrial Diamonds from compressors. Making any Shredder beforehand was rather expensive, for a pure recycling machine.",
 	  "x": 20,
 	  "y": 70,
 	  "icon": {
@@ -475,7 +528,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Hard Enough Blades",
-		  "longDescription": "Cobalt Brass is not a simple alloy like Bronze, but it has the required properties for a buzzsaw that slices Diamonds. Rmember to use Lubricant in the Cutter machine itself.",
+		  "longDescription": "Cobalt Brass is not a simple alloy like Bronze, but it has the required properties for a buzzsaw that slices Diamonds. Remember to use Lubricant in the Cutter machine itself.",
 		  "items": [
 		    {
 			  "item": {
@@ -496,7 +549,7 @@
 	},
 	{
 	  "name": "Quantum Replication",
-	  "description": "A far cry from UUMatter, a Matter Fabricator spends QU to break objects down into a mixture of Charged and Neutral Plasma. Pipe both plasmas (preferably by direct connection) into a Matter Replicator containing the scan data for some other elemental, or select molecular, material and apply more QU. \n Quantum power Units? This requires applying Laser energy Units to a Quantum Energizer. Naturally this conversion halves the energy flow. Note that both these machines\u0027 efficiency is tier dependent, only the T5 versions run without loss. However, due to the conversion limits it is currently impossible to get more than 8192 QU/t, and that requires using a tier 5 Crystal Charger with two Energium Crystals tier 5 in pulse operation or a pair of overclocked IV Electric CO2 Lasers. Lacking tier power cost multipliers, these machines actually use less total energy when done quickly at high tier. \n All four QU machines have Osmiridium as a major component. The alloy of two Platinum-group metals, this is awfully difficult to produce at scale; remember how bad building the Crystalyzation Crucible was?",
+	  "description": "A far cry from UUMatter, a Matter Fabricator spends QU to break objects down into a mixture of Charged and Neutral Plasma. Pipe both plasmas (preferably by direct connection or with Logistics Tanks) into a Matter Replicator containing the scan data for some other elemental, or select molecular, material and apply more QU. \n Quantum power Units? This requires applying Laser energy Units to a Quantum Energizer. Naturally this conversion halves the energy flow.\n Note that both these machines\u0027 efficiency is tier dependent, only the T5 versions and the multiblock run without loss. Lacking both tier power cost multipliers and minimum power requirements, these machines actually use less total energy at high tier. \n All QU machines have Osmiridium as a major component. The alloy of two Platinum-group metals, this is awfully difficult to produce at scale; remember how bad tiering up the Crystalyzation Crucible was?",
 	  "x": 260,
 	  "y": 150,
 	  "icon": {
@@ -510,7 +563,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Destructive Testing",
-		  "longDescription": "Sacrifice an item to attempt to read its molecular make-up in this sub-atomic Scanner. You will require a T3 (or T4) USB or HDD to store the data. This part takes specifically tier 3 QU power, and is awfully slow. \n By the way, this molecular scan data can be printed into a Material Dictionary book by the Printer.",
+		  "longDescription": "Sacrifice an item to attempt to read its molecular make-up in this sub-atomic Scanner. You will require a T3 (or T4) USB or HDD to store the data. This part takes and requires specifically tier 3 QU power, and is awfully slow. \n By the way, this molecular scan data can be printed into a Material Dictionary book by the Printer.",
 		  "items": [
 		    {
 			  "item": {
@@ -536,7 +589,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Data Selection",
-		  "longDescription": "Rather than replacing the USB3 Stick in the Scanner or Replicator, use a USB Switch or HDD Switch block and this USB data Cable. Unfortunately it\u0027s a very short cable, and will only connect to an adjacent block. Which one of the sixteen (virtual) data slots is chosen by a Selector cover. For creating material in the Replicator, the temporary selection of a Button Panel with auto-resest mode screwed in can be very nice. A sticky button panel is equivalent to a Manual Selector cover in this case.",
+		  "longDescription": "Rather than replacing the USB3 Stick in the Scanner or Replicator, use a USB Switch or HDD Switch block and this USB data Cable. Unfortunately it\u0027s a very short cable, and will only connect to an adjacent block. Which one of the sixteen (virtual) data slots to use is chosen by a Selector cover. For creating material in the Replicator, the temporary selection of a Button Panel with auto-reset mode screwed in can be very nice (leave data slot 0 empty for standby mode). A sticky button panel is equivalent to a Manual Selector cover.",
 		  "items": [
 		    {
 			  "item": {
@@ -556,46 +609,8 @@
 	  ]
 	},
 	{
-	  "name": "ZPM",
-	  "description": "Ancient power devices, these hold unimaginable - and unmeasurable - amounts of raw power. Functionaly single-use QU batteries, actually using the Zero Point Module is a mystery yet to be cracked by science.",
-	  "x": 300,
-	  "y": 130,
-	  "icon": {
-	    "id": "gregtech:gt.multitileentity",
-		"damage": 14999
-	  },
-	  "prerequisites": [
-	    "Enhanced Lasers"
-	  ],
-	  "trigger": "TASK_TRIGGER",
-	  "triggertasks": 1,
-	  "tasks": [
-	    {
-		  "type": "DETECT",
-		  "description": "Atlantean Loot",
-		  "longDescription": "Obviously you\u0027ve been dungeon diving.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "gregtech:gt.multitileentity",
-				"damage": 14999
-			  },
-			  "precision": "NBT_FUZZY"
-			}
-		  ]
-		}
-	  ],
-	  "reward": [
-	    {
-		  "id": "gregtech:gt.meta.machine",
-		  "damage": 8682,
-		  "amount": 2
-		}
-	  ]
-	},
-	{
 	  "name": "Eternal Mines",
-	  "description": "From beneath the Bedrock comes endless mineral wealth. However only in certian spots; in some biomes they are easy to spot by indicator plants, otherwise one must look for a hollow in the Bedrock interface, generally filled with an out-of-place lump of equivalent common ore.",
+	  "description": "From beneath the Bedrock comes endless mineral wealth. However only in certain spots; in some biomes they are easy to spot by indicator plants, otherwise one must look for a hollow in the Bedrock interface, generally filled with an out-of-place lump of equivalent common ore.",
 	  "x": 300,
 	  "y": 70,
 	  "icon": {
@@ -611,7 +626,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Heavy Bore",
-		  "longDescription": "Rather a lot of Titanium goes into this device, not to mention the TungstenSteel. At least it has four inputs for the 1024 to 4096 total RU/t. Find a way to input Lubricant. Items will come out the main block in the top, including the occasional Bedrock Dust - the expected source of Adamantium.",
+		  "longDescription": "Rather a lot of Titanium goes into this device, not to mention the TungstenSteel. At least it has four inputs that accept 1024 to 4096 RU/t each. Find a way to input Lubricant. Items will come out the main block in the top, including the occasional Impure Bedrock Dust - the expected source of Adamantium.",
 		  "items": [
 		    {
 			  "item": {
@@ -646,7 +661,7 @@
 	},
 	{
 	  "name": "Adam Man",
-	  "description": "Less magical than Draconium, or even Bedrock-Steel Alloy, Adamantium is also a massively overpowered metal in its own way. It is also immensely rarer than either of those other two are supposed to be. Although in this pack, Draconium is actually more rare and less useful than Adamantine.",
+	  "description": "Less magical than Draconium, or even Bedrock-Steel Alloy, Adamantium is also a massively overpowered metal in its own way. It is also immensely rarer than either of those other two are supposed to be.",
 	  "x": 300,
 	  "y": 40,
 	  "icon": {
@@ -660,7 +675,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Ultimate Rust",
-		  "longDescription": "Magnetically separate Adamantine from that Impure Bedrock Dust; even though an oxide, it is an extremely powerful tool material. Alas it needs to be purifed before it becomes useful for pipes and tanks.",
+		  "longDescription": "Magnetically separate Adamantine from that Impure Bedrock Dust; even though an oxide, it is an extremely powerful tool material. Alas it needs to be purified before it becomes useful for pipes and tanks.",
 		  "items": [
 		    {
 			  "item": {
@@ -673,7 +688,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "The Best, Supposedly",
-		  "longDescription": "Acid-Safe, outrageously High-Temperature, highly blast resistant, touch-safe, and with massive Capacity, Adamantium is possibly the platinum standard of pipe and tank material. Did I mention it is also Plasma safe? A very rare quality that.",
+		  "longDescription": "Acid-safe, outrageously high-temperature, highly blast resistant, touch-safe, and with massive Capacity, Adamantium is possibly the platinum standard of pipe and tank material. Did I mention it is also plasma safe? A very rare quality that.",
 		  "items": [
 		    {
 			  "item": {
@@ -686,7 +701,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Seriously, ...",
-		  "longDescription": "If you found some Animey-ese while prospecting for IE Extractor veins, there will be a tiny amount of Vibranium in it. Yes, that Marvel stuff. Alloy it for the insane Item Pipe and Turbine material: Vibramantium!",
+		  "longDescription": "If you found some Animey-ese while prospecting for IE Extractor veins, there will be a tiny amount of Vibranium in it. Yes, that Marvel stuff. Alloy it for the insane Item Pipe and Turbine material: Vibramantium! \n Alternately, once you get a Fusion Reactor up and running, Adamantium can be converted into Vibranium by the addition of Be-7. \n\n This will earn you other-worldly contacts, willing to support your creation of divine tools and machines.",
 		  "items": [
 		    {
 			  "item": {
@@ -723,8 +738,8 @@
 	  ]
 	},
 	{
-	  "name": "All Spun",
-	  "description": "Unlike mundane single-block Centrifuges, the Large Centrifuge does not suffer from overclocking (tiering) penalties to power consumption. It thus gets away with being a tier 3.5 machine and yet being faster then the tier 4 machine for all but the hardest recipes.",
+	  "name": "Master Machines",
+	  "description": "Every step in common ore processing, and the Bauxite chain, has a corresponding multiblock machine. Unlike mundane single-block machines, they do not suffer from overclocking (tiering) penalties to power consumption. They thus get away with being tier 3.5 machines and yet being faster then the tier 4 machine for all but the hardest recipes. Furthermore, they have 16, 64, or 256 threads to do recipes in parallel, making them very power efficient and super fast. Too bad they all take etched gem Crystal Processors.",
 	  "x": 260,
 	  "y": 50,
 	  "icon": {
@@ -736,6 +751,60 @@
 		"{Chemical Era}[Extra Crispy]"
 	  ],
 	  "tasks": [
+		{
+		  "type": "DETECT",
+		  "description": "Crush it all!",
+		  "longDescription": "The perfect gizzard. Just don\u0027t stand on it unless you want to be chewed up too.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17108
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18107
+			  },
+			  "required": 18
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18003
+			  },
+			  "required": 56
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Ore wash the world",
+		  "longDescription": "Operating the Large Sluice can be finicky. The ores must enter the three sluice parts on top at the back. Water can only be piped into those same eight faces. The controller and the two blocks flanking it at the front bottom are the only place washed ore and sluice juice can be piped out from; only the controller itself can auto-output. The RU must be input at the driving spot on either side near the back.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17107
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18106
+			  },
+			  "required": 21
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18006
+			  },
+			  "required": 41
+			}
+		  ]
+		},
 	    {
 		  "type": "DETECT",
 		  "description": "So much Centrifuge",
@@ -755,6 +824,93 @@
 			  "required": 17
 			}
 		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Shred it",
+		  "longDescription": "Whether you have needless piles of junk, or just need to turn a truly enormous amount of purified ore into dust, this frightening array of spinning diamond edged blades will do the trick.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17109
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18108
+			  },
+			  "required": 18
+			},
+			{
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18003
+			  },
+			  "required": 56
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Sauna for everyone",
+		  "longDescription": "Somebody might need this many pure certus or pure fluix crystals. Everybody will want this amount of bauxite processing.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17112
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18002
+			  },
+			  "required": 49
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Gotta soak them all",
+		  "longDescription": "The Large Bathing Vat handles enormous amounts of material sitting around getting soaked. Perfect for Aluminium.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17104
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18002
+			  },
+			  "required": 49
+			}
+		  ]
+		},
+		{
+		  "type": "DETECT",
+		  "description": "Separate Everything",
+		  "longDescription": "For when lots of stuff needs to be shocked, only the Large Electrolyzer will do.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 17103
+			  }
+			},
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 18105
+			  },
+			  "required": 17
+			}
+		  ]
 		}
 	  ],
 	  "reward": [
@@ -766,92 +922,52 @@
 	  ]
 	},
 	{
-	  "name": "GateBuilder",
-	  "description": "Not quite as diffcult as matter replication, the establishment of meta-stable wormholes between pre-designated and controlled loci also requires crystaline control units, and a special alloy. At least the power supply is simpler.",
+	  "name": "Fissibles",
+	  "description": "How about some GT6 nuclear Fission? The neutron flow is being simulated only in the two horizontal directions, which leaves the top face for manual rod intervention. Thankfully a bank of Reactor Cores (both 2x2 and 1x1 or mixed) shares Coolant and Heatant reservoirs across. Things will get dicey if the Coolant gets low. Things get vapourized should the coolant run out entirely, or if the Heatant clogs up. \n Be aware that Heatant is considered a Power-Conducting-Fluid like steam, and cannot be buffered or stored in greggy tanks or barrels.",
 	  "x": 220,
-	  "y": 70,
+	  "y": 130,
 	  "icon": {
-	    "id": "SGCraft:stargateRing",
-		"damage": 1
+	    "id": "gregtech:gt.multitileentity",
+		"damage": 9241
 	  },
 	  "prerequisites": [
 	    "Enhanced Lasers"
 	  ],
 	  "tasks": [
-	    {
-		  "type": "DETECT",
-		  "description": "Hyper-Fine Control",
-		  "longDescription": "To upgrade a Sapphire Conversion crystal to the stargate Core requires running it trhough the T2 Laser Engraver again, using a different colour on a different axis to program via wave interference patterns. The Ruby variant can similarly be used as the basis for a dialing Control Crystal, but is harder to perform, if less likely to fail.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "SGCraft:sgCoreCrystal"
-			  }
-			}
-		  ]
-		},
-	    {
-		  "type": "DETECT",
-		  "description": "Source the Ke",
-		  "longDescription": "Actually channeling the wormhole apparently requires Trinium specifically. Unless you\u0027ve tapped an Animey-ese vein somewhere, this material will have to be synthesized chemically (or alchemically). A (T3) Titanium Mixer should suffice, but the list of reactants reads like crockery: \n Titanium,  Bedrock dust, Meteoric iron dust, TungstenSteel, Iridium, Helium, Strong Strength Potions, and liquid XP!",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "gregtech:gt.meta.dust",
-				"damage": 1260
-			  },
-			  "precision": "ORE_DICTIONARY"
-			}
-		  ]
-		},
-	    {
-		  "type": "DETECT",
-		  "description": "A Great Ring",
-		  "longDescription": "Some old Pyramids contain functional Cha\u0027apa\u0027ai above the treaure shaft. Regardless it is now possible to build more from raw materials; although Naquadah may take some finding. Obviously this ring is 5x5 with a three metre passage. \n RF power and OC control can be supplied from below; Iris control, if installed, takes redstone signals from the sides while redstone signals are output on these same sides for wormhole activity. Thankfully, the Gate Controller will relay any OC Wireless signals through the connection.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "SGCraft:stargateBase"
-			  }
+	  {
+	    "type": "DETECT",
+		"description": "Neutron Boxes",
+		"longDescription": "The Rods in these cores will send and receive virtual neutrons on the half-grid of attached cores. Fill each zirconium reactor rod with a rod of a radioactive isotope, Cd-In-Ag absorber, or beryllium reflector. Pincers will be required to insert and extract the rods. A radiation suit would be well advised also.",
+		"items": [
+		  {
+		    "item": {
+			  "id": "gregtech:gt.multitileentity",
+			  "damage": 9200
 			},
 			{
 			  "item": {
-			    "id": "SGCraft:stargateRing",
-				"damage": 0
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 9201
 			  },
-			  "required": 8
-			},
-			{
-			  "item": {
-			    "id": "SGCraft:stargateRing",
-				"damage": 1
-			  },
-			  "required": 7
+			  "required": 4
 			}
-		  ]
-		},
-	    {
-		  "type": "DETECT",
-		  "description": "The Eighth Chevron",
-		  "longDescription": "Since each world is so enormous, seven digit dialing will only reach locations on the same dimension of existence. Attach some Enderium reflectors in this augment to allow for nine-digit dialing; thereby Stargates built in any dimension on any world can be accessed.",
-		  "items": [
-		    {
-			  "item": {
-			    "id": "SGCraft:sgChevronUpgrade"
-			  }
-			}
-		  ]
-		}
-	  ],
-	  "repeat": {
-	    "type": "TIME",
-		"days": 32,
-		"hours": 0
+		  }
+		]
 	  },
-	  "reward": [
-	    {
-		  "id": "SGCraft:naquadah"
-		}
+	  {
+	    "type": "DETECT",
+		"description": "Getting the power out",
+		"longDescription": "For this reactor type, the desirable output is liquid Heatant - liquid Coolant that has been pumped full of thermal energy. These Liquid Heat Exchangers will cool the Heatant back into Coolant when fed with some water that it turns into Steam. \n It can also cool Lava into Pahoehoe to make less steam slowly.",
+		"items": [
+		  {
+		    "item": {
+			  "id": "gregtech:gt.multitileentity",
+			  "damage": 9103
+			},
+			"precision": "ORE_DICTIONARY"
+		  }
+		]
+	  }
 	  ]
 	}
   ],

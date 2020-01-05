@@ -4,7 +4,7 @@
   "quests": [
 	{
 	  "name": "Without Blemish",
-	  "description": "The Art of Chemistry cannot be done in a dirty space. One must first craft a container that will not itself react with the substances of interest. It\u0027s a bit of a stretch of imagination, but Stainless Steel is a good game-y choice for that material. \n It also makes a gas-tight, acid-safe, medium-temperature Tank and Drum larger than the Wooden Tank or Barrel. This Bathing Pot will hold some molten metals (the steel can melt), and is acid-safe like the Measuring Pot (beaker) and Gas Cylinder upgrades.",
+	  "description": "The Art of Chemistry cannot be done in a dirty space. One must first craft a container that will not itself react with the substances of interest. It\u0027s a bit of a stretch of imagination, but Stainless Steel is a good game-y choice for that material. \n It also makes a gas-tight, acid-safe, medium-temperature Tank and Drum larger than the Wooden Tank or Barrel. \n This Bathing Pot will hold some molten metals (the steel can melt), and is acid-safe like the Measuring Pot (beaker) and Gas Cylinder upgrades.",
 	  "x": 50,
 	  "y": 100,
 	  "icon": {
@@ -55,7 +55,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Mixing Acids and Gasses",
-		  "longDescription": "You can already make a tier 2 Steel Mixer, or just use a tier 1 Bronze Mixer. Note that many metals can be alloyed in the molten state by Mixing Recipes, so this machine is extremely versatile. Expect to make a lot of them, not just several.",
+		  "longDescription": "You can already make a tier 2 Steel Mixer, or just use a tier 1 Bronze Mixer. Note that many metals can be alloyed in the molten state by Mixing Recipes with the use of a Selector Tag, so this machine is extremely versatile. Expect to make a lot of them, not just several.",
 		  "items": [
 		    {
 			  "item": {
@@ -83,7 +83,7 @@
 	},
 	{
 	  "name": "Swapping Up",
-	  "description": "These four machines are independantly interesting, rather than being properly necessary steps to progression. A Generifier to reduce things to ore dictionary simplicity. A Fermenter to control brewing and composting. The Debarkers to improve lumber production. And the Distilleries to brew potions, some of which are alcoholic.",
+	  "description": "These four machines are independently interesting, rather than being properly necessary steps to progression. A Generifier to reduce things to ore dictionary simplicity. A Fermenter to control brewing and composting. The Debarkers to improve lumber production. And the Distilleries to brew potions, some of which are alcoholic.",
 	  "x": 25,
 	  "y": 70,
 	  "icon": {
@@ -97,7 +97,7 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Clean",
-		  "longDescription": "De-barking Logs into Beams not only recovers the bark shavings, each Beam saws into six or more planks and some sawdust. Naturally this requires RU from a turbine or motor. \n The Generifier is like unto a oredictionifier you may have come across elsewhere. However, the recipes for the Generifier are fixed by GregAPI reading the pack ore dictionary and modlist; meaning that anything can be made into the most generic form, but only select few things can be transformed from the generic form into specific alternates. Notably, IE Plant Oil is interchangable with Seed Oil - while every other nut or seed oil can only be transformed to typeless seed oil. This is helpful for getting common typeless Wood, Iron, Steel, Juice, Wine, Concrete, etc. when using production methods from another mod. While it may technically be a time consuming machine, the Generifier consumes or produces an entire stack or bucket per tick.",
+		  "longDescription": "De-barking Logs into Beams not only recovers the bark shavings, each Beam saws into six or more planks and some sawdust. Naturally this requires RU from a turbine or motor. \n The Generifier is like unto a oredictionifier you may have come across elsewhere. However, the recipes for the Generifier are fixed by GregAPI reading the pack ore dictionary and modlist; meaning that anything can be made into the most generic form, but only select few things can be transformed from the generic form into specific alternates. Notably, IE Plant Oil is interchangeable with Seed Oil - while every other nut or seed oil can only be transformed to typeless seed oil. This is helpful for getting common typeless Wood, Iron, Steel, Juice, Wine, Concrete, etc. when using production methods from another mod. While it may technically be a time consuming machine, the Generifier consumes or produces an entire stack or bucket per tick.",
 		  "items": [
 		    {
 			  "item": {
@@ -111,7 +111,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Vintage",
-		  "longDescription": "The Fermenter operates on pure Time, making alcohol and other yeasty goodness. But, unlike a sealed Barrel or Drum, it only ever goes a single step, and it is capable of admixing a solid into the recipe. Thus, biomass digestion and glycerol production (the precursor to dynamite). \n A Distilley machine requires heat, and performs potion brewing much like a common Brewing Stand would, along with the production of distilled spirits. Note that many such products make for tolerable liquid fuel.",
+		  "longDescription": "The Fermenter operates on pure Time, making alcohol and other yeasty goodness. But, unlike a sealed Barrel or Drum, it only ever goes a single step, and it is capable of admixing a solid into the recipe. Thus, biomass digestion and glycerol production (the precursor to dynamite). \n A Distillery machine requires heat, and performs potion brewing much like a common Brewing Stand would, along with the production of distilled spirits. Note that many such products make for tolerable liquid fuel.",
 		  "items": [
 		    {
 			  "item": {
@@ -150,7 +150,7 @@
 	},
 	{
 	  "name": "Vitriolic",
-	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is useful for making the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, alas it will take a MV Electrolyzer to process the various colours of mineralized vitriol byproduct - which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam. \n Carbonizing Sugar is a great renewable source of pure Carbon for your Steel-producing (and other oxide reductive smelting) efforts.",
+	  "description": "Oil of vitriol, known in modern times as Sulphuric Acid, is the easiest to make acid in GregTech, and is useful for making the other three principal acids. An enormous list of ores can be Refined with bonus by bathing in the oil of vitriol, but it requires an Electrolyzer to process the various colours of mineralized vitriol byproduct - which are themselves acidic liquids. \n Only certain pipes, drums, and tanks can hold acidic fluids without being destroyed by them. Stainless Steel is the default, but if you have access to an alchemist Thaumium or Void Metal are often superior choices for pipes, as they have higher melting points, the materials are usually easier to get, and are insulating - safe to touch even when carrying a hot fluid without needing to be hidden behind a Panel Cover or inside CFoam.",
 	  "x": 175,
 	  "y": 70,
 	  "icon": {
@@ -222,7 +222,7 @@
 	},
 	{
 	  "name": "Royal Water",
-	  "description": "A mixture of Nitric Acid and Hydrochloric Acid, Aqua Regia is used strictly for ore processing - it especially produces additional chances at the Platinum Group Sludge by-product from purified ores that might contain it. The sludge is then overclock centrifuged into approximately equal parts of all six platinum group metals: Ruthenium, Rhodium, Palladium, Platinum, Osmium, and Iridium. The Chloroplatinic Acid also produced by this process requires MV electrolysis to decompose into more Platinum and other elements sufficient to re-constitute the Aqua Regia cyclically. \n\n It can also be used on purified Copper, Gold, Tin, and/or Cassiterite to get other chloro-acids and additional by-products.",
+	  "description": "A mixture of Nitric Acid and Hydrochloric Acid, Aqua Regia is used strictly for ore processing - it especially produces additional chances at the Platinum Group Sludge by-product from purified ores that might contain it. The sludge is then overclock centrifuged into approximately equal parts of all six platinum group metals: Ruthenium, Rhodium, Palladium, Platinum, Osmium, and Iridium. The Chloroplatinic Acid also produced by this process requires overclocked electrolysis to decompose into more Platinum and other elements sufficient to re-constitute the Aqua Regia cyclically. \n\n It can also be used on purified Copper, Gold, Tin, and/or Cassiterite to get other chloro-acids and additional by-products.",
 	  "x": 150,
 	  "y": 40,
 	  "icon": {
@@ -237,7 +237,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Nitric Nitre or Not",
-		  "longDescription": "Nitric Acid produciton is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly. \nAlternatively, use a Lightning discharge Processor to combine Oxygen and Nitrogen gasses, Mix in more Oxygen, and bubble through Water.\n\n Now, wash some ores containing Platinum, or its siblings to get this valuable sludge.",
+		  "longDescription": "Nitric Acid production is quite immediate: simply mix sulphuric acid with a nitrate. The bisulfate solid will come in handy shortly. \n Alternatively, use a Lightning discharge Processor to combine Oxygen and Nitrogen gasses, Mix in more Oxygen, and bubble through Water.\n\n Now, wash some ores containing Platinum, or its siblings to get this valuable sludge.",
 		  "items": [
 		    {
 			  "item": {
@@ -262,7 +262,7 @@
 	},
 	{
 	  "name": "Titanic",
-	  "description": "Titanium, the Tier 3 metal for both heat and mechanical machinery. \n Note that smelting is simply insufficient to liberate useable Titanium from its ores, time to start building dedicated ore processing machine chains.",
+	  "description": "Titanium, the Tier 3 metal for both heat and mechanical machinery. \n Note that smelting is simply insufficient to liberate usable Titanium from its ores, time to start building dedicated ore processing machine chains.",
 	  "x": 100,
 	  "y": 40,
 	  "icon": {
@@ -270,7 +270,8 @@
 		"damage": 220
 	  },
 	  "prerequisites": [
-		"Acid Gas"
+		"Acid Gas",
+		"{Dawn of Industry}[the Riddle of Steel]"
 	  ],
 	  "tasks": [
 		{
@@ -346,7 +347,7 @@
 	},
 	{
 	  "name": "Coagulation",
-	  "description": "Sometimes things just need to congeal. This is the machine to contain the slowly solidfying goo in. \n Most importantly, this is how one turns the latex extracted from resin or slime into proper Rubber.",
+	  "description": "Sometimes things just need to congeal. This is the machine to contain the slowly solidifying goo in. \n Most importantly, this is how one turns the latex extracted from resin or slime into proper Rubber.",
 	  "x": 25,
 	  "y": 130,
 	  "icon": {
@@ -375,7 +376,7 @@
 		{
 		  "type": "DETECT",
 		  "description": "Bouncy",
-		  "longDescription": "At long last, Rubber! With this immensely pliable insulating material many things become possible. \n Rubber is too bouncy to work solid like a metal, and a whole third burns off whenever melting it; thus it is best to manuipulate rubber in a Steel low-heat Extruder. Obviously, curved rubber sheets don\u0027t exist as a seperate item.",
+		  "longDescription": "At long last, Rubber! With this immensely pliable insulating material many things become possible. \n Rubber is too bouncy to work solid like a metal, and a whole third burns off whenever melting it; thus it is best to manipulate rubber in a Steel low-heat Extruder. Obviously, curved rubber sheets don\u0027t exist as a separate item.",
 		  "items": [
 		    {
 			  "item": {
@@ -397,7 +398,7 @@
 	},
 	{
 	  "name": "Simple Fractions",
-	  "description": "Time for those grand Tanks to be used. The oil Distillation Tower splits most varieties of Oil into two gases (Propane and Butane), five liquids (Lubricant, Petrol, Fuel Oil / gasoline, Diesel, and Kerosene), and a blend of two solids (Asphalt and Parrafin Wax). All seven fluids have dedicated output hatches, in order of condensation temperatures, above the item output hatch. Input the Oil into any of the other 11 faces on the base ring of the Tower Parts and controller, while supplying HU from Burning Boxes via the bottom of the nine Heat Acceptors. \n Both solids are output from the bottom port, so this is a good place to use Quadruple Item Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Many of the liquid fractions, and both gasses, are fuels; it is thus possible to make the distillation tower self-sustaining. \n\n The Distillation Tower can also be used to fractionate Liquifacted Coal (which was Burn Mixed under water) in much the same way, although the gasseous fractions are bound together as Coal Gas that will need to be fractionally distilled a second time at a higher power tier. Fractionally distilling Biomass is also possible, but only a good idea if you want Glycerol, Ethanol, and Methane in the supplied ratio.",
+	  "description": "Time for those grand Tanks to be used. The oil Distillation Tower splits most varieties of Oil into two gases (Propane and Butane), five liquids (Lubricant, Petrol, Fuel Oil / gasoline, Diesel, and Kerosene), and a blend of two solids (Asphalt and Parrafin Wax). All seven fluids have dedicated output hatches, in order of condensation temperatures, above the item output hatch. Input the Oil into any of the other 11 faces on the base ring of the Tower Parts and controller, while supplying HU from Burning Boxes via the nine Heat Acceptors. \n Both solids are output from the bottom port, so this is a good place to use Quadruple Item Pipes. Some Mass Storage barrels or Drawers, with their self-filtering behaviour, make for good outputs to the single multi-channel item pipe. \n Many of the liquid fractions, and both gasses, are fuels; it is thus possible to make the distillation tower self-sustaining. \n\n The Distillation Tower can also be used to fractionate Liquifacted Coal (which was Burn Mixed under water) in much the same way, although the gasseous fractions are bound together as Coal Gas that will need to be fractionally distilled a second time at a higher power tier. Fractionally distilling Biomass is also possible, but only a good idea if you want Glycerol, Ethanol, and Methane in the supplied ratio.",
 	  "x": 75,
 	  "y": 70,
 	  "icon": {
@@ -411,7 +412,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Tower of Juice",
-		  "longDescription": "The front of this multiblock is only for the GUI, it\u0027s the back one really cares about. in case it was unlcear, the 3x9 cylinder is solid.",
+		  "longDescription": "The front of this multiblock is only for the GUI, it\u0027s the back one really cares about. \n\n In case it was unclear, the 3x9 cylinder is solid.",
 		  "items": [
 		    {
 			  "item": {
@@ -582,7 +583,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Oxide Isolation",
-		  "longDescription": "Whether smetled directly from a few ores, dried from the acid-wash of many more ores, or centrigued as traces from exotic asteroids (Endstone), tungstic oxide WO_3 is where medieval methods end.",
+		  "longDescription": "Whether smelted directly from a few ores, dried from the acid-wash of many more ores, or centrifuged as traces from exotic asteroids (Endstone), tungstic oxide WO_3 is where medieval methods end.",
 		  "items": [
 		    {
 			  "item": {
@@ -616,7 +617,7 @@
 	},
 	{
 	  "name": "Crock Pot",
-	  "description": "An early step, but a VERY long one, in the production of electronic devices is the production of conrolled semi-conductor wafers. Elemental Silicon is a good material, alloying it with Redstone seems to be even better. Naturally, letting the boule grow from seed dust in liquid must be done with a non-reactive atmosphere. A noble gas, Helium, Neon, Argon, etc., is the best way to keep all the other gases from leaking in and contaminating the material. Like finding the minerals in Sluice Juice, getting the specific gasses out of Air is a perfect 64 RU/t Centrifuge recipe.",
+	  "description": "An early step, but a VERY long one, in the production of electronic devices is the production of controlled semi-conductor wafers. Elemental Silicon is a good material, alloying it with Redstone seems to be even better. Naturally, letting the boule grow from seed dust in liquid must be done with a non-reactive atmosphere. A noble gas, Helium, Neon, Argon, etc., is the best way to keep all the other gases from leaking in and contaminating the material. Until you can cool things down with CU, the only way to get any noble gas is the little bit of Helium that can be Centrifuged out of ground-up Endstone (trapped with other gasses).",
 	  "x": 200,
 	  "y": 136,
 	  "icon": {
@@ -630,12 +631,12 @@
 	    {
 		  "type": "CRAFT",
 		  "description": "Absolutely Pure",
-		  "longDescription": "To grow semiconductor wafers, one needs a surface that is both a good catalyst and never going to leech into the material. Iridium fits that role nicely, even better than platinum.\n This crucible can also be used in temperature progression.",
+		  "longDescription": "To grow semiconductor wafers, one needs a surface that is both a good catalyst and never going to leech into the material. Quartz will do for now, Iridium will be better later.",
 		  "items": [
 		    {
 			  "item": {
 			    "id": "gregtech:gt.multitileentity",
-				"damage": 1039
+				"damage": 1018
 			  },
 			  "precision": "NBT_FUZZY"
 			}
@@ -664,7 +665,7 @@
 	},
 	{
 	  "name": "Extra Crispy",
-	  "description": "That Ceramic Crucible had to get replaced eventually; there are a good number of materials with melting and alloying temperatures above 2500K. One will need to make a Crucible, and enough molds, from a material that one is currently capable of working that will have a higher failure temperatue and thus be able to work other materials, and so on. \n The use of foreign \"magic\" processes can create soild ingots of materials that can be worked cold, with hand tools like in the Stone Age, that can by-pass some steps of this ladder. \n These Crucibles do not have higher minimum HU/t tiers, 16 will still do, but reaching such high temperatures slowly will surely test one\u0027s patience.",
+	  "description": "That Ceramic Crucible had to get replaced eventually; there are a good number of materials with melting and alloying temperatures above 2500K. One will need to make a (small) Crucible, and enough molds, from a material that one is currently capable of working that will have a higher failure temperature and thus be able to work other materials, and so on. \n The use of foreign \"magic\" processes can create solid ingots of materials that can be worked cold, with hand tools like in the Stone Age, that can by-pass some steps of this ladder. \n These Crucibles do not have higher minimum HU/t tiers, 16 will still do, but reaching such high temperatures slowly will surely test one\u0027s patience.",
 	  "x": 190,
 	  "y": 118,
 	  "icon": {
@@ -678,7 +679,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Better than Ceramics",
-		  "longDescription": "As I write this, the initial options for a better Crucible than Ceramic are, in order: Chromium, Meteoric Steel, Thaumium, and Niobium-Titanium alloy. All of them can (if not safely) melt and cast Iridium, some can also do other materials to be mentioned in the next section. You will need to keep the Iridium Crucible for other uses. \n Fiery Steel, Void Metal, and bedrock-steel alloy can be made into ingots or even plates directly, while also being valid materials for a GregTech Crucible.",
+		  "longDescription": "As I write this, the initial options for a better Crucible than Ceramic are, in order: Chromium, Meteoric Steel, Thaumium, and Niobium-Titanium alloy. All of them can (if not safely) melt and cast Iridium, some can also do other materials to be mentioned in the next section. You will need to keep the Iridium Crucible for other uses. \n Fiery Steel and Void Metal can be made into ingots or even plates directly, while also being valid materials for a GregTech Crucible.",
 		  "items": [
 		    {
 			  "item": {
@@ -718,13 +719,26 @@
 		},
 	    {
 		  "type": "CRAFT",
-		  "description": "Time to Smelt",
-		  "longDescription": "All the Smelter machines have a Tungsten Crucible at thier core. There may yet be a few alloying recipes that do not work in the Mixer with molten materials, so keeping a backup Crucible around can be helpful. Only one mold is really needed though, since the Extruder can manipulate any material if it is of a high enough tier. Molds will cast when given molten output from the smelter machine, if one chooses that route; any pipe must have the ability to completely fill the mold, they do not have partial fill-states like the other smeltery mod.",
+		  "description": "Prepare to Smelt",
+		  "longDescription": "The basic Smelter machine has a Tungsten Crucible at its core. There may yet be a few alloying recipes that do not work in the Mixer with molten materials, so keeping a backup Crucible around can be helpful. Only one mold is really needed though, since the Extruder can manipulate any material if it is of a high enough tier. Molds will cast when given molten output from the smelter machine, if one chooses that route; any pipe between them must have the ability to completely fill the mold, they do not have partial fill-states like the other smeltery mod.",
 		  "items": [
 		    {
 			  "item": {
 			    "id": "gregtech:gt.multitileentity",
 				"damage": 1024
+			  }
+			}
+		  ]
+		},
+	    {
+		  "type": "DETECT",
+		  "description": "Thou hast Smelt it!",
+		  "longDescription": "This Smelter machine no longer has maximum temperatures to worry about, instead it takes power tiers to melt various materials. Instead of over-cooking, Wrought Iron and Annealed Copper can be made in the smelter from the base molten metal. \n Look into high-temperature materials to make pipes and drums out of, like TaHfC.",
+		  "items": [
+		    {
+			  "item": {
+			    "id": "gregtech:gt.multitileentity",
+				"damage": 20241
 			  }
 			}
 		  ]
@@ -776,7 +790,7 @@
 	},
 	{
 	  "name": "Re-Shaping",
-	  "description": "Now that one has Tunsten Carbide, double that plate to make new Extruder Shapes that can handle all the high-temperature materials without failure. Also, build any higher tier Extruder to use them from yet more Carbide plates.",
+	  "description": "Now that one has Tungsten Carbide, double that plate to make new Extruder Shapes that can handle all the high-temperature materials without failure. Also, build any higher tier Extruder to use them from yet more Carbide plates.",
 	  "x": 250,
 	  "y": 100,
 	  "icon": {
@@ -1019,7 +1033,7 @@
 	},
 	{
 	  "name": "Atomic POWER!",
-	  "description": "Full 3D, but no neutron flux; the NC fission reactors are very different to build from RoC, BR, or IC2 fission reactors. Due to the coolers having double effect under certain conditions, stacking a 2D representation will not scale well in general. Due to the square-cube relationship, designing an optimal medium size NC reactor is outrageously more complex than optimizing the maximum size of RoC or IC2 reactor. \n The casing does not require edges or corners, and the controller only works when facing outwards in an edge position. \n Always check your specific fuel\u0027s heat and power in the tooltip before operating the reactor.",
+	  "description": "Full 3D, but no neutron flux; the NC fission reactors are very different to build from ReC, BR, IC2, or GT6 fission reactors. Due to the coolers having double effect under certain conditions, stacking a 2D representation will not scale well in general. Due to the square-cube relationship, designing an optimal medium size NC reactor is outrageously more complex than optimizing the maximum size of RoC or IC2 reactor. \n The casing does not require edges or corners, and the controller only works when facing outwards in an edge position. \n Always check your specific fuel\u0027s heat and power in the tooltip before operating the reactor.",
 	  "x": 75,
 	  "y": 190,
 	  "icon": {
@@ -1032,7 +1046,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "A Puzzler",
-		  "longDescription": "Reactor internal design is a great in-depth topic. While searching the external resources, be aware that NC 1.9 for 1.7.10 has different cooler mechanics than modern NC 2.7 / 2.13; tooltips are your local resource.",
+		  "longDescription": "Reactor internal design is a great in-depth topic. While searching the external resources, be acutely aware that NC 1.9 for 1.7.10 has different cooler mechanics than modern NC 2.7 / 2.13; tooltips are your local resource.",
 		  "items": [
 		    {
 			  "item": {
@@ -1057,7 +1071,7 @@
 	},
 	{
 	  "name": "Atomise Steam",
-	  "description": "Upgrade that Fission reactor Controller to a Steam Fission reactor Controller; fluid Steam is the same for GregTech, Railcraft, Immersive Engineering, Forestry, Buildcraft, and NuclearCraft. However, if you have a powerful recator, NC will output Dense or Superdense Steam instead; this ensures a 2B/t pipe will be sufficient, and requires Steam Decompressor machines to convert into normal Steam that generators can use. The water is created by an internal infinite source, so no need to worry about active cooling (that\u0027s strictly a safety concern here).",
+	  "description": "Upgrade that Fission reactor Controller to a Steam Fission reactor Controller; fluid Steam is the same for GregTech, Railcraft, Immersive Engineering, Forestry, Buildcraft, and NuclearCraft. However, if you have a powerful reactor, NC will output Dense or Superdense Steam instead; this ensures a 2B/t pipe will be sufficient, and requires Steam Decompressor machines to convert into normal Steam that generators can use. The water is created by an internal infinite source, so no need to worry about active cooling (that\u0027s strictly a safety concern here).",
 	  "x": 45,
 	  "y": 190,
 	  "icon": {
@@ -1091,7 +1105,7 @@
 	},
 	{
 	  "name": "Climb the Isotope Path",
-	  "description": "Choose some fuels for power generation, and others for breeding potential. But always be aware of the heat prodction from each fuel mixture. \n The Deacy Hastener can further refine the outputs of the Reprocessing of Depleted Fuel rods.",
+	  "description": "Choose some fuels for power generation, and others for breeding potential. But always be aware of the heat production from each fuel mixture. \n The Decay Hastener can further refine the outputs of the Reprocessing of Depleted Fuel rods.",
 	  "x": 60,
 	  "y": 170,
 	  "icon": {
@@ -1105,7 +1119,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Re-Process",
-		  "longDescription": "This Reproccessing Plant converts extracts the usable isotopes from spent fuel rods. Often, this includes a small amount of something more useful than the fuel was made from; frequently it also includes a portion of un-spent fuel material.",
+		  "longDescription": "This Reprocessing Plant extracts the usable isotopes from spent fuel rods. Often, this includes a small amount of something more useful than the fuel was made from; frequently it also includes a portion of un-spent fuel material.",
 		  "items": [
 		    {
 			  "item": {
@@ -1158,7 +1172,7 @@
 	    {
 		  "type": "DETECT",
 		  "description": "Curie",
-		  "longDescription": "Either lightly enriched Am 242 or heavily enriched Pu 241 will make the Curium basis isotope 246 when depleated and reprocessed. \n The choices continue with lightly enriching Cm 245 or heavily enriching Cm 247 to breed the pinacle of both NC and Madame Curie\u0027s carreer : Californium 250.",
+		  "longDescription": "Either lightly enriched Am 242 or heavily enriched Pu 241 will make the Curium basis isotope 246 when depleted and reprocessed. \n The choices continue with lightly enriching Cm 245 or heavily enriching Cm 247 to breed the pinnacle of both NC and Madame Curie\u0027s career : Californium 250.",
 		  "items": [
 		    {
 			  "item": {
@@ -1191,7 +1205,7 @@
 	},
 	{
 	  "name": "RF Fusion",
-	  "description": "A very square, solidly encased, Tokamak variation is chosen by NC for the Fusion Reactor. Two fuels enter, up to four of six products leave. \n Each and every Electromagnet consumes 100 RF/t to be plasma-solid (aka not explode when active); the core requires high RF power input to reach an enormous reaction temperature. But once at or above the particular temperature, and with room in the output slots, the core emits a massive stream of power for a modest and constant stream of fuel. \n Being able to re-purpose those released Neutrons for material fabrication with Quantum power is a nice bonus.",
+	  "description": "A very square, solidly encased, Tokamak variation is chosen by NC for the Fusion Reactor. Two fuels enter, up to four of six products leave. \n Each and every Electromagnet consumes 100 RF/t to be plasma-solid (aka not explode when active); the core requires high RF power input to reach an enormous reaction temperature. But once at or above the particular temperature, and with room in the output slots, the core emits a massive stream of power for a modest and constant stream of fuel. \n Being able to re-purpose those released Neutrons for material fabrication with Quantum power is a nice gift, you\u0027re welcome.",
 	  "x": 100,
 	  "y": 130,
 	  "icon": {
