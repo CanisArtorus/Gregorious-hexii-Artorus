@@ -1,33 +1,86 @@
+:: mark 3.2.435 ::
+Quests overhaul and swap of spaceship mod will make keeping an old world unplesant,
+  plus several new GT vein types have been added
+  reverse compatibility limited.
 
-:: 3.0.366 ::
+Fix Atum / GS-space station biome conflict
+discovered a pile of aspect compatability scripts; enjoy TC scanning more now.
+Large changes to Stone Age quests
+Small changes to Chemical Age
+Moderate shuffling around the Electrical Era
+Modern re-worked and extended
+add Space Age
+
+Update
+: GalaxySpace 1.2.13 pre-final
+ - space suit modules stuff
+ - replaced batteries
+: GT6.12.00
+ - Natural gas pockets and bedrock vents, just like GT6 Oil
+ - All the multiblock machines
+ - ...
+ really, tons of updates, it's been nine months!
+ it's Release version now!
+: Carpenter's Blocks 3.3.8.2
+ - bugfix
+: OpenModsLib 0.10.1
+ - security fix
+: Craft Tweaker 3.1.0
+ - utility functions
+: OpenComputers 1.7.5
+ - Install an Analyzer in your Tablet as "barcode_reader"
+ - lots of crash fixes
+ - Robot improvements
+: NEI Addons 1.12.15.41
+ - fix log spam error
+
+Add
+: Advanced Rocketry 1.4.0-20-UNSTABLE
+  libVulpes 0.2.8-37-UNSTABLE
+   * Completely replace the Rockets system.
+   + xml galaxymap, biome-compositional planets
+     - expect more to trickle in later
+   + embed the best GS worlds in it
+   - gas & asteroid mining
+   * Replacement space stations
+   - recipe config may take forever
+   
+Remove:
+ Regional Water
+  - River water fixes most important case
+
+:: branch 3.0.369 ::
+N.B. !!! NEW WORLD ONLY !!!
+  Absolutely incompatible with any old saves
+
 Fix the RoC/ElC dependancies discovered by theFirstPaige
+Flavour the IE mineral veins more
 Disable Railcraft Tanks
+Change Keyboard recipes
+Fix some potionID (effect) conflicts.
+Fix a Thuanomicon Crash casued by broken recipe
+Re-balance Thaumium production
+
+Updates
+: GT6.10.08
+ - fluxo-convertors have a default recipe now, retiring mine.
+  - And the Flux Dynamo too, along with the others I didn't recipe earlier.
+ - all EU and RF convertors accept mode Selector covers to limit output
+   = mode 0 max, mode 8 nominal, mode 12 minimum. Linear by 16ths - modes 13, 14, and 15 non-functional. 
+ - Chisel is a block harvest tool for stone, drops as chiseled block instead of cobble.
 
 Remove
-: all of Reika's mods
+- all of Reika's mods
  - DragonAPI
  - RotaryCraft
  - ReactorCraft
  - ElectriCraft
  - Expanded Redstone
-: Electrical Age (ELN)
-: PneumaticCraft
+- Electrical Age (ELN)
+- PneumaticCraft
 
 Add:
-: Thaumic Fixer 1.2
-: Symcalc 0.14
- - Readout of Infusion altar stability.
-: Automagy
- - Redlogic crystals
- - Nethermind, creature and block conjuring
- - Inventarium & Essentia Loci, magical AE system
- - Golem Workbench, actual autocrafting
-: Thaumic Bases
- - Aura node management
- - Overchanting
- - resource crops (tbd)
- - Magic weed pipe (tbd)
- - Spawn obelisks [crying obsidian]
++ Thaumic Fixer 1.2
 
 :: mark 2.1.351 ::
 Someone tried to add Galacticraft to CurseForge, but was confused about file structure. Do not 'update' it.
