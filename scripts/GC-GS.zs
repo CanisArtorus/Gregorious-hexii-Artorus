@@ -240,11 +240,11 @@ var tires=	<GalacticraftCore:item.buggymat:0>;
 var cabin=	<GalacticraftCore:item.buggymat:1>;
 var trunk=	<GalacticraftCore:item.buggymat:2>;
 // var buggy=	<GalacticraftCore:item.buggy>;	// meta=cargo
-var axle=	<gregtech:gt.multitileentity:24811>;	//bronze 4-torque
+var axle=	<gregtech:gt.multitileentity:24811>;	//bronze medium 4-torque
 var steelBars=	<gregtech:gt.block.bars.steel>;
-var gearbox=	<gregtech:gt.multitileentity:24829>;	//steel custom gearbox
+var gearbox=	<gregtech:gt.multitileentity:24818>;	//bronze transformer gears 24829>;	//steel custom gearbox
 var rub =	<ore:plateRubber>;
-var internalCombustion	= <ore:steamTurbine>;	//awaiting Gt	as of v6.12.00
+var internalCombustion	= <gregtech:gt.multitileentity:9149>;	//<ore:steamTurbine>;	//awaiting Gt	as of v6.12.00 - invar diesel engine 64 RU/t
 var BronzeBox =	<gregtech:gt.multitileentity:509>;	//reinforced wood chest
 var tap 	= <gregtech:gt.multitileentity:32730>;	//stainless
 
@@ -256,7 +256,8 @@ recipes.remove(fuelPump);
 recipes.addShaped(fuelPump, [
 [anySteel, anySteel, anySteel],
 [tap, tinCan, anySteel],
-[jerryCanEmpty, gcChip1, Wrench]]);
+//[jerryCanEmpty, gcChip1, Wrench]]);
+[jerryCanEmpty, <ore:gt:circuit1>, Wrench]]);
 
 recipes.remove(tires);
 recipes.remove(cabin);
@@ -281,9 +282,9 @@ recipes.addShaped(<GalacticraftCore:item.buggy:3>, [
 recipes.addShaped(cabin, [
 [Saw,steelBars,HHam],
 [steelBars,<advancedRocketry:seat>,<minecraft:lever>],
-[axle,Wrench,jerryCanEmpty]]);
+[gearbox,Wrench,jerryCanEmpty]]);
 recipes.addShaped(tires*2, [
-[null, rub, gearbox],
+[null, rub, axle],
 [rub, <gregtech:gt.meta.minecartWheels:8630>, rub],
 [Mallet, rub, null]]);
 recipes.addShapeless(trunk, [BronzeBox, <ore:screwBronze>, Screw]);

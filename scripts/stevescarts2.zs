@@ -115,7 +115,7 @@ var pistonmv            = <gregtech:gt.multiitem.technological:12062>;	// metait
 // var pistonhv            = <gregtech:gt.multiitem.technological:12063>;	// metaitem.01:32642>;
 // var fieldgenMV          = <gregtech:gt.multiitem.technological:12102>;	// metaitem.01:32671>;
 // var fieldgenEV          = <gregtech:gt.multiitem.technological:12104>;	// metaitem.01:32673>;
-var pressurelavaboiler  = <gregtech:gt.multitileentity:18101>;	// <gregtech:gt.blockmachines:102>;	# super-boiler heat acceptor part
+var pressurelavaboiler  = <gregtech:gt.multitileentity:9103>;	// invar liquid heat exchanger 18101>;	// <gregtech:gt.blockmachines:102>;	# super-boiler heat acceptor part
 var NAND                = <ore:oc:circuit1>;	// <ore:circuitPrimitive>;
 var refineditemcasing   = <gregtech:gt.meta.casingSmall:8630>;	// <IC2:itemCasing:5>;
 var smallsteelpipe      = <ore:pipeSmallSteel>;
@@ -130,6 +130,7 @@ var solarpanelULV       = <NuclearCraft:solarPanel>;	// <GalacticraftCore:item.b
 var geothermal          = <ore:craftingGeothermalGenerator>;
 geothermal.add(<ImmersiveEngineering:metalDevice:10>);	// Thermo-electric generator
 geothermal.add(thermalengine);
+geothermal.add(<gregtech:gt.multitileentity:9107>);	// Tungsten heat exchanger
 // geothermal.add(<ReactorCraft:reactorcraft_item_placer:20>);	# fluid heat exchange machine
 // var dusttungsten        = <ore:dustTungsten>;
 var dustdiamond         = <ore:dustDiamond>;	// metaitem.01:2500>;

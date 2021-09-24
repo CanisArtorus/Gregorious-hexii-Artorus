@@ -51,7 +51,7 @@ Arcane.removeRecipe(<thaumicenergistics:material:2>);	// iron gear
 Arcane.addShaped("thaumicenergistics.TEARCANETERM", <thaumicenergistics:part.base:5>, "ordo 10, perditio 10, aqua 10, ignis 10, terra 10, aer 10", 
 	[[<ore:craftingToolScrewdriver>, <appliedenergistics2:item.ItemMultiPart:380>, <ore:craftingToolSoftHammer>], 
 	[<ore:screwCertusQuartz>, <Thaumcraft:blockTable:15>, <ore:screwCertusQuartz>], 
-	[<ore:plateNetherQuartz>, calcProc, <ore:plateNetherQuartz>]]);
+	[<ore:plateGemNetherQuartz>, calcProc, <ore:plateGemNetherQuartz>]]);
 /*
 // Essentia terminals
 Arcane.addShaped("thaumicenergistics.TEESSTERM", <thaumicenergistics:part.base:4>, "aqua 5, ordo 2, ignis 1", 
@@ -60,8 +60,8 @@ Arcane.addShaped("thaumicenergistics.TEESSTERM", <thaumicenergistics:part.base:4
 	[<ore:stickNetherQuartz>, <thaumicenergistics:material:1>, <ore:stickNetherQuartz>]]);
 recipes.addShaped(<thaumicenergistics:wireless.essentia.terminal>, 
 	[[<appliedenergistics2:item.ItemMultiMaterial:41>, <thaumicenergistics:part.base:4>, <appliedenergistics2:item.ItemMultiMaterial:41>], 
-	[<ore:plateNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateNetherQuartz>], 
-	[<ore:plateNetherQuartz>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <ore:plateNetherQuartz>]]);
+	[<ore:plateGemNetherQuartz>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:plateGemNetherQuartz>], 
+	[<ore:plateGemNetherQuartz>, <appliedenergistics2:tile.BlockDenseEnergyCell>, <ore:plateGemNetherQuartz>]]);
 */
 // // Storage Component
 // Research.addPrereq("thaumicenergistics.TESTORAGE", "AM_GEMVINTEUM", true);

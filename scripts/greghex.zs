@@ -491,6 +491,16 @@ recipes.addShaped(birchStair*4, [[saw, chs_brch], [chs_brch, chs_brch]]);
 // exploit patch
 recipes.remove(<gregtech:gt.multitileentity:29800>);	// graphene wire
 
+//	----	Fluid compat section	---	//
+// binnie's liquid nitrogen
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.freezer", false, 16, 25, [1000], [<gregapi:gt.integrated_circuit:0> *0], [<liquid:nitrogen>*100], [<liquid:liquidnitrogen>*100], [null]);
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 1, 1, [10000], [null], [<liquid:liquidnitrogen>], [<liquid:nitrogen>], [null]);
+
+// He-3
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 1, 1, [10000], [null], <liquid:helium-3>, <liquid:helium3>, null);
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.generifier", false, 1, 1, [10000], [null], <liquid:helium3>, <liquid:helium-3>, null);
+
+
 //vanilla improvements
 # Jason McRay
 
