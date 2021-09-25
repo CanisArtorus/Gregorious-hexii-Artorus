@@ -1,0 +1,25 @@
+{
+GalacticraftCore:[
+	{keep:["tile.oxygenCompressor",[0]]};
+	{keep:["tile.landingPad",[1]]};
+	{hide:["tile.",[distributor,sealer,oxygenDetector,refinery,cargo,rocketWorkbench,airLockFrame,machine2,machineTiered,spinThruster],[]]};
+	{hide:["tile.machine",[12]]};
+	{hide:["item.basicItem",[13,14]]};
+	{hide:["item.",[spaceship,oxygenMask,oxygenGear,"oxygenTank*",airVent,airFan,engine,noseCone,rocketFins,parachute],[]]};
+	{hide:["item.steel_",[pickaxe,axe,hoe,shovel,sword],[]]};
+],
+GalacticraftMars:[
+	{hide:["tile.",[marsMachineT2,hydrogenPipe],[]]};
+	{hide:["tile.marsMachine",[8]]};
+	{hide:["item.",[itemTier3Rocket,thermalPadding,atmosphericValve,heavyNoseCone,spaceshipTier2],[]]};
+	{hide:["item.itemBasicAsteroids",[1,2,7]]};
+	{hide:["item.titanium_",[pickaxe,axe,hoe,shovel,sword],[]]};
+	{hide:["item.desh",[Pick*,Axe,Hoe,Spade,Sword],[]]};
+],
+GalaxySpace:[
+	{hide:[[solarwindpanel,assemblymachine,*storagemodule*,advFuelLoader,rocketAssembly,recycler,liquidextractor,advlandingpad,gravitationmoduleon,radiationstabiliser,modificationtable],[]]};
+	{keep:["item.BasicItems",[14,15,17,18]]};
+	{hide:["item.",[Tier*Rocket,ThermalClothT2,Modules,RocketParts,oxygentank*,spacesuit*,ThermalPaddingT2],[]]};
+	{hide:["item.cobalt_",[pickaxe,axe,hoe,shovel,sword],[]]};
+]
+}
