@@ -146,7 +146,8 @@ mods.chisel.Groups.addVariation("basalt", thing);
 }
 
 // --- --- --- ---
-// Stop material changing cobblestone
+// Stop material changing cobblestone	until GT6.14.12
+/*
 mods.chisel.Groups.removeGroup("cobblestone");
 mods.chisel.Groups.addGroup("stoneCobble");
 // mods.chisel.Groups.addVariation("stoneCobble", <chisel:cobblestone:0>);
@@ -166,10 +167,10 @@ mods.chisel.Groups.addVariation("stoneCobble", <chisel:cobblestone:13>);
 mods.chisel.Groups.addVariation("stoneCobble", <chisel:cobblestone:14>);
 mods.chisel.Groups.addVariation("stoneCobble", <chisel:cobblestone:15>);
 mods.chisel.Groups.addVariation("stoneCobble", <minecraft:cobblestone>);
-
+*/
 // mods.chisel.Groups.removeVariation(<gregtech:gt.block.concrete:0>);	# errors to client (works anyway)
 mods.chisel.Groups.addVariation("concrete", <gregtech:gt.block.concrete:7>);
 
 // Stairs
-recipes.addShaped(<chisel:limestone_stairs.0> *4, [[gtLimestone, null, null], [gtLimestone, gtLimestone, null],[gtLimestone, gtLimestone, gtLimestone]]);
-recipes.addShaped(<chisel:marble_stairs.0> *4, [[gtMarble, null, null],[gtMarble, gtMarble, null],[gtMarble, gtMarble, gtMarble]]);
+recipes.addShaped(<chisel:limestone_stairs.0> *4, [[gtLimestone, null], [gtLimestone, gtLimestone]]);
+recipes.addShaped(<chisel:marble_stairs.0> *4, [[gtMarble, null],[gtMarble, gtMarble]]);

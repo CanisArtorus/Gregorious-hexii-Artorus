@@ -22,12 +22,12 @@ recipes.remove(<arsmagica2:deficitCrystal>);
 // fix mis-diagnoses by GregTech parsing.
 <ore:oreMoonAnyStone>.remove(moonstoneOre);
 <ore:oreMoonMoonstone>.add(moonstoneOre);
-// mods.MTUtilsGT.removeRecipe("gt.recipe.crusher", [moonstoneOre], [<gregtech:gt.meta.crushed:8500>*2, <gregtech:gt.meta.dust:8513>]);
+mods.MTUtilsGT.removeRecipe("gt.recipe.crusher", [moonstoneOre], [<gregtech:gt.meta.crushed:8500>*2, <gregtech:gt.meta.dust:8513>]);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, [7500, 10000], [moonstoneOre *1], [moonstoneGem *2, <gregtech:gt.meta.dust:8513>]);	# moon rock
 
-// add missing compatibility
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, [7500, 10000], [chimeriteOre *1], [chimeriteGem*2, <gregtech:gt.meta.dust:8500>]);	# stone
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, [7500, 10000], [sunstoneOre *1], [sunsoneGem*2, <gregtech:gt.meta.dust:8502>]);	# netherrack
+// add missing compatibility # until GT 6.13.01
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, [7500, 10000], [chimeriteOre *1], [chimeriteGem*2, <gregtech:gt.meta.dust:8500>]);	# stone
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.crusher", false, 16, 64, [7500, 10000], [sunstoneOre *1], [sunsoneGem*2, <gregtech:gt.meta.dust:8502>]);	# netherrack
 
 recipes.remove(<arsmagica2:stairsWitchwood>);
 recipes.addShapedMirrored(<arsmagica2:stairsWitchwood>*4, [

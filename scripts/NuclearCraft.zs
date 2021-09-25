@@ -16,6 +16,7 @@ var advPlate	= <NuclearCraft:parts:9>;
 var duPlate		= <NuclearCraft:parts:8>;
 var ncCapsule	= <NuclearCraft:fuel:48>;
 var ncCan		= <NuclearCraft:fuel:45>;
+var blackCell = <NuclearCraft:fuel:33>;
 var reactant	= <NuclearCraft:parts:4>;
 var toughAlloy	= <NuclearCraft:material:7>;
 var toughDust	= <NuclearCraft:material:22>;
@@ -112,7 +113,7 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", true, 16, 1024, [10000], [<
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", true, 16, 1536, [10000], [<NuclearCraft:parts:17>], <NuclearCraft:material:72> *2);	// MgB2
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", true, 32, 1024, [10000], [<NuclearCraft:parts:7>], <gregtech:gt.meta.dust:500> *10);
 mods.MTUtilsGT.addCustomRecipe("gt.recipe.shredder", true, 16, 64, [10000], [ncCan], <gregtech:gt.meta.dustSmall:500>);
-	
+
 <ore:plateDoubleSilver>.add(<NuclearCraft:parts:15>);
 
 // Plasmas
@@ -121,6 +122,10 @@ mods.MTUtilsGT.addCustomRecipe("gt.recipe.canner", true, 128, 16, [10000], [<Nuc
 
 // one black cell fills two white cans at parity. four cans fills a capsule - one capsule counts as eight cans of output - each capsule reacts with a whole cell. cell holds 1.0 units of dust.
 // can holds half unit; capsule holds two.
+
+// IE conflict
+recipes.remove(blackCell);
+recipes.addShaped(blackCell*16, [[null, <ore:plateAnyIron>, null], [<ore:plateCurvedAnyIron>, null,<ore:plateCurvedAnyIron>],[null, <ore:plateAnyIron>, null]]);
 
 // Bullets
 recipes.addShapeless(<NuclearCraft:dUBullet>, [<gregtech:gt.meta.bulletGtMedium:920>, <gregtech:gt.meta.bulletGtMedium:920>]);

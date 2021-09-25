@@ -316,14 +316,14 @@ recipes.addShaped(<ImmersiveEngineering:metalDevice2>, [
 // --- Do Later
 recipes.remove(<ImmersiveEngineering:metalDevice2:3>);
 recipes.addShaped(<ImmersiveEngineering:metalDevice2:3> * 2, [[Wrench, <ore:plateCurvedAnyIron>, null],
-	[<minecraft:glass_pane:*>, <ore:ingotLumium>, <minecraft:glass_pane:*>],
+	[<ore:paneGlass>, <ore:ingotLumium>, <ore:paneGlass>],
 	[<ImmersiveEngineering:metalDevice:0>, RingIron, <ImmersiveEngineering:metalDevice:0>]]);
 
 // Floodlight
 // --- use Lumium
 // --- Do Later
 recipes.remove(<ImmersiveEngineering:metalDevice2:4>);
-recipes.addShaped(<ImmersiveEngineering:metalDevice2:4>, 
+recipes.addShaped(<ImmersiveEngineering:metalDevice2:4>,
 	[[Screwdriver, PlateDoubleSteelGalvanized, HHammer],
 	[<ore:lensGlass>, <ore:plateDoubleLumium>, ElectrumCoil],
 	[<ore:screwAnyIronSteel>, StickSteel, SteelSlope]]);
@@ -336,7 +336,7 @@ recipes.addShapeless(<ImmersiveEngineering:metalDevice2:5>, [PipeSteel, RingIron
 // Fluid Pump
 // --- Do Later
 recipes.remove(<ImmersiveEngineering:metalDevice2:6>);
-recipes.addShaped(<ImmersiveEngineering:metalDevice2:6>, 
+recipes.addShaped(<ImmersiveEngineering:metalDevice2:6>,
 	[[Wrench, CopperCoil, null],
 	[PlateDoubleSteelGalvanized, Mag, PlateDoubleSteelGalvanized],
 	[RingIron, <gregtech:gt.multitileentity:16001>, RingIron]]);
@@ -381,7 +381,7 @@ recipes.addShaped(<ImmersiveEngineering:metalDecoration:9> * 4, [
 [Wrench, null, SteelFence],
 [null, HHammer, PlateSteel]]);
 /*
-// Sheet Iron Block	-- revert
+// Sheet Iron Block	-- revert, change NuclearCraft instead
 recipes.remove(SheetIron);
 recipes.addShaped(SheetIron * 2, [
 [FoilIron, FoilIron, FoilIron],
