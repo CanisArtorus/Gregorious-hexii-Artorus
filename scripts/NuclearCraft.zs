@@ -22,12 +22,13 @@ var toughAlloy	= <NuclearCraft:material:7>;
 var toughDust	= <NuclearCraft:material:22>;
 
 // NuclearCraft - GregTech pairing
+// 6.14.21 catches several
 <ore:tinyU235Base>.add(<gregtech:gt.meta.dustTiny:921>);
 <ore:tinyU235Base>.add(<gregtech:gt.meta.nugget:921>);
 <ore:tinyU235>.addAll(<ore:tinyU235Base>);
 <ore:dustTinyUranium235>.add(<NuclearCraft:material:27>);
 <ore:U235Base>.add(<gregtech:gt.meta.dust:921>);
-<ore:U235>.add(<gregtech:gt.meta.dust:921>);
+// <ore:U235>.add(<gregtech:gt.meta.dust:921>);
 <ore:dustUranium235>.add(<NuclearCraft:material:26>);
 
 <ore:tinyPu241Base>.add(<gregtech:gt.meta.dustTiny:943>);
@@ -35,7 +36,7 @@ var toughDust	= <NuclearCraft:material:22>;
 <ore:tinyPu241>.addAll(<ore:tinyPu241Base>);
 <ore:dustTinyPlutonium241>.add(<NuclearCraft:material:37>);
 <ore:Pu241Base>.add(<gregtech:gt.meta.dust:943>);
-<ore:Pu241>.add(<gregtech:gt.meta.dust:943>);
+// <ore:Pu241>.add(<gregtech:gt.meta.dust:943>);
 <ore:dustPlutonium241>.add(<NuclearCraft:material:36>);
 
 <ore:tinyPu239Base>.add(<gregtech:gt.meta.dustTiny:945>);
@@ -43,7 +44,7 @@ var toughDust	= <NuclearCraft:material:22>;
 <ore:tinyPu239>.addAll(<ore:tinyPu239Base>);
 <ore:dustTinyPlutonium243>.add(<NuclearCraft:material:33>);
 <ore:Pu239Base>.add(<gregtech:gt.meta.dust:945>);
-<ore:Pu239>.add(<gregtech:gt.meta.dust:945>);
+// <ore:Pu239>.add(<gregtech:gt.meta.dust:945>);
 <ore:dustPlutonium243>.add(<NuclearCraft:material:32>);
 
 <ore:tinyAm241Base>.add(<gregtech:gt.meta.dustTiny:951>);
@@ -51,7 +52,7 @@ var toughDust	= <NuclearCraft:material:22>;
 <ore:tinyAm241>.addAll(<ore:tinyAm241Base>);
 <ore:dustTinyAmericium241>.add(<NuclearCraft:material:91>);
 <ore:Am241Base>.add(<gregtech:gt.meta.dust:951>);
-<ore:Am241>.add(<gregtech:gt.meta.dust:951>);
+// <ore:Am241>.add(<gregtech:gt.meta.dust:951>);
 <ore:dustAmericium241>.add(<NuclearCraft:material:90>);
 
 <ore:tinyLi6>.add(<gregtech:gt.meta.dustTiny:31>);

@@ -242,6 +242,7 @@ for i in [75, 76, 735] as int[] {
 
 // RFlux accepting machines		until 6.10.08
 var HHammer = <ore:craftingToolHardHammer>;
+var SHammer = <ore:craftingToolSoftHammer>;
 var Screwdriver = <ore:craftingToolScrewdriver>;
 var WirCut	= <ore:craftingToolWireCutter>;
 var Wrench	= <ore:craftingToolWrench>;
@@ -345,7 +346,7 @@ recipes.addShaped(diamondChestplate, [
 recipes.remove(diamondLeggings);
 recipes.addShaped(diamondLeggings, [
     [plateDiamond, plateDiamond, plateDiamond],
-    [plateDiamond, <minecraft:chainmail_legs>, plateDiamond],
+    [plateDiamond, <minecraft:chainmail_leggings>, plateDiamond],
     [plateDiamond, SHammer, plateDiamond]]);
 recipes.remove(diamondBoots);
 recipes.addShaped(diamondBoots, [

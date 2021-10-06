@@ -108,8 +108,8 @@ var clusterCopper		= <Thaumcraft:ItemNugget:17>;
 var clusterHg			= <Thaumcraft:ItemNugget:21>;
 
 // GT
-var ingotMidasium       = <gregtech:gt.meta.ingot:8677>;	//- 01:11332>;
-var ingotRoseGold       = <gregtech:gt.meta.ingot:8602>;
+var ingotMidasium       = <gregtech:gt.meta.storage.ingot:8677>;	//- 01:11332>;
+var ingotRoseGold       = <gregtech:gt.meta.storage.ingot:8602>;
 var ingotEnderium       = <gregtech:gt.meta.ingot:8710>;	//- 01:11321>;
 var ingotAdamantium     = <gregtech:gt.meta.ingot:2220>;	//-	01:11319>;
 var diamondFlawless     = <gregtech:gt.meta.gemFlawless:8300>;	//-	02:29500>;

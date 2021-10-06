@@ -69,9 +69,15 @@ var controlRuby = <gregtech:gt.multiitem.technological:30402>;
 var convertSapph = <gregtech:gt.multiitem.technological:30404>;
 var transDimUpgrade = <SGCraft:sgChevronUpgrade>;
 var plateCurvedEnderium = <gregtech:gt.meta.plateCurved:8710>;
-var bedDust = <gregtech:gt.meta.dust:8599>; // <RotaryCraft:rotarycraft_item_powders:4>;
+var bedDust = <gregtech:gt.meta.dust:9222>; // 8599>; // <RotaryCraft:rotarycraft_item_powders:4>; // - Slate
 var meteorDust = <gregtech:gt.meta.dust:8649>;
-var triniumOre = <gregtech:gt.meta.crushedPurified:1260>;
+var rhodiumDust = <gregtech:gt.meta.dust:450>;
+var triniumOre = <gregtech:gt.meta.oreRaw:1260>; // crushedPurified:1260>;
+
+var rutheniumDust = <gregtech:gt.meta.dust:440>;
+var ceriumDust = <gregtech:gt.meta.dust:580>;
+var lanthanumDust = <gregtech:gt.meta.dust:570>;
+var tritaniumOre = <gregtech:gt.meta.oreRaw:9204>; // TnO2
 
 # Recipe Removal
 recipes.remove(ingotNaqAlloySG);	// GT);
@@ -148,12 +154,14 @@ recipes.addShaped(transDimUpgrade, [[plateCurvedEnderium, emitterEV, motorEV],
 	[motorEV, emitterEV, plateCurvedEnderium]]);
 
 # Recipe Creation
-# ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 512, 320, [10000], [bedDust, meteorDust], [<liquid:molten.tungstensteel> * 144, <liquid:molten.titanium> *288, <liquid:molten.iridium> *9, <liquid:helium> *100, <liquid:potion.strength.strong> *250, <liquid:xpjuice> *20], [<liquid:waterdirty> *250], [triniumOre *4]);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 75, [10000], [<gregtech:gt.meta.dustTiny:60>, <gregtech:gt.meta.dustTiny:1260> *6, <gregtech:gt.meta.dustTiny:1740> *2], <gregtech:gt.meta.dust:8684>);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 175, [10000], [<gregtech:gt.meta.dustSmall:60>, <gregtech:gt.meta.dustSmall:1260> *6, <gregtech:gt.meta.dustSmall:1740> *2], <gregtech:gt.meta.dustSmall:8684> *9);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 680, [10000], [<gregtech:gt.meta.dust:60>, <gregtech:gt.meta.dust:1260> *6, <gregtech:gt.meta.dust:1740> *2], <gregtech:gt.meta.storage.dust:8684>);
-mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 10, [10000], [<gregtech:gt.meta.dustDiv72:60>, <gregtech:gt.meta.dustDiv72:1260> *6, <gregtech:gt.meta.dustDiv72:1740> *2], <gregtech:gt.meta.dustDiv72:8684> *9);
+// ChemicalReactor.addRecipe(dustNaqAlloy, dustNaquadah, dustIron, 12000);
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 512, 320, [10000], [bedDust, meteorDust, rhodiumDust], [<liquid:molten.atlarus> * 144, <liquid:molten.titanium> *288, <liquid:molten.caesium> *144, <liquid:helium> *100, <liquid:potion.strength.strong> *250, <liquid:xpjuice> *20], [<liquid:waterdirty> *250], [triniumOre *3]);
+mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 512, 80, [10000], [lanthanumDust, ceriumDust, rutheniumDust], [<liquid:sluicejuice> *8100, <liquid:xpjuice> *10], [<liquid:waterdirty> *8000], [tritaniumOre]);
+
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 75, [10000], [<gregtech:gt.meta.dustTiny:60>, <gregtech:gt.meta.dustTiny:1260> *6, <gregtech:gt.meta.dustTiny:1740> *2], <gregtech:gt.meta.dust:8684>);
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 175, [10000], [<gregtech:gt.meta.dustSmall:60>, <gregtech:gt.meta.dustSmall:1260> *6, <gregtech:gt.meta.dustSmall:1740> *2], <gregtech:gt.meta.dustSmall:8684> *9);
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 680, [10000], [<gregtech:gt.meta.dust:60>, <gregtech:gt.meta.dust:1260> *6, <gregtech:gt.meta.dust:1740> *2], <gregtech:gt.meta.storage.dust:8684>);
+// mods.MTUtilsGT.addCustomRecipe("gt.recipe.mixer", true, 32, 10, [10000], [<gregtech:gt.meta.dustDiv72:60>, <gregtech:gt.meta.dustDiv72:1260> *6, <gregtech:gt.meta.dustDiv72:1740> *2], <gregtech:gt.meta.dustDiv72:8684> *9);
 # Assembler.addRecipe(crystalSGController, lapotronChip, lensTopaz, 6000, 32);
 # Assembler.addRecipe(crystalSGController, lapotronChip, lensAmber, 6000, 32);
 for lensY in <ore:craftingLensYellow>.items {
