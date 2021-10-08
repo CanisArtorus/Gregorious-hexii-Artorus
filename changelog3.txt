@@ -1,0 +1,322 @@
+:: 4-pre-473 ::
+
+Add:
++ Automagy 0.28.2
+ - Redlogic crystals
+ - Nethermind: creature and block conjuring
+ - Inventarium & Essentia Loci, magical AE system
+ - Golem Workbench, actual autocrafting
++ Witchery 0.24.1
+ - some hedge magic to help the common house-spouse to get out of the occasional scrape
+ - alternate magic system, Complete
+ - village 'towns' with factions, guards, walls
+ - vampires, werewolves, and witch hunters
+  
+Remove:
+ GalaxySpace
+  - currently bugged
+  - less need of space stuff
+
+:: 3.5.468 ::
+Fixed scripts with Thaunomicon crashes, as reported.
+Fixed AR planetDefs, no more constant galaxy errors!
+Updated compat scripts
+ - note the new stair Recipes
+Fixed Diamond Armor to be based on Chainmail
+Change Trinium ore recipe due to Bedrock -> Admantium process change
+ Add Tritanium/Duranium ore recipe
+Put more Midasium (gold) in the Ichorium process; balances with GT's new Midasium bathing lead to gold.
+
+Update
+: GT 6.14.20
+ Over a year of stuff. Seriously, tons.
+: CodeChickenCore 1.0.7.48-universal
+ auto-updates CodeChickenLib to 1.1.3.141 (from1.1.3.138)
+ 
+Don't update GalaxySpace, 1.2.14 isn't working...
+
+Remove
+; Thaumic Fixer
+ - is part of GT now.
+; Catwalks
+ - GT has Scaffolds that fill the niche well, especially with Bars blocks
+
+:: 3.4.449 ::
+Include custom excavator veins on the new planets.
+
+:: 3.3.448 ::
+Several more planets available, finished four systems.
+tweaked GT abandoned base 'dungeon' geneneration
+Ensure fluids discovered on other planets are useful.
+Made the car (GC Buggy) earlier tech - steel, basic circuit Gt, rubber
+Fix some recipe errors in AR.
+
+The AR rolling machine is simply an option to the Roll Bender.
+	Task Three of quest "Pre-Launch" in the Space Age requires it.
+	- gentle disassembly of this machine in the Centrifuge or Crusher added.
+	- new quest version
+
+Update
+: GT6.12.00
+ - multiblock Squeezer, Heat Exchanger
+ - Crossing crucible extender like a casting channel
+ - single-block Diesel engines (six tiers)
+
+
+:: 3.2.437 ::
+*Accidentally shipped with hqm editmode still on.
+
+Quests overhaul and swap of spaceship mod will make keeping an old world unplesant,
+  plus several new GT vein types have been added
+  reverse compatibility limited.
+
+Fix Atum / GS-space station biome conflict
+discovered a pile of aspect compatability scripts; enjoy TC scanning more now.
+Large changes to Stone Age quests
+Small changes to Chemical Age
+Moderate shuffling around the Electrical Era
+Modern re-worked and extended
+add Space Age
+
+Update
+: GalaxySpace 1.2.13 pre-final
+ - space suit modules stuff
+ - replaced batteries
+: GT6.11.26
+ - Natural gas pockets and bedrock vents, just like GT6 Oil
+ - All the multiblock machines
+ - ...
+ really, tons of updates, it's been nine months!
+ it's Release version now!
+: Carpenter's Blocks 3.3.8.2
+ - bugfix
+: OpenModsLib 0.10.1
+ - security fix
+: Craft Tweaker 3.1.0
+ - utility functions
+: OpenComputers 1.7.5
+ - Install an Analyzer in your Tablet as "barcode_reader"
+ - lots of crash fixes
+ - Robot improvements
+: NEI Addons 1.12.15.41
+ - fix log spam error
+
+Add
+: Advanced Rocketry 1.4.0-20-UNSTABLE
+  libVulpes 0.2.8-37-UNSTABLE
+   * Completely replace the Rockets system.
+   + xml galaxymap, biome-compositional planets
+     - expect more to trickle in later
+   + embed the best GS worlds in it
+   - gas & asteroid mining
+   * Replacement space stations
+   - recipe config may take forever
+
+Remove:
+ Regional Water
+  - River water fixes most important case
+
+Suggest -
+ DynamicTrees 0.7.2c
+ - forest simulation, and fell entire trees by cutting the base
+ - Greg trees now look cartoony.
+ - dynamic trees can't be de-barked in place.
+ - grows right next to roads, like Greatwood trees did.
+ - Only spawns on the Overworld, not other worlds
+
+
+:: branch 3.0.369 ::
+N.B. !!! NEW WORLD ONLY !!!
+  Absolutely incompatible with any old saves
+
+Fix the RoC/ElC dependancies discovered by theFirstPaige
+Flavour the IE mineral veins more
+Disable Railcraft Tanks
+Change Keyboard recipes
+Fix some potionID (effect) conflicts.
+Fix a Thuanomicon Crash casued by broken recipe
+Re-balance Thaumium production
+
+Updates
+: GT6.10.08
+ - fluxo-convertors have a default recipe now, retiring mine.
+  - And the Flux Dynamo too, along with the others I didn't recipe earlier.
+ - all EU and RF convertors accept mode Selector covers to limit output
+   = mode 0 max, mode 8 nominal, mode 12 minimum. Linear by 16ths - modes 13, 14, and 15 non-functional.
+ - Chisel is a block harvest tool for stone, drops as chiseled block instead of cobble.
+
+Remove
+- all of Reika's mods
+ - DragonAPI
+ - RotaryCraft
+ - ReactorCraft
+ - ElectriCraft
+ - Expanded Redstone
+- Electrical Age (ELN)
+- PneumaticCraft
+
+Add:
++ Thaumic Fixer 1.2
+
+:: mark 2.1.351 ::
+Someone tried to add Galacticraft to CurseForge, but was confused about file structure. Do not 'update' it.
+
+Made nuclear more coherent
+Fixed some erroring / non-functional tweaks
+
+Writing quest updates. But actually updating the quests file invalidates existing completion in the world.
+ + I am including alternate versions of the quest file, so that users can load the one they want.
+   go to $instances$/Gregorius hexii Artorus/config/hqm/ and rename any of the quests.hqm-version-x to override the default quests.hqm file there.
+
+Updates:
+: GT6.10.07
+ - Petroleum Chemistry.
+  -- Ethylene and Propylene, steam & catalytic cracked fractions, liquifacted coals, new Plastic recipe
+  -- Biomass fractional distillation in the tower
+ - Gas Turbine multiblock direct power
+ - River Water (infinite fresh water) is worldgen, and an obvious block with WAILA.
+  * Drains still work the old way, and RiverWater cannot be picked up by anything (always gives normal fresh Water) [nor can creative mode place it]. It will expand like vanilla water would have.
+
+Added:
+: Symcalc 0.14
+ - In-game check of Infusion Altar stability rating.
+
+:: mark 2.0.340 ::
+
+Update wood recipes for SawAxe option
+Slight change to IE excavator veins
+
+Decision
+: Split into version 2 branch
+ * config changes greatly transform worldgen
+ * re-writen HQM blanks all existing progress
+
+Quests
+ - Major changes to first page, for improved on-boarding
+  * and some mechanical updates
+ - pervasive copyediting
+ - add AM2 line
+ - replace Atum set
+
+Configs
+ - clean up some missed repair from the unstable era
+
+Added:
+: Regional Water
+ - Now buckets and digging will get also infinite fresh water in Rivers, Twilit Lakes, and on ocean worlds
+   * Actually in the biome, so many shore blocks along 'rivers' will not function this way.
+
+Updates
+: GregTech 6.10.03
+ - included the Erebus woods
+ - nicer Creosote treated slabs, and rail ties
+ - more metals for Drums, Item Pipes, and Cap-Cell-Containers
+ - Axles and Gearboxes !!!
+  * RU transmit / split & join / transform / convert to KU pair
+ - Anvils- qwertech style: durable hammer-partners for plate / ingot / rolling
+ - more miniportals than any sane person would use
+ - LuV lightning rod
+ - Robot Arms as covers - slot specific insert/extract
+ - Turf as peat bogs in Swamps
+ - New tier of Burning Boxes that only use charcoal / coal / coke / peat and take liquid Calcite to run
+   * Joy to Titanium and Tungstensteel super boiler / turbine / dynamo. And tier 4 HU machines
+ - Gas cylinders like measuring pots
+ - Cap Nozzle (ball cock) funnel-like for gasses upgrade to the tap-like Nozzles
+ - CU _*finally*_ cools down Molds and Basins for automating smeltery casting
+ - Button Panel, a temporary manual selector cover
+
+: OpenComputers 1.7.4.1692
+: GalaxySpace 1.2.8
+: Dragon Everything v22d
+
+
+:: mark 1.1r307 ::
+
+Attempting to improve new player welcome quests.
+
+MT fixes for wooden stairs GregT missed : all Ereubs vareities, Railcraft, Carpenters, Witchwood, and a birch/spruce mixup once Chiseled.
+
+Change Compacting Drawer Recipe to be Galvanized / Steel; from Aluminium / Steel
+ - mostly for Tiny Ore handling
+ - may restict utility of the Dust Funnel.
+   * only handles three of the five dust sizes, with choice of tiny or small in each to pile and block.
+   * did it even work on ores?
+
+Update
+: Dragon Everything v21c
+ - plenty of bugfixes
+ - still not compatible with Thaumic Fixer
+: GalaxySpace 1.2.5-STABLE
+ - continual improvement
+: Gregtech 6.08.04
+ - Wood stuff *
+ - loading times improved
+ - config erroring quelled
+ * not caring aobut Aether II mod, yet.
+ * version checker currently broken, disabled until resolved.
+
+Added
+: Tweaked inventory Tweaks
+ - sorting chests full of ore / samples.
+
+:: mark 1.0r295 ::
+
+repair the errored configs
+  - Worldgen mostly
+  - Probably due to re-adding galcticraft
+Completed (GT) quest writing
+
+Decision
+! Declare Release!  WooHoo!
+: Automagy Will not Add
+ - golem autocraft / sorted storage
+   * overlaps AE2 and Logistics Pipes
+   * requirement of EEPROM in each golem makes a lackluster choice - just use robots
+ - essentia to creature summons
+   * worse than RoC stabilized spawners
+   * similar to Wrath Cage and Tablet of Necromancy (FM, TT)
+ - essentia to block summons
+   * very weak version of matter replication
+   * why not just quarry
+ - redcrystal
+   * Expanded Redstone has better logic
+   * Signalum wire has equal transmission
+   * ELN massively better in both
+
+Issues
+ - extremely long pauses in build / load
+ - Occasional FML Proxy Packet crash on launch.
+   - Quit and reload MineCraft entirely usually works
+   - Only still happens to me if the World Load is in the Background
+     * Load into world with patience, as the active application window.
+
+Update
+: GT6.08.00
+ - IE takes EU
+ - some Railcraft stuff
+ - Ocean underwater sunlight
+ * Apparently the major version is back-end stuff
+   * Including the prior 6.07.24 in case of existing worlds breaking for other folks
+: Dragon everything v20c
+ - Galacticraft might be addable?
+ - Grinder / Extractor handle GT6 ore variants by default
+ - log spam, hopefully less
+ - Thaumic Fixer still isn't compatible
+ ! force MTReload - which doesn't work with MTUtilsGT
+   * managed to work-around, for now
+
+Add
+: Expanded Redstone v20a
+ - removed the troublesome dependency
+: Electrical Age 1.14.2
+ - realistic power simulator
+ - odd, but very limited, processing
+ - analog (LV-microamp) signal processing with rs interchange
+ * remove easy rubber
+ * remove easy chips
+: Galacticraft 3.0.12-504, and GalaxySpace 1.2.4
+ - asteroid dimension lighting fixed
+ - still has random crashes in Oxygen system
+   * these bugs are still unlikey to ever get fixed
+
+:: mark 0.8rc272 ::
