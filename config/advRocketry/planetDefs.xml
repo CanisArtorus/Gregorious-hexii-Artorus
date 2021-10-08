@@ -195,7 +195,6 @@
 			<GasGiant>true</GasGiant>
 			<gas>heliumhydrogen</gas>
 			<gas>hydrogen</gas>
-			<hasRings>true</hasRings>
 			<orbitalDistance>140</orbitalDistance>
 			<orbitalPhi>2</orbitalPhi>
 			<rotationalPeriod>10600</rotationalPeriod>
