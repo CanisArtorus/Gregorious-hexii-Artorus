@@ -449,6 +449,7 @@
 				<orbitalTheta>-90</orbitalTheta>
 			</planet>
 		</planet>
+        <!-- new and suspect here on out -->
 		<planet name="Aurigon" DIMID="147" customIcon="marslike">
 			<artifact>minecraft:gold_block 0 1</artifact>
 			<atmosphereDensity>100</atmosphereDensity>
@@ -527,9 +528,9 @@
 			<atmosphereDensity>90</atmosphereDensity>
 			<biomeIds>118,54</biomeIds>
 			<!-- <spawnable weight="10" groupMin="1" groupMax="5">am2.entities.EntityDryad</spawnable> not in this edition -->
-			<OreGen> <!-- complete replacement -->
+			<!-- <OreGen>
 				<ore block="minecraft:iron_block" minHeight="20" maxHeight="80" clumpSize="32" chancePerChunk="4" />
-			</OreGen>
+            </OreGen> --><!-- complete replacement -->
 			<seaLevel>80</seaLevel>
 			<fillerBlock>gregtech:gt.stone.kimberlite</fillerBlock>
 			<oceanBlock>gregtech:gt.stone.andesite</oceanBlock>
@@ -831,4 +832,125 @@
 	minecraft:stone	*with no toppings
 	minecraft:wool
 	-->
+    <!-- Biomes:
+0    Ocean
+1    Plains
+2    Desert
+3    Extreme Hills
+4    Forest
+5    Taiga
+6    Swampland
+7    River
+8    Hell
+9    Sky
+10    FrozenOcean
+11    FrozenRiver
+12    Ice Plains
+13    Ice Mountains
+14    MushroomIsland
+15    MushroomIslandShore
+16    Beach
+17    DesertHills
+18    ForestHills
+19    TaigaHills
+20    Extreme Hills Edge
+21    Jungle
+22    JungleHills
+23    JungleEdge
+24    Deep Ocean
+25    Stone Beach
+26    Cold Beach
+27    Birch Forest
+28    Birch Forest Hills
+29    Roofed Forest
+30    Cold Taiga
+31    Cold Taiga Hills
+32    Mega Taiga
+33    Mega Taiga Hills
+34    Extreme Hills+
+35    Savanna
+36    Savanna Plateau
+37    Mesa
+38    Mesa Plateau F
+39    Mesa Plateau
+40    Twilight Lake
+41    Twilight Forest
+42    Dense Twilight Forest
+43    Twilight Highlands
+44    Mushroom Forest
+45    Twilight Swamp
+46    Twilight Stream
+47    Snowy Forest
+48    Twilight Glacier
+49    Twilight Clearing
+50    Oak Savanna
+51    Firefly Forest
+52    Deep Mushroom Forest
+53    Dark Forest Center
+54    Highlands Center
+55    Dark Forest
+56    Enchanted Forest
+57    Fire Swamp
+58    Thornlands
+    Storage Cell
+100    Undergound Jungle
+101    Volcanic Desert
+102    Subterranean Savannah
+103    Elysian Fields
+104    Ulterior Outback
+105    Fungal Forest
+106    Submerged Swamp
+107    Elysian Forest
+108    WitchwoodForest
+110    Moon (light)
+111    Alien Forest
+112    Hot Dry Rock
+113    Space
+114    Stormland
+115    CrystalChasms
+116    DeepSwamp
+117    Marsh
+118    OceanSpires
+119    Moon (dark)
+120    moon (gc)
+121    marsFlat
+122    asteroids
+123    space
+126    Ocean Oil Field
+127    Desert Oil Field
+129    Sunflower Plains
+130    Desert M
+131    Extreme Hills M
+132    Flower Forest
+133    Taiga M
+134    Swampland M
+140    Ice Plains Spikes
+149    Jungle M
+151    JungleEdge M
+155    Birch Forest M
+156    Birch Forest Hills M
+157    Roofed Forest M
+158    Cold Taiga M
+160    Mega Spruce Taiga
+161    Mega Spruce Taiga
+162    Extreme Hills+ M
+163    Savanna M
+164    Savanna Plateau M
+165    Mesa (Bryce)
+166    Mesa Plateau F M
+167    Mesa Plateau M
+192    Tainted Land
+193    Magical Forest
+194    Eerie
+195    Eldritch
+199    Atum's Desert
+228    Undergound Jungle M
+229    Volcanic Desert M
+230    Subterranean Savannah M
+231    Elysian Fields M
+232    Ulterior Outback M
+233    Fungal Forest M
+234    Submerged Swamp M
+235    Elysian Forest M
+    -->
 </galaxy>
