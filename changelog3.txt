@@ -1,4 +1,5 @@
-:: 4-pre-473 ::
+:: 4-pre-480 ::
+Alter planetDefs.
 
 Add:
 + Automagy 0.28.2
@@ -17,7 +18,7 @@ Remove:
   - currently bugged
   - less need of space stuff
 
-:: 3.5.468 ::
+:: 3.5.472 ::
 Fixed scripts with Thaunomicon crashes, as reported.
 Fixed AR planetDefs, no more constant galaxy errors!
 Updated compat scripts
@@ -26,6 +27,8 @@ Fixed Diamond Armor to be based on Chainmail
 Change Trinium ore recipe due to Bedrock -> Admantium process change
  Add Tritanium/Duranium ore recipe
 Put more Midasium (gold) in the Ichorium process; balances with GT's new Midasium bathing lead to gold.
+
+Fix quests, plenty of typos, several updates.
 
 Update
 : GT 6.14.20
