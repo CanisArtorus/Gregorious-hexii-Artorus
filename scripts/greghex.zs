@@ -185,7 +185,7 @@ for i in metalMeta {
 	<ore:ca.plugBench>.add(gtTile.makeStack(5500 + i));
 }
 <ore:drawerLike>.addAll(<ore:drawerBasic>);
-var meta3 = [1100, 1101, 1102, 1103] as int[];
+var meta3 = [1100, 1101, 1102, 1103, 1199] as int[];
 for i in meta3 {
 	<ore:solidBurning>.add(gtTile.makeStack(i) );
 }

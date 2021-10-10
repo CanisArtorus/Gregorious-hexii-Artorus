@@ -1,4 +1,5 @@
 
+import minetweaker.liquid.ILiquidStack;
 
 // var vinteumOre		= <arsmagica2:vinteumOre:0>;	# 8316
 // var vinteumDust		= <arsmagica2:itemOre:0>;
